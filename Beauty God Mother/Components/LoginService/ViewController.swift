@@ -21,20 +21,8 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        placeholderForTextFields()
     }
-    
-    func placeholderForTextFields() {
-    
-        emailTextField.attributedPlaceholder = NSAttributedString(string: "Email",
-                                                                  attributes: [NSAttributedString.Key.foregroundColor: UIColor.white])
-        passwordTextField.attributedPlaceholder = NSAttributedString(string: "Password",
-                                                                  attributes: [NSAttributedString.Key.foregroundColor: UIColor.white])
-        
-    }
-   
-    
-    
+
     @IBAction func loginPressed(_ sender: UIButton) {
         // step 1
         guard let email = emailTextField.text, let password = passwordTextField.text else {return}
