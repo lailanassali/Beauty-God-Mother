@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5889CE958FED8A050B0F294E /* Pods_Beauty_God_MotherTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAB59A83EF87A5DAB24E7AA9 /* Pods_Beauty_God_MotherTests.framework */; };
 		5B16A01C21DFB0A70022DDE7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B16A01B21DFB0A70022DDE7 /* AppDelegate.swift */; };
 		5B16A01E21DFB0A70022DDE7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B16A01D21DFB0A70022DDE7 /* ViewController.swift */; };
 		5B16A02121DFB0A70022DDE7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B16A01F21DFB0A70022DDE7 /* Main.storyboard */; };
@@ -14,6 +15,8 @@
 		5B16A02621DFB0AA0022DDE7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B16A02421DFB0AA0022DDE7 /* LaunchScreen.storyboard */; };
 		5B16A03121DFB0AA0022DDE7 /* Beauty_God_MotherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B16A03021DFB0AA0022DDE7 /* Beauty_God_MotherTests.swift */; };
 		5B16A03C21DFB0AA0022DDE7 /* Beauty_God_MotherUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B16A03B21DFB0AA0022DDE7 /* Beauty_God_MotherUITests.swift */; };
+		5B16A04A21DFB1F90022DDE7 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5B16A04921DFB1F90022DDE7 /* GoogleService-Info.plist */; };
+		68FC856096471068AC3E1B4E /* Pods_Beauty_God_Mother.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AC7137FDBF8C98CB8F38344 /* Pods_Beauty_God_Mother.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1B9D4DE3D2073187C01E22B1 /* Pods-Beauty God MotherTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Beauty God MotherTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Beauty God MotherTests/Pods-Beauty God MotherTests.release.xcconfig"; sourceTree = "<group>"; };
+		3AC7137FDBF8C98CB8F38344 /* Pods_Beauty_God_Mother.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Beauty_God_Mother.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B16A01821DFB0A70022DDE7 /* Beauty God Mother.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Beauty God Mother.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B16A01B21DFB0A70022DDE7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5B16A01D21DFB0A70022DDE7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +52,11 @@
 		5B16A03721DFB0AA0022DDE7 /* Beauty God MotherUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Beauty God MotherUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B16A03B21DFB0AA0022DDE7 /* Beauty_God_MotherUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Beauty_God_MotherUITests.swift; sourceTree = "<group>"; };
 		5B16A03D21DFB0AA0022DDE7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5B16A04921DFB1F90022DDE7 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		718ACE45EB6FE671D1BEECC2 /* Pods-Beauty God MotherTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Beauty God MotherTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Beauty God MotherTests/Pods-Beauty God MotherTests.debug.xcconfig"; sourceTree = "<group>"; };
+		9E1D72925356FF595FB62F1B /* Pods-Beauty God Mother.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Beauty God Mother.release.xcconfig"; path = "Pods/Target Support Files/Pods-Beauty God Mother/Pods-Beauty God Mother.release.xcconfig"; sourceTree = "<group>"; };
+		EAB59A83EF87A5DAB24E7AA9 /* Pods_Beauty_God_MotherTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Beauty_God_MotherTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC2014412864173D30490638 /* Pods-Beauty God Mother.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Beauty God Mother.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Beauty God Mother/Pods-Beauty God Mother.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +64,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				68FC856096471068AC3E1B4E /* Pods_Beauty_God_Mother.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +72,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5889CE958FED8A050B0F294E /* Pods_Beauty_God_MotherTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,6 +86,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		410B39956FC1784CDFB24CB0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EC2014412864173D30490638 /* Pods-Beauty God Mother.debug.xcconfig */,
+				9E1D72925356FF595FB62F1B /* Pods-Beauty God Mother.release.xcconfig */,
+				718ACE45EB6FE671D1BEECC2 /* Pods-Beauty God MotherTests.debug.xcconfig */,
+				1B9D4DE3D2073187C01E22B1 /* Pods-Beauty God MotherTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		5B16A00F21DFB0A70022DDE7 = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +104,8 @@
 				5B16A02F21DFB0AA0022DDE7 /* Beauty God MotherTests */,
 				5B16A03A21DFB0AA0022DDE7 /* Beauty God MotherUITests */,
 				5B16A01921DFB0A70022DDE7 /* Products */,
+				410B39956FC1784CDFB24CB0 /* Pods */,
+				E4E30AEDA9F91096A65DF3C6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -103,6 +128,7 @@
 				5B16A02221DFB0AA0022DDE7 /* Assets.xcassets */,
 				5B16A02421DFB0AA0022DDE7 /* LaunchScreen.storyboard */,
 				5B16A02721DFB0AA0022DDE7 /* Info.plist */,
+				5B16A04921DFB1F90022DDE7 /* GoogleService-Info.plist */,
 			);
 			path = "Beauty God Mother";
 			sourceTree = "<group>";
@@ -125,6 +151,15 @@
 			path = "Beauty God MotherUITests";
 			sourceTree = "<group>";
 		};
+		E4E30AEDA9F91096A65DF3C6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3AC7137FDBF8C98CB8F38344 /* Pods_Beauty_God_Mother.framework */,
+				EAB59A83EF87A5DAB24E7AA9 /* Pods_Beauty_God_MotherTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +167,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5B16A04021DFB0AA0022DDE7 /* Build configuration list for PBXNativeTarget "Beauty God Mother" */;
 			buildPhases = (
+				A1D5D2D3E53D6E337585EDF5 /* [CP] Check Pods Manifest.lock */,
 				5B16A01421DFB0A70022DDE7 /* Sources */,
 				5B16A01521DFB0A70022DDE7 /* Frameworks */,
 				5B16A01621DFB0A70022DDE7 /* Resources */,
+				256B26206239973531B787F7 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -149,9 +186,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5B16A04321DFB0AA0022DDE7 /* Build configuration list for PBXNativeTarget "Beauty God MotherTests" */;
 			buildPhases = (
+				146649F995C99F20A024D5DF /* [CP] Check Pods Manifest.lock */,
 				5B16A02821DFB0AA0022DDE7 /* Sources */,
 				5B16A02921DFB0AA0022DDE7 /* Frameworks */,
 				5B16A02A21DFB0AA0022DDE7 /* Resources */,
+				DCE22F03FDF266C6F47F55D6 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -230,6 +269,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5B16A02621DFB0AA0022DDE7 /* LaunchScreen.storyboard in Resources */,
+				5B16A04A21DFB1F90022DDE7 /* GoogleService-Info.plist in Resources */,
 				5B16A02321DFB0AA0022DDE7 /* Assets.xcassets in Resources */,
 				5B16A02121DFB0A70022DDE7 /* Main.storyboard in Resources */,
 			);
@@ -250,6 +290,107 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		146649F995C99F20A024D5DF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Beauty God MotherTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		256B26206239973531B787F7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Beauty God Mother/Pods-Beauty God Mother-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Beauty God Mother/Pods-Beauty God Mother-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A1D5D2D3E53D6E337585EDF5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Beauty God Mother-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DCE22F03FDF266C6F47F55D6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Beauty God MotherTests/Pods-Beauty God MotherTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Beauty God MotherTests/Pods-Beauty God MotherTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		5B16A01421DFB0A70022DDE7 /* Sources */ = {
@@ -430,6 +571,7 @@
 		};
 		5B16A04121DFB0AA0022DDE7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EC2014412864173D30490638 /* Pods-Beauty God Mother.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -447,6 +589,7 @@
 		};
 		5B16A04221DFB0AA0022DDE7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9E1D72925356FF595FB62F1B /* Pods-Beauty God Mother.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -464,6 +607,7 @@
 		};
 		5B16A04421DFB0AA0022DDE7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 718ACE45EB6FE671D1BEECC2 /* Pods-Beauty God MotherTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -484,6 +628,7 @@
 		};
 		5B16A04521DFB0AA0022DDE7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1B9D4DE3D2073187C01E22B1 /* Pods-Beauty God MotherTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";

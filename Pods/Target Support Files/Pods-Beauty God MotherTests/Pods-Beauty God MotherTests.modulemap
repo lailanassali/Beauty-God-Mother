@@ -1,0 +1,6 @@
+framework module Pods_Beauty_God_MotherTests {
+  umbrella header "Pods-Beauty God MotherTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
