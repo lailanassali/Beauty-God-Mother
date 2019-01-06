@@ -16,6 +16,9 @@
 		5B16A03121DFB0AA0022DDE7 /* Beauty_God_MotherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B16A03021DFB0AA0022DDE7 /* Beauty_God_MotherTests.swift */; };
 		5B16A03C21DFB0AA0022DDE7 /* Beauty_God_MotherUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B16A03B21DFB0AA0022DDE7 /* Beauty_God_MotherUITests.swift */; };
 		5B16A04A21DFB1F90022DDE7 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5B16A04921DFB1F90022DDE7 /* GoogleService-Info.plist */; };
+		5B16A04C21DFB8AE0022DDE7 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B16A04B21DFB8AE0022DDE7 /* Extension.swift */; };
+		5B16A04E21DFC9AB0022DDE7 /* RBViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B16A04D21DFC9AB0022DDE7 /* RBViewController.swift */; };
+		5B16A05021DFC9C10022DDE7 /* SPViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B16A04F21DFC9C10022DDE7 /* SPViewController.swift */; };
 		68FC856096471068AC3E1B4E /* Pods_Beauty_God_Mother.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AC7137FDBF8C98CB8F38344 /* Pods_Beauty_God_Mother.framework */; };
 /* End PBXBuildFile section */
 
@@ -53,6 +56,9 @@
 		5B16A03B21DFB0AA0022DDE7 /* Beauty_God_MotherUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Beauty_God_MotherUITests.swift; sourceTree = "<group>"; };
 		5B16A03D21DFB0AA0022DDE7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5B16A04921DFB1F90022DDE7 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		5B16A04B21DFB8AE0022DDE7 /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
+		5B16A04D21DFC9AB0022DDE7 /* RBViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RBViewController.swift; sourceTree = "<group>"; };
+		5B16A04F21DFC9C10022DDE7 /* SPViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPViewController.swift; sourceTree = "<group>"; };
 		718ACE45EB6FE671D1BEECC2 /* Pods-Beauty God MotherTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Beauty God MotherTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Beauty God MotherTests/Pods-Beauty God MotherTests.debug.xcconfig"; sourceTree = "<group>"; };
 		9E1D72925356FF595FB62F1B /* Pods-Beauty God Mother.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Beauty God Mother.release.xcconfig"; path = "Pods/Target Support Files/Pods-Beauty God Mother/Pods-Beauty God Mother.release.xcconfig"; sourceTree = "<group>"; };
 		EAB59A83EF87A5DAB24E7AA9 /* Pods_Beauty_God_MotherTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Beauty_God_MotherTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -129,6 +135,9 @@
 				5B16A02421DFB0AA0022DDE7 /* LaunchScreen.storyboard */,
 				5B16A02721DFB0AA0022DDE7 /* Info.plist */,
 				5B16A04921DFB1F90022DDE7 /* GoogleService-Info.plist */,
+				5B16A04B21DFB8AE0022DDE7 /* Extension.swift */,
+				5B16A04D21DFC9AB0022DDE7 /* RBViewController.swift */,
+				5B16A04F21DFC9C10022DDE7 /* SPViewController.swift */,
 			);
 			path = "Beauty God Mother";
 			sourceTree = "<group>";
@@ -397,8 +406,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5B16A04E21DFC9AB0022DDE7 /* RBViewController.swift in Sources */,
+				5B16A04C21DFB8AE0022DDE7 /* Extension.swift in Sources */,
 				5B16A01E21DFB0A70022DDE7 /* ViewController.swift in Sources */,
 				5B16A01C21DFB0A70022DDE7 /* AppDelegate.swift in Sources */,
+				5B16A05021DFC9C10022DDE7 /* SPViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
