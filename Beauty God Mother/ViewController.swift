@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Firebase
 
 class ViewController: UIViewController {
     
@@ -31,6 +32,8 @@ class ViewController: UIViewController {
         
     }
     
+    
+    
     fileprivate func setupViews() {
         let buttonArray = [registerAsSP, registerAsBuyer]
         
@@ -38,11 +41,23 @@ class ViewController: UIViewController {
             i?.layer.cornerRadius = 24
             i?.layer.shadowOffset = CGSize(width: 0, height: 15)
             i?.layer.shadowRadius = 15
-            i?.layer.borderColor = #colorLiteral(red: 0.8833980709, green: 0.6338821987, blue: 1, alpha: 1)
+            i?.layer.borderColor = #colorLiteral(red: 0.2370404005, green: 0.7025367618, blue: 0.6212409139, alpha: 1)
             i?.layer.borderWidth = 2
         }
     }
-
+    
+    
+    @IBAction func loginPressed(_ sender: UIButton) {
+        guard let email = emailTextField.text, let password = passwordTextField.text else {return}
+        Auth.auth().signIn(withEmail: email, password: password) { (user, error) in
+            if let e = error {
+                print("Failed to log user in: ",e)
+                return
+            }
+            self.view.window?.rootViewController?.dismiss(animated: true, completion: nil)
+        }
+    }
+    
 
 }
 

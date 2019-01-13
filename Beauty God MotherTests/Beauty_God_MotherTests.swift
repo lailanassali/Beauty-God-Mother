@@ -21,13 +21,6 @@ class Beauty_God_MotherTests: XCTestCase {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
     
-    func testIfRegisterIsEnabled() {
-       
-        XCTAssertEqual(sut.isEnabled, true)
-}
-    func testIfDisables(){
-        sut.isDisabled()
-        XCTAssertEqual(sut.isEnabled, false)
-        
-    }
+
+    
 }
