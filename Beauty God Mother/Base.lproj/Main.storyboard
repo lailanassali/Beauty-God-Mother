@@ -741,8 +741,8 @@
         </scene>
     </scenes>
     <resources>
-        <image name="checked" width="256" height="256"/>
-        <image name="make-up" width="120" height="120"/>
+        <image name="checked" width="400.69564819335938" height="400.69564819335938"/>
+        <image name="make-up" width="96" height="96"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="H8L-Qa-8g0"/>

@@ -21,7 +21,7 @@ class RBViewController: UIViewController {
     @IBOutlet weak var passwordTF: UITextField!
     @IBOutlet weak var confirmPasswordTF: UITextField!
     @IBOutlet weak var registerButton: UIButton!
-   
+    
      var message = ""
     
     var isEnabled = true
@@ -31,22 +31,43 @@ class RBViewController: UIViewController {
     }
     @IBAction func registerPressed(_ sender: Any) {
         _ = verifyPasswords(p1: passwordTF.text ?? "",p2: confirmPasswordTF.text ?? "")
-        
-        
-        
-        
-        
+        _ = verifyName(name: name.text ?? "")
+        _ = verifyEmail(email: emailTF.text!)
     }
 
-    func verifyPasswords (p1:String, p2:String) -> Bool {
+    func verifyPasswords(p1:String, p2:String) -> Bool {
         if p1 == p2 {
             handleRegister()
             return true
-        } else {return false}
+        } else { return false }
     }
+    
+    public func verifyName(name: String) -> Bool {
+        if name.count <= 20 {
+            handleRegister()
+            return true
+        } else { return false }
+    }
+    
+    public func verifyUsername(username: String) -> Bool {
+        if username.count > 3 && username.count <= 20 {
+            handleRegister()
+            return true
+        } else { return false }
+    }
+    
+   public func verifyEmail(email: String) -> Bool {
+    let emailRegEx = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2, 64}"
+    
+    let emailTest = NSPredicate(format: "SELF MATCHES %@", emailRegEx)
+    return emailTest.evaluate(with: email)
+   }
+    
+    
     @IBAction func goBackToLogin(_ sender: UIButton) {
         navigationController?.popViewController(animated: true)
     }
+    
     public func handleRegister() {
         message = "match"
         guard let name = name.text, let username = usernameTF.text, let email = emailTF.text, let password = passwordTF.text, let confirmPassword = confirmPasswordTF.text else {return}

@@ -25,15 +25,50 @@ class RegisterTests: XCTestCase {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
     
-    func testFalse() {
+    func shouldFailToRegisterWithPasswordsThatAreNotTheSame() {
         let result = viewController.verifyPasswords(p1: "1234", p2: "1134")
         XCTAssertEqual(result, false)
     }
     
-    func testTrue() {
+    func shouldSucceedToRegisterWithPasswordsThatAreTheSame() {
         let result = viewController.verifyPasswords(p1: "0000", p2: "0000")
         XCTAssertEqual(result, true)
     }
     
+    func shouldSucceedToRegisterIfNameIsMoreThan3Characters() {
+        let result = viewController.verifyName(name: "laila")
+        XCTAssertEqual(result, true)
+    }
     
+    func shouldFailToRegisterIfNameIsMoreThan20Characters() {
+        let result = viewController.verifyName(name: "abcdefghijklmnopqrstuvwxyz")
+        XCTAssertEqual(result, true)
+        
+        }
+    
+    func shouldSucceedToRegisterIfUserameIsMoreThan3CharactersOrLessThanOrEqualTo20Characters() {
+        let result = viewController.verifyName(name: "laila")
+        let result2 = viewController.verifyName(name: "1234567891111111111")
+        XCTAssertEqual(result, true)
+        XCTAssertEqual(result2, true)
+    }
+    
+    func shouldFailToRegisterIfUserameIsLessThan3CharactersOrMoreThan20Characters() {
+        let result = viewController.verifyUsername(username: "a")
+        let result2 = viewController.verifyUsername(username: "1111111111111111111111111")
+        XCTAssertEqual(result, false)
+        
+    }
+
+    func shouldSucceedToRegisterIfEmailIsValid() {
+        let result = viewController.verifyEmail(email: "laila@hotmail.com")
+        XCTAssertEqual(result, true)
+        
+    }
+    
+    func shouldFailToRegisterIfEmailIsInvalid() {
+        let result = viewController.verifyEmail(email: "aisha@yahoo")
+        XCTAssertEqual(result, false)
+    
+    }
 }
