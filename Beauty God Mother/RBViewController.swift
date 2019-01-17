@@ -32,7 +32,7 @@ class RBViewController: UIViewController {
     @IBAction func registerPressed(_ sender: Any) {
         _ = verifyPasswords(p1: passwordTF.text ?? "",p2: confirmPasswordTF.text ?? "")
         _ = verifyName(name: name.text ?? "")
-        _ = verifyEmail(email: emailTF.text!)
+    //    _ = verifyEmail(email: emailTF.text!)
     }
 
     func verifyPasswords(p1:String, p2:String) -> Bool {
