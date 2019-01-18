@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="gR9-rz-YHF">
     <device id="retina5_9" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -756,7 +756,6 @@
         <!--Item 1-->
         <scene sceneID="JRl-Eb-4k1">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="CdL-VT-Gyr" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="iCw-za-fFN" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="9Ok-AY-TW0">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
@@ -766,6 +765,7 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Item 1" id="lKD-Ln-sDe"/>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CdL-VT-Gyr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3820" y="-389"/>
         </scene>
@@ -810,6 +810,6 @@
         <image name="make-up" width="96" height="96"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="MO0-Ha-c5J"/>
+        <segue reference="H8L-Qa-8g0"/>
     </inferredMetricsTieBreakers>
 </document>
