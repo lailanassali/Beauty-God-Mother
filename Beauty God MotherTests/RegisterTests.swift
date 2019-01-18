@@ -12,49 +12,38 @@ import Firebase
 //BeautyGodMother
 class RegisterTests: XCTestCase {
     var viewController: RBViewController!
-    
-    override func setUp() {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
-        let storyboard = UIStoryboard(name: "Main", bundle: Bundle.main)
-        viewController = (storyboard.instantiateViewController(withIdentifier: "RBViewController") as! RBViewController)
-        UIApplication.shared.keyWindow!.rootViewController = viewController
-        _ = viewController.view
-    }
-    
-    override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
-    }
+    let registerService = RegistrationService.shared
     
     func testShouldFailToRegisterWithPasswordsThatAreNotTheSame() {
-        let result = viewController.verifyPasswords(p1: "1234", p2: "1134")
+        let result = registerService.passwordMatches(p1: "1234", p2: "1134")
         XCTAssertEqual(result, false)
     }
     
     func testShouldSucceedToRegisterWithPasswordsThatAreTheSame() {
-        let result = viewController.verifyPasswords(p1: "0000", p2: "0000")
+        let result = registerService.passwordMatches(p1: "0000", p2: "0000")
         XCTAssertEqual(result, true)
     }
     
     func testShouldSucceedToRegisterIfNameIsMoreThan3Characters() {
-        let result = viewController.verifyName(name: "laila")
+        let result = registerService.nameFormatIsCorrect(name: "laila")
         XCTAssertEqual(result, true)
     }
     
     func testShouldFailToRegisterIfNameIsMoreThan20Characters() {
-        let result = viewController.verifyName(name: "abcdefghijklmnopqrstuvwxyz")
+        let result = registerService.nameFormatIsCorrect(name: "abcdefghijklmnopqrstuvwxyz")
         XCTAssertEqual(result, false)
         
         }
     
     func testShouldSucceedToRegisterIfUserameIsMoreThan3CharactersOrLessThanOrEqualTo20Characters() {
-        let result = viewController.verifyName(name: "laila")
-        let result2 = viewController.verifyName(name: "1234567891111111111")
+        let result = registerService.nameFormatIsCorrect(name: "laila")
+        let result2 = registerService.nameFormatIsCorrect(name: "1234567891111111111")
         XCTAssertEqual(result, true)
         XCTAssertEqual(result2, true)
     }
     
     func testShouldFailToRegisterIfUserameIsLessThan3Characters() {
-        let result = viewController.verifyUsername(username: "a")
+        let result = registerService.usernameFormatIsCorrect(username: "a")
         XCTAssertEqual(result, false)
     }
 

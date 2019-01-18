@@ -20,6 +20,7 @@
 		5B16A04E21DFC9AB0022DDE7 /* RBViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B16A04D21DFC9AB0022DDE7 /* RBViewController.swift */; };
 		5B16A05021DFC9C10022DDE7 /* SPViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B16A04F21DFC9C10022DDE7 /* SPViewController.swift */; };
 		68FC856096471068AC3E1B4E /* Pods_Beauty_God_Mother.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AC7137FDBF8C98CB8F38344 /* Pods_Beauty_God_Mother.framework */; };
+		AE2942F021F2832D00D629EA /* RegistrationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE2942EF21F2832D00D629EA /* RegistrationService.swift */; };
 		AE29B29421EBEE3800B19FFF /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE29B29321EBEE3800B19FFF /* MainViewController.swift */; };
 		AE29B29821EBEE9A00B19FFF /* RegisterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE29B29721EBEE9A00B19FFF /* RegisterTests.swift */; };
 		AE29B29A21EBEF6800B19FFF /* ConfirmationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE29B29921EBEF6800B19FFF /* ConfirmationVC.swift */; };
@@ -64,6 +65,7 @@
 		5B16A04F21DFC9C10022DDE7 /* SPViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPViewController.swift; sourceTree = "<group>"; };
 		718ACE45EB6FE671D1BEECC2 /* Pods-Beauty God MotherTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Beauty God MotherTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Beauty God MotherTests/Pods-Beauty God MotherTests.debug.xcconfig"; sourceTree = "<group>"; };
 		9E1D72925356FF595FB62F1B /* Pods-Beauty God Mother.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Beauty God Mother.release.xcconfig"; path = "Pods/Target Support Files/Pods-Beauty God Mother/Pods-Beauty God Mother.release.xcconfig"; sourceTree = "<group>"; };
+		AE2942EF21F2832D00D629EA /* RegistrationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationService.swift; sourceTree = "<group>"; };
 		AE29B29321EBEE3800B19FFF /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		AE29B29721EBEE9A00B19FFF /* RegisterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterTests.swift; sourceTree = "<group>"; };
 		AE29B29921EBEF6800B19FFF /* ConfirmationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmationVC.swift; sourceTree = "<group>"; };
@@ -146,6 +148,7 @@
 				5B16A04F21DFC9C10022DDE7 /* SPViewController.swift */,
 				AE29B29321EBEE3800B19FFF /* MainViewController.swift */,
 				AE29B29921EBEF6800B19FFF /* ConfirmationVC.swift */,
+				AE2942EF21F2832D00D629EA /* RegistrationService.swift */,
 			);
 			path = "Beauty God Mother";
 			sourceTree = "<group>";
@@ -415,6 +418,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AE2942F021F2832D00D629EA /* RegistrationService.swift in Sources */,
 				5B16A04E21DFC9AB0022DDE7 /* RBViewController.swift in Sources */,
 				AE29B29A21EBEF6800B19FFF /* ConfirmationVC.swift in Sources */,
 				5B16A04C21DFB8AE0022DDE7 /* Extension.swift in Sources */,
