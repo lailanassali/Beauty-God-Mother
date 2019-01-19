@@ -32,7 +32,7 @@ class SPViewController: UIViewController {
     }
     
     
-    fileprivate func handleRegister() {
+    public func handleRegister() {
         // stage 1
         guard let organisation = organisation.text, let username = username.text, let email = email.text, let password = password.text, let confirmPassword = confirmPassword.text else {return}
         
