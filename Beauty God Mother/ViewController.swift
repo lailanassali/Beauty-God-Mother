@@ -19,16 +19,12 @@ class ViewController: UIViewController {
     @IBOutlet weak var registerAsSP: UIButton!
     @IBOutlet weak var registerAsBuyer: UIButton!
     
-    let topView: UIView = {
-        let view = UIView()
-        view.backgroundColor = .red
-        return view
-    }()
 
     override func viewDidLoad() {
         super.viewDidLoad()
         setupViews()
-        view.addSubview(topView)
+        
+        
         
     }
     
