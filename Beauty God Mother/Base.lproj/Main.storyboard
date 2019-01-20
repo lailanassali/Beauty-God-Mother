@@ -53,7 +53,7 @@
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xvR-ja-JlK">
                                 <rect key="frame" x="16" y="424" width="343" height="50"/>
-                                <color key="backgroundColor" red="0.91102655440000002" green="0.55376136970000001" blue="0.68843997649999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.91135531663894653" green="0.55298763513565063" blue="0.68964064121246338" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="8xh-bm-WLR"/>
                                 </constraints>
@@ -728,42 +728,46 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="J9v-o6-chd">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="681"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </mapView>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MaB-UE-Ein">
-                                <rect key="frame" x="0.0" y="676" width="391" height="154"/>
+                                <rect key="frame" x="-8" y="679" width="391" height="133"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qvF-rX-0q3">
-                                        <rect key="frame" x="-49" y="8" width="472" height="137"/>
+                                        <rect key="frame" x="-41" y="8" width="472" height="128"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <subviews>
                                             <imageView userInteractionEnabled="NO" alpha="0.75" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Image-1" translatesAutoresizingMaskIntoConstraints="NO" id="Mgr-rH-yaW">
-                                                <rect key="frame" x="86" y="24" width="62" height="57"/>
+                                                <rect key="frame" x="100" y="46" width="45" height="44"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             </imageView>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Image-2" translatesAutoresizingMaskIntoConstraints="NO" id="9AH-4q-f5i">
-                                                <rect key="frame" x="198" y="26" width="76" height="57"/>
+                                                <rect key="frame" x="212" y="44" width="42" height="46"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             </imageView>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Image-3" translatesAutoresizingMaskIntoConstraints="NO" id="KB9-dd-Pie">
-                                                <rect key="frame" x="326" y="22" width="62" height="61"/>
+                                                <rect key="frame" x="328" y="40" width="52" height="50"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             </imageView>
                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dMo-UP-B2L">
-                                                <rect key="frame" x="198" y="22" width="76" height="68"/>
+                                                <rect key="frame" x="202" y="40" width="67" height="52"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <connections>
                                                     <segue destination="nR2-rb-jWQ" kind="show" id="VQt-K8-kp8"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bDC-0Q-xkk">
-                                                <rect key="frame" x="319" y="18" width="76" height="68"/>
+                                                <rect key="frame" x="325" y="35" width="58" height="61"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <connections>
                                                     <segue destination="5YE-TP-U2r" kind="show" id="Dz1-n3-bS4"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NDs-hI-xZc">
-                                                <rect key="frame" x="79" y="18" width="76" height="68"/>
+                                                <rect key="frame" x="90" y="44" width="65" height="48"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             </button>
                                         </subviews>
@@ -772,10 +776,6 @@
                                 </subviews>
                                 <color key="backgroundColor" red="0.91102655440000002" green="0.55376136970000001" blue="0.68843997649999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="J9v-o6-chd">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="681"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </mapView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="ASR-Yx-SeA"/>
@@ -823,9 +823,9 @@
     </scenes>
     <resources>
         <image name="Image" width="230" height="339"/>
-        <image name="Image-1" width="240" height="222"/>
-        <image name="Image-2" width="225" height="225"/>
-        <image name="Image-3" width="512" height="512"/>
+        <image name="Image-1" width="500" height="500"/>
+        <image name="Image-2" width="500" height="500"/>
+        <image name="Image-3" width="500" height="500"/>
         <image name="checked" width="256" height="256"/>
     </resources>
     <inferredMetricsTieBreakers>
