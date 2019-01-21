@@ -641,6 +641,7 @@
                                 </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="dismissRegistration:" destination="5Zx-Io-eZE" eventType="touchUpInside" id="QWt-bm-Ezc"/>
+                                    <segue destination="iCw-za-fFN" kind="show" id="eso-ki-YaH"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -896,14 +897,13 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Image" width="230" height="339"/>
-        <image name="Image-1" width="500" height="500"/>
-        <image name="Image-3" width="500" height="500"/>
-        <image name="checked" width="256" height="256"/>
+        <image name="Image" width="461" height="679"/>
+        <image name="Image-1" width="179.10447692871094" height="179.10447692871094"/>
+        <image name="Image-3" width="179.10447692871094" height="179.10447692871094"/>
+        <image name="checked" width="400.69564819335938" height="400.69564819335938"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="AcB-pc-j15"/>
         <segue reference="MO0-Ha-c5J"/>
-        <segue reference="9Md-L4-6j9"/>
+        <segue reference="YBi-b3-Kws"/>
     </inferredMetricsTieBreakers>
 </document>
