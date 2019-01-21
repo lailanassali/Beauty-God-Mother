@@ -42,8 +42,8 @@ class RBViewController: UIViewController {
         // Stage 1
         guard let name = name.text, let username = usernameTF.text, let email = emailTF.text, let password = passwordTF.text, let confirmPassword = confirmPasswordTF.text else {return}
        // Stage 2
-        if !rs.passwordMatches(p1: password, p2: confirmPassword) && !rs.nameFormatIsCorrect(name: name)
-            && !rs.usernameFormatIsCorrect(username: username) { return }
+        if !rs.passwordMatches(p1: password, p2: confirmPassword) || !rs.nameFormatIsCorrect(name: name) ||
+            !rs.usernameFormatIsCorrect(username: username) { return }
         
         
         Auth.auth().createUser(withEmail: email, password: password) { (result:AuthDataResult?, error) in
