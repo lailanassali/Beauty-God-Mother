@@ -78,6 +78,7 @@
                                 </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="loginPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="omK-kN-Ux9"/>
+                                    <segue destination="iCw-za-fFN" kind="show" id="TgP-dv-Mls"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kFf-ao-jXM">
@@ -903,6 +904,7 @@
         <image name="checked" width="400.69564819335938" height="400.69564819335938"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="TgP-dv-Mls"/>
         <segue reference="MO0-Ha-c5J"/>
         <segue reference="YBi-b3-Kws"/>
     </inferredMetricsTieBreakers>

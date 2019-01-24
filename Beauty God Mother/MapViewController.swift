@@ -18,6 +18,9 @@ class MapViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        MapView.delegate = self
+        
         configureLocationServices()
 
         
@@ -41,9 +44,36 @@ class MapViewController: UIViewController {
     
     private func zoomToLatestLocation(with coordinate: CLLocationCoordinate2D ){
         
-        let region = MKCoordinateRegion (center: coordinate, latitudinalMeters: 500, longitudinalMeters: 500)
+        let region = MKCoordinateRegion (center: coordinate, latitudinalMeters: 5500, longitudinalMeters: 5500)
         MapView.setRegion(region, animated: true)
     }
+    
+    private func addAnnotions() {
+    let laidByTiff = MKPointAnnotation()
+    laidByTiff.title = "laidByTiff"
+    laidByTiff.coordinate = CLLocationCoordinate2D(latitude: 51.287750, longitude: 1.093652)
+    
+    
+    let nailsByAisha = MKPointAnnotation()
+    nailsByAisha.title = "nailsByAisha"
+    nailsByAisha.coordinate = CLLocationCoordinate2D(latitude: 51.307794, longitude: 1.068223)
+        
+    let hairByLaila = MKPointAnnotation ()
+    hairByLaila.title = "hairByLaila"
+    hairByLaila.coordinate = CLLocationCoordinate2D(latitude: 51.294494, longitude: 1.091007)
+        
+    let shanjuNails = MKPointAnnotation ()
+    shanjuNails.title = "shanjuNails"
+    shanjuNails.coordinate = CLLocationCoordinate2D(latitude: 51.294793, longitude: 1.083423)
+        
+    MapView.addAnnotation(laidByTiff)
+    MapView.addAnnotation(nailsByAisha)
+    MapView.addAnnotation(hairByLaila)
+    MapView.addAnnotation(shanjuNails)
+  
+    }
+        
+    
 }
 
 extension MapViewController: CLLocationManagerDelegate {
@@ -55,6 +85,7 @@ extension MapViewController: CLLocationManagerDelegate {
         
         if currentLocation == nil {
             zoomToLatestLocation(with: latestLocation.coordinate)
+            addAnnotions()
             
         }
         currentLocation = latestLocation.coordinate
@@ -64,5 +95,37 @@ private func locationManager(_ manager: CLLocationManager,didChangeAuthorization
     if status == .authorizedAlways || status == .authorizedWhenInUse{
             beginLocationUpdates(locationManager: manager)
         }
+    }
+}
+extension MapViewController: MKMapViewDelegate {
+    func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
+        
+        var annotationView = mapView.dequeueReusableAnnotationView(withIdentifier: "AnnotationView")
+        if annotationView == nil {
+            annotationView = MKAnnotationView(annotation: annotation, reuseIdentifier: "AnnotationView")
+        }
+        
+             if let title = annotation.title, title == "laidByTiff" {
+            annotationView?.image = UIImage( named: "make-up")
+        } else if let title = annotation.title, title == "nailsByAisha"{
+            annotationView?.image = UIImage ( named: "make-up")
+        } else if let title = annotation.title, title == "hairByLaila" {
+            annotationView?.image = UIImage( named: "make-up")
+        } else if let title = annotation.title, title == "shanjuNails"{
+           annotationView?.image = UIImage ( named: "make-up")
+        }
+        else if annotation === mapView.userLocation {
+        annotationView?.image = UIImage (named: "make-up")
+        }
+    
+
+        annotationView?.canShowCallout = true
+        
+        
+        return annotationView
+    }
+    
+    func mapView(_ mapView: MKMapView, didSelect view: MKAnnotationView) {
+        print (" The annotation was selected: \(String(describing: view.annotation?.title))")
     }
 }
