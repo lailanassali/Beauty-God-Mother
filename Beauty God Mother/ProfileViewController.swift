@@ -26,7 +26,7 @@ class ProfileViewController: UIViewController {
             databaseRef.child("profile").child(userID).observeSingleEvent(of: .value, with:{ (snapshot) in
                 let dictionary = snapshot.value as? NSDictionary
             
-                let username = dictionary?["username"] as? String ?? "usernane"
+                let username = dictionary?["username"] as? String ?? "username"
             
            
          
