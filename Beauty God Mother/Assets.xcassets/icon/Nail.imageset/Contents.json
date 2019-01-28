@@ -1,8 +1,19 @@
 {
   "images" : [
     {
+      "resizing" : {
+        "mode" : "3-part-horizontal",
+        "center" : {
+          "mode" : "tile",
+          "width" : 1
+        },
+        "cap-insets" : {
+          "right" : 0,
+          "left" : 479
+        }
+      },
       "idiom" : "universal",
-      "filename" : "2801_-_Applying_Nailpolish-512.png",
+      "filename" : "Pink_Nail_Polish_Emoji_large.png",
       "scale" : "1x"
     },
     {

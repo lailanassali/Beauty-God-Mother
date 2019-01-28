@@ -106,16 +106,16 @@ extension MapViewController: MKMapViewDelegate {
         }
         
              if let title = annotation.title, title == "laidByTiff" {
-            annotationView?.image = UIImage( named: "Hair")
+            annotationView?.image = UIImage( named: "make-up")
         } else if let title = annotation.title, title == "nailsByAisha"{
-            annotationView?.image = UIImage ( named: "Nail")
+            annotationView?.image = UIImage ( named: "make-up")
         } else if let title = annotation.title, title == "hairByLaila" {
-            annotationView?.image = UIImage( named: "Hair")
+            annotationView?.image = UIImage( named: "make-up")
         } else if let title = annotation.title, title == "shanjuNails"{
-           annotationView?.image = UIImage ( named: "Nail")
+           annotationView?.image = UIImage ( named: "make-up")
         }
         else if annotation === mapView.userLocation {
-        annotationView?.image = UIImage (named: "Self")
+        annotationView?.image = UIImage (named: "make-up")
         }
     
 
