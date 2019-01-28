@@ -24,13 +24,11 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         setupViews()
         
-        if UserDefaults.standard.bool(forKey: "IsUserLoggedIn") == true {
-            let mapVC =
-                self.storyboard?.instantiateViewController(withIdentifier: "mapVC")
-                    as! MapViewController
-            self.navigationController?.pushViewController(mapVC, animated: false)
-        }
+        
+        
     }
+    
+    
     
     fileprivate func setupViews() {
         let buttonArray = [registerAsSP, registerAsBuyer]
@@ -53,11 +51,11 @@ class ViewController: UIViewController {
                 return
             }
             
-            UserDefaults.standard.set(true, forKey: "IsUserLoggedIn")
-        
+            
      self.view.window?.rootViewController?.dismiss(animated: true, completion: nil)
         }
     }
     
+
 }
 
