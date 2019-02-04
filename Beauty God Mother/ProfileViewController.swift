@@ -27,13 +27,9 @@ class ProfileViewController: UIViewController {
                 let dictionary = snapshot.value as? NSDictionary
             
                 let username = dictionary?["username"] as? String ?? "usernane"
-            
-           
-         
         }
         
-       ) }
+       )}
     
-
 }
 }
