@@ -31,6 +31,7 @@ class RBViewController: UIViewController {
     }
     @IBAction func registerPressed(_ sender: Any) {
             handleRegister()
+    
     }
 
     @IBAction func goBackToLogin(_ sender: UIButton) {
@@ -42,8 +43,8 @@ class RBViewController: UIViewController {
         // Stage 1
         guard let name = name.text, let username = usernameTF.text, let email = emailTF.text, let password = passwordTF.text, let confirmPassword = confirmPasswordTF.text else {return}
        // Stage 2
-        if !rs.passwordMatches(p1: password, p2: confirmPassword) || !rs.nameFormatIsCorrect(name: name) ||
-            !rs.usernameFormatIsCorrect(username: username) { return }
+        if !rs.passwordMatches(p1: password, p2: confirmPassword, viewController: self) || !rs.nameFormatIsCorrect(name: name, viewController: self) ||
+            !rs.usernameFormatIsCorrect(username: username, viewController: self) { return }
         
         
         Auth.auth().createUser(withEmail: email, password: password) { (result:AuthDataResult?, error) in
@@ -71,6 +72,16 @@ class RBViewController: UIViewController {
                 self.performSegue(withIdentifier: "buyerToConfirmation", sender: self)
             })
         }
-        
     }
+    
+    func createAlertForFieldConstraints(title:String, message:String) {
+        
+        let alert = UIAlertController.init(title: "title", message: "message", preferredStyle: .alert)
+        
+        alert.addAction(UIAlertAction.init(title: "OK", style: .default, handler: { (action) in
+            alert.dismiss(animated: true, completion: nil)
+        }))
+        self.present(alert, animated: true, completion: nil)
+    }
+  
 }
