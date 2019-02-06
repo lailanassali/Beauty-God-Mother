@@ -109,7 +109,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <segue destination="Igd-8i-HBB" kind="show" id="VDy-TP-mzG"/>
+                                    <segue destination="Igd-8i-HBB" kind="show" identifier="Customer" id="VDy-TP-mzG"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ad4-eW-DQu">
@@ -138,7 +138,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <segue destination="BNY-0A-wg1" kind="show" id="AcB-pc-j15"/>
+                                    <segue destination="BNY-0A-wg1" kind="show" identifier="BeautyService" id="AcB-pc-j15"/>
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="7bG-2Y-ZG9">
@@ -962,7 +962,8 @@
         <image name="make-up" width="96" height="96"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="VDy-TP-mzG"/>
         <segue reference="H8L-Qa-8g0"/>
-        <segue reference="zKv-ns-HSy"/>
+        <segue reference="2bT-nD-DrZ"/>
     </inferredMetricsTieBreakers>
 </document>
