@@ -52,11 +52,8 @@ class ViewController: UIViewController {
                 print("Failed to log user in: ",e)
                 return
             }
-            
-        self.view.window?.rootViewController?.dismiss(animated: true, completion: nil)
+            self.performSegue(withIdentifier: "tabBar", sender: self)
         }
     }
-    
-
 }
 
