@@ -15,8 +15,8 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
+   
     @IBOutlet weak var registerAsBuyer: UIButton!
-    
     @IBOutlet weak var registerAsSP: UIButton!
     
     
