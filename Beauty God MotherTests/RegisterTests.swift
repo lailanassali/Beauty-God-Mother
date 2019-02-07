@@ -30,7 +30,7 @@ class RegisterTests: XCTestCase {
     }
     
     func testShouldFailToRegisterIfNameIsMoreThan20Characters() {
-        let result = registerService.nameFormatIsCorrect(name: "abcdefghijklmnopqrstuvwxyz" viewController: viewController)
+        let result = registerService.nameFormatIsCorrect(name: "abcdefghijklmnopqrstuvwxyz", viewController: viewController)
         XCTAssertEqual(result, false)
         
         }
