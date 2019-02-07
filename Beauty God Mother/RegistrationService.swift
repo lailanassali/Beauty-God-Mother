@@ -47,6 +47,7 @@ class RegistrationService {
             print("NAME MUST BE MORE THAN 3 OR LESS THAN EQUAL 20");return false }
     }
     
+    
     // email function needed and tested.
     
   

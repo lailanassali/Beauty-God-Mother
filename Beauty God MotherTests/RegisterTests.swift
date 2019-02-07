@@ -15,35 +15,35 @@ class RegisterTests: XCTestCase {
     let registerService = RegistrationService.shared
     
     func testShouldFailToRegisterWithPasswordsThatAreNotTheSame() {
-        let result = registerService.passwordMatches(p1: "1234", p2: "1134")
+        let result = registerService.passwordMatches(p1: "1234", p2: "1134", viewController: viewController)
         XCTAssertEqual(result, false)
     }
     
     func testShouldSucceedToRegisterWithPasswordsThatAreTheSame() {
-        let result = registerService.passwordMatches(p1: "0000", p2: "0000")
+        let result = registerService.passwordMatches(p1: "0000", p2: "0000", viewController: viewController)
         XCTAssertEqual(result, true)
     }
     
     func testShouldSucceedToRegisterIfNameIsMoreThan3Characters() {
-        let result = registerService.nameFormatIsCorrect(name: "laila")
+        let result = registerService.nameFormatIsCorrect(name: "laila", viewController: viewController)
         XCTAssertEqual(result, true)
     }
     
     func testShouldFailToRegisterIfNameIsMoreThan20Characters() {
-        let result = registerService.nameFormatIsCorrect(name: "abcdefghijklmnopqrstuvwxyz")
+        let result = registerService.nameFormatIsCorrect(name: "abcdefghijklmnopqrstuvwxyz" viewController: viewController)
         XCTAssertEqual(result, false)
         
         }
     
     func testShouldSucceedToRegisterIfUserameIsMoreThan3CharactersOrLessThanOrEqualTo20Characters() {
-        let result = registerService.nameFormatIsCorrect(name: "laila")
-        let result2 = registerService.nameFormatIsCorrect(name: "1234567891111111111")
+        let result = registerService.nameFormatIsCorrect(name: "laila", viewController: viewController)
+        let result2 = registerService.nameFormatIsCorrect(name: "1234567891111111111", viewController: viewController)
         XCTAssertEqual(result, true)
         XCTAssertEqual(result2, true)
     }
     
     func testShouldFailToRegisterIfUserameIsLessThan3Characters() {
-        let result = registerService.usernameFormatIsCorrect(username: "a")
+        let result = registerService.usernameFormatIsCorrect(username: "a", viewController: viewController)
         XCTAssertEqual(result, false)
     }
 
