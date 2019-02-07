@@ -47,20 +47,8 @@ class RegistrationService {
             print("NAME MUST BE MORE THAN 3 OR LESS THAN EQUAL 20");return false }
     }
     
-    public func fieldsAreNotEmpty(name: String, username: String, p1: String, p2: String, viewController:UIViewController) -> Bool {
-        if name.count == 0 && username.count == 0 && p1.count == 0 && p2.count == 0 {
-            return true
-        } else {
-            let cancel = UIAlertAction(title: "Ok", style: .cancel, handler: nil)
-            let alert = UIAlertController(title: "Sorry, please fill out the required fields to register!", message: "Please try again.", preferredStyle: .alert)
-            alert.addAction(cancel)
-            viewController.present(alert, animated: true, completion: nil)
-            print("ALL FIELDS MUST BE ENTERED TO REGISTER"); return false }
-        }
-    }
-    
     
     // email function needed and tested.
     
   
-
+}

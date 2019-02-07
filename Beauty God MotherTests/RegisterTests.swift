@@ -46,7 +46,6 @@ class RegisterTests: XCTestCase {
         let result = registerService.usernameFormatIsCorrect(username: "a", viewController: viewController)
         XCTAssertEqual(result, false)
     }
-    
 
   //  func shouldSucceedToRegisterIfEmailIsValid() {
  //       let result = viewController.verifyEmail(email: "laila@hotmail.com")
