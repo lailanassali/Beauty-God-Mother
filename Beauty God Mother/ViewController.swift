@@ -18,17 +18,11 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var registerAsSP: UIButton!
     @IBOutlet weak var registerAsBuyer: UIButton!
-    
 
     override func viewDidLoad() {
         super.viewDidLoad()
         setupViews()
-        
-        
-        
     }
-    
-    
     
     fileprivate func setupViews() {
         let buttonArray = [registerAsSP, registerAsBuyer]
@@ -44,15 +38,20 @@ class ViewController: UIViewController {
     
     
     @IBAction func loginPressed(_ sender: UIButton) {
+        // Stage 1
         guard let email = emailTextField.text, let password = passwordTextField.text else {return}
+        
         Auth.auth().signIn(withEmail: email, password: password) { (user, error) in
             if let e = error {
-                print("Failed to log user in: ",e)
+                let cancel = UIAlertAction(title: "Ok", style: .cancel, handler:nil)
+                let alert = UIAlertController(title: "Sorry, the username or password you entered is incorrect!", message: "Please try again.", preferredStyle: .alert)
+                alert.addAction(cancel)
+                self.present(alert, animated: true, completion: nil)
+                print("Failed to log user in:",e)
                 return
             }
             
-            
-     self.view.window?.rootViewController?.dismiss(animated: true, completion: nil)
+        self.performSegue(withIdentifier: "goToMapView", sender: self)
         }
     }
     
