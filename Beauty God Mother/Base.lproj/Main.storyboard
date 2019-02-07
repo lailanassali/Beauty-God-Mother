@@ -80,7 +80,7 @@
                                 </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="loginPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="omK-kN-Ux9"/>
-                                    <segue destination="J3r-c9-DRm" kind="presentation" id="orm-vj-UGa"/>
+                                    <segue destination="J3r-c9-DRm" kind="presentation" identifier="goToMapView" id="orm-vj-UGa"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kFf-ao-jXM">
@@ -333,7 +333,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <segue destination="BYZ-38-t0r" kind="showDetail" id="2bT-nD-DrZ"/>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="6s7-0f-0VF"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qZ2-qS-ZrL">
@@ -664,7 +664,6 @@
                                 </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="dismissRegistration:" destination="5Zx-Io-eZE" eventType="touchUpInside" id="QWt-bm-Ezc"/>
-                                    <segue destination="BYZ-38-t0r" kind="presentation" id="zKv-ns-HSy"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -903,6 +902,7 @@
         <!--View Controller-->
         <scene sceneID="fmZ-SJ-Kn3">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="89W-ho-efq" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController storyboardIdentifier="hey" id="3CF-Gm-0Lb" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="NjG-Uv-pof"/>
@@ -930,7 +930,6 @@
                         <color key="backgroundColor" red="0.54519511010362698" green="0.54519511010362698" blue="0.54519511010362698" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="89W-ho-efq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3676" y="1262.5187406296852"/>
         </scene>
@@ -996,7 +995,7 @@
         <image name="make-up" width="96" height="96"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="MO0-Ha-c5J"/>
-        <segue reference="9Md-L4-6j9"/>
+        <segue reference="H8L-Qa-8g0"/>
+        <segue reference="6s7-0f-0VF"/>
     </inferredMetricsTieBreakers>
 </document>

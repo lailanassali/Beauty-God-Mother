@@ -44,7 +44,8 @@ class RBViewController: UIViewController {
         guard let name = name.text, let username = usernameTF.text, let email = emailTF.text, let password = passwordTF.text, let confirmPassword = confirmPasswordTF.text else {return}
        // Stage 2
         if !rs.passwordMatches(p1: password, p2: confirmPassword, viewController: self) || !rs.nameFormatIsCorrect(name: name, viewController: self) ||
-            !rs.usernameFormatIsCorrect(username: username, viewController: self) { return }
+            !rs.usernameFormatIsCorrect(username: username, viewController: self) || !rs.passwordMustBeMoreThan8Characters(p1: password, p2: confirmPassword, viewController: self)
+         { return }
         
         
         Auth.auth().createUser(withEmail: email, password: password) { (result:AuthDataResult?, error) in
