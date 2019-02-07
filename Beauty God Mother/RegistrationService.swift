@@ -23,8 +23,8 @@ class RegistrationService {
             print("PASSWORD DO NOT MATCH!");return false }
     }
     
-    public func passwordMustBe8Characters(p1: String, p2: String, viewController:UIViewController) -> Bool {
-        if p1.count > 8 && p2.count > 98 {
+  /**  public func passwordMustBe8Characters(p1: String, p2: String, viewController:UIViewController) -> Bool {
+        if p1.count > 8  && p2.count > 8 {
             return true
         } else {
             let cancel = UIAlertAction(title: "Ok", style: .cancel, handler: nil)
@@ -32,7 +32,7 @@ class RegistrationService {
             alert.addAction(cancel)
             viewController.present(alert, animated: true, completion: nil)
             print("PASSWORD MUST BE 8 CHARACTERS"); return false }
-        }
+        } **/
     
     public func nameFormatIsCorrect(name: String, viewController:UIViewController) -> Bool {
         if name.count <= 20 {
@@ -40,12 +40,24 @@ class RegistrationService {
         } else {
             let cancel = UIAlertAction(title: "Ok", style: .cancel, handler: nil)
             
-            let alert = UIAlertController(title: "Sorry, the name entered is in the wrong format!", message: "Please try again.", preferredStyle: .alert)
+            let alert = UIAlertController(title: "Sorry, the name entered is too long, must be a minimum of 20 characters!", message: "Please try again.", preferredStyle: .alert)
             alert.addAction(cancel)
             viewController.present(alert, animated: true, completion: nil)
             print("NAME MUST BE LESS THAN OR EQUAL TO 20 CHARACTERS");return false }
     }
-}
+    
+    public func fieldsAreNotEmpty(name: String, p1: String, p2: String, email: String, viewController: UIViewController) -> Bool {
+        if name.count != 0 && p1.count != 0 && p2.count != 0 && email.count != 0 {
+            return true
+        } else {
+            let cancel = UIAlertAction(title: "Ok", style: .cancel, handler: nil)
+            let alert = UIAlertController(title: "Sorry, you must fill out your details to continue!", message: "Please try again.", preferredStyle: .alert)
+            alert.addAction(cancel)
+            viewController.present(alert, animated: true, completion: nil)
+            print("FIELDS MUST NOT BE EMPTY"); return false }
+        }
+    }
+
 
     
    
