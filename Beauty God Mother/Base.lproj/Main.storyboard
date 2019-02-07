@@ -686,6 +686,24 @@
             </objects>
             <point key="canvasLocation" x="2053.5999999999999" y="1229.5566502463055"/>
         </scene>
+        <!--Confirmation DetailsBP-->
+        <scene sceneID="iY7-8W-NWo">
+            <objects>
+                <viewController id="qs1-Yx-rDf" customClass="ConfirmationDetailsBP" customModule="Beauty_God_Mother" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Zb4-l1-yOY"/>
+                        <viewControllerLayoutGuide type="bottom" id="bTO-6H-DA9"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Q9W-OM-2Gz">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bud-hj-iyg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3245" y="1104"/>
+        </scene>
         <!--Profile-->
         <scene sceneID="fa2-vj-ofd">
             <objects>
@@ -894,40 +912,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CdL-VT-Gyr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3576.8000000000002" y="366.56671664167919"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="fmZ-SJ-Kn3">
-            <objects>
-                <viewController storyboardIdentifier="hey" id="3CF-Gm-0Lb" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="NjG-Uv-pof"/>
-                        <viewControllerLayoutGuide type="bottom" id="cTd-eR-ABz"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="R7B-Eh-uUW">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="smc-TN-5Xu">
-                                <rect key="frame" x="29" y="161" width="314" height="340"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S7d-0u-NG3">
-                                        <rect key="frame" x="120" y="26" width="0.0" height="0.0"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                </subviews>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            </view>
-                        </subviews>
-                        <color key="backgroundColor" red="0.54519511010362698" green="0.54519511010362698" blue="0.54519511010362698" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="89W-ho-efq" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="3676" y="1262.5187406296852"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="gDC-Wl-XTQ">

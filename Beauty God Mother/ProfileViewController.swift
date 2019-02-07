@@ -12,7 +12,7 @@ import Firebase
 import FirebaseDatabase
 import FirebaseAuth
 
-class ProfileViewController: UIViewController {
+class ProfileViewController: UITableViewController {
     override func viewDidLoad (){
         super.viewDidLoad()
        }
