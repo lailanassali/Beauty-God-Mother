@@ -363,7 +363,7 @@
                                 </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="registerPressed:" destination="Igd-8i-HBB" eventType="touchUpInside" id="qQN-uf-Cp9"/>
-                                    <segue destination="cCs-cU-p6t" kind="show" identifier="buyerToConfirmation" id="kRh-hN-85C"/>
+                                    <segue destination="5Zx-Io-eZE" kind="show" identifier="buyerToConfirmation" id="7i7-eS-0tf"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -549,6 +549,7 @@
                                 </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="registerPressed:" destination="BNY-0A-wg1" eventType="touchUpInside" id="JO0-aS-pcE"/>
+                                    <segue destination="cCs-cU-p6t" kind="show" identifier="sellerToConfirmation" id="Au0-cY-3sh"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KQ0-22-vdo">
@@ -609,7 +610,6 @@
                         <outlet property="organisation" destination="54v-jh-alM" id="EYz-u7-blk"/>
                         <outlet property="password" destination="6B3-qB-bb0" id="o90-v3-01U"/>
                         <outlet property="username" destination="PU2-b7-lvf" id="2L6-e5-Sa4"/>
-                        <segue destination="5Zx-Io-eZE" kind="show" identifier="sellerToConfirmation" id="MO0-Ha-c5J"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="e0j-pP-HoS" sceneMemberID="firstResponder"/>
@@ -684,7 +684,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="V12-WN-01H" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2625" y="1647"/>
+            <point key="canvasLocation" x="1500" y="1538"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="Y6E-nQ-kx6">
@@ -702,7 +702,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9HX-Nl-4cs" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1500" y="1647"/>
+            <point key="canvasLocation" x="2625" y="1538"/>
         </scene>
         <!--Profile-->
         <scene sceneID="fa2-vj-ofd">
@@ -1021,7 +1021,7 @@
         <image name="make-up" width="96" height="96"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="VDy-TP-mzG"/>
-        <segue reference="HOL-t2-xlm"/>
+        <segue reference="7i7-eS-0tf"/>
+        <segue reference="zKv-ns-HSy"/>
     </inferredMetricsTieBreakers>
 </document>
