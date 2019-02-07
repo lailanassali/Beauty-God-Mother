@@ -14,6 +14,9 @@ class MapViewController: UIViewController {
     private let locationManager = CLLocationManager()
     private var currentLocation: CLLocationCoordinate2D?
     
+    private var destinations: [MKPointAnnotation] = []
+    private var currentRoute: MKRoute?
+    
     @IBOutlet weak var MapView: MKMapView!
     
     override func viewDidLoad() {
@@ -65,14 +68,41 @@ class MapViewController: UIViewController {
     let shanjuNails = MKPointAnnotation ()
     shanjuNails.title = "shanjuNails"
     shanjuNails.coordinate = CLLocationCoordinate2D(latitude: 51.294793, longitude: 1.083423)
-        
+    
+        destinations.append(laidByTiff)
+        destinations.append(nailsByAisha)
+        destinations.append(hairByLaila)
+        destinations.append(shanjuNails)
+    
     MapView.addAnnotation(laidByTiff)
     MapView.addAnnotation(nailsByAisha)
     MapView.addAnnotation(hairByLaila)
     MapView.addAnnotation(shanjuNails)
   
     }
+    
+    private func constructRoute(userLocation: CLLocationCoordinate2D) {
         
+        let directionRequest = MKDirections.Request()
+        directionRequest.source = MKMapItem(placemark: MKPlacemark (coordinate: userLocation))
+        directionRequest.destination = MKMapItem(placemark: MKPlacemark (coordinate: destinations[1].coordinate))
+        directionRequest.requestsAlternateRoutes = true
+        directionRequest.transportType = .walking
+        
+        let direction = MKDirections(request: directionRequest)
+        direction.calculate { [weak self ](directionResponse, error) in
+            guard let strongSelf = self else { return }
+            
+            if let error = error {
+                print(error.localizedDescription)
+            } else if let response = directionResponse, response.routes.count > 0 {
+                
+                strongSelf.currentRoute = response.routes[0]
+                strongSelf.MapView.addOverlay(response.routes[0].polyline)
+                strongSelf.MapView.setVisibleMapRect(response.routes[0].polyline.boundingMapRect, animated: true)
+        }
+    }
+    }
     
 }
 
@@ -86,6 +116,7 @@ extension MapViewController: CLLocationManagerDelegate {
         if currentLocation == nil {
             zoomToLatestLocation(with: latestLocation.coordinate)
             addAnnotions()
+            constructRoute(userLocation: latestLocation.coordinate)
             
         }
         currentLocation = latestLocation.coordinate
@@ -98,6 +129,17 @@ private func locationManager(_ manager: CLLocationManager,didChangeAuthorization
     }
 }
 extension MapViewController: MKMapViewDelegate {
+    
+    func mapView(_ mapView: MKMapView, rendererFor overlay: MKOverlay) -> MKOverlayRenderer {
+        let renderer = MKPolylineRenderer (overlay: overlay)
+        renderer.strokeColor = UIColor.purple
+        renderer.lineWidth = 5
+        
+        return renderer
+    }
+
+    }
+    
     func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
         
         var annotationView = mapView.dequeueReusableAnnotationView(withIdentifier: "AnnotationView")
@@ -121,11 +163,10 @@ extension MapViewController: MKMapViewDelegate {
 
         annotationView?.canShowCallout = true
         
-        
         return annotationView
     }
     
     func mapView(_ mapView: MKMapView, didSelect view: MKAnnotationView) {
         print (" The annotation was selected: \(String(describing: view.annotation?.title))")
     }
-}
+

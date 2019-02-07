@@ -872,21 +872,16 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="J9v-o6-chd">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="J9v-o6-chd">
+                                <rect key="frame" x="0.0" y="80" width="375" height="518"/>
                             </mapView>
-                            <searchBar contentMode="redraw" ambiguous="YES" barStyle="blackTranslucent" searchBarStyle="minimal" translatesAutoresizingMaskIntoConstraints="NO" id="BsU-Gn-XoQ">
-                                <rect key="frame" x="0.0" y="109" width="375" height="56"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </searchBar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="J9v-o6-chd" firstAttribute="top" secondItem="9Ok-AY-TW0" secondAttribute="top" id="AgG-hr-59n"/>
-                            <constraint firstItem="J9v-o6-chd" firstAttribute="leading" secondItem="9Ok-AY-TW0" secondAttribute="leading" id="Dgc-1v-Xgo"/>
-                            <constraint firstItem="J9v-o6-chd" firstAttribute="trailing" secondItem="BsU-Gn-XoQ" secondAttribute="trailing" id="IdU-I3-5l0"/>
-                            <constraint firstItem="BsU-Gn-XoQ" firstAttribute="top" secondItem="obI-f3-5K6" secondAttribute="bottom" constant="89" id="gpi-oH-sUi"/>
-                            <constraint firstAttribute="trailing" secondItem="J9v-o6-chd" secondAttribute="trailing" id="mFH-4n-ncn"/>
+                            <constraint firstItem="J9v-o6-chd" firstAttribute="leading" secondItem="9Ok-AY-TW0" secondAttribute="leading" id="3yS-aq-AlN"/>
+                            <constraint firstItem="J9v-o6-chd" firstAttribute="top" secondItem="obI-f3-5K6" secondAttribute="bottom" constant="60" id="HU4-BO-K1k"/>
+                            <constraint firstItem="49S-cc-qS1" firstAttribute="top" secondItem="J9v-o6-chd" secondAttribute="bottom" constant="20" id="T7v-K9-tde"/>
+                            <constraint firstAttribute="trailing" secondItem="J9v-o6-chd" secondAttribute="trailing" id="ead-EW-6v0"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" systemItem="search" id="lKD-Ln-sDe">
@@ -898,7 +893,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CdL-VT-Gyr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3578" y="367"/>
+            <point key="canvasLocation" x="3576.8000000000002" y="366.56671664167919"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="fmZ-SJ-Kn3">
@@ -996,6 +991,7 @@
         <image name="make-up" width="96" height="96"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="AcB-pc-j15"/>
         <segue reference="MO0-Ha-c5J"/>
         <segue reference="9Md-L4-6j9"/>
     </inferredMetricsTieBreakers>
