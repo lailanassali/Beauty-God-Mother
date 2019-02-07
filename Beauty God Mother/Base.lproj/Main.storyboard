@@ -530,7 +530,6 @@
                                 </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="registerPressed:" destination="BNY-0A-wg1" eventType="touchUpInside" id="JO0-aS-pcE"/>
-                                    <segue destination="qs1-Yx-rDf" kind="show" identifier="sellerToConfirmation" id="yKX-9M-BZH"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KQ0-22-vdo">
@@ -607,6 +606,7 @@
                         <outlet property="email" destination="WSP-FM-PKj" id="1as-hY-ZW6"/>
                         <outlet property="organisation" destination="54v-jh-alM" id="EYz-u7-blk"/>
                         <outlet property="password" destination="6B3-qB-bb0" id="o90-v3-01U"/>
+                        <segue destination="qs1-Yx-rDf" kind="show" identifier="sellerToConfirmation" id="tPl-fT-DUt"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="e0j-pP-HoS" sceneMemberID="firstResponder"/>
