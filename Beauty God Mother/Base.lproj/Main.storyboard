@@ -607,7 +607,6 @@
                         <outlet property="email" destination="WSP-FM-PKj" id="1as-hY-ZW6"/>
                         <outlet property="organisation" destination="54v-jh-alM" id="EYz-u7-blk"/>
                         <outlet property="password" destination="6B3-qB-bb0" id="o90-v3-01U"/>
-                        <outlet property="username" destination="PU2-b7-lvf" id="2L6-e5-Sa4"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="e0j-pP-HoS" sceneMemberID="firstResponder"/>
@@ -973,6 +972,6 @@
         <image name="make-up" width="96" height="96"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="H7O-Of-qyw"/>
+        <segue reference="9Md-L4-6j9"/>
     </inferredMetricsTieBreakers>
 </document>
