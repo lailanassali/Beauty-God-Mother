@@ -45,21 +45,13 @@ class ViewController: UIViewController {
     
     @IBAction func loginPressed(_ sender: UIButton) {
         guard let email = emailTextField.text, let password = passwordTextField.text else {return}
-        
         Auth.auth().signIn(withEmail: email, password: password) { (user, error) in
             if let e = error {
-                
-            /**    let cancel = UIAlertAction(title: "Ok", style: .cancel, handler: nil)
-                let alert = UIAlertController(title: "Sorry, the username or password entered is incorrect!", message: "Please try again.", preferredStyle: .alert)
-                alert.addAction(cancel)
-                self.present(alert, animated: true, completion: nil) **/
-                
                 print("Failed to log user in: ",e)
-                
                 return
             }
             
-         self.performSegue(withIdentifier: "loginToMap", sender: self)
+            
      self.view.window?.rootViewController?.dismiss(animated: true, completion: nil)
         }
     }
