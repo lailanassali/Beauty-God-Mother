@@ -6,30 +6,30 @@
 //  Copyright © 2019 BGM. All rights reserved.
 //
 
+
 import UIKit
 import Firebase
+import FirebaseDatabase
+import FirebaseAuth
 
 class ProfileViewController: UIViewController {
-
-    @IBOutlet weak var usernameText: UILabel!
-    @IBOutlet weak var profileImageView: UIImageView!
-    @IBOutlet weak var displayNameText: UILabel!
-    
-    var databaseRef: DatabaseReference!
-    override func viewDidLoad() {
+    override func viewDidLoad (){
         super.viewDidLoad()
-
-        databaseRef = Database.database().reference()
+       }
+    
+    @IBAction func logout(_ sender: Any) {
         
-        if let userID = Auth.auth().currentUser?.uid{
-           
-            databaseRef.child("profile").child(userID).observeSingleEvent(of: .value, with:{ (snapshot) in
-                let dictionary = snapshot.value as? NSDictionary
-            
-                let username = dictionary?["username"] as? String ?? "usernane"
+        
+        do {
+            try Auth.auth().signOut()
+        } catch let logoutError {
+            print(logoutError)
         }
         
-       )}
+        
+        let storyboard = UIStoryboard(name: "LaunchScreen", bundle: nil)
+        let signInVC = storyboard.instantiateViewController( withIdentifier: "LoginPageID")
+        self.present(signInVC, animated: true, completion: nil)
+    }
     
-}
 }
