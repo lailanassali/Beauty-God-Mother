@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		01777D6E220B35B400D51EC4 /* EditProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01777D6D220B35B400D51EC4 /* EditProfileViewController.swift */; };
 		01E097B921FBB19100DB85D4 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01E097B821FBB19100DB85D4 /* ProfileViewController.swift */; };
 		4C6D626821F48A4F00087370 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C6D626721F48A4F00087370 /* MapViewController.swift */; };
 		5889CE958FED8A050B0F294E /* Pods_Beauty_God_MotherTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAB59A83EF87A5DAB24E7AA9 /* Pods_Beauty_God_MotherTests.framework */; };
@@ -47,7 +46,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		01777D6D220B35B400D51EC4 /* EditProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileViewController.swift; sourceTree = "<group>"; };
 		01E097B821FBB19100DB85D4 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		1B9D4DE3D2073187C01E22B1 /* Pods-Beauty God MotherTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Beauty God MotherTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Beauty God MotherTests/Pods-Beauty God MotherTests.release.xcconfig"; sourceTree = "<group>"; };
 		3AC7137FDBF8C98CB8F38344 /* Pods_Beauty_God_Mother.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Beauty_God_Mother.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -157,7 +155,6 @@
 				AE2942EF21F2832D00D629EA /* RegistrationService.swift */,
 				4C6D626721F48A4F00087370 /* MapViewController.swift */,
 				01E097B821FBB19100DB85D4 /* ProfileViewController.swift */,
-				01777D6D220B35B400D51EC4 /* EditProfileViewController.swift */,
 			);
 			path = "Beauty God Mother";
 			sourceTree = "<group>";
@@ -356,7 +353,6 @@
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
 				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
-				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
 				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
@@ -367,7 +363,6 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
@@ -429,7 +424,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				01777D6E220B35B400D51EC4 /* EditProfileViewController.swift in Sources */,
 				AE2942F021F2832D00D629EA /* RegistrationService.swift in Sources */,
 				5B16A04E21DFC9AB0022DDE7 /* RBViewController.swift in Sources */,
 				01E097B921FBB19100DB85D4 /* ProfileViewController.swift in Sources */,
@@ -620,15 +614,14 @@
 			baseConfigurationReference = EC2014412864173D30490638 /* Pods-Beauty God Mother.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = FG8A4NB658;
+				DEVELOPMENT_TEAM = AQ6CQRSKHS;
 				INFOPLIST_FILE = "Beauty God Mother/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "Beauty-God-Mother1";
+				PRODUCT_BUNDLE_IDENTIFIER = "Beauty-God-Mother";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -640,15 +633,14 @@
 			baseConfigurationReference = 9E1D72925356FF595FB62F1B /* Pods-Beauty God Mother.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = FG8A4NB658;
+				DEVELOPMENT_TEAM = AQ6CQRSKHS;
 				INFOPLIST_FILE = "Beauty God Mother/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "Beauty-God-Mother1";
+				PRODUCT_BUNDLE_IDENTIFIER = "Beauty-God-Mother";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";

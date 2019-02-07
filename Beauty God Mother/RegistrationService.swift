@@ -5,46 +5,28 @@
 //  Created by Laila on 18/01/2019.
 //  Copyright © 2019 BGM. All rights reserved.
 //
-import UIKit
 
 class RegistrationService {
     
     static var shared = RegistrationService()
     
-    func passwordMatches(p1:String, p2:String, viewController:UIViewController) -> Bool {
+    
+    func passwordMatches(p1:String, p2:String) -> Bool {
         if p1 == p2 {
             return true
-        } else {
-            let cancel = UIAlertAction(title: "Ok", style: .cancel, handler: nil)
-            
-            let alert = UIAlertController(title: "Sorry, the password entered does not match!", message: "Please try again.", preferredStyle: .alert)
-            alert.addAction(cancel)
-            viewController.present(alert, animated: true, completion: nil)
-            print("PASSWORD DO NOT MATCH!");return false }
+        } else { print("PASSWORD DO NOT MATCH!");return false }
     }
     
-    public func nameFormatIsCorrect(name: String, viewController:UIViewController) -> Bool {
+    public func nameFormatIsCorrect(name: String) -> Bool {
         if name.count <= 20 {
             return true
-        } else {
-            let cancel = UIAlertAction(title: "Ok", style: .cancel, handler: nil)
-            
-            let alert = UIAlertController(title: "Sorry, the name entered is in the wrong format!", message: "Please try again.", preferredStyle: .alert)
-            alert.addAction(cancel)
-            viewController.present(alert, animated: true, completion: nil)
-            print("NAME MUST BE LESS THAN OR EQUAL TO 20 CHARACTERS");return false }
+        } else { print("NAME MUST BE LESS THAN OR EQUAL TO 20 CHARACTERS");return false }
     }
     
-    public func usernameFormatIsCorrect(username: String, viewController:UIViewController) -> Bool {
+    public func usernameFormatIsCorrect(username: String) -> Bool {
         if username.count > 3 && username.count <= 20 {
             return true
-        } else {
-            let cancel = UIAlertAction(title: "Ok", style: .cancel, handler: nil)
-            
-            let alert = UIAlertController(title: "Sorry, the username entered is in the wrong format!", message: "Please try again.", preferredStyle: .alert)
-            alert.addAction(cancel)
-            viewController.present(alert, animated: true, completion: nil)
-            print("NAME MUST BE MORE THAN 3 OR LESS THAN EQUAL 20");return false }
+        } else { print("NAME MUST BE MORE THAN 3 OR LESS THAN EQUAL 20");return false }
     }
     
     public func passwordMustBeMoreThan8Characters(p1: String, p2: String, viewController:UIViewController) -> Bool {
@@ -61,5 +43,10 @@ class RegistrationService {
     
     // email function needed and tested.
     
+<<<<<<< HEAD
   
 
+=======
+    
+}
+>>>>>>> 61f80b146f38edc364218099afbefae608c2271e
