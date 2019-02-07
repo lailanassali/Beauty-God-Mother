@@ -686,6 +686,24 @@
             </objects>
             <point key="canvasLocation" x="2053.5999999999999" y="1229.5566502463055"/>
         </scene>
+        <!--Confirmation DetailsBP-->
+        <scene sceneID="iY7-8W-NWo">
+            <objects>
+                <viewController id="qs1-Yx-rDf" customClass="ConfirmationDetailsBP" customModule="Beauty_God_Mother" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Zb4-l1-yOY"/>
+                        <viewControllerLayoutGuide type="bottom" id="bTO-6H-DA9"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Q9W-OM-2Gz">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bud-hj-iyg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3245" y="1104"/>
+        </scene>
         <!--Profile-->
         <scene sceneID="fa2-vj-ofd">
             <objects>
@@ -962,7 +980,7 @@
         <image name="make-up" width="96" height="96"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="H8L-Qa-8g0"/>
-        <segue reference="2bT-nD-DrZ"/>
+        <segue reference="MO0-Ha-c5J"/>
+        <segue reference="9Md-L4-6j9"/>
     </inferredMetricsTieBreakers>
 </document>
