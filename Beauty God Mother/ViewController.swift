@@ -15,20 +15,16 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
-    
-    @IBOutlet weak var registerAsSP: UIButton!
     @IBOutlet weak var registerAsBuyer: UIButton!
     
-
+    @IBOutlet weak var registerAsSP: UIButton!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         setupViews()
         
-        
-        
     }
-    
-    
     
     fileprivate func setupViews() {
         let buttonArray = [registerAsSP, registerAsBuyer]

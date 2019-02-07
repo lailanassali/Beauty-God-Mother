@@ -109,7 +109,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <segue destination="Igd-8i-HBB" kind="show" identifier="Customer" id="VDy-TP-mzG"/>
+                                    <segue destination="Igd-8i-HBB" kind="show" id="eFD-EX-6aa"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ad4-eW-DQu">
@@ -138,7 +138,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <segue destination="BNY-0A-wg1" kind="show" identifier="BeautyService" id="AcB-pc-j15"/>
+                                    <segue destination="BNY-0A-wg1" kind="show" id="509-pP-VnA"/>
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="7bG-2Y-ZG9">
@@ -172,8 +172,8 @@
                     <connections>
                         <outlet property="emailTextField" destination="9da-8l-7Xn" id="e4H-CL-y2w"/>
                         <outlet property="passwordTextField" destination="iJQ-cd-NKK" id="LGd-f4-QZR"/>
-                        <outlet property="registerAsBuyer" destination="Ad4-eW-DQu" id="Lrd-Wd-5vx"/>
-                        <outlet property="registerAsSP" destination="kFf-ao-jXM" id="IvI-hw-UgB"/>
+                        <outlet property="registerAsBuyer" destination="kFf-ao-jXM" id="SFC-SR-oSm"/>
+                        <outlet property="registerAsSP" destination="Ad4-eW-DQu" id="9g2-W7-igM"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -332,9 +332,6 @@
                                         <integer key="value" value="15"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <segue destination="BYZ-38-t0r" kind="showDetail" id="2bT-nD-DrZ"/>
-                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qZ2-qS-ZrL">
                                 <rect key="frame" x="16" y="518" width="343" height="50"/>
@@ -403,8 +400,6 @@
                         <outlet property="emailTF" destination="cAx-MY-5yT" id="KAW-La-Oqq"/>
                         <outlet property="name" destination="qdQ-M1-eaB" id="XL4-Ge-Ydt"/>
                         <outlet property="passwordTF" destination="p60-Mo-ASN" id="m4Z-Iq-lyd"/>
-                        <outlet property="registerButton" destination="qZ2-qS-ZrL" id="PCc-QH-fsf"/>
-                        <outlet property="usernameTF" destination="c5h-o3-445" id="I1Z-iA-POJ"/>
                         <segue destination="5Zx-Io-eZE" kind="show" identifier="buyerToConfirmation" id="H8L-Qa-8g0"/>
                     </connections>
                 </viewController>
@@ -975,6 +970,6 @@
         <image name="make-up" width="96" height="96"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="9Md-L4-6j9"/>
+        <segue reference="YBi-b3-Kws"/>
     </inferredMetricsTieBreakers>
 </document>
