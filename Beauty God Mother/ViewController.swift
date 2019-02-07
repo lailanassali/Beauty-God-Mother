@@ -45,7 +45,7 @@ class ViewController: UIViewController {
             if let e = error {
                 
                 let cancel = UIAlertAction(title: "Ok", style: .cancel, handler: nil)
-                let alert = UIAlertController(title: "Sorry, the username or password is incorrect!", message: "Please try again.", preferredStyle: .alert)
+                let alert = UIAlertController(title: "Sorry, please enter a valid username or password to continue!", message: "Please try again.", preferredStyle: .alert)
                 alert.addAction(cancel)
                 self.present(alert, animated: true, completion: nil) 
                 
