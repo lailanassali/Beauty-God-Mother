@@ -43,12 +43,17 @@ class ViewController: UIViewController {
         guard let email = emailTextField.text, let password = passwordTextField.text else {return}
         Auth.auth().signIn(withEmail: email, password: password) { (user, error) in
             if let e = error {
+                
+                let cancel = UIAlertAction(title: "Ok", style: .cancel, handler: nil)
+                let alert = UIAlertController(title: "Sorry, the username or password is incorrect!", message: "Please try again.", preferredStyle: .alert)
+                alert.addAction(cancel)
+                self.present(alert, animated: true, completion: nil) 
+                
                 print("Failed to log user in: ",e)
                 return
             }
             
-            
-     self.view.window?.rootViewController?.dismiss(animated: true, completion: nil)
+        self.view.window?.rootViewController?.dismiss(animated: true, completion: nil)
         }
     }
     

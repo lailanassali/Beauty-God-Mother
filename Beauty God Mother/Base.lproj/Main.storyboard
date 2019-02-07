@@ -80,7 +80,6 @@
                                 </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="loginPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="omK-kN-Ux9"/>
-                                    <segue destination="J3r-c9-DRm" kind="presentation" id="orm-vj-UGa"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kFf-ao-jXM">
@@ -174,6 +173,7 @@
                         <outlet property="passwordTextField" destination="iJQ-cd-NKK" id="LGd-f4-QZR"/>
                         <outlet property="registerAsBuyer" destination="kFf-ao-jXM" id="SFC-SR-oSm"/>
                         <outlet property="registerAsSP" destination="Ad4-eW-DQu" id="9g2-W7-igM"/>
+                        <segue destination="J3r-c9-DRm" kind="show" id="EaV-hn-ljT"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -972,6 +972,7 @@
         <image name="make-up" width="96" height="96"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="509-pP-VnA"/>
         <segue reference="9Md-L4-6j9"/>
     </inferredMetricsTieBreakers>
 </document>

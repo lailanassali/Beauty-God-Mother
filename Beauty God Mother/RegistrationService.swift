@@ -34,7 +34,9 @@ class RegistrationService {
             viewController.present(alert, animated: true, completion: nil)
             print("NAME MUST BE LESS THAN OR EQUAL TO 20 CHARACTERS");return false }
     }
-    }
+    
+   
+}
     
     
     // email function needed and tested.
