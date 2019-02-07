@@ -42,9 +42,6 @@ class RegisterTests: XCTestCase {
         XCTAssertEqual(result2, true)
     }
     
-    func testShouldFailToRegisterIfUserameIsLessThan3Characters() {
-        let result = registerService.usernameFormatIsCorrect(username: "a", viewController: viewController)
-        XCTAssertEqual(result, false)
     }
 
   //  func shouldSucceedToRegisterIfEmailIsValid() {
@@ -58,4 +55,4 @@ class RegisterTests: XCTestCase {
    //     XCTAssertEqual(result, false)
     
  //   }
-}
+

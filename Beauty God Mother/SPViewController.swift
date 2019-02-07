@@ -14,7 +14,6 @@ class SPViewController: UIViewController {
     
     
     @IBOutlet weak var organisation: UITextField!
-    @IBOutlet weak var username: UITextField!
     @IBOutlet weak var email: UITextField!
     @IBOutlet weak var password: UITextField!
     @IBOutlet weak var confirmPassword: UITextField!
@@ -34,11 +33,10 @@ class SPViewController: UIViewController {
     
     public func handleRegister() {
         // stage 1
-        guard let organisation = organisation.text, let username = username.text, let email = email.text, let password = password.text, let confirmPassword = confirmPassword.text else {return}
+        guard let organisation = organisation.text, let email = email.text, let password = password.text, let confirmPassword = confirmPassword.text else {return}
         
         // stage 2
-        if !rs.passwordMatches(p1: password, p2: confirmPassword, viewController: self) || !rs.nameFormatIsCorrect(name: organisation, viewController: self)
-            || !rs.usernameFormatIsCorrect(username: username, viewController: self) { return }
+        if !rs.passwordMatches(p1: password, p2: confirmPassword, viewController: self) || !rs.nameFormatIsCorrect(name: organisation, viewController: self) { return }
         
         
         Auth.auth().createUser(withEmail: email, password: password) { (result:AuthDataResult?, error) in
@@ -53,7 +51,6 @@ class SPViewController: UIViewController {
             // Database Structure
             let dictionaryValues = [
                                 "organisation": organisation,
-                                "username": username,
                                     "email": email]
             // Save values to uid
             let values = [uid:dictionaryValues]
@@ -63,7 +60,7 @@ class SPViewController: UIViewController {
                     return
                 }
                 
-                print("Sucessfully added \(username) to database!")
+                print("Sucessfully added \(organisation) to database!")
                 self.performSegue(withIdentifier: "sellerToConfirmation", sender: self)
             })
         }

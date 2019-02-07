@@ -34,21 +34,10 @@ class RegistrationService {
             viewController.present(alert, animated: true, completion: nil)
             print("NAME MUST BE LESS THAN OR EQUAL TO 20 CHARACTERS");return false }
     }
-    
-    public func usernameFormatIsCorrect(username: String, viewController:UIViewController) -> Bool {
-        if username.count > 3 && username.count <= 20 {
-            return true
-        } else {
-            let cancel = UIAlertAction(title: "Ok", style: .cancel, handler: nil)
-            
-            let alert = UIAlertController(title: "Sorry, the username entered is in the wrong format!", message: "Please try again.", preferredStyle: .alert)
-            alert.addAction(cancel)
-            viewController.present(alert, animated: true, completion: nil)
-            print("NAME MUST BE MORE THAN 3 OR LESS THAN EQUAL 20");return false }
     }
     
     
     // email function needed and tested.
     
   
-}
+

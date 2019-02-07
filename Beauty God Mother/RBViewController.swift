@@ -16,7 +16,6 @@ class RBViewController: UIViewController {
     
     
     @IBOutlet weak var name: UITextField!
-    @IBOutlet weak var usernameTF: UITextField!
     @IBOutlet weak var emailTF: UITextField!
     @IBOutlet weak var passwordTF: UITextField!
     @IBOutlet weak var confirmPasswordTF: UITextField!
@@ -41,10 +40,9 @@ class RBViewController: UIViewController {
     public func handleRegister() {
         
         // Stage 1
-        guard let name = name.text, let username = usernameTF.text, let email = emailTF.text, let password = passwordTF.text, let confirmPassword = confirmPasswordTF.text else {return}
+        guard let name = name.text, let email = emailTF.text, let password = passwordTF.text, let confirmPassword = confirmPasswordTF.text else {return}
        // Stage 2
-        if !rs.passwordMatches(p1: password, p2: confirmPassword, viewController: self) || !rs.nameFormatIsCorrect(name: name, viewController: self) ||
-            !rs.usernameFormatIsCorrect(username: username, viewController: self) { return }
+        if !rs.passwordMatches(p1: password, p2: confirmPassword, viewController: self) || !rs.nameFormatIsCorrect(name: name, viewController: self) { return }
         
         
         Auth.auth().createUser(withEmail: email, password: password) { (result:AuthDataResult?, error) in
@@ -58,7 +56,6 @@ class RBViewController: UIViewController {
             
             // Database Structure
             let dictionaryValues = ["name": name,
-                                    "username": username,
                                     "email": email]
             // Save values to uid
             let values = [uid:dictionaryValues]
@@ -68,7 +65,7 @@ class RBViewController: UIViewController {
                     return
                 }
                 
-                print("Sucessfully added \(username) to database!")
+                print("Sucessfully added \(name) to database!")
                 self.performSegue(withIdentifier: "buyerToConfirmation", sender: self)
             })
         }
