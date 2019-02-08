@@ -354,22 +354,12 @@
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="IDh-rO-cdS">
-                                        <rect key="frame" x="0.0" y="24" width="375" height="641"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="1000" id="tVP-NJ-9tn"/>
-                                        </constraints>
-                                    </scrollView>
                                 </subviews>
                                 <color key="backgroundColor" red="0.8833980709" green="0.63388219869999995" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstItem="IDh-rO-cdS" firstAttribute="leading" secondItem="VrA-2I-Va9" secondAttribute="leading" id="3FT-KO-MoO"/>
                                     <constraint firstAttribute="height" constant="140" id="4CS-Kk-ApO"/>
                                     <constraint firstItem="LrN-6k-rbd" firstAttribute="top" secondItem="VrA-2I-Va9" secondAttribute="top" constant="64" id="6cc-Hu-7Kc"/>
-                                    <constraint firstAttribute="bottom" secondItem="IDh-rO-cdS" secondAttribute="bottom" id="UYb-k8-ZYS"/>
                                     <constraint firstItem="LrN-6k-rbd" firstAttribute="centerX" secondItem="VrA-2I-Va9" secondAttribute="centerX" id="csr-QC-Jjs"/>
-                                    <constraint firstAttribute="trailing" secondItem="IDh-rO-cdS" secondAttribute="trailing" id="dTb-RS-x1F"/>
-                                    <constraint firstItem="IDh-rO-cdS" firstAttribute="top" secondItem="VrA-2I-Va9" secondAttribute="top" id="gz8-oW-wN6"/>
                                 </constraints>
                             </view>
                         </subviews>
