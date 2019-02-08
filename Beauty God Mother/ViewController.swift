@@ -15,20 +15,16 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
-    
-    @IBOutlet weak var registerAsSP: UIButton!
+   
     @IBOutlet weak var registerAsBuyer: UIButton!
+    @IBOutlet weak var registerAsSP: UIButton!
     
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         setupViews()
         
-        
-        
     }
-    
-    
     
     fileprivate func setupViews() {
         let buttonArray = [registerAsSP, registerAsBuyer]
@@ -47,15 +43,17 @@ class ViewController: UIViewController {
         guard let email = emailTextField.text, let password = passwordTextField.text else {return}
         Auth.auth().signIn(withEmail: email, password: password) { (user, error) in
             if let e = error {
+                
+                let cancel = UIAlertAction(title: "Ok", style: .cancel, handler: nil)
+                let alert = UIAlertController(title: "Sorry, please enter a valid username or password to continue!", message: "Please try again.", preferredStyle: .alert)
+                alert.addAction(cancel)
+                self.present(alert, animated: true, completion: nil) 
+                
                 print("Failed to log user in: ",e)
                 return
             }
-            
-            
-     self.view.window?.rootViewController?.dismiss(animated: true, completion: nil)
+            self.performSegue(withIdentifier: "tabBar", sender: self)
         }
     }
-    
-
 }
 

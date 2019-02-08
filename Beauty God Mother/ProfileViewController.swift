@@ -8,28 +8,24 @@
 
 
 import UIKit
-import Firebase
-import FirebaseDatabase
 import FirebaseAuth
 
-class ProfileViewController: UITableViewController {
+
+class ProfileViewController: UIViewController {
     override func viewDidLoad (){
         super.viewDidLoad()
        }
     
-    @IBAction func logout(_ sender: Any) {
-        
+    @IBAction func logout_TouchUpInside(_ sender: Any) {
         
         do {
-            try Auth.auth().signOut()
+       try Auth.auth().signOut()
         } catch let logoutError {
             print(logoutError)
         }
-        
-        
-        let storyboard = UIStoryboard(name: "LaunchScreen", bundle: nil)
-        let signInVC = storyboard.instantiateViewController( withIdentifier: "LoginPageID")
+
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+       let signInVC = storyboard.instantiateViewController(withIdentifier: "LoginPageID")
         self.present(signInVC, animated: true, completion: nil)
     }
-    
 }

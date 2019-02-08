@@ -42,6 +42,14 @@ class RegisterTests: XCTestCase {
         XCTAssertEqual(result2, true)
     }
     
+  /**  func testShouldFailToRegisterIfPasswordIsLessThan8Characters() {
+        let result = registerService.passwordMustBe8Characters(p1: "12345678", p2: "12345678", viewController: viewController)
+        let result2 = registerService.passwordMustBe8Characters(p1: "123", p2: "1256", viewController: viewController)
+        XCTAssertEqual(result, false)
+        XCTAssertEqual(result2, false)
+    } **/
+    
+    
     }
 
   //  func shouldSucceedToRegisterIfEmailIsValid() {
