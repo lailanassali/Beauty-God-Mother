@@ -146,6 +146,13 @@
                                     <constraint firstAttribute="width" constant="241" id="FnT-7A-Lcl"/>
                                 </constraints>
                             </imageView>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" text="Forgot password?" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kpE-pQ-bSg">
+                                <rect key="frame" x="16" y="282" width="160" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -169,6 +176,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="ETG-SQ-YaG"/>
                     <connections>
+                        <outlet property="ForgotPassword" destination="kpE-pQ-bSg" id="sfF-9g-7Mk"/>
                         <outlet property="emailTextField" destination="9da-8l-7Xn" id="e4H-CL-y2w"/>
                         <outlet property="passwordTextField" destination="iJQ-cd-NKK" id="LGd-f4-QZR"/>
                         <outlet property="registerAsBuyer" destination="kFf-ao-jXM" id="SFC-SR-oSm"/>
@@ -178,7 +186,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2054" y="-374"/>
+            <point key="canvasLocation" x="2053.5999999999999" y="-374.66266866566718"/>
         </scene>
         <!--RBVC-->
         <scene sceneID="nnx-o9-56z">
