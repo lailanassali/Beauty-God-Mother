@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		01777D6E220B35B400D51EC4 /* EditProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01777D6D220B35B400D51EC4 /* EditProfileViewController.swift */; };
 		01D0F38F220CBC120016FD5B /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01D0F38E220CBC110016FD5B /* MenuViewController.swift */; };
-		01D0F391220CF5B80016FD5B /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01D0F390220CF5B70016FD5B /* MainTabBarController.swift */; };
 		01E097B921FBB19100DB85D4 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01E097B821FBB19100DB85D4 /* ProfileViewController.swift */; };
 		4C391311220C84F200BC55D8 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C391310220C84F200BC55D8 /* MapKit.framework */; };
 		4C6D626821F48A4F00087370 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C6D626721F48A4F00087370 /* MapViewController.swift */; };
@@ -53,7 +52,6 @@
 /* Begin PBXFileReference section */
 		01777D6D220B35B400D51EC4 /* EditProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileViewController.swift; sourceTree = "<group>"; };
 		01D0F38E220CBC110016FD5B /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
-		01D0F390220CF5B70016FD5B /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 		01E097B821FBB19100DB85D4 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		1B9D4DE3D2073187C01E22B1 /* Pods-Beauty God MotherTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Beauty God MotherTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Beauty God MotherTests/Pods-Beauty God MotherTests.release.xcconfig"; sourceTree = "<group>"; };
 		3AC7137FDBF8C98CB8F38344 /* Pods_Beauty_God_Mother.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Beauty_God_Mother.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -169,7 +167,6 @@
 				01D0F38E220CBC110016FD5B /* MenuViewController.swift */,
 				01777D6D220B35B400D51EC4 /* EditProfileViewController.swift */,
 				CCA91948220C7A1C00672E6F /* ConfirmationDetailsBP.swift */,
-				01D0F390220CF5B70016FD5B /* MainTabBarController.swift */,
 			);
 			path = "Beauty God Mother";
 			sourceTree = "<group>";
@@ -457,7 +454,6 @@
 				01D0F38F220CBC120016FD5B /* MenuViewController.swift in Sources */,
 				CCA91949220C7A1C00672E6F /* ConfirmationDetailsBP.swift in Sources */,
 				5B16A01E21DFB0A70022DDE7 /* ViewController.swift in Sources */,
-				01D0F391220CF5B80016FD5B /* MainTabBarController.swift in Sources */,
 				5B16A01C21DFB0A70022DDE7 /* AppDelegate.swift in Sources */,
 				5B16A05021DFC9C10022DDE7 /* SPViewController.swift in Sources */,
 				AE29B29421EBEE3800B19FFF /* MainViewController.swift in Sources */,
