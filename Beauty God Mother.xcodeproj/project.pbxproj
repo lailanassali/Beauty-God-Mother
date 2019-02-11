@@ -167,6 +167,11 @@
 				01D0F38E220CBC110016FD5B /* MenuViewController.swift */,
 				01777D6D220B35B400D51EC4 /* EditProfileViewController.swift */,
 				CCA91948220C7A1C00672E6F /* ConfirmationDetailsBP.swift */,
+<<<<<<< HEAD
+=======
+				4C2A24BF2210A9AF009A7161 /* TableViewCell.swift */,
+				4C2A24C12210A9CE009A7161 /* SearchViewController.swift */,
+>>>>>>> parent of 90adab5... recover bottom
 			);
 			path = "Beauty God Mother";
 			sourceTree = "<group>";
