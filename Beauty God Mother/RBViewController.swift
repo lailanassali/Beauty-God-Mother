@@ -16,7 +16,6 @@ class RBViewController: UIViewController {
     
     
     @IBOutlet weak var name: UITextField!
-
     @IBOutlet weak var emailTF: UITextField!
     @IBOutlet weak var passwordTF: UITextField!
     @IBOutlet weak var confirmPasswordTF: UITextField!
