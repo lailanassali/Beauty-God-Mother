@@ -638,13 +638,21 @@
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
+<<<<<<< HEAD
 				DEVELOPMENT_TEAM = PAUK362GK5;
+=======
+				DEVELOPMENT_TEAM = FG8A4NB658;
+>>>>>>> parent of c92a242... Unlock Storyboard, Include Navigation Bar and Started Search
 				INFOPLIST_FILE = "Beauty God Mother/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+<<<<<<< HEAD
 				PRODUCT_BUNDLE_IDENTIFIER = "Beauty-God-Mother1990";
+=======
+				PRODUCT_BUNDLE_IDENTIFIER = "Beauty-God-Mother20";
+>>>>>>> parent of c92a242... Unlock Storyboard, Include Navigation Bar and Started Search
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -657,13 +665,21 @@
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
+<<<<<<< HEAD
 				DEVELOPMENT_TEAM = PAUK362GK5;
+=======
+				DEVELOPMENT_TEAM = FG8A4NB658;
+>>>>>>> parent of c92a242... Unlock Storyboard, Include Navigation Bar and Started Search
 				INFOPLIST_FILE = "Beauty God Mother/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+<<<<<<< HEAD
 				PRODUCT_BUNDLE_IDENTIFIER = "Beauty-God-Mother1990";
+=======
+				PRODUCT_BUNDLE_IDENTIFIER = "Beauty-God-Mother20";
+>>>>>>> parent of c92a242... Unlock Storyboard, Include Navigation Bar and Started Search
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";

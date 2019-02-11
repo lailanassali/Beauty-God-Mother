@@ -193,6 +193,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" contentInsetAdjustmentBehavior="scrollableAxes" translatesAutoresizingMaskIntoConstraints="NO" id="agQ-9s-u2O">
+<<<<<<< HEAD
                                 <rect key="frame" x="0.0" y="20" width="375" height="647"/>
                             </scrollView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="miB-4g-9Gp">
@@ -227,6 +228,12 @@
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Yey-XH-IMa">
                                         <rect key="frame" x="0.0" y="0.0" width="343" height="42"/>
+=======
+                                <rect key="frame" x="0.0" y="20" width="375" height="980"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vkX-dF-HqN">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="1000"/>
+>>>>>>> parent of c92a242... Unlock Storyboard, Include Navigation Bar and Started Search
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="1Rf-F0-Ew4">
                                                 <rect key="frame" x="0.0" y="0.0" width="343" height="42"/>
@@ -422,6 +429,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+<<<<<<< HEAD
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Register as Seller" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S92-1X-EBf">
                                 <rect key="frame" x="92" y="164" width="191.5" height="30"/>
                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="25"/>
@@ -440,6 +448,13 @@
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="nhp-bz-xIN">
                                         <rect key="frame" x="0.0" y="0.0" width="343" height="42"/>
+=======
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sWI-aF-LLY">
+                                <rect key="frame" x="0.0" y="20" width="375" height="980"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HuW-gD-b3z">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="1000"/>
+>>>>>>> parent of c92a242... Unlock Storyboard, Include Navigation Bar and Started Search
                                         <subviews>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Organization" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="54v-jh-alM">
                                                 <rect key="frame" x="0.0" y="0.0" width="343" height="42"/>
@@ -734,7 +749,11 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CdL-VT-Gyr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+<<<<<<< HEAD
             <point key="canvasLocation" x="3641" y="406"/>
+=======
+            <point key="canvasLocation" x="3615" y="565"/>
+>>>>>>> parent of c92a242... Unlock Storyboard, Include Navigation Bar and Started Search
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="gDC-Wl-XTQ">
