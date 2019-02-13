@@ -55,5 +55,10 @@ class ViewController: UIViewController {
             self.performSegue(withIdentifier: "tabBar", sender: self)
         }
     }
+    
+    @IBAction func forgotPassowrd(_ sender: Any) {
+        
+        
+    }
 }
 
