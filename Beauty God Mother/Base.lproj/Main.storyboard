@@ -590,6 +590,7 @@
                                 </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="registerPressed:" destination="BNY-0A-wg1" eventType="touchUpInside" id="JO0-aS-pcE"/>
+                                    <segue destination="1Ks-kp-agJ" kind="show" id="HSd-K1-8R8"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KQ0-22-vdo">
@@ -666,12 +667,53 @@
                         <outlet property="email" destination="WSP-FM-PKj" id="1as-hY-ZW6"/>
                         <outlet property="organisation" destination="54v-jh-alM" id="EYz-u7-blk"/>
                         <outlet property="password" destination="6B3-qB-bb0" id="o90-v3-01U"/>
-                        <segue destination="qs1-Yx-rDf" kind="show" identifier="sellerToConfirmation" id="tPl-fT-DUt"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="e0j-pP-HoS" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2751" y="1654"/>
+        </scene>
+        <!--Swipe1 View Controller-->
+        <scene sceneID="1Ck-1a-7kC">
+            <objects>
+                <viewController id="1Ks-kp-agJ" customClass="Swipe1ViewController" customModule="Beauty_God_Mother" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="V8T-7J-Qp9"/>
+                        <viewControllerLayoutGuide type="bottom" id="ITV-go-Se3"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="cD1-Cu-80e">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="0.66726310320000004" blue="0.099020232080000006" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <connections>
+                        <segue destination="HI8-mj-CGP" kind="show" identifier="swipeLeft" id="hSf-gK-yh9"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3FB-4L-k29" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2794" y="2520"/>
+        </scene>
+        <!--Swipe2 View Controller-->
+        <scene sceneID="QEF-2B-vdY">
+            <objects>
+                <viewController id="HI8-mj-CGP" customClass="Swipe2ViewController" customModule="Beauty_God_Mother" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="8Mg-zN-ylK"/>
+                        <viewControllerLayoutGuide type="bottom" id="hq8-0a-GRh"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="eWT-n7-jmH">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.91441923379898071" green="0.51185643672943115" blue="0.5285765528678894" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <connections>
+                        <segue destination="1Ks-kp-agJ" kind="show" identifier="swipeRight" id="xud-Gp-qTd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZSA-YW-MXn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3769" y="2531"/>
         </scene>
         <!--ConfirmationVC-->
         <scene sceneID="jOA-JO-E6R">
@@ -742,24 +784,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="V12-WN-01H" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1350" y="2729"/>
-        </scene>
-        <!--Confirmation DetailsBP-->
-        <scene sceneID="iY7-8W-NWo">
-            <objects>
-                <viewController id="qs1-Yx-rDf" customClass="ConfirmationDetailsBP" customModule="Beauty_God_Mother" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="Zb4-l1-yOY"/>
-                        <viewControllerLayoutGuide type="bottom" id="bTO-6H-DA9"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="Q9W-OM-2Gz">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="bud-hj-iyg" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2750" y="2729"/>
         </scene>
         <!--Map View Controller-->
         <scene sceneID="JRl-Eb-4k1">
@@ -847,6 +871,7 @@
                                         </state>
                                         <connections>
                                             <action selector="CancelButton:" destination="6D7-J4-RYg" eventType="touchUpInside" id="ciV-dI-cmd"/>
+                                            <segue destination="BYZ-38-t0r" kind="show" id="iW4-I4-pyO"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -1239,6 +1264,7 @@
         <image name="images (1)" width="225" height="225"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="j2j-O3-EEh"/>
+        <segue reference="xud-Gp-qTd"/>
+        <segue reference="iW4-I4-pyO"/>
     </inferredMetricsTieBreakers>
 </document>

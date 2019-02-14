@@ -36,6 +36,8 @@
 		AE29B29821EBEE9A00B19FFF /* RegisterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE29B29721EBEE9A00B19FFF /* RegisterTests.swift */; };
 		AE29B29A21EBEF6800B19FFF /* ConfirmationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE29B29921EBEF6800B19FFF /* ConfirmationVC.swift */; };
 		CC62D3C72212F593004FB434 /* ForgotPassword.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC62D3C62212F593004FB434 /* ForgotPassword.swift */; };
+		CC62D3D922161BA4004FB434 /* Swipe1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC62D3D822161BA4004FB434 /* Swipe1ViewController.swift */; };
+		CC62D3DB22161BB6004FB434 /* Swipe2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC62D3DA22161BB6004FB434 /* Swipe2ViewController.swift */; };
 		CCA91949220C7A1C00672E6F /* ConfirmationDetailsBP.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCA91948220C7A1C00672E6F /* ConfirmationDetailsBP.swift */; };
 /* End PBXBuildFile section */
 
@@ -94,6 +96,8 @@
 		AE29B29721EBEE9A00B19FFF /* RegisterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterTests.swift; sourceTree = "<group>"; };
 		AE29B29921EBEF6800B19FFF /* ConfirmationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmationVC.swift; sourceTree = "<group>"; };
 		CC62D3C62212F593004FB434 /* ForgotPassword.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPassword.swift; sourceTree = "<group>"; };
+		CC62D3D822161BA4004FB434 /* Swipe1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Swipe1ViewController.swift; sourceTree = "<group>"; };
+		CC62D3DA22161BB6004FB434 /* Swipe2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Swipe2ViewController.swift; sourceTree = "<group>"; };
 		CCA91948220C7A1C00672E6F /* ConfirmationDetailsBP.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmationDetailsBP.swift; sourceTree = "<group>"; };
 		EAB59A83EF87A5DAB24E7AA9 /* Pods_Beauty_God_MotherTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Beauty_God_MotherTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC2014412864173D30490638 /* Pods-Beauty God Mother.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Beauty God Mother.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Beauty God Mother/Pods-Beauty God Mother.debug.xcconfig"; sourceTree = "<group>"; };
@@ -186,6 +190,8 @@
 				CC62D3C62212F593004FB434 /* ForgotPassword.swift */,
 				5B6A73AE221597C000E506DC /* AccountViewController.swift */,
 				5B2E244222159E5D00F21E29 /* Extension+Database.swift */,
+				CC62D3D822161BA4004FB434 /* Swipe1ViewController.swift */,
+				CC62D3DA22161BB6004FB434 /* Swipe2ViewController.swift */,
 			);
 			path = "Beauty God Mother";
 			sourceTree = "<group>";
@@ -493,6 +499,7 @@
 			files = (
 				01777D6E220B35B400D51EC4 /* EditProfileViewController.swift in Sources */,
 				AE2942F021F2832D00D629EA /* RegistrationService.swift in Sources */,
+				CC62D3D922161BA4004FB434 /* Swipe1ViewController.swift in Sources */,
 				5B16A04E21DFC9AB0022DDE7 /* RBViewController.swift in Sources */,
 				01E097B921FBB19100DB85D4 /* ProfileViewController.swift in Sources */,
 				AE29B29A21EBEF6800B19FFF /* ConfirmationVC.swift in Sources */,
@@ -508,6 +515,7 @@
 				5B16A01C21DFB0A70022DDE7 /* AppDelegate.swift in Sources */,
 				CC62D3C72212F593004FB434 /* ForgotPassword.swift in Sources */,
 				5B2E244322159E5D00F21E29 /* Extension+Database.swift in Sources */,
+				CC62D3DB22161BB6004FB434 /* Swipe2ViewController.swift in Sources */,
 				5B6A73AD2215969400E506DC /* CustomerTabBar.swift in Sources */,
 				5B16A05021DFC9C10022DDE7 /* SPViewController.swift in Sources */,
 				AE29B29421EBEE3800B19FFF /* MainViewController.swift in Sources */,
