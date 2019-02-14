@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "A3D8D42AFF65BEF14A019403529F8C02"
-               BlueprintName = "SDWebImage"
+               BlueprintIdentifier = "CF0A30BB0DB12A33AFFF62F518C205E0"
+               BlueprintName = "GoogleAppMeasurement"
                ReferencedContainer = "container:Pods.xcodeproj"
-               BuildableName = "SDWebImage.framework">
+               BuildableName = "GoogleAppMeasurement">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

@@ -14,7 +14,7 @@ class ConfirmationVC: UIViewController {
     }
     
     @IBAction func dismissRegistration(_ sender: UIButton) {
-        view.window?.rootViewController?.dismiss(animated: true, completion: nil)
+        self.present(RootViewController(), animated: true, completion: nil)
     }
     
 }

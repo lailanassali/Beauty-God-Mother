@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="gR9-rz-YHF">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -180,7 +180,6 @@
                         <outlet property="passwordTextField" destination="iJQ-cd-NKK" id="LGd-f4-QZR"/>
                         <outlet property="registerAsBuyer" destination="kFf-ao-jXM" id="SFC-SR-oSm"/>
                         <outlet property="registerAsSP" destination="Ad4-eW-DQu" id="9g2-W7-igM"/>
-                        <segue destination="J3r-c9-DRm" kind="showDetail" identifier="tabBar" id="EaV-hn-ljT"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -711,7 +710,7 @@
         <!--Map View Controller-->
         <scene sceneID="JRl-Eb-4k1">
             <objects>
-                <viewController id="iCw-za-fFN" customClass="MapViewController" customModule="Beauty_God_Mother" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MapVC" id="iCw-za-fFN" customClass="MapViewController" customModule="Beauty_God_Mother" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="obI-f3-5K6"/>
                         <viewControllerLayoutGuide type="bottom" id="49S-cc-qS1"/>
@@ -721,14 +720,22 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="J9v-o6-chd">
-                                <rect key="frame" x="0.0" y="80" width="375" height="518"/>
+                                <rect key="frame" x="0.0" y="80" width="375" height="460"/>
                             </mapView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wdr-iC-b2i">
+                                <rect key="frame" x="33" y="548" width="301" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="LOGOUT"/>
+                                <connections>
+                                    <action selector="logoutNow:" destination="iCw-za-fFN" eventType="touchUpInside" id="5aG-0j-Ih9"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="J9v-o6-chd" firstAttribute="leading" secondItem="9Ok-AY-TW0" secondAttribute="leading" id="3yS-aq-AlN"/>
                             <constraint firstItem="J9v-o6-chd" firstAttribute="top" secondItem="obI-f3-5K6" secondAttribute="bottom" constant="60" id="HU4-BO-K1k"/>
-                            <constraint firstItem="49S-cc-qS1" firstAttribute="top" secondItem="J9v-o6-chd" secondAttribute="bottom" constant="20" id="T7v-K9-tde"/>
+                            <constraint firstItem="49S-cc-qS1" firstAttribute="top" secondItem="J9v-o6-chd" secondAttribute="bottom" constant="78" id="T7v-K9-tde"/>
                             <constraint firstAttribute="trailing" secondItem="J9v-o6-chd" secondAttribute="trailing" id="ead-EW-6v0"/>
                         </constraints>
                     </view>
@@ -737,11 +744,12 @@
                     </tabBarItem>
                     <connections>
                         <outlet property="MapView" destination="J9v-o6-chd" id="tWU-xK-dJk"/>
+                        <segue destination="BYZ-38-t0r" kind="presentation" identifier="mainToLogin" id="C7x-dW-wwH"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CdL-VT-Gyr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3641" y="406"/>
+            <point key="canvasLocation" x="3797.5999999999999" y="447.52623688155927"/>
         </scene>
         <!--Forgot Password-->
         <scene sceneID="bjt-cc-76M">
@@ -834,12 +842,12 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XDJ-EX-5u6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2879" y="-375"/>
+            <point key="canvasLocation" x="3798" y="-376"/>
         </scene>
         <!--Business Name-->
         <scene sceneID="FYn-uC-HP5">
             <objects>
-                <viewController id="4t6-Mz-GXy" customClass="ProfileViewController" customModule="Beauty_God_Mother" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ProfileVC" id="4t6-Mz-GXy" customClass="ProfileViewController" customModule="Beauty_God_Mother" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="a1G-in-KVn"/>
                         <viewControllerLayoutGuide type="bottom" id="r45-1j-67X"/>
@@ -963,10 +971,13 @@
                         </barButtonItem>
                     </navigationItem>
                     <size key="freeformSize" width="375" height="1024"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="presentation" identifier="accountToLogin" id="j2j-O3-EEh"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8YK-Ge-YAZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4666.3999999999996" y="-384.55772113943033"/>
+            <point key="canvasLocation" x="4692" y="608"/>
         </scene>
         <!--Menu View Controller-->
         <scene sceneID="gTK-ZO-x6d">
@@ -1165,14 +1176,13 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vHQ-Fe-UIB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3727.1999999999998" y="-384.55772113943033"/>
+            <point key="canvasLocation" x="4692" y="-375"/>
         </scene>
     </scenes>
     <resources>
         <image name="checked" width="400.69564819335938" height="400.69564819335938"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="eFD-EX-6aa"/>
-        <segue reference="zKv-ns-HSy"/>
+        <segue reference="C7x-dW-wwH"/>
     </inferredMetricsTieBreakers>
 </document>

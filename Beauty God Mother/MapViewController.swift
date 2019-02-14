@@ -8,6 +8,7 @@
 
 import UIKit
 import MapKit
+import Firebase
 
 class MapViewController: UIViewController {
     
@@ -16,17 +17,56 @@ class MapViewController: UIViewController {
     
     private var destinations: [MKPointAnnotation] = []
     private var currentRoute: MKRoute?
+    var user: User?
     
     @IBOutlet weak var MapView: MKMapView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        checkIfUserIsLoggedIn()
+        fetchUser()
         MapView.delegate = self
         
         configureLocationServices()
 
-        
+    }
+    
+    @IBAction func logoutNow(_ sender: Any) {
+        do {
+            try Auth.auth().signOut()
+            dismiss(animated: true, completion: nil)
+        } catch let e {
+            print("Failed to logout",e)
+        }
+    }
+    fileprivate func fetchUser() {
+        guard let id = Auth.auth().currentUser?.uid else {return}
+        Database.database().reference().child("users").child(id).observeSingleEvent(of: .value, with: { (snapshot) in
+            guard let dictionary = snapshot.value as? [String:Any] else {return}
+            let user = User(id: id, dictionary: dictionary)
+            
+            
+        }) { (err) in
+            print("Failed to fetch user: ", err)
+        }
+    }
+    
+    fileprivate func checkIfUserIsLoggedIn(){
+        if Auth.auth().currentUser?.uid == nil {
+            DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 0) {
+                self.logout()
+            }
+        }
+    }
+    
+    
+    fileprivate func logout() {
+        do {
+            try Auth.auth().signOut()
+            performSegue(withIdentifier: "mainToLogin", sender: self)
+        } catch let e {
+            print("Failed to logout",e)
+        }
     }
     private func configureLocationServices() {
         locationManager.delegate = self

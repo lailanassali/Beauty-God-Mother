@@ -51,17 +51,18 @@ class SPViewController: UIViewController {
             // Database Structure
             let dictionaryValues = [
                                 "organisation": organisation,
-                                    "email": email]
+                                    "email": email,
+                                    "kind": "provider"]
             // Save values to uid
             let values = [uid:dictionaryValues]
-            Database.database().reference().child("providers").updateChildValues(values, withCompletionBlock: { (err, ref) in
+            Database.database().reference().child("users").updateChildValues(values, withCompletionBlock: { (err, ref) in
                 if let err = error {
                     print("Failed to save user to database:",err)
                     return
                 }
                 
                 print("Sucessfully added \(organisation) to database!")
-                self.performSegue(withIdentifier: "sellerToConfirmation", sender: self)
+                self.present(RootViewController(), animated: true, completion: nil)
             })
         }
     }

@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "A3D8D42AFF65BEF14A019403529F8C02"
-               BlueprintName = "SDWebImage"
+               BlueprintIdentifier = "A362F66E64D5C13C71515C28C4A8F0A9"
+               BlueprintName = "FirebaseAuthInterop"
                ReferencedContainer = "container:Pods.xcodeproj"
-               BuildableName = "SDWebImage.framework">
+               BuildableName = "FirebaseAuthInterop">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

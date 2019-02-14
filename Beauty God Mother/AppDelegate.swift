@@ -18,10 +18,24 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         FirebaseApp.configure()
+        
+        window = UIWindow(frame: UIScreen.main.bounds)
+        window?.makeKeyAndVisible()
+        print(Auth.auth().currentUser?.uid)
+        if let _ = Auth.auth().currentUser?.uid {
+            window?.rootViewController = RootViewController()
+        } else {
+            let storyboard = UIStoryboard(name: "Main", bundle: nil)
+            let loginVC = storyboard.instantiateViewController(withIdentifier: "LoginPageID")
+            window?.rootViewController = loginVC
+        }
+
        //change colour of tab bar items
-        UITabBar.appearance().tintColor = .yellow
+//        UITabBar.appearance().tintColor = .yellow
         return true
     }
+    
+
 
    
 }

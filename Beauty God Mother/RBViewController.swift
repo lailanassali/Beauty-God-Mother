@@ -56,10 +56,11 @@ class RBViewController: UIViewController {
             
             // Database Structure
             let dictionaryValues = ["name": name,
-                                    "email": email]
+                                    "email": email,
+                                    "kind": "customer"]
             // Save values to uid
             let values = [uid:dictionaryValues]
-            Database.database().reference().child("customers").updateChildValues(values, withCompletionBlock: { (err, ref) in
+            Database.database().reference().child("users").updateChildValues(values, withCompletionBlock: { (err, ref) in
                 if let err = error {
                     print("Failed to save user to database:",err)
                     return

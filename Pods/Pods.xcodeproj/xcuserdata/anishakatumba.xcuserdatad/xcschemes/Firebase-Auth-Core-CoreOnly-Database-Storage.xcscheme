@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "A3D8D42AFF65BEF14A019403529F8C02"
-               BlueprintName = "SDWebImage"
+               BlueprintIdentifier = "15870EBEF7FAA6F97F4900C4477AD0A1"
+               BlueprintName = "Firebase-Auth-Core-CoreOnly-Database-Storage"
                ReferencedContainer = "container:Pods.xcodeproj"
-               BuildableName = "SDWebImage.framework">
+               BuildableName = "Firebase-Auth-Core-CoreOnly-Database-Storage">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

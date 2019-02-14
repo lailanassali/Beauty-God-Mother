@@ -27,14 +27,13 @@ class ViewController: UIViewController {
     }
     
     fileprivate func setupViews() {
-        let buttonArray = [registerAsSP, registerAsBuyer]
-        
-        for i in buttonArray {
-            i?.layer.cornerRadius = 24
-            i?.layer.shadowOffset = CGSize(width: 0, height: 15)
-            i?.layer.shadowRadius = 15
-            i?.layer.borderColor = #colorLiteral(red: 0.2370404005, green: 0.7025367618, blue: 0.6212409139, alpha: 1)
-            i?.layer.borderWidth = 2
+        _ = [registerAsSP, registerAsBuyer].map { (btn) in
+            guard let btn = btn else {return}
+            btn.layer.cornerRadius = 24
+            btn.layer.shadowOffset = CGSize(width: 0, height: 15)
+            btn.layer.shadowRadius = 15
+            btn.layer.borderColor = #colorLiteral(red: 0.2370404005, green: 0.7025367618, blue: 0.6212409139, alpha: 1)
+            btn.layer.borderWidth = 2
         }
     }
     
@@ -52,7 +51,7 @@ class ViewController: UIViewController {
                 print("Failed to log user in: ",e)
                 return
             }
-            self.performSegue(withIdentifier: "tabBar", sender: self)
+            self.present(RootViewController(), animated: true, completion: nil)
         }
     }
     
