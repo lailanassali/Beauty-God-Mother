@@ -31,9 +31,10 @@ class ProviderTabBar: UITabBarController, UITabBarControllerDelegate {
         let profileNavigation = UINavigationController(rootViewController: profileVC)
         profileVC.title = "Profile"
         // account
-        let accountVC = UIViewController()
+        let accountVC = storyboard.instantiateViewController(withIdentifier: "AccountVC")
         let accountNavigation = UINavigationController(rootViewController: accountVC)
-        accountVC.title = "Account"
+        accountVC.title = "My Account"
+        
         
         viewControllers = [searchNavigation, profileNavigation, accountNavigation]
         
