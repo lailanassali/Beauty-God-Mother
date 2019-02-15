@@ -8,13 +8,11 @@
 
 import UIKit
 import FirebaseAuth
-import FirebaseDatabase
-import FirebaseStorage
-
 
 
 class AccountViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
 
+<<<<<<< HEAD
     
     
    
@@ -24,6 +22,12 @@ class AccountViewController: UIViewController, UIImagePickerControllerDelegate, 
     }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
+=======
+    override func viewDidLoad() {
+        super.viewDidLoad()
+
+        // Do any additional setup after loading the view.
+>>>>>>> 6c7f9f96a3dc0a52eeda7b3bcf0619ddcc94ef64
     }
     
     
