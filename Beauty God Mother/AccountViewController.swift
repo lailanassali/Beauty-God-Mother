@@ -13,28 +13,27 @@ import FirebaseStorage
 
 
 
-class AccountViewController: UIViewController {
+class AccountViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
 
+    
+    
    
-    @IBOutlet weak var username: UILabel!
-    @IBOutlet weak var email: UILabel!
-    @IBOutlet weak var accountPic: UIImageView!
-    
-    var loggedInUser = AnyObject?()
-    var databaseRef = Database.database().reference()
-    var StorageRef = Storage.storage().reference()
-    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        self.loggedInUser = FIRAuth.auth()?.currentUser
-        
-        self.databaseRef.child(
-
+    }
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
     }
     
-
+    
+    
+    
+    
+    
+    
+    
+    
     @IBAction func logoutTapped(_ sender: Any) {
         do {
                 try Auth.auth().signOut()
