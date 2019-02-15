@@ -8,14 +8,30 @@
 
 import UIKit
 import FirebaseAuth
+import FirebaseDatabase
+import FirebaseStorage
+
 
 
 class AccountViewController: UIViewController {
 
+   
+    @IBOutlet weak var username: UILabel!
+    @IBOutlet weak var email: UILabel!
+    @IBOutlet weak var accountPic: UIImageView!
+    
+    var loggedInUser = AnyObject?()
+    var databaseRef = Database.database().reference()
+    var StorageRef = Storage.storage().reference()
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        self.loggedInUser = FIRAuth.auth()?.currentUser
+        
+        self.databaseRef.child(
+
     }
     
 
