@@ -731,6 +731,55 @@
             </objects>
             <point key="canvasLocation" x="3797.5999999999999" y="447.52623688155927"/>
         </scene>
+        <!--Reset Email Sent View Controller-->
+        <scene sceneID="Pwe-34-aub">
+            <objects>
+                <viewController id="W8v-1h-XgV" customClass="ResetEmailSentViewController" customModule="Beauty_God_Mother" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="hK3-1T-daL"/>
+                        <viewControllerLayoutGuide type="bottom" id="ccT-rk-wN7"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="yk9-Fh-jlA">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6vG-ud-c4l">
+                                <rect key="frame" x="127" y="359" width="108" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.91102655440000002" green="0.55376136970000001" blue="0.68843997649999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Back">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="lky-7q-pvw"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Completed " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hc3-YR-ah2">
+                                <rect key="frame" x="127" y="63" width="94" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="email" translatesAutoresizingMaskIntoConstraints="NO" id="zYJ-gp-JIf">
+                                <rect key="frame" x="80" y="150" width="192" height="165"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" text="An email has been sent with further instructions on how to reset your password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1PT-Ro-SFa">
+                                <rect key="frame" x="16" y="101" width="321" height="68"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="8"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HGq-Va-bIz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-527.20000000000005" y="381.85907046476763"/>
+        </scene>
         <!--Forgot Password-->
         <scene sceneID="bjt-cc-76M">
             <objects>
@@ -762,6 +811,7 @@
                                         </state>
                                         <connections>
                                             <action selector="ResetButton:" destination="6D7-J4-RYg" eventType="touchUpInside" id="6Ai-lQ-Ctz"/>
+                                            <segue destination="W8v-1h-XgV" kind="show" id="8kv-IY-Cfj"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ql2-6w-ztG">
@@ -786,7 +836,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="urw-d3-8s3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="359" y="386"/>
+            <point key="canvasLocation" x="682" y="382"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="gDC-Wl-XTQ">
@@ -1162,9 +1212,10 @@
     <resources>
         <image name="Image" width="461" height="679"/>
         <image name="checked" width="400.69564819335938" height="400.69564819335938"/>
+        <image name="email" width="512" height="512"/>
         <image name="images (1)" width="225" height="225"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="8G6-v6-mcn"/>
+        <segue reference="lky-7q-pvw"/>
     </inferredMetricsTieBreakers>
 </document>

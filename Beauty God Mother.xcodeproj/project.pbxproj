@@ -35,6 +35,7 @@
 		AE29B29421EBEE3800B19FFF /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE29B29321EBEE3800B19FFF /* MainViewController.swift */; };
 		AE29B29821EBEE9A00B19FFF /* RegisterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE29B29721EBEE9A00B19FFF /* RegisterTests.swift */; };
 		AE29B29A21EBEF6800B19FFF /* ConfirmationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE29B29921EBEF6800B19FFF /* ConfirmationVC.swift */; };
+		CC123CFF2217149A001A6BBA /* ResetEmailSentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC123CFE2217149A001A6BBA /* ResetEmailSentViewController.swift */; };
 		CC62D3C72212F593004FB434 /* ForgotPassword.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC62D3C62212F593004FB434 /* ForgotPassword.swift */; };
 		CCA91949220C7A1C00672E6F /* ConfirmationDetailsBP.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCA91948220C7A1C00672E6F /* ConfirmationDetailsBP.swift */; };
 /* End PBXBuildFile section */
@@ -93,6 +94,7 @@
 		AE29B29321EBEE3800B19FFF /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		AE29B29721EBEE9A00B19FFF /* RegisterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterTests.swift; sourceTree = "<group>"; };
 		AE29B29921EBEF6800B19FFF /* ConfirmationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmationVC.swift; sourceTree = "<group>"; };
+		CC123CFE2217149A001A6BBA /* ResetEmailSentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetEmailSentViewController.swift; sourceTree = "<group>"; };
 		CC62D3C62212F593004FB434 /* ForgotPassword.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPassword.swift; sourceTree = "<group>"; };
 		CCA91948220C7A1C00672E6F /* ConfirmationDetailsBP.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmationDetailsBP.swift; sourceTree = "<group>"; };
 		EAB59A83EF87A5DAB24E7AA9 /* Pods_Beauty_God_MotherTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Beauty_God_MotherTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -186,6 +188,7 @@
 				CC62D3C62212F593004FB434 /* ForgotPassword.swift */,
 				5B6A73AE221597C000E506DC /* AccountViewController.swift */,
 				5B2E244222159E5D00F21E29 /* Extension+Database.swift */,
+				CC123CFE2217149A001A6BBA /* ResetEmailSentViewController.swift */,
 			);
 			path = "Beauty God Mother";
 			sourceTree = "<group>";
@@ -491,6 +494,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CC123CFF2217149A001A6BBA /* ResetEmailSentViewController.swift in Sources */,
 				01777D6E220B35B400D51EC4 /* EditProfileViewController.swift in Sources */,
 				AE2942F021F2832D00D629EA /* RegistrationService.swift in Sources */,
 				5B16A04E21DFC9AB0022DDE7 /* RBViewController.swift in Sources */,
