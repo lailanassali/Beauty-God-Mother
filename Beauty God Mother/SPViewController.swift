@@ -24,10 +24,8 @@ class SPViewController: UIViewController {
         super.viewDidLoad()
     }
     
-  
     @IBAction func registerPressed(_ sender: Any) {
         handleRegister()
-        
     }
     
     
