@@ -716,6 +716,7 @@
                         <outlet property="email" destination="lDs-Sn-Jwl" id="y8e-fO-tMh"/>
                         <outlet property="organisation" destination="Ayz-2G-5Do" id="bbQ-57-ANh"/>
                         <outlet property="password" destination="gds-gL-L5f" id="1oo-1h-tz0"/>
+                        <segue destination="qs1-Yx-rDf" kind="show" identifier="sellerToConfirmation" id="4O5-Os-YQy"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Xj0-6x-N3M" userLabel="First Responder" sceneMemberID="firstResponder"/>
