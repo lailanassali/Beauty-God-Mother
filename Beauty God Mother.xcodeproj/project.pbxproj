@@ -10,6 +10,8 @@
 		01777D6E220B35B400D51EC4 /* EditProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01777D6D220B35B400D51EC4 /* EditProfileViewController.swift */; };
 		01D0F38F220CBC120016FD5B /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01D0F38E220CBC110016FD5B /* MenuViewController.swift */; };
 		01E097B921FBB19100DB85D4 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01E097B821FBB19100DB85D4 /* ProfileViewController.swift */; };
+		4C26D3BC221B36AB0054E7DC /* SearchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C26D3BB221B36AB0054E7DC /* SearchVC.swift */; };
+		4C26D3BE221B36C00054E7DC /* TableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C26D3BD221B36C00054E7DC /* TableVC.swift */; };
 		4C391311220C84F200BC55D8 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C391310220C84F200BC55D8 /* MapKit.framework */; };
 		4C6D626821F48A4F00087370 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C6D626721F48A4F00087370 /* MapViewController.swift */; };
 		5889CE958FED8A050B0F294E /* Pods_Beauty_God_MotherTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAB59A83EF87A5DAB24E7AA9 /* Pods_Beauty_God_MotherTests.framework */; };
@@ -62,6 +64,8 @@
 		01E097B821FBB19100DB85D4 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		1B9D4DE3D2073187C01E22B1 /* Pods-Beauty God MotherTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Beauty God MotherTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Beauty God MotherTests/Pods-Beauty God MotherTests.release.xcconfig"; sourceTree = "<group>"; };
 		3AC7137FDBF8C98CB8F38344 /* Pods_Beauty_God_Mother.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Beauty_God_Mother.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4C26D3BB221B36AB0054E7DC /* SearchVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SearchVC.swift; path = ../../../../Desktop/SearchVC.swift; sourceTree = "<group>"; };
+		4C26D3BD221B36C00054E7DC /* TableVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TableVC.swift; path = ../../../../Desktop/TableVC.swift; sourceTree = "<group>"; };
 		4C391310220C84F200BC55D8 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		4C6D626721F48A4F00087370 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		5B16A01821DFB0A70022DDE7 /* Beauty God Mother.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Beauty God Mother.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -186,6 +190,8 @@
 				CC62D3C62212F593004FB434 /* ForgotPassword.swift */,
 				5B6A73AE221597C000E506DC /* AccountViewController.swift */,
 				5B2E244222159E5D00F21E29 /* Extension+Database.swift */,
+				4C26D3BB221B36AB0054E7DC /* SearchVC.swift */,
+				4C26D3BD221B36C00054E7DC /* TableVC.swift */,
 			);
 			path = "Beauty God Mother";
 			sourceTree = "<group>";
@@ -497,10 +503,12 @@
 				01E097B921FBB19100DB85D4 /* ProfileViewController.swift in Sources */,
 				AE29B29A21EBEF6800B19FFF /* ConfirmationVC.swift in Sources */,
 				5B16A04C21DFB8AE0022DDE7 /* Extension.swift in Sources */,
+				4C26D3BC221B36AB0054E7DC /* SearchVC.swift in Sources */,
 				5B6A73AA2215964800E506DC /* ProviderTabBar.swift in Sources */,
 				4C6D626821F48A4F00087370 /* MapViewController.swift in Sources */,
 				5B6A73AF221597C000E506DC /* AccountViewController.swift in Sources */,
 				01D0F38F220CBC120016FD5B /* MenuViewController.swift in Sources */,
+				4C26D3BE221B36C00054E7DC /* TableVC.swift in Sources */,
 				5B2E24452215A3A600F21E29 /* RootViewController.swift in Sources */,
 				5B6A73A722158E6D00E506DC /* User.swift in Sources */,
 				CCA91949220C7A1C00672E6F /* ConfirmationDetailsBP.swift in Sources */,
