@@ -2,4 +2,162 @@
 <Bucket
    type = "0"
    version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Beauty God Mother/SPViewController.swift"
+            timestampString = "572203001.757807"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "16"
+            endingLineNumber = "16"
+            landmarkName = "unknown"
+            landmarkType = "0">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Beauty_God_Mother.SPViewController.organisation.getter : weak Swift.Optional&lt;__C.UITextField&gt;"
+                  moduleName = "Beauty God Mother"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/anishakatumba/Documents/GitHub/Beauty-God-Mother/Beauty-God-Mother/Beauty%20God%20Mother/SPViewController.swift"
+                  timestampString = "572218196.659984"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "16"
+                  endingLineNumber = "16"
+                  offsetFromSymbolStart = "86">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Beauty_God_Mother.SPViewController.organisation.setter : weak Swift.Optional&lt;__C.UITextField&gt;"
+                  moduleName = "Beauty God Mother"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/anishakatumba/Documents/GitHub/Beauty-God-Mother/Beauty-God-Mother/Beauty%20God%20Mother/SPViewController.swift"
+                  timestampString = "572218196.662365"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "16"
+                  endingLineNumber = "16"
+                  offsetFromSymbolStart = "106">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Beauty_God_Mother.SPViewController.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; Beauty_God_Mother.SPViewController"
+                  moduleName = "Beauty God Mother"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/anishakatumba/Documents/GitHub/Beauty-God-Mother/Beauty-God-Mother/Beauty%20God%20Mother/SPViewController.swift"
+                  timestampString = "572218196.665228"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "16"
+                  endingLineNumber = "16"
+                  offsetFromSymbolStart = "57">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Beauty_God_Mother.SPViewController.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;Beauty_God_Mother.SPViewController&gt;"
+                  moduleName = "Beauty God Mother"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/anishakatumba/Documents/GitHub/Beauty-God-Mother/Beauty-God-Mother/Beauty%20God%20Mother/SPViewController.swift"
+                  timestampString = "572218196.667922"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "16"
+                  endingLineNumber = "16"
+                  offsetFromSymbolStart = "50">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Beauty God Mother/SPViewController.swift"
+            timestampString = "572204400.411793"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "19"
+            endingLineNumber = "19"
+            landmarkName = "SPViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Beauty_God_Mother.SPViewController.confirmPassword.getter : weak Swift.Optional&lt;__C.UITextField&gt;"
+                  moduleName = "Beauty God Mother"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/anishakatumba/Documents/GitHub/Beauty-God-Mother/Beauty-God-Mother/Beauty%20God%20Mother/SPViewController.swift"
+                  timestampString = "572218196.679845"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "19"
+                  endingLineNumber = "19"
+                  offsetFromSymbolStart = "86">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Beauty_God_Mother.SPViewController.confirmPassword.setter : weak Swift.Optional&lt;__C.UITextField&gt;"
+                  moduleName = "Beauty God Mother"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/anishakatumba/Documents/GitHub/Beauty-God-Mother/Beauty-God-Mother/Beauty%20God%20Mother/SPViewController.swift"
+                  timestampString = "572218196.682451"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "19"
+                  endingLineNumber = "19"
+                  offsetFromSymbolStart = "106">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Beauty_God_Mother.SPViewController.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; Beauty_God_Mother.SPViewController"
+                  moduleName = "Beauty God Mother"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/anishakatumba/Documents/GitHub/Beauty-God-Mother/Beauty-God-Mother/Beauty%20God%20Mother/SPViewController.swift"
+                  timestampString = "572218196.685053"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "19"
+                  endingLineNumber = "19"
+                  offsetFromSymbolStart = "384">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Beauty_God_Mother.SPViewController.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;Beauty_God_Mother.SPViewController&gt;"
+                  moduleName = "Beauty God Mother"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/anishakatumba/Documents/GitHub/Beauty-God-Mother/Beauty-God-Mother/Beauty%20God%20Mother/SPViewController.swift"
+                  timestampString = "572218196.687481"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "19"
+                  endingLineNumber = "19"
+                  offsetFromSymbolStart = "355">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
 </Bucket>
