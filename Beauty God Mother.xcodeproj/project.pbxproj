@@ -38,6 +38,9 @@
 		CC123CFF2217149A001A6BBA /* ResetEmailSentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC123CFE2217149A001A6BBA /* ResetEmailSentViewController.swift */; };
 		CC62D3C72212F593004FB434 /* ForgotPassword.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC62D3C62212F593004FB434 /* ForgotPassword.swift */; };
 		CCA91949220C7A1C00672E6F /* ConfirmationDetailsBP.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCA91948220C7A1C00672E6F /* ConfirmationDetailsBP.swift */; };
+		CCFA3E9B221AD20800B160EF /* Swipe1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCFA3E9A221AD20800B160EF /* Swipe1ViewController.swift */; };
+		CCFA3E9D221AD25D00B160EF /* Swipe2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCFA3E9C221AD25D00B160EF /* Swipe2ViewController.swift */; };
+		CCFA3E9F221AD2D700B160EF /* Swipe3ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCFA3E9E221AD2D700B160EF /* Swipe3ViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -97,6 +100,9 @@
 		CC123CFE2217149A001A6BBA /* ResetEmailSentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetEmailSentViewController.swift; sourceTree = "<group>"; };
 		CC62D3C62212F593004FB434 /* ForgotPassword.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPassword.swift; sourceTree = "<group>"; };
 		CCA91948220C7A1C00672E6F /* ConfirmationDetailsBP.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmationDetailsBP.swift; sourceTree = "<group>"; };
+		CCFA3E9A221AD20800B160EF /* Swipe1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Swipe1ViewController.swift; sourceTree = "<group>"; };
+		CCFA3E9C221AD25D00B160EF /* Swipe2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Swipe2ViewController.swift; sourceTree = "<group>"; };
+		CCFA3E9E221AD2D700B160EF /* Swipe3ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Swipe3ViewController.swift; sourceTree = "<group>"; };
 		EAB59A83EF87A5DAB24E7AA9 /* Pods_Beauty_God_MotherTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Beauty_God_MotherTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC2014412864173D30490638 /* Pods-Beauty God Mother.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Beauty God Mother.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Beauty God Mother/Pods-Beauty God Mother.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -189,6 +195,9 @@
 				5B6A73AE221597C000E506DC /* AccountViewController.swift */,
 				5B2E244222159E5D00F21E29 /* Extension+Database.swift */,
 				CC123CFE2217149A001A6BBA /* ResetEmailSentViewController.swift */,
+				CCFA3E9A221AD20800B160EF /* Swipe1ViewController.swift */,
+				CCFA3E9C221AD25D00B160EF /* Swipe2ViewController.swift */,
+				CCFA3E9E221AD2D700B160EF /* Swipe3ViewController.swift */,
 			);
 			path = "Beauty God Mother";
 			sourceTree = "<group>";
@@ -505,6 +514,7 @@
 				4C6D626821F48A4F00087370 /* MapViewController.swift in Sources */,
 				5B6A73AF221597C000E506DC /* AccountViewController.swift in Sources */,
 				01D0F38F220CBC120016FD5B /* MenuViewController.swift in Sources */,
+				CCFA3E9B221AD20800B160EF /* Swipe1ViewController.swift in Sources */,
 				5B2E24452215A3A600F21E29 /* RootViewController.swift in Sources */,
 				5B6A73A722158E6D00E506DC /* User.swift in Sources */,
 				CCA91949220C7A1C00672E6F /* ConfirmationDetailsBP.swift in Sources */,
@@ -515,6 +525,8 @@
 				5B6A73AD2215969400E506DC /* CustomerTabBar.swift in Sources */,
 				5B16A05021DFC9C10022DDE7 /* SPViewController.swift in Sources */,
 				AE29B29421EBEE3800B19FFF /* MainViewController.swift in Sources */,
+				CCFA3E9D221AD25D00B160EF /* Swipe2ViewController.swift in Sources */,
+				CCFA3E9F221AD2D700B160EF /* Swipe3ViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
