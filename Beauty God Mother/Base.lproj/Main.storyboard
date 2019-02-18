@@ -314,7 +314,7 @@
                                                     <color key="titleShadowColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                                 <connections>
-                                                    <segue destination="Pl6-nP-lqa" kind="show" id="AMB-iI-UVW"/>
+                                                    <segue destination="Pl6-nP-lqa" kind="show" animates="NO" id="AMB-iI-UVW"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -1135,7 +1135,7 @@
                                                     <color key="titleShadowColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                                 <connections>
-                                                    <segue destination="Pl6-nP-lqa" kind="show" id="MA9-b3-8EW"/>
+                                                    <segue destination="Pl6-nP-lqa" kind="show" animates="NO" id="MA9-b3-8EW"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -1705,11 +1705,10 @@
         <image name="email" width="512" height="512"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="sYr-pL-U3C"/>
         <segue reference="1xb-oD-BK7"/>
         <segue reference="QiS-Nc-cxx"/>
         <segue reference="mFP-Gh-OUY"/>
-        <segue reference="AMB-iI-UVW"/>
+        <segue reference="MA9-b3-8EW"/>
         <segue reference="SPp-fL-nz2"/>
     </inferredMetricsTieBreakers>
 </document>
