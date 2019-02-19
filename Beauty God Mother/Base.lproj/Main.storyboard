@@ -312,14 +312,32 @@
                                                     <segue destination="Pl6-nP-lqa" kind="show" animates="NO" id="AMB-iI-UVW"/>
                                                 </connections>
                                             </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="A 'bea-user' is any individual who any time would like to search the app for local services. Anyone is welcome!" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0lz-Hd-B24">
+                                                <rect key="frame" x="8" y="0.0" width="185" height="174"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="174" id="FW1-Pi-jca"/>
+                                                    <constraint firstAttribute="width" constant="185" id="h6T-wr-Hen"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
                                         </subviews>
                                         <color key="backgroundColor" red="0.96436005830764771" green="0.54703593254089355" blue="0.7100873589515686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="bottom" secondItem="Hrp-ze-mqo" secondAttribute="bottom" constant="5" id="2o5-p7-ZD2"/>
+                                            <constraint firstItem="0lz-Hd-B24" firstAttribute="leading" secondItem="TWV-Au-aAd" secondAttribute="leadingMargin" id="EHk-yt-VNB"/>
                                             <constraint firstAttribute="width" constant="236" id="JqQ-0R-vlD"/>
-                                            <constraint firstItem="Hrp-ze-mqo" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="TWV-Au-aAd" secondAttribute="leading" symbolic="YES" id="M6q-Zw-4Vc"/>
+                                            <constraint firstItem="Hrp-ze-mqo" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="TWV-Au-aAd" secondAttribute="leading" constant="20" symbolic="YES" id="M6q-Zw-4Vc"/>
+                                            <constraint firstItem="0lz-Hd-B24" firstAttribute="top" secondItem="TWV-Au-aAd" secondAttribute="top" id="Mgq-Kb-hFO"/>
+                                            <constraint firstAttribute="bottom" secondItem="0lz-Hd-B24" secondAttribute="bottom" constant="20" id="Udv-zh-EVO"/>
+                                            <constraint firstItem="0lz-Hd-B24" firstAttribute="top" secondItem="TWV-Au-aAd" secondAttribute="top" id="bTt-k8-D5S"/>
                                             <constraint firstAttribute="height" constant="194" id="bmk-Ln-RpV"/>
+                                            <constraint firstAttribute="trailing" secondItem="0lz-Hd-B24" secondAttribute="trailing" constant="43" id="dot-wt-Ap3"/>
                                             <constraint firstAttribute="trailing" secondItem="Hrp-ze-mqo" secondAttribute="trailing" constant="11" id="neU-zC-wle"/>
+                                            <constraint firstAttribute="bottom" secondItem="0lz-Hd-B24" secondAttribute="bottom" constant="20" id="sZ5-ly-AnV"/>
+                                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="0lz-Hd-B24" secondAttribute="trailing" constant="20" symbolic="YES" id="w0g-IN-0od"/>
+                                            <constraint firstItem="0lz-Hd-B24" firstAttribute="leading" secondItem="TWV-Au-aAd" secondAttribute="leading" constant="8" id="xUs-u7-7Gv"/>
                                         </constraints>
                                     </view>
                                 </subviews>
@@ -766,7 +784,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fJ1-aA-skB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4279" y="1738"/>
+            <point key="canvasLocation" x="2662" y="2849"/>
         </scene>
         <!--Swipe2 View Controller-->
         <scene sceneID="aT6-aB-dD2">
@@ -836,7 +854,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="f1m-i8-mrG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5724" y="1738"/>
+            <point key="canvasLocation" x="4366" y="2849"/>
         </scene>
         <!--Swipe3 View Controller-->
         <scene sceneID="z0S-f8-R2F">
@@ -857,7 +875,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0gJ-hN-smm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="7337" y="1737"/>
+            <point key="canvasLocation" x="5988" y="2849"/>
         </scene>
         <!--ConfirmationVC-->
         <scene sceneID="jOA-JO-E6R">
@@ -1007,7 +1025,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bud-hj-iyg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2549.5999999999999" y="3287.4062968515746"/>
+            <point key="canvasLocation" x="7497" y="2849"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="ueU-Hz-UJY">
@@ -1040,14 +1058,24 @@
                                                     <segue destination="Pl6-nP-lqa" kind="show" animates="NO" id="MA9-b3-8EW"/>
                                                 </connections>
                                             </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="A 'beautrepeneur' is anyone who has started a business no matter how big, where they provide beauty services for 'bea-users'." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tif-ka-syt">
+                                                <rect key="frame" x="8" y="-11" width="228" height="194"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
                                         </subviews>
                                         <color key="backgroundColor" red="0.96436005830764771" green="0.54703593254089355" blue="0.7100873589515686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="236" id="0v8-By-bPY"/>
                                             <constraint firstAttribute="trailing" secondItem="1Ar-vp-Rsq" secondAttribute="trailing" constant="10" id="5Qa-aT-RZc"/>
+                                            <constraint firstItem="Tif-ka-syt" firstAttribute="leading" secondItem="CW8-aa-tuS" secondAttribute="leadingMargin" id="CSp-bF-An3"/>
                                             <constraint firstAttribute="height" constant="194" id="DZp-8M-L9c"/>
+                                            <constraint firstItem="Tif-ka-syt" firstAttribute="top" secondItem="CW8-aa-tuS" secondAttribute="top" constant="-11" id="FRt-hJ-o6L"/>
+                                            <constraint firstAttribute="trailing" secondItem="Tif-ka-syt" secondAttribute="trailing" id="TiF-C0-98c"/>
                                             <constraint firstAttribute="bottom" secondItem="1Ar-vp-Rsq" secondAttribute="bottom" constant="6" id="g1U-5I-rkY"/>
                                             <constraint firstItem="1Ar-vp-Rsq" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="CW8-aa-tuS" secondAttribute="leading" symbolic="YES" id="gDw-t7-bYh"/>
+                                            <constraint firstAttribute="bottom" secondItem="Tif-ka-syt" secondAttribute="bottom" constant="11" id="uyF-Sq-EBA"/>
                                         </constraints>
                                     </view>
                                 </subviews>
@@ -1593,10 +1621,11 @@
         <image name="title" width="781" height="128"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="sYr-pL-U3C"/>
         <segue reference="1xb-oD-BK7"/>
         <segue reference="QiS-Nc-cxx"/>
         <segue reference="Qc8-nx-xfX"/>
-        <segue reference="e9Q-62-xmD"/>
+        <segue reference="AMB-iI-UVW"/>
         <segue reference="j3C-bY-YQ8"/>
     </inferredMetricsTieBreakers>
 </document>
