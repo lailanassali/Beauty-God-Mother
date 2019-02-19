@@ -462,6 +462,9 @@
                                                                 <integer key="value" value="15"/>
                                                             </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <action selector="registerPressed:" destination="Igd-8i-HBB" eventType="touchUpInside" id="QvW-YD-T6H"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                                 <color key="backgroundColor" red="0.96436005830764771" green="0.54703593254089355" blue="0.7100873589515686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -521,6 +524,10 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="confirmPasswordTF" destination="OlE-ef-Kdq" id="i2P-3W-m92"/>
+                        <outlet property="emailTF" destination="sGV-SA-Rya" id="c6g-T6-hnZ"/>
+                        <outlet property="name" destination="ghd-V4-spX" id="fAd-02-RO3"/>
+                        <outlet property="passwordTF" destination="KC4-Sw-9CW" id="P4C-uv-qtM"/>
                         <segue destination="5Zx-Io-eZE" kind="show" identifier="buyerToConfirmation" id="H8L-Qa-8g0"/>
                     </connections>
                 </viewController>
@@ -531,7 +538,7 @@
         <!--View Controller-->
         <scene sceneID="68T-Qp-W8x">
             <objects>
-                <viewController id="gbS-R6-EDA" sceneMemberID="viewController">
+                <viewController id="gbS-R6-EDA" customClass="SPViewController" customModule="Beauty_God_Mother" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="mXm-V2-QZ7"/>
                         <viewControllerLayoutGuide type="bottom" id="LVe-Nv-SQK"/>
@@ -634,6 +641,9 @@
                                                 <integer key="value" value="15"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <segue destination="pBD-ew-xAw" kind="show" id="qWq-tL-dND"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.96436005830764771" green="0.54703593254089355" blue="0.7100873589515686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -685,6 +695,12 @@
                             <constraint firstItem="vX9-vo-g4g" firstAttribute="centerX" secondItem="flG-O6-G0D" secondAttribute="centerX" id="wWb-ts-pIr"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="confirmPassword" destination="wdZ-Jp-Fdi" id="Ytc-Dz-Zvm"/>
+                        <outlet property="email" destination="ebZ-bo-gdM" id="nSe-xT-H8e"/>
+                        <outlet property="organisation" destination="SqE-TP-ZeB" id="Sif-d5-Wni"/>
+                        <outlet property="password" destination="NIg-6L-DfN" id="R3d-z8-1VT"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WCY-WM-xqV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -750,7 +766,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fJ1-aA-skB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4280.8000000000002" y="2038.8305847076463"/>
+            <point key="canvasLocation" x="4279" y="1738"/>
         </scene>
         <!--Swipe2 View Controller-->
         <scene sceneID="aT6-aB-dD2">
@@ -820,7 +836,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="f1m-i8-mrG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5711" y="2039"/>
+            <point key="canvasLocation" x="5724" y="1738"/>
         </scene>
         <!--Swipe3 View Controller-->
         <scene sceneID="z0S-f8-R2F">
@@ -841,7 +857,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0gJ-hN-smm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="7340" y="2039"/>
+            <point key="canvasLocation" x="7337" y="1737"/>
         </scene>
         <!--ConfirmationVC-->
         <scene sceneID="jOA-JO-E6R">
@@ -911,7 +927,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="V12-WN-01H" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1350" y="2729"/>
+            <point key="canvasLocation" x="1508" y="2850"/>
         </scene>
         <!--Confirmation DetailsBP-->
         <scene sceneID="iY7-8W-NWo">
