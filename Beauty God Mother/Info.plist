@@ -75,5 +75,12 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>LSApplicationQueriesSchemes</key>
+	<array>
+		<string>Twitter</string>
+		<string>Instagram</string>
+		<string>Facebook</string>
+		<string>Snapchat</string>
+	</array>
 </dict>
 </plist>

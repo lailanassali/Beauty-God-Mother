@@ -26,17 +26,20 @@ class ProviderTabBar: UITabBarController, UITabBarControllerDelegate {
         let searchVC = storyboard.instantiateViewController(withIdentifier: "MapVC")
         let searchNavigation = UINavigationController(rootViewController: searchVC)
         searchVC.title = "Search"
-        // profile
-        let profileVC = storyboard.instantiateViewController(withIdentifier: "ProfileVC")
-        let profileNavigation = UINavigationController(rootViewController: profileVC)
-        profileVC.title = "Profile"
         // account
         let accountVC = storyboard.instantiateViewController(withIdentifier: "AccountVC")
         let accountNavigation = UINavigationController(rootViewController: accountVC)
         accountVC.title = "My Account"
+        // profile
+        let profileVC = storyboard.instantiateViewController(withIdentifier: "ProfileVC")
+        let profileNavigation = UINavigationController(rootViewController: profileVC)
+        profileVC.title = "Profile"
+        //contact page 
+        let contactVC = storyboard.instantiateViewController(withIdentifier: "ContactVC")
+        let contactNavigation = UINavigationController(rootViewController: contactVC)
+        accountVC.title = "Contact "
         
-        
-        viewControllers = [searchNavigation, profileNavigation, accountNavigation]
+        viewControllers = [searchNavigation, accountNavigation, profileNavigation, contactNavigation]
         
         
     }

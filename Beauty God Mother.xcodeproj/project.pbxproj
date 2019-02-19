@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		010AEDE8221C9CAD0095118B /* ContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 010AEDE7221C9CAC0095118B /* ContactViewController.swift */; };
 		01777D6E220B35B400D51EC4 /* EditProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01777D6D220B35B400D51EC4 /* EditProfileViewController.swift */; };
 		01D0F38F220CBC120016FD5B /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01D0F38E220CBC110016FD5B /* MenuViewController.swift */; };
 		01E097B921FBB19100DB85D4 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01E097B821FBB19100DB85D4 /* ProfileViewController.swift */; };
@@ -57,6 +58,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		010AEDE7221C9CAC0095118B /* ContactViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactViewController.swift; sourceTree = "<group>"; };
 		01777D6D220B35B400D51EC4 /* EditProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileViewController.swift; sourceTree = "<group>"; };
 		01D0F38E220CBC110016FD5B /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		01E097B821FBB19100DB85D4 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
@@ -186,6 +188,7 @@
 				CC62D3C62212F593004FB434 /* ForgotPassword.swift */,
 				5B6A73AE221597C000E506DC /* AccountViewController.swift */,
 				5B2E244222159E5D00F21E29 /* Extension+Database.swift */,
+				010AEDE7221C9CAC0095118B /* ContactViewController.swift */,
 			);
 			path = "Beauty God Mother";
 			sourceTree = "<group>";
@@ -499,6 +502,7 @@
 				5B16A04C21DFB8AE0022DDE7 /* Extension.swift in Sources */,
 				5B6A73AA2215964800E506DC /* ProviderTabBar.swift in Sources */,
 				4C6D626821F48A4F00087370 /* MapViewController.swift in Sources */,
+				010AEDE8221C9CAD0095118B /* ContactViewController.swift in Sources */,
 				5B6A73AF221597C000E506DC /* AccountViewController.swift in Sources */,
 				01D0F38F220CBC120016FD5B /* MenuViewController.swift in Sources */,
 				5B2E24452215A3A600F21E29 /* RootViewController.swift in Sources */,
