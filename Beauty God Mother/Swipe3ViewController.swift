@@ -8,8 +8,38 @@
 
 import UIKit
 
-class Swipe3ViewController: UIViewController {
-
+class Swipe3ViewController: UIViewController, UINavigationBarDelegate, UIImagePickerControllerDelegate{
+    
+    
+    @IBOutlet weak var myImageView: UIImageView!
+    
+    @IBAction func imageImport(_ sender: Any)
+    {
+        let image = UIImagePickerController()
+        image.delegate = self as! UIImagePickerControllerDelegate & UINavigationControllerDelegate
+        
+        image.sourceType = UIImagePickerController.SourceType.photoLibrary
+        
+        image.allowsEditing = false
+        
+        self.present(image,animated: true )
+        {
+            
+        }
+    }
+    
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any])
+    {
+        if let image = info[UIImagePickerController.InfoKey.originalImage] as? UIImage
+        {
+            myImageView.image = image
+        }
+        else
+        {
+            //error message
+        }
+        self.dismiss(animated: true, completion: nil)
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
 
