@@ -138,11 +138,58 @@ class AccountViewController: UIViewController, UIImagePickerControllerDelegate, 
     }
     
 
-//
- //   self.dismiss(animated: true, completion: nil)
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+        
+        guard let userID = Auth.auth().currentUser?.uid else {return}
+        
+        
+        if let accountPic = info [UIImagePickerController.InfoKey.editedImage] as? UIImage {
+            self.accountPic.image = accountPic
+            guard let uploadData = accountPic.jpegData(compressionQuality: 0.75) else {return}
+            print(uploadData)
+            let ref = Storage.storage().reference().child("accountpics").child(userID)
+            
+            ref.putData(uploadData, metadata: nil) { (metadata, err) in
+                if let e = err {print("Failed to upload picture to database",e)}
+                ref.downloadURL(completion: { (url, err) in
+                    if let e = err {print("Failed to get image url",e)}
+                    
+                    guard let userImageUrl = url?.absoluteString else {return}
+                    print("Image successfully uploaded")
+                    let value = ["imageUrl": userImageUrl]
+                    Database.database().reference().child("users").updateChildValues(value, withCompletionBlock: { (err, ref) in
+                        if let e = err { print("Failed to save",e) }
+                        self.dismiss(animated: true, completion: nil)
+                    })
+                    
+                })
+            }
+            
+
+        } else {
+            print("error withimage...")
+        }
+        
+      
+   
+        
+    }
+    
+    
+    
+    
+    //self.dismiss(animated: true, completion: nil)
 
 }
 
-
-
+//var selectedImage: UIImage?
+//if let edititedImage = info[.editedImage] as? UIImage {
+//    selectedImage = edititedImage
+//    self.accountPic.image = selectedImage!
+//    picker.dismiss(animated: true, completion: nil)
+//} else if let originalImage = info [.originalImage] as? UIImage {
+//    selectedImage = originalImage
+//    self.accountPic.image = selectedImage!
+//    picker.dismiss(animated: true, completion: nil)
+//}
 

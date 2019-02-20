@@ -52,6 +52,7 @@ class SPViewController: UIViewController {
             let dictionaryValues = [
                                 "organisation": organisation,
                                     "email": email,
+                                    "imageUrl": "",
                                     "kind": "provider"]
             // Save values to uid
             let values = [uid:dictionaryValues]

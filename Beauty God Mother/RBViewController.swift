@@ -57,6 +57,7 @@ class RBViewController: UIViewController {
             // Database Structure
             let dictionaryValues = ["name": name,
                                     "email": email,
+                                    "imageUrl": "",
                                     "kind": "customer"]
             // Save values to uid
             let values = [uid:dictionaryValues]
