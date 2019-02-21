@@ -8,15 +8,16 @@
 
 import UIKit
 
-class Swipe3ViewController: UIViewController, UINavigationBarDelegate, UIImagePickerControllerDelegate{
+class Swipe3ViewController: UIViewController, UINavigationControllerDelegate, UIImagePickerControllerDelegate {
     
     
     @IBOutlet weak var myImageView: UIImageView!
     
-    @IBAction func imageImport(_ sender: Any)
+    @IBAction func `import`(_ sender: Any) 
+    
     {
         let image = UIImagePickerController()
-        image.delegate = self as! UIImagePickerControllerDelegate & UINavigationControllerDelegate
+        image.delegate = self
         
         image.sourceType = UIImagePickerController.SourceType.photoLibrary
         
