@@ -1,17 +1,17 @@
 //
-//  BPRegistration1ViewController.swift
+//  BPRegistrationStartViewController.swift
 //  Beauty God Mother
 //
-//  Created by Shanju Bakeerathan on 20/02/2019.
+//  Created by Shanju Bakeerathan on 21/02/2019.
 //  Copyright © 2019 BGM. All rights reserved.
 //
 
 import UIKit
 
-class BPRegistration1ViewController: UIViewController {
-    
-   // @IBOutlet weak var nextButton: Next! 
-    
+class BPRegistrationStartViewController: UIViewController {
+
+    @IBAction func NextButton(_ sender: Any) {
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
