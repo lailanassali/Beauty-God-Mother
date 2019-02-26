@@ -16,7 +16,7 @@ class ContactViewController: UIViewController {
     
     @IBAction func openTwiterPage(_ sender: Any) {
         
-        let screenName = "Aisha_ayy"
+        let screenName = "bgm_app"
         let appURL = NSURL(string:"twitter://user?screen_name=\(screenName)")!
         let webURL = NSURL(string: "https://twitter.com/\(screenName)")!
         
@@ -37,7 +37,7 @@ class ContactViewController: UIViewController {
     
     @IBAction func openInstaPage(_ sender: Any) {
       
-        let screenName = "iseeaisha"
+        let screenName = "beautygodmother_"
         let appURL = NSURL(string:"instagram://user?screen_name=\(screenName)")!
         let webURL = NSURL(string: "https://instagram.com/\(screenName)")!
         
