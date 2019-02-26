@@ -39,6 +39,7 @@
 		CC24B0E6221E96CC00ADEFCC /* BPRegConfirmationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC24B0E5221E96CC00ADEFCC /* BPRegConfirmationViewController.swift */; };
 		CC24B0E8221ED1BA00ADEFCC /* BPRegistrationStartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC24B0E7221ED1BA00ADEFCC /* BPRegistrationStartViewController.swift */; };
 		CC62D3C72212F593004FB434 /* ForgotPassword.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC62D3C62212F593004FB434 /* ForgotPassword.swift */; };
+		CC660EC42225DD39008D6E25 /* ConnectionsSPViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC660EC32225DD39008D6E25 /* ConnectionsSPViewController.swift */; };
 		CC793C0F22253A8B00266734 /* ServicesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC793C0E22253A8B00266734 /* ServicesTableViewController.swift */; };
 		CCA91949220C7A1C00672E6F /* ConfirmationDetailsBP.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCA91948220C7A1C00672E6F /* ConfirmationDetailsBP.swift */; };
 		CCFA3E9F221AD2D700B160EF /* Swipe3ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCFA3E9E221AD2D700B160EF /* Swipe3ViewController.swift */; };
@@ -102,6 +103,7 @@
 		CC24B0E5221E96CC00ADEFCC /* BPRegConfirmationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BPRegConfirmationViewController.swift; sourceTree = "<group>"; };
 		CC24B0E7221ED1BA00ADEFCC /* BPRegistrationStartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BPRegistrationStartViewController.swift; sourceTree = "<group>"; };
 		CC62D3C62212F593004FB434 /* ForgotPassword.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPassword.swift; sourceTree = "<group>"; };
+		CC660EC32225DD39008D6E25 /* ConnectionsSPViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectionsSPViewController.swift; sourceTree = "<group>"; };
 		CC793C0E22253A8B00266734 /* ServicesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServicesTableViewController.swift; sourceTree = "<group>"; };
 		CCA91948220C7A1C00672E6F /* ConfirmationDetailsBP.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmationDetailsBP.swift; sourceTree = "<group>"; };
 		CCFA3E9E221AD2D700B160EF /* Swipe3ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Swipe3ViewController.swift; sourceTree = "<group>"; };
@@ -201,6 +203,7 @@
 				CC24B0E5221E96CC00ADEFCC /* BPRegConfirmationViewController.swift */,
 				CC24B0E7221ED1BA00ADEFCC /* BPRegistrationStartViewController.swift */,
 				CC793C0E22253A8B00266734 /* ServicesTableViewController.swift */,
+				CC660EC32225DD39008D6E25 /* ConnectionsSPViewController.swift */,
 			);
 			path = "Beauty God Mother";
 			sourceTree = "<group>";
@@ -509,6 +512,7 @@
 				CC123CFF2217149A001A6BBA /* ResetEmailSentViewController.swift in Sources */,
 				01777D6E220B35B400D51EC4 /* EditProfileViewController.swift in Sources */,
 				AE2942F021F2832D00D629EA /* RegistrationService.swift in Sources */,
+				CC660EC42225DD39008D6E25 /* ConnectionsSPViewController.swift in Sources */,
 				5B16A04E21DFC9AB0022DDE7 /* RBViewController.swift in Sources */,
 				CC24B0E6221E96CC00ADEFCC /* BPRegConfirmationViewController.swift in Sources */,
 				01E097B921FBB19100DB85D4 /* ProfileViewController.swift in Sources */,
