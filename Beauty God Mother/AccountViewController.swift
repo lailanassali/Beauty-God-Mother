@@ -175,21 +175,6 @@ class AccountViewController: UIViewController, UIImagePickerControllerDelegate, 
         
     }
     
-    
-    
-    
-    //self.dismiss(animated: true, completion: nil)
-
 }
 
-//var selectedImage: UIImage?
-//if let edititedImage = info[.editedImage] as? UIImage {
-//    selectedImage = edititedImage
-//    self.accountPic.image = selectedImage!
-//    picker.dismiss(animated: true, completion: nil)
-//} else if let originalImage = info [.originalImage] as? UIImage {
-//    selectedImage = originalImage
-//    self.accountPic.image = selectedImage!
-//    picker.dismiss(animated: true, completion: nil)
-//}
 

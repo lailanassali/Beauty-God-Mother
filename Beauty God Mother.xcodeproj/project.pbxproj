@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		010AEDE8221C9CAD0095118B /* ContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 010AEDE7221C9CAC0095118B /* ContactViewController.swift */; };
 		01777D6E220B35B400D51EC4 /* EditProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01777D6D220B35B400D51EC4 /* EditProfileViewController.swift */; };
+		01987030222F333E0016F4B4 /* EditEmailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0198702F222F333A0016F4B4 /* EditEmailViewController.swift */; };
 		01D0F38F220CBC120016FD5B /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01D0F38E220CBC110016FD5B /* MenuViewController.swift */; };
 		01E097B921FBB19100DB85D4 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01E097B821FBB19100DB85D4 /* ProfileViewController.swift */; };
 		4C391311220C84F200BC55D8 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C391310220C84F200BC55D8 /* MapKit.framework */; };
@@ -60,6 +61,7 @@
 /* Begin PBXFileReference section */
 		010AEDE7221C9CAC0095118B /* ContactViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactViewController.swift; sourceTree = "<group>"; };
 		01777D6D220B35B400D51EC4 /* EditProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileViewController.swift; sourceTree = "<group>"; };
+		0198702F222F333A0016F4B4 /* EditEmailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditEmailViewController.swift; sourceTree = "<group>"; };
 		01D0F38E220CBC110016FD5B /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		01E097B821FBB19100DB85D4 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		1B9D4DE3D2073187C01E22B1 /* Pods-Beauty God MotherTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Beauty God MotherTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Beauty God MotherTests/Pods-Beauty God MotherTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -189,6 +191,7 @@
 				5B6A73AE221597C000E506DC /* AccountViewController.swift */,
 				5B2E244222159E5D00F21E29 /* Extension+Database.swift */,
 				010AEDE7221C9CAC0095118B /* ContactViewController.swift */,
+				0198702F222F333A0016F4B4 /* EditEmailViewController.swift */,
 			);
 			path = "Beauty God Mother";
 			sourceTree = "<group>";
@@ -503,6 +506,7 @@
 				5B6A73AA2215964800E506DC /* ProviderTabBar.swift in Sources */,
 				4C6D626821F48A4F00087370 /* MapViewController.swift in Sources */,
 				010AEDE8221C9CAD0095118B /* ContactViewController.swift in Sources */,
+				01987030222F333E0016F4B4 /* EditEmailViewController.swift in Sources */,
 				5B6A73AF221597C000E506DC /* AccountViewController.swift in Sources */,
 				01D0F38F220CBC120016FD5B /* MenuViewController.swift in Sources */,
 				5B2E24452215A3A600F21E29 /* RootViewController.swift in Sources */,

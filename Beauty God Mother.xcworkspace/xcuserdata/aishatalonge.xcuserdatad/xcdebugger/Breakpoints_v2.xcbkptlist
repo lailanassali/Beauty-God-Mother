@@ -2,4 +2,84 @@
 <Bucket
    type = "0"
    version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Beauty God Mother/AccountViewController.swift"
+            timestampString = "573427718.29489"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "23"
+            endingLineNumber = "23"
+            landmarkName = "AccountViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Beauty_God_Mother.AccountViewController.picLoader.getter : weak Swift.Optional&lt;__C.UIActivityIndicatorView&gt;"
+                  moduleName = "Beauty God Mother"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/aishatalonge/Documents/project%20final%20year/Beauty-God-Mother/Beauty%20God%20Mother/AccountViewController.swift"
+                  timestampString = "573422797.979023"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "23"
+                  endingLineNumber = "23"
+                  offsetFromSymbolStart = "96">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Beauty_God_Mother.AccountViewController.picLoader.setter : weak Swift.Optional&lt;__C.UIActivityIndicatorView&gt;"
+                  moduleName = "Beauty God Mother"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/aishatalonge/Documents/project%20final%20year/Beauty-God-Mother/Beauty%20God%20Mother/AccountViewController.swift"
+                  timestampString = "573422798.0028"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "23"
+                  endingLineNumber = "23"
+                  offsetFromSymbolStart = "112">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Beauty_God_Mother.AccountViewController.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; Beauty_God_Mother.AccountViewController"
+                  moduleName = "Beauty God Mother"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/aishatalonge/Documents/project%20final%20year/Beauty-God-Mother/Beauty%20God%20Mother/AccountViewController.swift"
+                  timestampString = "573422798.009047"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "23"
+                  endingLineNumber = "23"
+                  offsetFromSymbolStart = "356">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Beauty_God_Mother.AccountViewController.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;Beauty_God_Mother.AccountViewController&gt;"
+                  moduleName = "Beauty God Mother"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/aishatalonge/Documents/project%20final%20year/Beauty-God-Mother/Beauty%20God%20Mother/AccountViewController.swift"
+                  timestampString = "573422798.015095"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "23"
+                  endingLineNumber = "23"
+                  offsetFromSymbolStart = "332">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
 </Bucket>

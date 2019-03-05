@@ -14,8 +14,32 @@ class ContactViewController: UIViewController {
         super.viewDidLoad()
    }
     
-    @IBAction func openTwiterPage(_ sender: Any) {
+  
+    
+    @IBAction func didTapInstagram(_ sender: Any) {
         
+        let InstaScreenName = "beautygodmother_"
+        let appURL = NSURL(string:"instagram://user?screen_name=\(InstaScreenName)")!
+        let webURL = NSURL(string: "https://instagram.com/\(InstaScreenName)")!
+        
+        if UIApplication.shared.canOpenURL(appURL as URL){
+            if #available(iOS 10.0, *) {
+                UIApplication.shared.open(appURL as URL, options: [:], completionHandler: nil)
+            } else {
+                UIApplication.shared.openURL(appURL as URL)
+            }
+        } else {
+            if #available(iOS 10.0, *) {
+                UIApplication.shared.open(webURL as URL, options: [:], completionHandler: nil)
+            } else {
+                UIApplication.shared.canOpenURL(webURL as URL)
+            }
+        }
+    }
+    
+
+    
+    @IBAction func didTapTwitter(_ sender: Any) {
         let screenName = "bgm_app"
         let appURL = NSURL(string:"twitter://user?screen_name=\(screenName)")!
         let webURL = NSURL(string: "https://twitter.com/\(screenName)")!
@@ -31,32 +55,13 @@ class ContactViewController: UIViewController {
                 UIApplication.shared.open(webURL as URL, options: [:], completionHandler: nil)
             } else {
                 UIApplication.shared.canOpenURL(webURL as URL)
-        }
-    }
-}
-    
-    @IBAction func openInstaPage(_ sender: Any) {
-      
-        let screenName = "beautygodmother_"
-        let appURL = NSURL(string:"instagram://user?screen_name=\(screenName)")!
-        let webURL = NSURL(string: "https://instagram.com/\(screenName)")!
-        
-        if UIApplication.shared.canOpenURL(appURL as URL){
-            if #available(iOS 10.0, *) {
-                UIApplication.shared.open(appURL as URL, options: [:], completionHandler: nil)
-            } else {
-                UIApplication.shared.openURL(appURL as URL)
-            }
-        } else {
-            if #available(iOS 10.0, *) {
-                UIApplication.shared.open(webURL as URL, options: [:], completionHandler: nil)
-            } else {
-                UIApplication.shared.canOpenURL(webURL as URL)
             }
         }
     }
+   
     
-    @IBAction func sendFeedbackEmail(_ sender: Any) {
+    
+    @IBAction func didTapEmail(_ sender: Any) {
         let email = "beautygodmother@gmail.com"
         if let url = URL(string: "mailto:\(email)"){
             if #available(iOS 10.0, *){
@@ -67,3 +72,58 @@ class ContactViewController: UIViewController {
         }
     }
 }
+
+//
+//    @IBAction func openTwiterPage(_ sender: Any) {
+//
+//        let screenName = "bgm_app"
+//        let appURL = NSURL(string:"twitter://user?screen_name=\(screenName)")!
+//        let webURL = NSURL(string: "https://twitter.com/\(screenName)")!
+//
+//        if UIApplication.shared.canOpenURL(appURL as URL){
+//            if #available(iOS 10.0, *) {
+//                UIApplication.shared.open(appURL as URL, options: [:], completionHandler: nil)
+//            } else {
+//                UIApplication.shared.openURL(appURL as URL)
+//            }
+//        } else {
+//            if #available(iOS 10.0, *) {
+//                UIApplication.shared.open(webURL as URL, options: [:], completionHandler: nil)
+//            } else {
+//                UIApplication.shared.canOpenURL(webURL as URL)
+//        }
+//    }
+//}
+//
+
+//    @IBAction func openInstaPage(_ sender: Any) {
+//
+//        let InstaScreenName = "beautygodmother_"
+//        let appURL = NSURL(string:"instagram://user?screen_name=\(InstaScreenName)")!
+//        let webURL = NSURL(string: "https://instagram.com/\(InstaScreenName)")!
+//
+//        if UIApplication.shared.canOpenURL(appURL as URL){
+//            if #available(iOS 10.0, *) {
+//                UIApplication.shared.open(appURL as URL, options: [:], completionHandler: nil)
+//            } else {
+//                UIApplication.shared.openURL(appURL as URL)
+//            }
+//        } else {
+//            if #available(iOS 10.0, *) {
+//                UIApplication.shared.open(webURL as URL, options: [:], completionHandler: nil)
+//            } else {
+//                UIApplication.shared.canOpenURL(webURL as URL)
+//            }
+//        }
+//    }
+
+//    @IBAction func sendFeedbackEmail(_ sender: Any) {
+//        let email = "beautygodmother@gmail.com"
+//        if let url = URL(string: "mailto:\(email)"){
+//            if #available(iOS 10.0, *){
+//                UIApplication.shared.open(url)
+//            } else {
+//                UIApplication.shared.openURL(url)
+//            }
+//        }
+//    }
