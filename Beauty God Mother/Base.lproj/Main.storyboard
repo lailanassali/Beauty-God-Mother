@@ -813,19 +813,19 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wix-JD-Eob">
-                                <rect key="frame" x="329" y="600" width="30" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wix-JD-Eob">
+                                <rect key="frame" x="306" y="600" width="53" height="30"/>
                                 <color key="backgroundColor" red="0.92739731073379517" green="0.24725005030632019" blue="0.47542798519134521" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="next">
                                     <color key="titleColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="NextButton:" destination="TDs-X3-0yw" eventType="touchUpInside" id="Txc-sv-mFF"/>
-                                    <segue destination="F2m-UX-yHD" kind="show" id="v7F-Kg-7c6"/>
+                                    <segue destination="M0o-Sq-ZzZ" kind="show" id="wbY-7C-7Rd"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QZu-60-6rw">
-                                <rect key="frame" x="22" y="600" width="34" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QZu-60-6rw">
+                                <rect key="frame" x="16" y="600" width="53" height="30"/>
                                 <color key="backgroundColor" red="0.92739731073379517" green="0.24725005030632019" blue="0.47542798519134521" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Back">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -847,8 +847,8 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="5Uw-PO-Dqy">
-                                <rect key="frame" x="104" y="622" width="39" height="37"/>
+                            <pageControl opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="5Uw-PO-Dqy">
+                                <rect key="frame" x="150" y="610" width="39" height="37"/>
                                 <color key="pageIndicatorTintColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="currentPageIndicatorTintColor" red="0.92739731073379517" green="0.24725005030632019" blue="0.47542798519134521" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </pageControl>
@@ -903,7 +903,100 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SA7-Mx-OTy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2568.8000000000002" y="2867.3163418290856"/>
+            <point key="canvasLocation" x="2297" y="2866"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="JYd-jh-kGd">
+            <objects>
+                <viewController id="M0o-Sq-ZzZ" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="hrj-z9-dIy"/>
+                        <viewControllerLayoutGuide type="bottom" id="Jcc-vX-SKk"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="G77-kn-U6V">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="makeup" translatesAutoresizingMaskIntoConstraints="NO" id="zSZ-y2-1fn">
+                                <rect key="frame" x="20" y="301" width="334" height="110"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="massage" translatesAutoresizingMaskIntoConstraints="NO" id="4Uf-Ig-IHT">
+                                <rect key="frame" x="20" y="183" width="334" height="110"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="hair-1" translatesAutoresizingMaskIntoConstraints="NO" id="KHN-c4-SqF" customClass="hai">
+                                <rect key="frame" x="20" y="65" width="334" height="110"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" text="Beauty servies " textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="K2L-oM-SzP">
+                                <rect key="frame" x="20" y="28" width="147" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EFh-eI-21h">
+                                <rect key="frame" x="20" y="65" width="334" height="110"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <inset key="titleEdgeInsets" minX="200" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" title="Hair ">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mFB-Sx-4Yg">
+                                <rect key="frame" x="20" y="183" width="334" height="110"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <inset key="titleEdgeInsets" minX="200" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" title="Massage">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sgx-Oq-e5o">
+                                <rect key="frame" x="20" y="301" width="334" height="110"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <inset key="titleEdgeInsets" minX="200" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" title="Makeup">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="nails2" translatesAutoresizingMaskIntoConstraints="NO" id="PYk-u8-Ms4">
+                                <rect key="frame" x="20" y="419" width="334" height="110"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2HK-eF-gbk">
+                                <rect key="frame" x="20" y="419" width="334" height="110"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <inset key="titleEdgeInsets" minX="200" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" title="Nails">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="waxing2" translatesAutoresizingMaskIntoConstraints="NO" id="qKl-ro-e90">
+                                <rect key="frame" x="20" y="539" width="334" height="108"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oYA-EL-emp">
+                                <rect key="frame" x="20" y="539" width="334" height="108"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <inset key="contentEdgeInsets" minX="0.0" minY="0.0" maxX="16" maxY="0.0"/>
+                                <inset key="titleEdgeInsets" minX="200" minY="0.0" maxX="0.0" maxY="-81"/>
+                                <state key="normal" title="Waxing">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="61d-0F-KCs" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3428" y="2865.5172413793107"/>
         </scene>
         <!--Swipe3 View Controller-->
         <scene sceneID="z0S-f8-R2F">
@@ -982,6 +1075,14 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" translatesAutoresizingMaskIntoConstraints="NO" id="lFn-2V-Ruw">
+                                <rect key="frame" x="-16" y="373" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="lFn-2V-Ruw" id="ghU-HL-WcV">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -1220,9 +1321,6 @@
                             <state key="normal" title="Back">
                                 <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </state>
-                            <connections>
-                                <segue destination="TDs-X3-0yw" kind="show" id="8V6-cn-kbv"/>
-                            </connections>
                         </button>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="428" id="Sjf-UW-hg3">
@@ -1231,13 +1329,6 @@
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Sjf-UW-hg3" id="6BG-i0-SEf">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="427.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
-                                    <subviews>
-                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1hq-GK-elZ">
-                                            <rect key="frame" x="80" y="387" width="117" height="30"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <state key="normal" title="Button"/>
-                                        </button>
-                                    </subviews>
                                 </tableViewCellContentView>
                                 <color key="backgroundColor" red="0.91102655440000002" green="0.55376136970000001" blue="0.68843997649999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </tableViewCell>
@@ -1247,13 +1338,10 @@
                             <outlet property="delegate" destination="F2m-UX-yHD" id="0rN-Au-fcy"/>
                         </connections>
                     </tableView>
-                    <connections>
-                        <segue destination="7yh-yW-ka8" kind="show" id="rKv-JR-Gkb"/>
-                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mXu-kl-AKH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3688.8000000000002" y="2868.2158920539732"/>
+            <point key="canvasLocation" x="2998" y="3644"/>
         </scene>
         <!--ConfirmationVC-->
         <scene sceneID="jOA-JO-E6R">
@@ -1323,7 +1411,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="V12-WN-01H" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1508" y="2850"/>
+            <point key="canvasLocation" x="1476" y="2866"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="ueU-Hz-UJY">
@@ -1917,13 +2005,16 @@
         <image name="Image-8" width="465" height="127"/>
         <image name="checked" width="400.69564819335938" height="400.69564819335938"/>
         <image name="email" width="512" height="512"/>
+        <image name="hair-1" width="1500" height="530"/>
+        <image name="makeup" width="700" height="420"/>
+        <image name="massage" width="620" height="338"/>
+        <image name="nails2" width="929" height="429"/>
         <image name="title" width="781" height="128"/>
+        <image name="waxing2" width="667" height="334"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="v7F-Kg-7c6"/>
-        <segue reference="rKv-JR-Gkb"/>
-        <segue reference="8V6-cn-kbv"/>
+        <segue reference="p8F-1W-U4a"/>
         <segue reference="e9Q-62-xmD"/>
-        <segue reference="lVf-ao-wEC"/>
+        <segue reference="zKv-ns-HSy"/>
     </inferredMetricsTieBreakers>
 </document>
