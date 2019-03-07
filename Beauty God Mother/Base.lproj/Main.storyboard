@@ -903,12 +903,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SA7-Mx-OTy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2297" y="2866"/>
+            <point key="canvasLocation" x="2490" y="2866"/>
         </scene>
-        <!--View Controller-->
+        <!--Services View Controller-->
         <scene sceneID="UIa-rm-QCz">
             <objects>
-                <viewController id="ROc-lZ-egk" sceneMemberID="viewController">
+                <viewController id="ROc-lZ-egk" customClass="ServicesViewController" customModule="Beauty_God_Mother" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="qPs-i1-DaQ"/>
                         <viewControllerLayoutGuide type="bottom" id="CqB-aO-9Aa"/>
@@ -917,12 +917,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Ta-Wf-07d" customClass="Next">
-                                <rect key="frame" x="252" y="617" width="107" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Ta-Wf-07d" customClass="Next">
+                                <rect key="frame" x="327" y="617" width="32" height="30"/>
                                 <color key="backgroundColor" red="0.92739731069999998" green="0.2472500503" blue="0.47542798520000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="107" id="g6E-0C-zK3"/>
-                                </constraints>
                                 <state key="normal" title="Next">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
@@ -932,11 +929,17 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="4Ta-Wf-07d" firstAttribute="trailing" secondItem="D7H-tN-ElQ" secondAttribute="trailingMargin" id="19A-d3-iBH"/>
+                            <constraint firstItem="CqB-aO-9Aa" firstAttribute="top" secondItem="4Ta-Wf-07d" secondAttribute="bottom" constant="20" id="f3b-le-bv0"/>
+                            <constraint firstItem="4Ta-Wf-07d" firstAttribute="top" secondItem="qPs-i1-DaQ" secondAttribute="bottom" constant="597" id="hvQ-lV-Xwt"/>
+                            <constraint firstItem="4Ta-Wf-07d" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="D7H-tN-ElQ" secondAttribute="leadingMargin" id="rW3-28-6cV"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GG7-u9-4UE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3713" y="2827"/>
+            <point key="canvasLocation" x="3682" y="2866"/>
         </scene>
         <!--Swipe3 View Controller-->
         <scene sceneID="z0S-f8-R2F">
