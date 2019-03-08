@@ -25,8 +25,10 @@ class ServicesViewController: UIViewController  {
         button.centerXAnchor.constraint(equalTo: self.view.centerXAnchor) .isActive = true
         button.centerYAnchor.constraint(equalTo: self.view.centerYAnchor) .isActive = true
         
-        button.widthAnchor.constraint(equalToConstant: 150).isActive = true
+        button.widthAnchor.constraint(equalToConstant: 180).isActive = true
         button.heightAnchor.constraint(equalToConstant: 40).isActive = true
+        
+        button.dropView.dropDownOptions = ["Hair","Nails","Grooming","Massage"]
 
         
         
@@ -38,7 +40,16 @@ class ServicesViewController: UIViewController  {
     
 }
 
-class DropDownBtn: UIButton{
+protocol dropDownProtocol{
+    func dropDownPressed(String: String)
+}
+
+class DropDownBtn: UIButton,dropDownProtocol{
+    func dropDownPressed(String string: String) {
+        self.setTitle(string, for: .normal)
+        self.dismissDropDown()
+    }
+    
     
     var dropView = DropDownView()
     var height = NSLayoutConstraint()
@@ -49,6 +60,7 @@ class DropDownBtn: UIButton{
         self.backgroundColor = UIColor.darkGray
         
         dropView =  DropDownView.init(frame: CGRect.init(x: 0, y: 0, width: 0, height: 0))
+        dropView.delegate = self
         
         dropView.translatesAutoresizingMaskIntoConstraints = false
         
@@ -68,7 +80,39 @@ class DropDownBtn: UIButton{
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         if isOpen == false  {
             
+            isOpen = true
+            
+            NSLayoutConstraint.deactivate([self.height])
+            
+            NSLayoutConstraint.activate( [self.height])
+            
+            if self.dropView.tableView.contentSize.height > 150 {
+                self.height.constant = 150
+                
+            }else {
+                self.height.constant = self.dropView.tableView.contentSize.height
+            }
+            
+            
+            UIView.animate(withDuration: 0.5, delay: 0, usingSpringWithDamping: 0.5, initialSpringVelocity: 0.5, options: .curveEaseInOut, animations:
+                {
+                    self.dropView.layoutIfNeeded()
+                    self.dropView.center.y += self.dropView.frame.height / 2
+            }, completion: nil )
+            
+            
         } else  {
+            isOpen = false
+            
+            NSLayoutConstraint.deactivate([self.height])
+            self.height.constant = 0
+            NSLayoutConstraint.activate( [self.height])
+            UIView.animate(withDuration: 0.5, delay: 0, usingSpringWithDamping: 0.5, initialSpringVelocity: 0.5, options: .curveEaseInOut, animations:
+                {
+                    self.dropView.center.y -= self.dropView.frame.height / 2
+                    self.dropView.layoutIfNeeded()
+            }, completion: nil )
+            
             
         }
     }
@@ -77,6 +121,21 @@ class DropDownBtn: UIButton{
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
+
+    
+    func dismissDropDown(){
+         isOpen = false
+        NSLayoutConstraint.deactivate([self.height])
+        self.height.constant = 0
+        NSLayoutConstraint.activate( [self.height])
+        UIView.animate(withDuration: 0.5, delay: 0, usingSpringWithDamping: 0.5, initialSpringVelocity: 0.5, options: .curveEaseInOut, animations:
+            {
+                self.dropView.center.y -= self.dropView.frame.height / 2
+                self.dropView.layoutIfNeeded()
+        }, completion: nil )
+        
+    }
+
 }
 
 class DropDownView: UIView,UITableViewDelegate,UITableViewDataSource{
@@ -85,9 +144,14 @@ class DropDownView: UIView,UITableViewDelegate,UITableViewDataSource{
     
     var tableView = UITableView()
     
+    var delegate : dropDownProtocol!
+    
     
     override init(frame: CGRect) {
       super.init(frame:  frame)
+        
+    tableView.backgroundColor = UIColor.darkGray
+    self.backgroundColor = UIColor.darkGray
      
     tableView.delegate = self
     tableView.dataSource = self
@@ -121,11 +185,15 @@ class DropDownView: UIView,UITableViewDelegate,UITableViewDataSource{
         var cell =  UITableViewCell()
         
         cell.textLabel?.text = dropDownOptions[indexPath.row]
-        
+        cell.backgroundColor =  UIColor.darkGray
         return cell
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+       
+        self.delegate.dropDownPressed(String: dropDownOptions[indexPath.row])
+        self.tableView.deselectRow(at: indexPath, animated: true)
+        
         print(dropDownOptions[indexPath.row])
     }
     
