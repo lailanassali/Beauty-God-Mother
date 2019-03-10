@@ -22,6 +22,8 @@ class ServicesViewController: UIViewController  {
         
         self.view.addSubview(button)
         
+        
+        button.topAnchor.constraint(equalTo: self.view.topAnchor, constant: 24).isActive = true
         button.centerXAnchor.constraint(equalTo: self.view.centerXAnchor) .isActive = true
         button.widthAnchor.constraint(equalToConstant: 300).isActive = true
         button.heightAnchor.constraint(equalToConstant: 40).isActive = true
