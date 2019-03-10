@@ -22,15 +22,12 @@ class ServicesViewController: UIViewController  {
         
         self.view.addSubview(button)
         
-        button.centerXAnchor.constraint(equalTo: self.view.centerXAnchor) .isActive = true
-        button.centerYAnchor.constraint(equalTo: self.view.centerYAnchor) .isActive = true
-        
         button.widthAnchor.constraint(equalToConstant: 180).isActive = true
-        button.heightAnchor.constraint(equalToConstant: 40).isActive = true
+        button.heightAnchor.constraint(equalToConstant: 60).isActive = true
         
         button.dropView.dropDownOptions = ["Hair","Nails","Grooming","Massage"]
 
-        
+    
         
     }
     
