@@ -25,7 +25,7 @@ class ServicesViewController: UIViewController  {
         
         button.topAnchor.constraint(equalTo: self.view.topAnchor, constant: 24).isActive = true
         button.centerXAnchor.constraint(equalTo: self.view.centerXAnchor) .isActive = true
-        button.widthAnchor.constraint(equalToConstant: 300).isActive = true
+        button.widthAnchor.constraint(equalToConstant: 350).isActive = true
         button.heightAnchor.constraint(equalToConstant: 40).isActive = true
 
         
@@ -56,7 +56,7 @@ class DropDownBtn: UIButton,dropDownProtocol{
     override init(frame: CGRect) {
         super.init(frame: frame)
         
-        self.backgroundColor = UIColor.darkGray
+        self.backgroundColor = UIColor.lightGray
         
         dropView =  DropDownView.init(frame: CGRect.init(x: 0, y: 0, width: 0, height: 0))
         dropView.delegate = self
@@ -149,8 +149,8 @@ class DropDownView: UIView,UITableViewDelegate,UITableViewDataSource{
     override init(frame: CGRect) {
       super.init(frame:  frame)
         
-    tableView.backgroundColor = UIColor.darkGray
-    self.backgroundColor = UIColor.darkGray
+    tableView.backgroundColor = UIColor.lightGray
+    self.backgroundColor = UIColor.white
      
     tableView.delegate = self
     tableView.dataSource = self
