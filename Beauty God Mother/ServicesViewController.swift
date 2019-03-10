@@ -17,14 +17,14 @@ class ServicesViewController: UIViewController  {
         super.viewDidLoad()
         
         button = DropDownBtn.init(frame:  CGRect(x: 0, y: 0, width: 0, height: 0))
-        button.setTitle("services", for: .normal)
+        button.setTitle("Select a beauty service", for: .normal)
         button.translatesAutoresizingMaskIntoConstraints = false
         
         self.view.addSubview(button)
         
         button.centerXAnchor.constraint(equalTo: self.view.centerXAnchor) .isActive = true
-        button.widthAnchor.constraint(equalToConstant: 180).isActive = true
-        button.heightAnchor.constraint(equalToConstant: 60).isActive = true
+        button.widthAnchor.constraint(equalToConstant: 300).isActive = true
+        button.heightAnchor.constraint(equalToConstant: 40).isActive = true
 
         
         button.dropView.dropDownOptions = ["Hair","Nails","Grooming","Massage"]
