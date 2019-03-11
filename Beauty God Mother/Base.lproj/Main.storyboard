@@ -1486,18 +1486,11 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Thank you!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a2Q-bK-jLY">
-                                <rect key="frame" x="112" y="53" width="187" height="36"/>
+                                <rect key="frame" x="112" y="53" width="187" height="96.5"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="checked" translatesAutoresizingMaskIntoConstraints="NO" id="yDi-xe-gST">
-                                <rect key="frame" x="91" y="259" width="188" height="212"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="212" id="PdU-Db-diY"/>
-                                    <constraint firstAttribute="width" constant="188" id="z7s-or-L86"/>
-                                </constraints>
-                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="We have recieved your application and we will be in contact with you  shortly to verify your business account." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MhT-vs-5y9">
                                 <rect key="frame" x="25" y="82" width="329" height="102"/>
                                 <constraints>
@@ -1507,30 +1500,54 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Beauty God Mother Team" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LKo-2y-Pu2">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Beauty God Mother Team" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LKo-2y-Pu2">
                                 <rect key="frame" x="92" y="192" width="195" height="20"/>
                                 <fontDescription key="fontDescription" type="italicSystem" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iGL-TZ-vnk" customClass="LOTAnimationView">
+                                <rect key="frame" x="39" y="244" width="300" height="239.5"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="300" id="Q6g-el-CpD"/>
+                                    <constraint firstAttribute="width" constant="300" id="ewf-wJ-NGe"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="0Wy-Py-sYQ" firstAttribute="centerX" secondItem="a2Q-bK-jLY" secondAttribute="centerX" constant="-18" id="0gt-yh-hjn"/>
-                            <constraint firstItem="yDi-xe-gST" firstAttribute="top" secondItem="MhT-vs-5y9" secondAttribute="bottom" constant="75" id="5Kq-3C-uDb"/>
+                            <constraint firstItem="0Wy-Py-sYQ" firstAttribute="top" secondItem="iGL-TZ-vnk" secondAttribute="bottom" constant="53" id="1OV-do-VUK"/>
+                            <constraint firstItem="0Wy-Py-sYQ" firstAttribute="trailing" secondItem="9Jl-FP-kQ3" secondAttribute="trailingMargin" id="4ct-Z1-4l1"/>
+                            <constraint firstItem="iGL-TZ-vnk" firstAttribute="centerX" secondItem="9Jl-FP-kQ3" secondAttribute="centerX" id="7Iq-iI-J4m"/>
                             <constraint firstItem="0Wy-Py-sYQ" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="9Jl-FP-kQ3" secondAttribute="trailingMargin" id="7qa-7x-ccg"/>
+                            <constraint firstItem="iGL-TZ-vnk" firstAttribute="leading" secondItem="9Jl-FP-kQ3" secondAttribute="leadingMargin" constant="23" id="A10-Xc-vhB"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="MhT-vs-5y9" secondAttribute="trailing" constant="5" id="Ctg-RZ-i7I"/>
+                            <constraint firstItem="iGL-TZ-vnk" firstAttribute="top" secondItem="LKo-2y-Pu2" secondAttribute="bottom" constant="32" id="Dew-wc-dh6"/>
                             <constraint firstAttribute="bottom" secondItem="0Wy-Py-sYQ" secondAttribute="bottom" constant="20" symbolic="YES" id="Gag-w3-qLa"/>
+                            <constraint firstItem="Ozo-r2-sYe" firstAttribute="top" secondItem="0Wy-Py-sYQ" secondAttribute="bottom" constant="20" id="IFf-dS-n6J"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="iGL-TZ-vnk" secondAttribute="trailing" constant="20" id="MMJ-QF-hqR"/>
+                            <constraint firstItem="a2Q-bK-jLY" firstAttribute="leading" secondItem="9Jl-FP-kQ3" secondAttribute="leadingMargin" constant="96" id="P7V-8d-0VD"/>
                             <constraint firstItem="0Wy-Py-sYQ" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="9Jl-FP-kQ3" secondAttribute="leadingMargin" id="QhJ-e8-C1Q"/>
                             <constraint firstItem="a2Q-bK-jLY" firstAttribute="leading" secondItem="9Jl-FP-kQ3" secondAttribute="leadingMargin" constant="96" id="R1s-BR-mO5"/>
+                            <constraint firstItem="iGL-TZ-vnk" firstAttribute="centerY" secondItem="9Jl-FP-kQ3" secondAttribute="centerY" id="RNB-7O-J14"/>
+                            <constraint firstItem="MhT-vs-5y9" firstAttribute="top" secondItem="SA6-cP-rtH" secondAttribute="bottom" constant="62" id="TGa-9l-kVH"/>
+                            <constraint firstItem="MhT-vs-5y9" firstAttribute="leading" secondItem="9Jl-FP-kQ3" secondAttribute="leadingMargin" constant="9" id="UUU-rF-ooc"/>
                             <constraint firstAttribute="trailingMargin" secondItem="MhT-vs-5y9" secondAttribute="trailing" constant="5" id="aaS-7p-JbV"/>
-                            <constraint firstItem="yDi-xe-gST" firstAttribute="centerX" secondItem="0Wy-Py-sYQ" secondAttribute="centerX" constant="-2.5" id="e6B-Xt-tm8"/>
-                            <constraint firstItem="LKo-2y-Pu2" firstAttribute="centerX" secondItem="yDi-xe-gST" secondAttribute="centerX" constant="4.5" id="krb-h2-ezr"/>
+                            <constraint firstItem="0Wy-Py-sYQ" firstAttribute="leading" secondItem="9Jl-FP-kQ3" secondAttribute="leadingMargin" id="gfM-Yn-yn1"/>
+                            <constraint firstItem="a2Q-bK-jLY" firstAttribute="top" secondItem="SA6-cP-rtH" secondAttribute="bottom" constant="33" id="l2J-zQ-bGI"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="a2Q-bK-jLY" secondAttribute="trailing" constant="60" id="qDN-24-9In"/>
+                            <constraint firstItem="0Wy-Py-sYQ" firstAttribute="top" secondItem="iGL-TZ-vnk" secondAttribute="bottom" constant="113.5" id="qY7-f8-FKi"/>
                             <constraint firstItem="MhT-vs-5y9" firstAttribute="leading" secondItem="9Jl-FP-kQ3" secondAttribute="leadingMargin" constant="9" id="run-nl-idR"/>
-                            <constraint firstItem="yDi-xe-gST" firstAttribute="top" secondItem="9Jl-FP-kQ3" secondAttribute="top" constant="259" id="sGH-AD-AW5"/>
-                            <constraint firstItem="yDi-xe-gST" firstAttribute="top" secondItem="LKo-2y-Pu2" secondAttribute="bottom" constant="47" id="wPV-G0-vhB"/>
+                            <constraint firstItem="iGL-TZ-vnk" firstAttribute="top" secondItem="a2Q-bK-jLY" secondAttribute="bottom" constant="94.5" id="w1Q-vg-wQG"/>
+                            <constraint firstItem="LKo-2y-Pu2" firstAttribute="top" secondItem="MhT-vs-5y9" secondAttribute="bottom" constant="8" id="xDx-tl-ZCp"/>
                             <constraint firstItem="a2Q-bK-jLY" firstAttribute="top" secondItem="SA6-cP-rtH" secondAttribute="bottom" constant="33" id="z3q-7V-5dm"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="animationView" destination="iGL-TZ-vnk" id="Q9e-2k-Ktm"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pM2-ME-4dD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -2268,7 +2285,6 @@
         <image name="title" width="781" height="128"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="fmN-gn-Anz"/>
         <segue reference="ScV-HV-PxE"/>
         <segue reference="L9s-Ne-SX8"/>
         <segue reference="MA9-b3-8EW"/>

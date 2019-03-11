@@ -71,6 +71,7 @@ PODS:
   - GTMSessionFetcher/Core (1.2.1)
   - Kingfisher (5.0.1)
   - leveldb-library (1.20)
+  - lottie-ios (2.5.3)
   - nanopb (0.3.901):
     - nanopb/decode (= 0.3.901)
     - nanopb/encode (= 0.3.901)
@@ -87,6 +88,7 @@ DEPENDENCIES:
   - Firebase/Database
   - Firebase/Storage
   - Kingfisher
+  - lottie-ios
   - SDWebImage
 
 SPEC REPOS:
@@ -104,6 +106,7 @@ SPEC REPOS:
     - GTMSessionFetcher
     - Kingfisher
     - leveldb-library
+    - lottie-ios
     - nanopb
     - SDWebImage
 
@@ -121,9 +124,10 @@ SPEC CHECKSUMS:
   GTMSessionFetcher: 32aeca0aa144acea523e1c8e053089dec2cb98ca
   Kingfisher: 4f771421b9208185217550528a06fd48756cb7c2
   leveldb-library: 08cba283675b7ed2d99629a4bc5fd052cd2bb6a5
+  lottie-ios: a50d5c0160425cd4b01b852bb9578963e6d92d31
   nanopb: 2901f78ea1b7b4015c860c2fdd1ea2fee1a18d48
   SDWebImage: c5594f1a19c48d526d321e548902b56b479cd508
 
-PODFILE CHECKSUM: 765d53b9e9dfafaeaf5a75caa32a70425fcc13ca
+PODFILE CHECKSUM: 9c011a7985c95dd3dca52d874917c609a1bebbec
 
-COCOAPODS: 1.6.0
+COCOAPODS: 1.6.1

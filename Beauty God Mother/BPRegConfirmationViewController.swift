@@ -7,24 +7,23 @@
 //
 
 import UIKit
+import Lottie
 
 class BPRegConfirmationViewController: UIViewController {
 
+  
+    @IBOutlet var animationView: LOTAnimationView!
     override func viewDidLoad() {
         super.viewDidLoad()
+        startAnimation()
 
         // Do any additional setup after loading the view.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    func startAnimation(){
+        animationView.setAnimation(named: "732-tick-reveal")
+        animationView.play()
+        
     }
-    */
 
-}
+} 
