@@ -9,11 +9,11 @@
 import UIKit
 
 class CustomerTabBar: UITabBarController {
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         setupTabBar()
-        
+
         // Do any additional setup after loading the view.
     }
     
@@ -24,20 +24,15 @@ class CustomerTabBar: UITabBarController {
         let searchVC = storyboard.instantiateViewController(withIdentifier: "MapVC")
         let searchNavigation = UINavigationController(rootViewController: searchVC)
         searchVC.title = "Search"
-        
-        let accountVC = storyboard.instantiateViewController(withIdentifier: "AccountVC")
+
+        // account
+        let accountVC = UIViewController()
         let accountNavigation = UINavigationController(rootViewController: accountVC)
-        accountVC.title = "My Account"
+        accountVC.title = "Account"
         
-        let contactVC = storyboard.instantiateViewController(withIdentifier: "ContactVC")
-        let contactNavigation = UINavigationController(rootViewController: contactVC)
-        contactVC.title = "Contact"
-        
-        
-        
-        viewControllers = [searchNavigation, accountNavigation, contactNavigation]
+        viewControllers = [searchNavigation, accountNavigation]
     }
-    
-    
-    
+
+  
+
 }

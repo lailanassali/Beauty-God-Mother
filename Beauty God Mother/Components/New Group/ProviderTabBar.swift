@@ -9,13 +9,13 @@
 import UIKit
 
 class ProviderTabBar: UITabBarController, UITabBarControllerDelegate {
-    
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.delegate = self
         setupTabBar()
-        
+
         // Do any additional setup after loading the view.
     }
     
@@ -26,24 +26,29 @@ class ProviderTabBar: UITabBarController, UITabBarControllerDelegate {
         let searchVC = storyboard.instantiateViewController(withIdentifier: "MapVC")
         let searchNavigation = UINavigationController(rootViewController: searchVC)
         searchVC.title = "Search"
-        // account
-        let accountVC = storyboard.instantiateViewController(withIdentifier: "AccountVC")
-        let accountNavigation = UINavigationController(rootViewController: accountVC)
-        accountVC.title = "My Account"
         // profile
         let profileVC = storyboard.instantiateViewController(withIdentifier: "ProfileVC")
         let profileNavigation = UINavigationController(rootViewController: profileVC)
         profileVC.title = "Profile"
-        //contact page
-        let contactVC = storyboard.instantiateViewController(withIdentifier: "ContactVC")
-        let contactNavigation = UINavigationController(rootViewController: contactVC)
-        accountVC.title = "Contact "
+        // account
+        let accountVC = UIViewController()
+        let accountNavigation = UINavigationController(rootViewController: accountVC)
+        accountVC.title = "Account"
         
-        viewControllers = [searchNavigation, accountNavigation, profileNavigation, contactNavigation]
+        viewControllers = [searchNavigation, profileNavigation, accountNavigation]
         
         
     }
     
-    
-    
+
+    /*
+    // MARK: - Navigation
+
+    // In a storyboard-based application, you will often want to do a little preparation before navigation
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        // Get the new view controller using segue.destination.
+        // Pass the selected object to the new view controller.
+    }
+    */
+
 }
