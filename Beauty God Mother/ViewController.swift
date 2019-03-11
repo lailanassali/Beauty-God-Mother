@@ -51,7 +51,7 @@ class ViewController: UIViewController {
                 print("Failed to log user in: ",e)
                 return
             }
-           self.present(RootViewController(), animated: true, completion: nil)
+            self.present(RootViewController(), animated: true, completion: nil)
         }
     }
     
