@@ -7,12 +7,15 @@
 //
 
 import UIKit
+<<<<<<< HEAD
 import Firebase
 import FirebaseAuth
 import FirebaseDatabase
 import FirebaseStorage
 import ImageIO
 
+=======
+>>>>>>> develop
 
 
 class AccountViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
@@ -54,6 +57,7 @@ class AccountViewController: UIViewController, UIImagePickerControllerDelegate, 
 
     }
     
+<<<<<<< HEAD
     func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
     
     }
@@ -176,5 +180,17 @@ class AccountViewController: UIViewController, UIImagePickerControllerDelegate, 
     }
     
 }
+=======
 
+    /*
+    // MARK: - Navigation
+>>>>>>> develop
 
+    // In a storyboard-based application, you will often want to do a little preparation before navigation
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        // Get the new view controller using segue.destination.
+        // Pass the selected object to the new view controller.
+    }
+    */
+
+}
