@@ -34,7 +34,7 @@ class SPViewController: UIViewController {
         guard let organisation = organisation.text, let email = email.text, let password = password.text, let confirmPassword = confirmPassword.text else {return}
         
         // stage 2
-        if !rs.passwordMatches(p1: password, p2: confirmPassword) || !rs.nameFormatIsCorrect(name: organisation) || !rs.fieldsAreNotEmpty(field1: organisation, field2: password, field3: confirmPassword, field4: email) { return }
+        if !rs.passwordMatches(p1: password, p2: confirmPassword) || !rs.nameFormatIsCorrect(name: organisation) || !rs.fieldsAreNotEmpty(name: organisation, p1: password, p2: confirmPassword, email: email) { return }
         
         
         Auth.auth().createUser(withEmail: email, password: password) { (result:AuthDataResult?, error) in

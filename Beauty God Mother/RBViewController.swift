@@ -42,7 +42,7 @@ class RBViewController: UIViewController {
         // Stage 1
         guard let name = name.text, let email = emailTF.text, let password = passwordTF.text, let confirmPassword = confirmPasswordTF.text else {return}
        // Stage 2
-        if !rs.passwordMatches(p1: password, p2: confirmPassword) || !rs.nameFormatIsCorrect(name: name) || !rs.fieldsAreNotEmpty(field1: name, field2: password, field3: confirmPassword, field4: email) { return }
+        if !rs.passwordMatches(p1: password, p2: confirmPassword) || !rs.nameFormatIsCorrect(name: name) || !rs.fieldsAreNotEmpty(name: name, p1: password, p2: confirmPassword, email: email) { return }
         
         
         Auth.auth().createUser(withEmail: email, password: password) { (result:AuthDataResult?, error) in

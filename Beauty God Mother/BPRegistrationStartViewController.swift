@@ -10,33 +10,24 @@ import UIKit
 
 class BPRegistrationStartViewController: UIViewController {
 
-    
-    @IBOutlet weak var nameOfOrganisation: UITextField!
-    
-    @IBOutlet var addressTF: UITextField!
-    
-    @IBOutlet weak var postcodeTF: UITextField!
-    
-    var rs = RegistrationService.shared
-    
-    @IBAction func nextTapped(_ sender: Any) {
-            handleRegister()
- 
-        }
-    
-    public func handleRegister() {
-        guard let name = nameOfOrganisation.text, let address = addressTF.text, let postcode = postcodeTF.text else {return}
-        
-        if !rs.contactFieldsShouldNotBeEmpty(name: name, address: address, postcode: postcode) {  return }
-        
-            self.performSegue(withIdentifier: "RegisterStageTwo", sender: self)
-        }
-        
-        
-    
+    @IBAction func NextButton(_ sender: Any) {
     }
     
-   
+    override func viewDidLoad() {
+        super.viewDidLoad()
 
+        // Do any additional setup after loading the view.
+    }
     
 
+    /*
+    // MARK: - Navigation
+
+    // In a storyboard-based application, you will often want to do a little preparation before navigation
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        // Get the new view controller using segue.destination.
+        // Pass the selected object to the new view controller.
+    }
+    */
+
+}

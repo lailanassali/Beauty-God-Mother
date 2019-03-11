@@ -12,12 +12,6 @@ class ServicesViewController: UIViewController  {
     
     var button = DropDownBtn()
     
-    var rs = RegistrationService.shared
-    
-    @IBOutlet weak var nameOfService: UITextField!
-    @IBOutlet weak var priceTF: UITextField!
-    @IBOutlet weak var durationTF: UITextField!
-    @IBOutlet weak var descriptionTF: UITextField!
     
     override func viewDidLoad(){
         super.viewDidLoad()
@@ -36,20 +30,6 @@ class ServicesViewController: UIViewController  {
 
         
         button.dropView.dropDownOptions = ["Hair","Nails","Grooming","Massage"]
-        
-    }
-    
-    
-    
-    @IBAction func saveTapped(_ sender: Any) {
-        handleRegister()
-    }
-    
-    public func handleRegister() {
-        guard let name = nameOfService.text, let price = priceTF.text, let duration = durationTF.text, let description = descriptionTF.text else { return }
-        
-        if !rs.fieldsAreNotEmpty(field1: name, field2: price, field3: duration, field4: description) { return }
-        self.performSegue(withIdentifier: "registerStageThree", sender: self)
         
     }
     

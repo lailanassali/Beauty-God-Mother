@@ -50,12 +50,12 @@
 	<string>We need your location</string>
 	<key>NSLocationWhenInUseUsageDescription</key>
 	<string>We need your location</string>
-	<key>NSPhotoLibraryUsageDescription</key>
-	<string>Permission to use Images</string>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
 	<key>UIMainStoryboardFile</key>
 	<string>Main</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>Permission to use Images</string>
 	<key>UIRequiredDeviceCapabilities</key>
 	<array>
 		<string>armv7</string>
