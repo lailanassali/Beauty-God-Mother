@@ -10,13 +10,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Beauty God Mother/SPViewController.swift"
-            timestampString = "573664285.2567739"
+            timestampString = "574011104.699277"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "16"
             endingLineNumber = "16"
-            landmarkName = "unknown"
-            landmarkType = "0">
+            landmarkName = "SPViewController"
+            landmarkType = "3">
             <Locations>
                <Location
                   shouldBeEnabled = "Yes"
@@ -26,12 +26,12 @@
                   moduleName = "Beauty God Mother"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/anishakatumba/Documents/GitHub/Beauty-God-Mother/Beauty-God-Mother/Beauty%20God%20Mother/SPViewController.swift"
-                  timestampString = "573962190.984107"
+                  timestampString = "574013749.028316"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "16"
                   endingLineNumber = "16"
-                  offsetFromSymbolStart = "86">
+                  offsetFromSymbolStart = "96">
                </Location>
                <Location
                   shouldBeEnabled = "Yes"
@@ -41,12 +41,12 @@
                   moduleName = "Beauty God Mother"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/anishakatumba/Documents/GitHub/Beauty-God-Mother/Beauty-God-Mother/Beauty%20God%20Mother/SPViewController.swift"
-                  timestampString = "573962190.986249"
+                  timestampString = "574013749.030262"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "16"
                   endingLineNumber = "16"
-                  offsetFromSymbolStart = "106">
+                  offsetFromSymbolStart = "112">
                </Location>
                <Location
                   shouldBeEnabled = "Yes"
@@ -56,12 +56,12 @@
                   moduleName = "Beauty God Mother"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/anishakatumba/Documents/GitHub/Beauty-God-Mother/Beauty-God-Mother/Beauty%20God%20Mother/SPViewController.swift"
-                  timestampString = "573962190.988766"
+                  timestampString = "574013749.032015"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "16"
                   endingLineNumber = "16"
-                  offsetFromSymbolStart = "57">
+                  offsetFromSymbolStart = "64">
                </Location>
                <Location
                   shouldBeEnabled = "Yes"
@@ -71,12 +71,12 @@
                   moduleName = "Beauty God Mother"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/anishakatumba/Documents/GitHub/Beauty-God-Mother/Beauty-God-Mother/Beauty%20God%20Mother/SPViewController.swift"
-                  timestampString = "573962190.991545"
+                  timestampString = "574013749.033787"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "16"
                   endingLineNumber = "16"
-                  offsetFromSymbolStart = "50">
+                  offsetFromSymbolStart = "56">
                </Location>
             </Locations>
          </BreakpointContent>
@@ -88,13 +88,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Beauty God Mother/SPViewController.swift"
-            timestampString = "573664285.257614"
+            timestampString = "574011104.699468"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "19"
             endingLineNumber = "19"
-            landmarkName = "unknown"
-            landmarkType = "0">
+            landmarkName = "SPViewController"
+            landmarkType = "3">
             <Locations>
                <Location
                   shouldBeEnabled = "Yes"
@@ -104,12 +104,12 @@
                   moduleName = "Beauty God Mother"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/anishakatumba/Documents/GitHub/Beauty-God-Mother/Beauty-God-Mother/Beauty%20God%20Mother/SPViewController.swift"
-                  timestampString = "573962191.000686"
+                  timestampString = "574013749.1520489"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "19"
                   endingLineNumber = "19"
-                  offsetFromSymbolStart = "86">
+                  offsetFromSymbolStart = "96">
                </Location>
                <Location
                   shouldBeEnabled = "Yes"
@@ -119,12 +119,12 @@
                   moduleName = "Beauty God Mother"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/anishakatumba/Documents/GitHub/Beauty-God-Mother/Beauty-God-Mother/Beauty%20God%20Mother/SPViewController.swift"
-                  timestampString = "573962191.003549"
+                  timestampString = "574013749.154748"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "19"
                   endingLineNumber = "19"
-                  offsetFromSymbolStart = "106">
+                  offsetFromSymbolStart = "112">
                </Location>
                <Location
                   shouldBeEnabled = "Yes"
@@ -134,12 +134,12 @@
                   moduleName = "Beauty God Mother"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/anishakatumba/Documents/GitHub/Beauty-God-Mother/Beauty-God-Mother/Beauty%20God%20Mother/SPViewController.swift"
-                  timestampString = "573962191.0057189"
+                  timestampString = "574013749.157021"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "19"
                   endingLineNumber = "19"
-                  offsetFromSymbolStart = "384">
+                  offsetFromSymbolStart = "356">
                </Location>
                <Location
                   shouldBeEnabled = "Yes"
@@ -149,12 +149,12 @@
                   moduleName = "Beauty God Mother"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/anishakatumba/Documents/GitHub/Beauty-God-Mother/Beauty-God-Mother/Beauty%20God%20Mother/SPViewController.swift"
-                  timestampString = "573962191.0079221"
+                  timestampString = "574013749.159246"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "19"
                   endingLineNumber = "19"
-                  offsetFromSymbolStart = "355">
+                  offsetFromSymbolStart = "332">
                </Location>
             </Locations>
          </BreakpointContent>
@@ -166,7 +166,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Beauty God Mother/AppDelegate.swift"
-            timestampString = "573950813.966557"
+            timestampString = "574008670.842072"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "5"
@@ -198,7 +198,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Beauty God Mother/Swipe3ViewController.swift"
-            timestampString = "573962190.743981"
+            timestampString = "574013748.219932"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "11"

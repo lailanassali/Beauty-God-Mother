@@ -25,17 +25,6 @@ class RegistrationService {
             print("PASSWORD DO NOT MATCH!");return false }
     }
     
-  /**  public func passwordMustBe8Characters(p1: String, p2: String, viewController:UIViewController) -> Bool {
-        if p1.count > 8  && p2.count > 8 {
-            return true
-        } else {
-            let cancel = UIAlertAction(title: "Ok", style: .cancel, handler: nil)
-            let alert = UIAlertController(title: "Sorry, the password must be at least 8 characters!", message: "Please try again.", preferredStyle: .alert)
-            alert.addAction(cancel)
-            viewController.present(alert, animated: true, completion: nil)
-            print("PASSWORD MUST BE 8 CHARACTERS"); return false }
-        } **/
-    
     public func nameFormatIsCorrect(name: String) -> Bool {
         if name.count <= 20 {
             return true
@@ -48,8 +37,8 @@ class RegistrationService {
             print("NAME MUST BE LESS THAN OR EQUAL TO 20 CHARACTERS");return false }
     }
     
-    public func fieldsAreNotEmpty(name: String, p1: String, p2: String, email: String) -> Bool {
-        if name.count != 0 && p1.count != 0 && p2.count != 0 && email.count != 0 {
+    public func fieldsAreNotEmpty(field1: String, field2: String, field3: String, field4: String) -> Bool {
+        if field1.count != 0 && field2.count != 0 && field3.count != 0 && field4.count != 0 {
             return true
         } else {
             let cancel = UIAlertAction(title: "Ok", style: .cancel, handler: nil)
@@ -58,7 +47,21 @@ class RegistrationService {
             view.present(alert, animated: true, completion: nil)
             print("FIELDS MUST NOT BE EMPTY"); return false }
         }
+    
+    public func contactFieldsShouldNotBeEmpty(name:String, address:String, postcode:String) -> Bool {
+        if name.count != 0 && address.count != 0 && postcode.count != 0 {
+            return true
+        } else {
+            let cancel = UIAlertAction(title: "Ok", style: .cancel, handler: nil)
+            let alert = UIAlertController(title: "Sorry, you must fill out your details to continue!", message: "Please try again.", preferredStyle: .alert)
+            alert.addAction(cancel)
+            view.present(alert, animated: true, completion: nil)
+            print("FIELDS MUST NOT BE EMPTY"); return false }
+        }
+    
+    
     }
+
 
 
     

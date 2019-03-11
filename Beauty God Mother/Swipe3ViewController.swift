@@ -13,7 +13,10 @@ class Swipe3ViewController: UIViewController, UINavigationControllerDelegate, UI
     
     @IBOutlet weak var myImageView: UIImageView!
     
-    @IBAction func `import`(_ sender: Any) 
+    @IBOutlet weak var addProfilePicture: UIButton!
+  
+    
+    @IBAction func `import`(_ sender: Any)
     
     {
         let image = UIImagePickerController()
@@ -41,21 +44,4 @@ class Swipe3ViewController: UIViewController, UINavigationControllerDelegate, UI
         }
         self.dismiss(animated: true, completion: nil)
     }
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-    }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }
