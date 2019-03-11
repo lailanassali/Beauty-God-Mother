@@ -41,7 +41,12 @@
 		CC24B0E6221E96CC00ADEFCC /* BPRegConfirmationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC24B0E5221E96CC00ADEFCC /* BPRegConfirmationViewController.swift */; };
 		CC24B0E8221ED1BA00ADEFCC /* BPRegistrationStartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC24B0E7221ED1BA00ADEFCC /* BPRegistrationStartViewController.swift */; };
 		CC62D3C72212F593004FB434 /* ForgotPassword.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC62D3C62212F593004FB434 /* ForgotPassword.swift */; };
+		CC660EC42225DD39008D6E25 /* ConnectionsSPViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC660EC32225DD39008D6E25 /* ConnectionsSPViewController.swift */; };
+		CC793C0F22253A8B00266734 /* ServicesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC793C0E22253A8B00266734 /* ServicesTableViewController.swift */; };
 		CCA91949220C7A1C00672E6F /* ConfirmationDetailsBP.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCA91948220C7A1C00672E6F /* ConfirmationDetailsBP.swift */; };
+		CCF3506522315CC8007DB408 /* HairServicesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCF3506422315CC8007DB408 /* HairServicesViewController.swift */; };
+		CCF35067223178B6007DB408 /* ServicesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCF35066223178B6007DB408 /* ServicesViewController.swift */; };
+		CCFA3E9F221AD2D700B160EF /* Swipe3ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCFA3E9E221AD2D700B160EF /* Swipe3ViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -204,6 +209,16 @@
 <<<<<<< HEAD
 				010AEDE7221C9CAC0095118B /* ContactViewController.swift */,
 				0198702F222F333A0016F4B4 /* EditEmailViewController.swift */,
+=======
+				CC123CFE2217149A001A6BBA /* ResetEmailSentViewController.swift */,
+				CCFA3E9E221AD2D700B160EF /* Swipe3ViewController.swift */,
+				CC24B0E5221E96CC00ADEFCC /* BPRegConfirmationViewController.swift */,
+				CC24B0E7221ED1BA00ADEFCC /* BPRegistrationStartViewController.swift */,
+				CC793C0E22253A8B00266734 /* ServicesTableViewController.swift */,
+				CC660EC32225DD39008D6E25 /* ConnectionsSPViewController.swift */,
+				CCF3506422315CC8007DB408 /* HairServicesViewController.swift */,
+				CCF35066223178B6007DB408 /* ServicesViewController.swift */,
+>>>>>>> develop
 			);
 			path = "Beauty God Mother";
 			sourceTree = "<group>";
