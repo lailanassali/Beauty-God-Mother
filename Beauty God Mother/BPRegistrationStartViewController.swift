@@ -10,24 +10,29 @@ import UIKit
 
 class BPRegistrationStartViewController: UIViewController {
 
+    
+    @IBOutlet weak var organisationName: UITextField!
+    @IBOutlet weak var addressLabel: UITextField!
+    @IBOutlet weak var postcodeLabel: UITextField!
+    @IBOutlet weak var contactNumberLabel: UITextField!
+    
+    let rs = RegistrationService.shared
     @IBAction func NextButton(_ sender: Any) {
+        // stage 1
+        guard let organisationName = organisationName.text, let address = addressLabel.text, let postcode = postcodeLabel.text, let contactNumber = contactNumberLabel.text else {return}
+        // save details to registration service
+        rs.organisationName = organisationName
+        rs.address = address
+        rs.contactNumber = Int(contactNumber)
+        rs.postCode = postcode
+        
+        let controller = storyboard!.instantiateViewController(withIdentifier: "ServicesVC")
+        self.present(controller, animated: true, completion: nil)
     }
+
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-    }
     
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
+    
 
 }

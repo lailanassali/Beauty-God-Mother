@@ -225,7 +225,7 @@
                                         <rect key="frame" x="22" y="140" width="298" height="78"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <connections>
-                                            <segue destination="TDs-X3-0yw" kind="show" id="szC-bR-pW7"/>
+                                            <segue destination="z9a-OI-FET" kind="show" id="6sq-qc-Qqc"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -296,7 +296,7 @@
                         <viewControllerLayoutGuide type="top" id="ttE-ry-EF3"/>
                         <viewControllerLayoutGuide type="bottom" id="jZy-tX-XlX"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="Zhw-Ew-qQQ">
+                    <view key="view" alpha="0.90000000000000002" contentMode="scaleToFill" id="Zhw-Ew-qQQ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -359,7 +359,7 @@
                                 </constraints>
                             </view>
                         </subviews>
-                        <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.5" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="jZy-tX-XlX" firstAttribute="top" secondItem="898-fa-WTr" secondAttribute="bottom" constant="228" id="BmL-jA-bZi"/>
                             <constraint firstItem="898-fa-WTr" firstAttribute="top" secondItem="ttE-ry-EF3" secondAttribute="bottom" constant="209" id="GpR-y1-bUr"/>
@@ -667,6 +667,9 @@
                                                 <integer key="value" value="15"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="nextPressed:" destination="z9a-OI-FET" eventType="touchUpInside" id="Vhs-lk-WxW"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.96436005830000004" green="0.54703593250000004" blue="0.71008735899999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -723,12 +726,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CPX-bG-ifh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3359" y="1693"/>
+            <point key="canvasLocation" x="2542" y="1737"/>
         </scene>
         <!--Registration Start View Controller-->
         <scene sceneID="B4k-6V-8Qe">
             <objects>
-                <viewController id="TDs-X3-0yw" customClass="BPRegistrationStartViewController" customModule="Beauty_God_Mother" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="StartVC" id="TDs-X3-0yw" customClass="BPRegistrationStartViewController" customModule="Beauty_God_Mother" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Z17-WF-jgs"/>
                         <viewControllerLayoutGuide type="bottom" id="4hz-iH-vbt"/>
@@ -885,8 +888,7 @@
                                     <color key="titleColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="NextButton:" destination="TDs-X3-0yw" eventType="touchUpInside" id="Txc-sv-mFF"/>
-                                    <segue destination="ROc-lZ-egk" kind="show" id="TqS-XX-ueN"/>
+                                    <action selector="NextButton:" destination="TDs-X3-0yw" eventType="touchUpInside" id="dIG-gG-qNj"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -902,6 +904,12 @@
                             <constraint firstItem="wix-JD-Eob" firstAttribute="baseline" secondItem="QZu-60-6rw" secondAttribute="baseline" id="oz2-Hj-kN4"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="addressLabel" destination="zFQ-wh-bPr" id="cWw-MG-TQJ"/>
+                        <outlet property="contactNumberLabel" destination="aJP-GV-eQO" id="r03-y9-PXU"/>
+                        <outlet property="organisationName" destination="NdB-7d-zb8" id="9eL-wb-J6G"/>
+                        <outlet property="postcodeLabel" destination="bNU-RR-Tbx" id="Wey-Bj-QWE"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SA7-Mx-OTy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -910,7 +918,7 @@
         <!--Services View Controller-->
         <scene sceneID="UIa-rm-QCz">
             <objects>
-                <viewController id="ROc-lZ-egk" customClass="ServicesViewController" customModule="Beauty_God_Mother" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ServicesVC" id="ROc-lZ-egk" customClass="ServicesViewController" customModule="Beauty_God_Mother" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="qPs-i1-DaQ"/>
                         <viewControllerLayoutGuide type="bottom" id="CqB-aO-9Aa"/>
@@ -1043,7 +1051,7 @@
                                             <constraint firstItem="Bif-XO-8Rf" firstAttribute="leading" secondItem="jql-Bl-OyY" secondAttribute="leading" id="Jcb-s9-QCO"/>
                                             <constraint firstItem="tLV-Ha-w1l" firstAttribute="top" secondItem="fuh-q2-3TC" secondAttribute="bottom" constant="8" id="O4V-4n-1BS"/>
                                             <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="aj8-Fd-eOb" secondAttribute="trailing" id="POK-Ff-P9F"/>
-                                            <constraint firstItem="Bif-XO-8Rf" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="N9c-RW-oSo" secondAttribute="trailing" symbolic="YES" id="S8Y-v3-crt"/>
+                                            <constraint firstItem="Bif-XO-8Rf" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="N9c-RW-oSo" secondAttribute="trailing" constant="8" symbolic="YES" id="S8Y-v3-crt"/>
                                             <constraint firstItem="nXc-03-TMU" firstAttribute="top" secondItem="N9c-RW-oSo" secondAttribute="bottom" constant="32" id="SqU-Ue-LP1"/>
                                             <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="tLV-Ha-w1l" secondAttribute="trailing" constant="20" symbolic="YES" id="Ti2-4h-HY7"/>
                                             <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="fuh-q2-3TC" secondAttribute="trailing" constant="20" symbolic="YES" id="Uzh-OW-JsA"/>
@@ -1091,7 +1099,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <segue destination="7yh-yW-ka8" kind="show" id="Vir-ie-4wl"/>
+                                    <action selector="NextButton:" destination="ROc-lZ-egk" eventType="touchUpInside" id="hFx-fO-27K"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -1121,6 +1129,13 @@
                             <constraint firstItem="umt-NT-gdW" firstAttribute="top" secondItem="QwK-mI-rXy" secondAttribute="bottom" constant="92" id="tA3-t3-2O5"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="addtionalnfoLabel" destination="4qG-uc-k9j" id="pbu-bs-Kxn"/>
+                        <outlet property="descriptionLabel" destination="nXc-03-TMU" id="u0a-jK-U3U"/>
+                        <outlet property="durationLabel" destination="jql-Bl-OyY" id="HTo-Yj-rVo"/>
+                        <outlet property="nameOfService" destination="fuh-q2-3TC" id="OWL-QZ-Na0"/>
+                        <outlet property="priceLabel" destination="N9c-RW-oSo" id="01Y-G7-ut2"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GG7-u9-4UE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1129,7 +1144,7 @@
         <!--Swipe3 View Controller-->
         <scene sceneID="z0S-f8-R2F">
             <objects>
-                <viewController id="7yh-yW-ka8" customClass="Swipe3ViewController" customModule="Beauty_God_Mother" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Swipe3VC" id="7yh-yW-ka8" customClass="Swipe3ViewController" customModule="Beauty_God_Mother" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Bg1-sm-GR9"/>
                         <viewControllerLayoutGuide type="bottom" id="Cgq-wU-oj5"/>
@@ -1218,8 +1233,7 @@
                                     <color key="titleColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="NextButton:" destination="TDs-X3-0yw" eventType="touchUpInside" id="DNZ-Cd-Yxx"/>
-                                    <segue destination="9iZ-qT-u4Z" kind="show" id="fmN-gn-Anz"/>
+                                    <action selector="NextButton:" destination="7yh-yW-ka8" eventType="touchUpInside" id="tdg-fJ-qB0"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -1238,6 +1252,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="bioLabel" destination="LPf-Bw-m8D" id="NR7-sY-sjF"/>
                         <outlet property="myImageView" destination="6TJ-5P-cyu" id="jq6-W0-Vsf"/>
                     </connections>
                 </viewController>
@@ -1248,7 +1263,7 @@
         <!--ConnectionsSP View Controller-->
         <scene sceneID="h7A-HO-0MH">
             <objects>
-                <viewController id="9iZ-qT-u4Z" customClass="ConnectionsSPViewController" customModule="Beauty_God_Mother" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ConnectionsVC" id="9iZ-qT-u4Z" customClass="ConnectionsSPViewController" customModule="Beauty_God_Mother" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="bQx-eJ-vSo"/>
                         <viewControllerLayoutGuide type="bottom" id="2H9-9h-r1m"/>
@@ -1335,19 +1350,19 @@
                                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Hxw-x2-8zS">
                                                 <rect key="frame" x="176" y="238" width="51" height="31"/>
                                                 <connections>
-                                                    <action selector="swicth1:" destination="9iZ-qT-u4Z" eventType="valueChanged" id="Wvn-KY-B1D"/>
+                                                    <action selector="swicthState:" destination="9iZ-qT-u4Z" eventType="valueChanged" id="Dcd-oE-fJ7"/>
                                                 </connections>
                                             </switch>
-                                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xNF-GM-I49">
+                                            <switch opaque="NO" tag="1" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xNF-GM-I49">
                                                 <rect key="frame" x="176" y="288" width="51" height="31"/>
                                                 <connections>
-                                                    <action selector="swicth1:" destination="9iZ-qT-u4Z" eventType="valueChanged" id="YeH-Ae-Aaj"/>
+                                                    <action selector="swicthState:" destination="9iZ-qT-u4Z" eventType="valueChanged" id="0LX-90-ZEe"/>
                                                 </connections>
                                             </switch>
-                                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wfV-fq-iYc">
+                                            <switch opaque="NO" tag="2" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wfV-fq-iYc">
                                                 <rect key="frame" x="176" y="336" width="51" height="31"/>
                                                 <connections>
-                                                    <action selector="swicth1:" destination="9iZ-qT-u4Z" eventType="valueChanged" id="6qD-BA-gHr"/>
+                                                    <action selector="swicthState:" destination="9iZ-qT-u4Z" eventType="valueChanged" id="wdV-TO-nQg"/>
                                                 </connections>
                                             </switch>
                                         </subviews>
@@ -1429,8 +1444,7 @@
                                     <color key="titleColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="NextButton:" destination="TDs-X3-0yw" eventType="touchUpInside" id="KcH-AR-ni5"/>
-                                    <segue destination="rO3-1p-lkF" kind="show" id="tth-JP-ucs"/>
+                                    <action selector="NextButton:" destination="9iZ-qT-u4Z" eventType="touchUpInside" id="y11-mM-ccx"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -1450,6 +1464,11 @@
                             <constraint firstItem="OCw-pt-Cb3" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="tNZ-hm-txv" secondAttribute="trailing" constant="8" symbolic="YES" id="yza-BJ-mjy"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="facebookLabel" destination="QW8-av-jAK" id="6kP-Dh-xZ4"/>
+                        <outlet property="instagramLabel" destination="iJl-pJ-fSp" id="h9H-tu-do4"/>
+                        <outlet property="websiteLabel" destination="Qvx-5N-9E4" id="FQj-Ca-RQm"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kdv-Np-PUB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1458,7 +1477,7 @@
         <!--Reg Confirmation View Controller-->
         <scene sceneID="DCw-PO-oBd">
             <objects>
-                <viewController id="rO3-1p-lkF" customClass="BPRegConfirmationViewController" customModule="Beauty_God_Mother" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="RegistrationConfirmationVC" id="rO3-1p-lkF" customClass="BPRegConfirmationViewController" customModule="Beauty_God_Mother" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="SA6-cP-rtH"/>
                         <viewControllerLayoutGuide type="bottom" id="Ozo-r2-sYe"/>
@@ -1619,7 +1638,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1hR-xY-rRL">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1hR-xY-rRL" userLabel="Pop up">
                                 <rect key="frame" x="61" y="228" width="252" height="210"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CW8-aa-tuS">
@@ -1670,7 +1689,7 @@
                                 </constraints>
                             </view>
                         </subviews>
-                        <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="1hR-xY-rRL" firstAttribute="leading" secondItem="mD2-ao-4Tf" secondAttribute="leading" constant="61" id="Nek-PM-PTo"/>
                             <constraint firstAttribute="trailing" secondItem="1hR-xY-rRL" secondAttribute="trailing" constant="62" id="TyJ-DP-EyG"/>
@@ -2497,9 +2516,7 @@
         <image name="title" width="781" height="128"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="ScV-HV-PxE"/>
-        <segue reference="L9s-Ne-SX8"/>
         <segue reference="e9Q-62-xmD"/>
-        <segue reference="zKv-ns-HSy"/>
+        <segue reference="6PL-Nj-YnB"/>
     </inferredMetricsTieBreakers>
 </document>

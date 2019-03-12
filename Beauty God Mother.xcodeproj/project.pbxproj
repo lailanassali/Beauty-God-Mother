@@ -27,6 +27,7 @@
 		5B16A04C21DFB8AE0022DDE7 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B16A04B21DFB8AE0022DDE7 /* Extension.swift */; };
 		5B16A04E21DFC9AB0022DDE7 /* RBViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B16A04D21DFC9AB0022DDE7 /* RBViewController.swift */; };
 		5B16A05021DFC9C10022DDE7 /* SPViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B16A04F21DFC9C10022DDE7 /* SPViewController.swift */; };
+		5B1C212D223730DC00E69DF3 /* Firebase_Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B1C212C223730DC00E69DF3 /* Firebase_Extension.swift */; };
 		5B2E244322159E5D00F21E29 /* Extension+Database.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B2E244222159E5D00F21E29 /* Extension+Database.swift */; };
 		5B2E24452215A3A600F21E29 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B2E24442215A3A600F21E29 /* RootViewController.swift */; };
 		5B6A73A722158E6D00E506DC /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B6A73A622158E6D00E506DC /* User.swift */; };
@@ -93,6 +94,7 @@
 		5B16A04B21DFB8AE0022DDE7 /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
 		5B16A04D21DFC9AB0022DDE7 /* RBViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RBViewController.swift; sourceTree = "<group>"; };
 		5B16A04F21DFC9C10022DDE7 /* SPViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPViewController.swift; sourceTree = "<group>"; };
+		5B1C212C223730DC00E69DF3 /* Firebase_Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Firebase_Extension.swift; sourceTree = "<group>"; };
 		5B2E244222159E5D00F21E29 /* Extension+Database.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+Database.swift"; sourceTree = "<group>"; };
 		5B2E24442215A3A600F21E29 /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
 		5B6A73A622158E6D00E506DC /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
@@ -181,6 +183,7 @@
 		5B16A01A21DFB0A70022DDE7 /* Beauty God Mother */ = {
 			isa = PBXGroup;
 			children = (
+				5B1C21292237297200E69DF3 /* Supporting Files */,
 				5B6A73A82215960100E506DC /* Components */,
 				5B6A73A522158E5600E506DC /* Model */,
 				5B16A01B21DFB0A70022DDE7 /* AppDelegate.swift */,
@@ -234,6 +237,14 @@
 				5B16A03D21DFB0AA0022DDE7 /* Info.plist */,
 			);
 			path = "Beauty God MotherUITests";
+			sourceTree = "<group>";
+		};
+		5B1C21292237297200E69DF3 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5B1C212C223730DC00E69DF3 /* Firebase_Extension.swift */,
+			);
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		5B6A73A522158E5600E506DC /* Model */ = {
@@ -530,6 +541,7 @@
 				CCF3506522315CC8007DB408 /* HairServicesViewController.swift in Sources */,
 				5B6A73AA2215964800E506DC /* ProviderTabBar.swift in Sources */,
 				4C6D626821F48A4F00087370 /* MapViewController.swift in Sources */,
+				5B1C212D223730DC00E69DF3 /* Firebase_Extension.swift in Sources */,
 				01B7C3572236A23600381DCD /* ContactViewController.swift in Sources */,
 				01D0F38F220CBC120016FD5B /* MenuViewController.swift in Sources */,
 				CC24B0E8221ED1BA00ADEFCC /* BPRegistrationStartViewController.swift in Sources */,

@@ -21,14 +21,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         window = UIWindow(frame: UIScreen.main.bounds)
         window?.makeKeyAndVisible()
-        print(Auth.auth().currentUser?.uid)
-        if let _ = Auth.auth().currentUser?.uid {
-            window?.rootViewController = RootViewController()
-        } else {
-            let storyboard = UIStoryboard(name: "Main", bundle: nil)
-            let loginVC = storyboard.instantiateViewController(withIdentifier: "LoginPageID")
-            window?.rootViewController = loginVC
-        }
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let loginVC = storyboard.instantiateViewController(withIdentifier: "LoginPageID")
+        window?.rootViewController = loginVC
+//        print(Auth.auth().currentUser?.uid)
+//        if let _ = Auth.auth().currentUser?.uid {
+//            window?.rootViewController = RootViewController()
+//        } else {
+//            let storyboard = UIStoryboard(name: "Main", bundle: nil)
+//            let loginVC = storyboard.instantiateViewController(withIdentifier: "LoginPageID")
+//            window?.rootViewController = loginVC
+//        }
 
        //change colour of tab bar items
 //        UITabBar.appearance().tintColor = .yellow

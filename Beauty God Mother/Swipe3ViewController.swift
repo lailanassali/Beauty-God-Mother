@@ -10,8 +10,20 @@ import UIKit
 
 class Swipe3ViewController: UIViewController, UINavigationControllerDelegate, UIImagePickerControllerDelegate {
     
-    
+    let rs = RegistrationService.shared
     @IBOutlet weak var myImageView: UIImageView!
+    @IBOutlet weak var bioLabel: UITextField!
+    
+    @IBAction func NextButton(_ sender: Any) {
+        // stage 1
+        guard let profileImageView = myImageView.image, let bio = bioLabel.text else {return}
+        // save details to registration service
+        rs.profileImage = profileImageView
+        rs.bio = bio
+        
+        let controller = storyboard!.instantiateViewController(withIdentifier: "ConnectionsVC")
+        self.present(controller, animated: true, completion: nil)
+    }
     
     @IBAction func `import`(_ sender: Any) 
     
@@ -47,15 +59,5 @@ class Swipe3ViewController: UIViewController, UINavigationControllerDelegate, UI
         // Do any additional setup after loading the view.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }

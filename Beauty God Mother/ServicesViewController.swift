@@ -11,7 +11,13 @@ import UIKit
 class ServicesViewController: UIViewController  {
     
     var button = DropDownBtn()
+    let rs = RegistrationService.shared
     
+    @IBOutlet weak var nameOfService: UITextField!
+    @IBOutlet weak var priceLabel: UITextField!
+    @IBOutlet weak var durationLabel: UITextField!
+    @IBOutlet weak var descriptionLabel: UITextField!
+    @IBOutlet weak var addtionalnfoLabel: UITextField!
     
     override func viewDidLoad(){
         super.viewDidLoad()
@@ -33,9 +39,21 @@ class ServicesViewController: UIViewController  {
         
     }
     
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
+    
+    @IBAction func NextButton(_ sender: Any) {
+        // stage 1
+        guard let serviceName = nameOfService.text, let price = priceLabel.text, let duration = durationLabel.text, let description = descriptionLabel.text, let additionalInformation = addtionalnfoLabel.text else {return}
+        // save details to registration service
+        rs.serviceName = serviceName
+        rs.price = price
+        rs.duration = duration
+        rs.description = description
+        rs.additionalInformation = additionalInformation
+        
+        let controller = storyboard!.instantiateViewController(withIdentifier: "Swipe3VC")
+        self.present(controller, animated: true, completion: nil)
     }
+    
     
 }
 
