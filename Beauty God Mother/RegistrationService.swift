@@ -25,6 +25,7 @@ class RegistrationService {
     var address: String!
     var postCode: String!
     var contactNumber: Int?
+    var serviceType: String!
     var serviceName: String!
     var price: String!
     var duration: String!
@@ -35,7 +36,6 @@ class RegistrationService {
     var instagram: String?
     var facebook: String?
     var website: String?
-    var serviceType: String!
     var companyType: CompanyType = .commercial
     
     
