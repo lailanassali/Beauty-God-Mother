@@ -55,18 +55,19 @@ extension Database {
             "organisation name": rs.organisationName,
             "address": rs.address,
             "postcode": rs.postCode,
-            "contact number": rs.contactNumber,
+            "contact number": rs.contactNumber.null,
             "service name": rs.serviceName,
             "price": rs.price,
             "duration": rs.duration,
             "description": rs.description,
-            "additional information": rs.additionalInformation,
+            "additional information": rs.additionalInformation.null,
             "profileImageURL": url,
-            "bio": rs.bio,
-            "instagram": rs.instagram,
-            "facebook": rs.facebook,
-            "website": rs.website,
-            "company type": rs.companyType
+            "bio": rs.bio.null,
+            "instagram": rs.instagram.null ,
+            "facebook": rs.facebook.null,
+            "website": rs.website.null,
+            "company type": rs.companyType.rawValue,
+            "serviceType": rs.serviceType
             ] as [String : Any]
         // Save values to uid
         let values = [uid:dictionaryValues]
@@ -76,8 +77,21 @@ extension Database {
                 return
             }
             
-            print("Sucessfully added \(rs.organisationName) to database!")
+            print("Sucessfully added \(rs.organisationName.null) to database!")
         })
     }
 }
 
+
+
+extension Optional where Wrapped == String {
+    var null: String {
+        return self ?? "null"
+    }
+}
+
+extension Optional where Wrapped == Int {
+    var null: Int {
+        return self ?? 0
+    }
+}

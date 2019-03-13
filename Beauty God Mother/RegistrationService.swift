@@ -11,7 +11,7 @@ class RegistrationService {
     
     static var shared = RegistrationService()
     
-    enum CompanyType {
+    enum CompanyType: String {
         case residential
         case commercial
         case mobile
@@ -35,6 +35,7 @@ class RegistrationService {
     var instagram: String?
     var facebook: String?
     var website: String?
+    var serviceType: String!
     var companyType: CompanyType = .commercial
     
     
