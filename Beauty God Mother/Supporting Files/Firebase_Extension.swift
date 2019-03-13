@@ -52,9 +52,21 @@ extension Database {
         let dictionaryValues = [
             "name": rs.name ,
             "email": rs.email,
-            "organisationName": rs.organisationName,
+            "organisation name": rs.organisationName,
             "address": rs.address,
-            "profileImageURL": url
+            "postcode": rs.postCode,
+            "contact number": rs.contactNumber,
+            "service name": rs.serviceName,
+            "price": rs.price,
+            "duration": rs.duration,
+            "description": rs.description,
+            "additional information": rs.additionalInformation,
+            "profileImageURL": url,
+            "bio": rs.bio,
+            "instagram": rs.instagram,
+            "facebook": rs.facebook,
+            "website": rs.website,
+            "company type": rs.companyType
             ] as [String : Any]
         // Save values to uid
         let values = [uid:dictionaryValues]
