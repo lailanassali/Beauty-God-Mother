@@ -66,6 +66,22 @@ class RegistrationService {
             return false }
         }
     
+    public func fieldsAreNotEmpty(image: UIImage) -> Bool {
+        if image.images?.count == 0 {
+            return true
+        } else {
+        presentAlert(title: "Sorry", errorDescription: "You must add a profile picture to continue!")
+            return false }
+    }
+    
+    public func fieldsAreNotEmpty(name: String, price: String, duration: String, description: String) -> Bool {
+        if name.count != 0 && price.count != 0 && duration.count != 0 && description.count != 0 {
+            return true
+        } else {
+        presentAlert(title: "Sorry", errorDescription: "You must fill out your details to continue!")
+            return false }
+    }
+    
     
     fileprivate func presentAlert(title: String, errorDescription: String) {
         let cancel = UIAlertAction(title: "Ok", style: .cancel, handler: nil)

@@ -17,6 +17,10 @@ class Swipe3ViewController: UIViewController, UINavigationControllerDelegate, UI
     @IBAction func NextButton(_ sender: Any) {
         // stage 1
         guard let profileImageView = myImageView.image, let bio = bioLabel.text else {return}
+        
+        // stage 2
+      //  if !rs.fieldsAreNotEmpty(image: profileImageView) { return }
+        
         // save details to registration service
         rs.profileImage = profileImageView
         rs.bio = bio

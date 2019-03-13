@@ -42,13 +42,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Beauty God Mother/Swipe3ViewController.swift"
-            timestampString = "574047451.694971"
+            timestampString = "574172508.80993"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "11"
             endingLineNumber = "11"
-            landmarkName = "Swipe3ViewController"
-            landmarkType = "3">
+            landmarkName = "unknown"
+            landmarkType = "0">
             <Locations>
                <Location
                   shouldBeEnabled = "No"
@@ -135,13 +135,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Beauty God Mother/Supporting Files/Firebase_Extension.swift"
-            timestampString = "574048962.790345"
+            timestampString = "574172508.810344"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "67"
-            endingLineNumber = "67"
-            landmarkName = "unknown"
-            landmarkType = "0">
+            startingLineNumber = "79"
+            endingLineNumber = "79"
+            landmarkName = "saveToDatabase(uid:imageUrl:completionHandler:)"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -151,13 +151,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Beauty God Mother/Supporting Files/Firebase_Extension.swift"
-            timestampString = "574048962.7904119"
+            timestampString = "574172508.810396"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "32"
             endingLineNumber = "32"
-            landmarkName = "unknown"
-            landmarkType = "0">
+            landmarkName = "createUser()"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

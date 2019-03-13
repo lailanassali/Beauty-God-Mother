@@ -43,6 +43,10 @@ class ServicesViewController: UIViewController  {
     @IBAction func NextButton(_ sender: Any) {
         // stage 1
         guard let serviceName = nameOfService.text, let price = priceLabel.text, let duration = durationLabel.text, let description = descriptionLabel.text, let additionalInformation = addtionalnfoLabel.text else {return}
+        
+        // stage 2
+        if !rs.fieldsAreNotEmpty(name: serviceName, p1: price, p2: duration, email: description) { return }
+        
         // save details to registration service
         rs.serviceName = serviceName
         rs.price = price

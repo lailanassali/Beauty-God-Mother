@@ -20,6 +20,10 @@ class BPRegistrationStartViewController: UIViewController {
     @IBAction func NextButton(_ sender: Any) {
         // stage 1
         guard let organisationName = organisationName.text, let address = addressLabel.text, let postcode = postcodeLabel.text, let contactNumber = contactNumberLabel.text else {return}
+        
+        // stage 2
+        if !rs.fieldsAreNotEmpty(name: organisationName, p1: address, p2: postcode, email: contactNumber) { return }
+        
         // save details to registration service
         rs.organisationName = organisationName
         rs.address = address
