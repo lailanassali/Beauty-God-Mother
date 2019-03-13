@@ -15,11 +15,7 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
-   
-    @IBOutlet weak var registerAsBuyer: UIButton!
-    @IBOutlet weak var registerAsSP: UIButton!
-    
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         setupViews()
@@ -37,14 +33,13 @@ class ViewController: UIViewController {
         }
     }
     
-    
     @IBAction func loginPressed(_ sender: UIButton) {
         guard let email = emailTextField.text, let password = passwordTextField.text else {return}
         Auth.auth().signIn(withEmail: email, password: password) { (user, error) in
             if let e = error {
                 
                 let cancel = UIAlertAction(title: "Ok", style: .cancel, handler: nil)
-                let alert = UIAlertController(title: "Sorry, please enter a valid username or password to continue!", message: "Please try again.", preferredStyle: .alert)
+                let alert = UIAlertController(title: "Sorry, you have entered an invalid email or password!", message: "Please try again.", preferredStyle: .alert)
                 alert.addAction(cancel)
                 self.present(alert, animated: true, completion: nil) 
                 
