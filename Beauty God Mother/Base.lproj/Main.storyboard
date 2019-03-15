@@ -190,6 +190,13 @@
                                             <segue destination="yS6-3Z-fDt" kind="presentation" modalPresentationStyle="overCurrentContext" id="sYr-pL-U3C"/>
                                         </connections>
                                     </button>
+                                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JGE-oq-c9W">
+                                        <rect key="frame" x="0.0" y="354" width="343" height="221"/>
+                                        <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="252" id="ywU-UD-tOG"/>
+                                        </constraints>
+                                    </view>
                                 </subviews>
                                 <color key="backgroundColor" red="0.96436005830764771" green="0.54703593254089355" blue="0.7100873589515686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
@@ -2525,7 +2532,8 @@
         <image name="title" width="781" height="128"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="sEq-NP-V1k"/>
+        <segue reference="sYr-pL-U3C"/>
+        <segue reference="6sq-qc-Qqc"/>
         <segue reference="AMB-iI-UVW"/>
         <segue reference="zKv-ns-HSy"/>
     </inferredMetricsTieBreakers>
