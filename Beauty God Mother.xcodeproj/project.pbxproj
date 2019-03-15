@@ -187,13 +187,9 @@
 				5B16A02721DFB0AA0022DDE7 /* Info.plist */,
 				5B16A04921DFB1F90022DDE7 /* GoogleService-Info.plist */,
 				AE29B29321EBEE3800B19FFF /* MainViewController.swift */,
-				4C6D626721F48A4F00087370 /* MapViewController.swift */,
-				01E097B821FBB19100DB85D4 /* ProfileViewController.swift */,
 				01D0F38E220CBC110016FD5B /* MenuViewController.swift */,
-				01777D6D220B35B400D51EC4 /* EditProfileViewController.swift */,
 				5B2E244222159E5D00F21E29 /* Extension+Database.swift */,
 				CC123CFE2217149A001A6BBA /* ResetEmailSentViewController.swift */,
-				01B7C3582236A2C500381DCD /* AccountViewCoontroller.swift */,
 			);
 			path = "Beauty God Mother";
 			sourceTree = "<group>";
@@ -270,6 +266,24 @@
 			path = RegistrationService;
 			sourceTree = "<group>";
 		};
+		5B280D69223BBD4500F402B4 /* ProfileService */ = {
+			isa = PBXGroup;
+			children = (
+				01E097B821FBB19100DB85D4 /* ProfileViewController.swift */,
+				01777D6D220B35B400D51EC4 /* EditProfileViewController.swift */,
+				01B7C3582236A2C500381DCD /* AccountViewCoontroller.swift */,
+			);
+			path = ProfileService;
+			sourceTree = "<group>";
+		};
+		5B280D6A223BBD4E00F402B4 /* MapService */ = {
+			isa = PBXGroup;
+			children = (
+				4C6D626721F48A4F00087370 /* MapViewController.swift */,
+			);
+			path = MapService;
+			sourceTree = "<group>";
+		};
 		5B6A73A522158E5600E506DC /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -282,6 +296,8 @@
 		5B6A73A82215960100E506DC /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				5B280D6A223BBD4E00F402B4 /* MapService */,
+				5B280D69223BBD4500F402B4 /* ProfileService */,
 				5B1F858822398E7000EDF2A9 /* RegistrationService */,
 				5B1F858622398E3900EDF2A9 /* LoginService */,
 			);
