@@ -18,19 +18,6 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        setupViews()
-        
-    }
-    
-    fileprivate func setupViews() {
-        _ = [registerAsSP, registerAsBuyer].map { (btn) in
-            guard let btn = btn else {return}
-            btn.layer.cornerRadius = 24
-            btn.layer.shadowOffset = CGSize(width: 0, height: 15)
-            btn.layer.shadowRadius = 15
-            btn.layer.borderColor = #colorLiteral(red: 0.2370404005, green: 0.7025367618, blue: 0.6212409139, alpha: 1)
-            btn.layer.borderWidth = 2
-        }
     }
     
     @IBAction func loginPressed(_ sender: UIButton) {
