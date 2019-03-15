@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		014CEF11223C326800F2FC8E /* ContactCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 014CEF10223C326800F2FC8E /* ContactCollectionViewCell.swift */; };
 		01777D6E220B35B400D51EC4 /* EditProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01777D6D220B35B400D51EC4 /* EditProfileViewController.swift */; };
 		01B7C3572236A23600381DCD /* ContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01B7C3562236A23600381DCD /* ContactViewController.swift */; };
 		01B7C3592236A2C500381DCD /* AccountViewCoontroller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01B7C3582236A2C500381DCD /* AccountViewCoontroller.swift */; };
@@ -64,6 +65,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		014CEF10223C326800F2FC8E /* ContactCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactCollectionViewCell.swift; sourceTree = "<group>"; };
 		01777D6D220B35B400D51EC4 /* EditProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileViewController.swift; sourceTree = "<group>"; };
 		01B7C3562236A23600381DCD /* ContactViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactViewController.swift; sourceTree = "<group>"; };
 		01B7C3582236A2C500381DCD /* AccountViewCoontroller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewCoontroller.swift; sourceTree = "<group>"; };
@@ -182,6 +184,7 @@
 				5B6A73A522158E5600E506DC /* Model */,
 				5B16A01B21DFB0A70022DDE7 /* AppDelegate.swift */,
 				5B16A01F21DFB0A70022DDE7 /* Main.storyboard */,
+				014CEF10223C326800F2FC8E /* ContactCollectionViewCell.swift */,
 				5B16A02221DFB0AA0022DDE7 /* Assets.xcassets */,
 				5B16A02421DFB0AA0022DDE7 /* LaunchScreen.storyboard */,
 				5B16A02721DFB0AA0022DDE7 /* Info.plist */,
@@ -557,6 +560,7 @@
 				AE2942F021F2832D00D629EA /* RegistrationService.swift in Sources */,
 				CC660EC42225DD39008D6E25 /* ConnectionsSPViewController.swift in Sources */,
 				5B16A04E21DFC9AB0022DDE7 /* RBViewController.swift in Sources */,
+				014CEF11223C326800F2FC8E /* ContactCollectionViewCell.swift in Sources */,
 				01E097B921FBB19100DB85D4 /* ProfileViewController.swift in Sources */,
 				AE29B29A21EBEF6800B19FFF /* ConfirmationVC.swift in Sources */,
 				5B6A73AA2215964800E506DC /* ProviderTabBar.swift in Sources */,
