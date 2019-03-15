@@ -1531,15 +1531,8 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="checked" translatesAutoresizingMaskIntoConstraints="NO" id="yDi-xe-gST">
-                                <rect key="frame" x="91" y="259" width="188" height="212"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="212" id="PdU-Db-diY"/>
-                                    <constraint firstAttribute="width" constant="188" id="z7s-or-L86"/>
-                                </constraints>
-                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="We have recieved your application and we will be in contact with you  shortly to verify your business account." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MhT-vs-5y9">
-                                <rect key="frame" x="25" y="82" width="329" height="102"/>
+                                <rect key="frame" x="25" y="96" width="329" height="102"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="102" id="Tsh-to-cnU"/>
                                 </constraints>
@@ -1548,26 +1541,33 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Beauty God Mother Team" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LKo-2y-Pu2">
-                                <rect key="frame" x="92" y="192" width="195" height="20"/>
+                                <rect key="frame" x="92" y="231" width="195" height="20"/>
                                 <fontDescription key="fontDescription" type="italicSystem" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="checked" translatesAutoresizingMaskIntoConstraints="NO" id="yDi-xe-gST">
+                                <rect key="frame" x="83" y="328" width="212" height="248"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="248" id="PdU-Db-diY"/>
+                                    <constraint firstAttribute="width" constant="212" id="z7s-or-L86"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="0Wy-Py-sYQ" firstAttribute="centerX" secondItem="a2Q-bK-jLY" secondAttribute="centerX" constant="-18" id="0gt-yh-hjn"/>
-                            <constraint firstItem="yDi-xe-gST" firstAttribute="top" secondItem="MhT-vs-5y9" secondAttribute="bottom" constant="75" id="5Kq-3C-uDb"/>
+                            <constraint firstItem="yDi-xe-gST" firstAttribute="top" secondItem="MhT-vs-5y9" secondAttribute="bottom" constant="130" id="5Kq-3C-uDb"/>
                             <constraint firstItem="0Wy-Py-sYQ" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="9Jl-FP-kQ3" secondAttribute="trailingMargin" id="7qa-7x-ccg"/>
                             <constraint firstAttribute="bottom" secondItem="0Wy-Py-sYQ" secondAttribute="bottom" constant="20" symbolic="YES" id="Gag-w3-qLa"/>
                             <constraint firstItem="0Wy-Py-sYQ" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="9Jl-FP-kQ3" secondAttribute="leadingMargin" id="QhJ-e8-C1Q"/>
                             <constraint firstItem="a2Q-bK-jLY" firstAttribute="leading" secondItem="9Jl-FP-kQ3" secondAttribute="leadingMargin" constant="96" id="R1s-BR-mO5"/>
                             <constraint firstAttribute="trailingMargin" secondItem="MhT-vs-5y9" secondAttribute="trailing" constant="5" id="aaS-7p-JbV"/>
-                            <constraint firstItem="yDi-xe-gST" firstAttribute="centerX" secondItem="0Wy-Py-sYQ" secondAttribute="centerX" constant="-2.5" id="e6B-Xt-tm8"/>
-                            <constraint firstItem="LKo-2y-Pu2" firstAttribute="centerX" secondItem="yDi-xe-gST" secondAttribute="centerX" constant="4.5" id="krb-h2-ezr"/>
+                            <constraint firstItem="yDi-xe-gST" firstAttribute="centerX" secondItem="0Wy-Py-sYQ" secondAttribute="centerX" constant="1.5" id="e6B-Xt-tm8"/>
+                            <constraint firstItem="LKo-2y-Pu2" firstAttribute="centerX" secondItem="yDi-xe-gST" secondAttribute="centerX" constant="0.5" id="krb-h2-ezr"/>
                             <constraint firstItem="MhT-vs-5y9" firstAttribute="leading" secondItem="9Jl-FP-kQ3" secondAttribute="leadingMargin" constant="9" id="run-nl-idR"/>
-                            <constraint firstItem="yDi-xe-gST" firstAttribute="top" secondItem="9Jl-FP-kQ3" secondAttribute="top" constant="259" id="sGH-AD-AW5"/>
-                            <constraint firstItem="yDi-xe-gST" firstAttribute="top" secondItem="LKo-2y-Pu2" secondAttribute="bottom" constant="47" id="wPV-G0-vhB"/>
+                            <constraint firstItem="yDi-xe-gST" firstAttribute="top" secondItem="9Jl-FP-kQ3" secondAttribute="top" constant="328" id="sGH-AD-AW5"/>
+                            <constraint firstItem="yDi-xe-gST" firstAttribute="top" secondItem="LKo-2y-Pu2" secondAttribute="bottom" constant="77" id="wPV-G0-vhB"/>
                             <constraint firstItem="a2Q-bK-jLY" firstAttribute="top" secondItem="SA6-cP-rtH" secondAttribute="bottom" constant="33" id="z3q-7V-5dm"/>
                         </constraints>
                     </view>
