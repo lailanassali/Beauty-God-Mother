@@ -190,20 +190,17 @@
                                             <segue destination="yS6-3Z-fDt" kind="presentation" modalPresentationStyle="overCurrentContext" id="sYr-pL-U3C"/>
                                         </connections>
                                     </button>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JGE-oq-c9W">
-                                        <rect key="frame" x="8" y="355" width="318" height="37"/>
+                                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JGE-oq-c9W">
+                                        <rect key="frame" x="0.0" y="354" width="343" height="221"/>
                                         <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="318" id="ywU-UD-tOG"/>
+                                            <constraint firstAttribute="width" constant="252" id="ywU-UD-tOG"/>
                                         </constraints>
                                     </view>
                                 </subviews>
                                 <color key="backgroundColor" red="0.96436005830764771" green="0.54703593254089355" blue="0.7100873589515686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstItem="JGE-oq-c9W" firstAttribute="leading" secondItem="thW-N6-OXM" secondAttribute="leading" constant="8" id="ChY-Bq-GZ6"/>
                                     <constraint firstAttribute="width" constant="343" id="OwC-NG-hzp"/>
-                                    <constraint firstAttribute="bottom" secondItem="JGE-oq-c9W" secondAttribute="bottom" constant="-14" id="Tjt-K1-IzR"/>
-                                    <constraint firstItem="JGE-oq-c9W" firstAttribute="top" secondItem="thW-N6-OXM" secondAttribute="top" constant="355" id="YF9-ic-blS"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9OI-b1-C21">
