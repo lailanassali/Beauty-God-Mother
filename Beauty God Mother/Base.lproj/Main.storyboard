@@ -2668,6 +2668,12 @@
                                     <outlet property="delegate" destination="rA1-a9-lkN" id="5qN-LQ-2sN"/>
                                 </connections>
                             </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hJs-y8-eFP">
+                                <rect key="frame" x="279" y="593" width="60" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" image="Map"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -2691,6 +2697,7 @@
         <!--Navigation Controller-->
         <scene sceneID="aas-aQ-4Vq">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OUR-Ln-ZCe" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="VaL-9Q-qQ2" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="om6-m4-gEp">
@@ -2702,7 +2709,6 @@
                         <segue destination="rA1-a9-lkN" kind="relationship" relationship="rootViewController" id="bsM-1g-guV"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="OUR-Ln-ZCe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="6477.6000000000004" y="-448.42578710644682"/>
         </scene>
@@ -2826,6 +2832,7 @@
         <image name="Image-7" width="3601" height="3601"/>
         <image name="Image-8" width="465" height="127"/>
         <image name="Instagram round social media icon free" width="100" height="100"/>
+        <image name="Map" width="48" height="48"/>
         <image name="Twitter round" width="100" height="100"/>
         <image name="account picture" width="346" height="346"/>
         <image name="checked" width="400.69564819335938" height="400.69564819335938"/>

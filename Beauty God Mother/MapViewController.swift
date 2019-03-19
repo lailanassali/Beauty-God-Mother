@@ -1,12 +1,10 @@
-//
-//  MapViewController.swift
-//  Beauty God Mother
-//
-//  Created by Jessica Owusu on 1/20/19.
-//  Copyright © 2019 BGM. All rights reserved.
-//
 
-//import UIKit
+// MapViewController.swift
+// Beauty God Mother
+// Created by Jessica Owusu on 1/20/19.
+// Copyright © 2019 BGM. All rights reserved.
+
+import UIKit
 //import MapKit
 //import Firebase
 

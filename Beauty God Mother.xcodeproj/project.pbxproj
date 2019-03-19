@@ -194,7 +194,6 @@
 				5B16A02721DFB0AA0022DDE7 /* Info.plist */,
 				5B16A04921DFB1F90022DDE7 /* GoogleService-Info.plist */,
 				AE29B29321EBEE3800B19FFF /* MainViewController.swift */,
-				4C6D626721F48A4F00087370 /* MapViewController.swift */,
 				01E097B821FBB19100DB85D4 /* ProfileViewController.swift */,
 				01D0F38E220CBC110016FD5B /* MenuViewController.swift */,
 				01777D6D220B35B400D51EC4 /* EditProfileViewController.swift */,
@@ -203,6 +202,7 @@
 				01B7C3582236A2C500381DCD /* AccountViewCoontroller.swift */,
 				4C6E0791223C456F003B9967 /* SearchViewController.swift */,
 				4C6E0795223C4688003B9967 /* SearchCell.swift */,
+				4C6D626721F48A4F00087370 /* MapViewController.swift */,
 			);
 			path = "Beauty God Mother";
 			sourceTree = "<group>";
