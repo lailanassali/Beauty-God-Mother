@@ -8,35 +8,73 @@
 
 import UIKit
 
-class SearchViewController: UIViewController {
+class SearchViewController: UIViewController,UITableViewDataSource, UITableViewDelegate,UISearchBarDelegate {
 
     @IBOutlet var table: UITableView!
     @IBOutlet var search: UISearchBar!
+    
     var providersArray = [Providers]()
+    var currentProvidersArray = [Providers]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-    }
-}
-    var name = ["Laid By Tiff","Hair By Lai"]
-    var type = ["Hair","Hair"]
-    var image = ["Tiff","Lai"]
-var providersList = Array<Providers>()
-
-func tableView(_ tableView:UITableView, numberOfRowsInSection section: Int) -> Int {
-    return name.count
-}
-
-func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell{
-    guard let cell = tableView.dequeueReusableCell(withIdentifier: "SearchCell") as? SearchCell else {
-        return UITableViewCell()
+        setUpProviders()
+        setUpSearchBar()
     }
     
-    cell.name.text = name[indexPath.row]
-    cell.type.text = type[indexPath.row]
-    cell.imge.image = UIImage(named:image[indexPath.row])
-    return cell
+    private func setUpSearchBar(){
+        //include search bar placeholder
+    }
+    
+    // Details and List of all beauty providers
+    private func setUpProviders() {
+        // HAIR
+        providersArray.append(Providers(name: "Laid By Tiff", type: "Hair", image: "Tiff"))
+        providersArray.append(Providers(name: "Hair By Lai", type: "Hair", image: "Lai"))
+        
+        // NAILS
+        
+        providersArray.append(Providers(name: "Nails By Aisha", type: "Nails", image: "Tiff"))
+        providersArray.append(Providers(name: "Shanju Nails", type: "Nails", image: "Lai"))
+        
+        currentProvidersArray = providersArray
+    }
+    
+    func tableView(_ tableView:UITableView, numberOfRowsInSection section: Int) -> Int {
+        return currentProvidersArray.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell{
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: "SearchCell") as? SearchCell else {
+            return UITableViewCell()
 }
+        cell.name.text = currentProvidersArray[indexPath.row].name
+        cell.type.text = currentProvidersArray[indexPath.row].type
+        cell.imge.image = UIImage(named:currentProvidersArray[indexPath.row].image)
+        return cell
+        
+
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 100
+    }
+
+    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String){
+        guard !searchText.isEmpty else {
+            currentProvidersArray = providersArray
+            table.reloadData()
+            return
+        }
+    currentProvidersArray = providersArray.filter({ providers -> Bool in
+        guard let searchText = searchBar.text else { return false }
+        return providers.type.lowercased().contains(searchText.lowercased())
+    })
+        table.reloadData()
+        
+        }
+    }
+
 
 class Providers {
     let name: String

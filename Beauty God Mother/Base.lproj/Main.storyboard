@@ -1509,6 +1509,7 @@
                                 </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="dismissRegistration:" destination="5Zx-Io-eZE" eventType="touchUpInside" id="ftM-7K-aOP"/>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="bJ2-At-Za9"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Thank you!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a2Q-bK-jLY">
@@ -2608,6 +2609,9 @@
                                     <rect key="frame" x="0.0" y="0.0" width="343" height="44"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                     <textInputTraits key="textInputTraits"/>
+                                    <connections>
+                                        <outlet property="delegate" destination="rA1-a9-lkN" id="6Pz-Xh-rNr"/>
+                                    </connections>
                                 </searchBar>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="SearchCell" rowHeight="114" id="vXq-UB-Zl9" customClass="SearchCell" customModule="Beauty_God_Mother" customModuleProvider="target">
@@ -2706,6 +2710,10 @@
         <scene sceneID="if9-OE-gsQ">
             <objects>
                 <viewController id="XUv-IJ-53e" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="RtB-bp-JWu"/>
+                        <viewControllerLayoutGuide type="bottom" id="MHU-Tw-0v1"/>
+                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="86F-dC-Flb">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -2728,6 +2736,10 @@
         <scene sceneID="VzD-dd-yYE">
             <objects>
                 <viewController id="woE-Nr-NY0" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="HYy-iw-dR5"/>
+                        <viewControllerLayoutGuide type="bottom" id="i8s-VW-tKy"/>
+                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="wAB-yL-ahB">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="457"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -2751,6 +2763,10 @@
         <scene sceneID="KKV-Bb-ebh">
             <objects>
                 <viewController id="NVh-vA-c41" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="qOT-Mh-xMQ"/>
+                        <viewControllerLayoutGuide type="bottom" id="4Ws-B2-bVB"/>
+                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="cT1-mK-DCu">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="457"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -2774,6 +2790,10 @@
         <scene sceneID="tgz-Fn-ceC">
             <objects>
                 <viewController id="wpX-pA-ZRA" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="MU0-b7-qWM"/>
+                        <viewControllerLayoutGuide type="bottom" id="7ix-I8-EvY"/>
+                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="aRl-BQ-aBJ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="457"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -2817,6 +2837,6 @@
         <segue reference="w7d-OH-wFc"/>
         <segue reference="sEq-NP-V1k"/>
         <segue reference="e9Q-62-xmD"/>
-        <segue reference="6PL-Nj-YnB"/>
+        <segue reference="bJ2-At-Za9"/>
     </inferredMetricsTieBreakers>
 </document>
