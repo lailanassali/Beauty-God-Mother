@@ -6,11 +6,11 @@
 //  Copyright © 2019 BGM. All rights reserved.
 //
 
-import UIKit
-import MapKit
-import Firebase
+//import UIKit
+//import MapKit
+//import Firebase
 
-class MapViewController: UIViewController {
+//class MapViewController: UIViewController {
 //
 //    private let locationManager = CLLocationManager()
 //    private var currentLocation: CLLocationCoordinate2D?
@@ -21,15 +21,15 @@ class MapViewController: UIViewController {
 //
 //    @IBOutlet weak var MapView: MKMapView!
 //
-    override func viewDidLoad() {
-      super.viewDidLoad()
+ //   override func viewDidLoad() {
+//       super.viewDidLoad()
 //        checkIfUserIsLoggedIn()
 //        fetchUser()
 //        MapView.delegate = self
 //
 //        configureLocationServices()
 //
-   }
+ //  }
 
 //    @IBAction func logoutNow(_ sender: Any) {
 //        do {
@@ -89,7 +89,7 @@ class MapViewController: UIViewController {
 //
 //        let region = MKCoordinateRegion (center: coordinate, latitudinalMeters: 5500, longitudinalMeters: 5500)
 //        MapView.setRegion(region, animated: true)
-}
+//    }
 //
 //    private func addAnnotions() {
 //    let laidByTiff = MKPointAnnotation()

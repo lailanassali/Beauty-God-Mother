@@ -21,7 +21,7 @@ class CustomerTabBar: UITabBarController {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         
         // search
-        let searchVC = storyboard.instantiateViewController(withIdentifier: "SearchVC")
+        let searchVC = storyboard.instantiateViewController(withIdentifier: "MapVC")
         let searchNavigation = UINavigationController(rootViewController: searchVC)
         searchVC.title = "Search"
         

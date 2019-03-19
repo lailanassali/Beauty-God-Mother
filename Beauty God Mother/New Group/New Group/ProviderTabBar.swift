@@ -23,7 +23,7 @@ class ProviderTabBar: UITabBarController, UITabBarControllerDelegate {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         
         // search
-        let searchVC = storyboard.instantiateViewController(withIdentifier: "SearchVC")
+        let searchVC = storyboard.instantiateViewController(withIdentifier: "MapVC")
         let searchNavigation = UINavigationController(rootViewController: searchVC)
         searchVC.title = "Search"
         // account
@@ -37,7 +37,7 @@ class ProviderTabBar: UITabBarController, UITabBarControllerDelegate {
         //contact page
         let contactVC = storyboard.instantiateViewController(withIdentifier: "ContactVC")
         let contactNavigation = UINavigationController(rootViewController: contactVC)
-        accountVC.title = "Contact"
+        accountVC.title = "Contact "
         
         viewControllers = [searchNavigation, accountNavigation, profileNavigation, contactNavigation]
         
