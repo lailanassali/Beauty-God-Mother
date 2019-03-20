@@ -23,7 +23,7 @@ class ProviderTabBar: UITabBarController, UITabBarControllerDelegate {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         
         // search
-        let searchVC = storyboard.instantiateViewController(withIdentifier: "MapVC")
+        let searchVC = storyboard.instantiateViewController(withIdentifier: "SearchVC")
         let searchNavigation = UINavigationController(rootViewController: searchVC)
         searchVC.title = "Search"
         // account

@@ -82,7 +82,7 @@ class Providers {
     let image: String
     //let rating:
     
-    init(name: String, type:String, image: String){
+    init(name: String, type: String, image: String){
         self.name = name
         self.type = type
         self.image = image
