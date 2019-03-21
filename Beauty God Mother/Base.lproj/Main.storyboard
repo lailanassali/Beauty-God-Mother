@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -1957,6 +1957,112 @@
             </objects>
             <point key="canvasLocation" x="6430" y="-1252"/>
         </scene>
+        <!--Booking View Controller-->
+        <scene sceneID="4UC-0s-S1e">
+            <objects>
+                <viewController id="ABz-dL-51i" customClass="BookingViewController" customModule="Beauty_God_Mother" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="xbI-Zr-LMT"/>
+                        <viewControllerLayoutGuide type="bottom" id="mM2-t5-y9j"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="PBt-Na-Rzu">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Make a booking" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aOX-M1-5HP">
+                                <rect key="frame" x="127" y="61" width="121" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.56207287800000005" green="0.4531161494" blue="0.66422775889999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Calendar" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UAb-Hx-erH">
+                                <rect key="frame" x="153" y="136" width="69" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HHT-PN-OJ9">
+                                <rect key="frame" x="296" y="148" width="32" height="30"/>
+                                <state key="normal" title="Next"/>
+                                <connections>
+                                    <action selector="Next:" destination="ABz-dL-51i" eventType="touchUpInside" id="QuM-rF-6mR"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GTk-xk-6V5">
+                                <rect key="frame" x="59" y="148" width="34" height="30"/>
+                                <state key="normal" title="Back"/>
+                                <connections>
+                                    <action selector="Back:" destination="ABz-dL-51i" eventType="touchUpInside" id="j6o-Kx-3SP"/>
+                                </connections>
+                            </button>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="LDt-zh-nyF">
+                                <rect key="frame" x="27" y="243" width="321" height="195"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="4" minimumInteritemSpacing="5" id="iKV-61-7pT">
+                                    <size key="itemSize" width="40" height="40"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Calendar" id="K2a-c5-lDG" customClass="DateCollectionViewCell" customModule="Beauty_God_Mother" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                            <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mXp-ES-uqs">
+                                                    <rect key="frame" x="6" y="8" width="29" height="25"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </view>
+                                        <size key="customSize" width="40" height="40"/>
+                                        <connections>
+                                            <outlet property="DateLabel" destination="mXp-ES-uqs" id="Eyz-YG-23s"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="ABz-dL-51i" id="DWC-W5-Xhj"/>
+                                    <outlet property="delegate" destination="ABz-dL-51i" id="OVT-lb-GVr"/>
+                                </connections>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="mM2-t5-y9j" firstAttribute="top" secondItem="UAb-Hx-erH" secondAttribute="bottom" constant="510" id="0Bj-jU-w63"/>
+                            <constraint firstItem="UAb-Hx-erH" firstAttribute="top" secondItem="aOX-M1-5HP" secondAttribute="bottom" constant="54" id="1Ou-pb-QYH"/>
+                            <constraint firstItem="GTk-xk-6V5" firstAttribute="top" secondItem="xbI-Zr-LMT" secondAttribute="bottom" constant="128" id="6G4-de-bFj"/>
+                            <constraint firstItem="UAb-Hx-erH" firstAttribute="leading" secondItem="PBt-Na-Rzu" secondAttribute="leadingMargin" constant="137" id="9jQ-JN-CWK"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="UAb-Hx-erH" secondAttribute="trailing" constant="137" id="F8x-Dj-DFq"/>
+                            <constraint firstItem="mM2-t5-y9j" firstAttribute="top" secondItem="aOX-M1-5HP" secondAttribute="bottom" constant="585" id="GO1-ka-U6h"/>
+                            <constraint firstItem="mM2-t5-y9j" firstAttribute="top" secondItem="GTk-xk-6V5" secondAttribute="bottom" constant="489" id="GaQ-Jm-yiy"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="aOX-M1-5HP" secondAttribute="trailing" constant="111" id="Os5-as-VG1"/>
+                            <constraint firstItem="aOX-M1-5HP" firstAttribute="top" secondItem="xbI-Zr-LMT" secondAttribute="bottom" constant="41" id="PcH-eU-EYe"/>
+                            <constraint firstItem="aOX-M1-5HP" firstAttribute="leading" secondItem="PBt-Na-Rzu" secondAttribute="leadingMargin" constant="111" id="Phd-Mj-PE3"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="HHT-PN-OJ9" secondAttribute="trailing" constant="31" id="b0Y-1L-cTM"/>
+                            <constraint firstItem="GTk-xk-6V5" firstAttribute="leading" secondItem="PBt-Na-Rzu" secondAttribute="leadingMargin" constant="43" id="e0T-fG-3Of"/>
+                            <constraint firstItem="UAb-Hx-erH" firstAttribute="leading" secondItem="GTk-xk-6V5" secondAttribute="trailing" constant="60" id="e7G-ys-5y5"/>
+                            <constraint firstItem="mM2-t5-y9j" firstAttribute="top" secondItem="HHT-PN-OJ9" secondAttribute="bottom" constant="489" id="eA3-WW-JLg"/>
+                            <constraint firstItem="HHT-PN-OJ9" firstAttribute="leading" secondItem="UAb-Hx-erH" secondAttribute="trailing" constant="74" id="jh8-50-O2h"/>
+                            <constraint firstItem="HHT-PN-OJ9" firstAttribute="top" secondItem="xbI-Zr-LMT" secondAttribute="bottom" constant="128" id="y9m-Kb-pfr"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="Calendar" destination="LDt-zh-nyF" id="zWV-TL-oUL"/>
+                        <outlet property="MonthLabel" destination="UAb-Hx-erH" id="37l-GQ-NXZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vdn-c5-wx5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6639" y="331"/>
+        </scene>
         <!--My Account-->
         <scene sceneID="Pzk-Nq-JOr">
             <objects>
@@ -2744,7 +2850,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rBW-rO-OTu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="8868" y="-364.7676161919041"/>
+            <point key="canvasLocation" x="9014" y="-484"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="KKV-Bb-ebh">
@@ -2771,7 +2877,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6FU-m3-9MK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="9540" y="-824.43778110944538"/>
+            <point key="canvasLocation" x="9818" y="-903"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="tgz-Fn-ceC">
@@ -2825,6 +2931,6 @@
         <segue reference="w7d-OH-wFc"/>
         <segue reference="sEq-NP-V1k"/>
         <segue reference="e9Q-62-xmD"/>
-        <segue reference="Kv6-es-Wtb"/>
+        <segue reference="6PL-Nj-YnB"/>
     </inferredMetricsTieBreakers>
 </document>
