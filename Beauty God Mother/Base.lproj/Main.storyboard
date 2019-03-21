@@ -892,6 +892,7 @@
                                 </state>
                                 <connections>
                                     <action selector="NextButton:" destination="TDs-X3-0yw" eventType="touchUpInside" id="dIG-gG-qNj"/>
+                                    <segue destination="ROc-lZ-egk" kind="show" id="up0-8U-q7I"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -1103,6 +1104,7 @@
                                 </state>
                                 <connections>
                                     <action selector="NextButton:" destination="ROc-lZ-egk" eventType="touchUpInside" id="hFx-fO-27K"/>
+                                    <segue destination="7yh-yW-ka8" kind="show" id="rYB-uv-Rba"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -1240,6 +1242,7 @@
                                 </state>
                                 <connections>
                                     <action selector="NextButton:" destination="7yh-yW-ka8" eventType="touchUpInside" id="tdg-fJ-qB0"/>
+                                    <segue destination="9iZ-qT-u4Z" kind="show" id="o3i-r0-GkD"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -2929,6 +2932,8 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="w7d-OH-wFc"/>
+        <segue reference="rYB-uv-Rba"/>
+        <segue reference="Kyl-E8-csH"/>
         <segue reference="sEq-NP-V1k"/>
         <segue reference="e9Q-62-xmD"/>
         <segue reference="6PL-Nj-YnB"/>
