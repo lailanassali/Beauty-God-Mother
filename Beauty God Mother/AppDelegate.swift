@@ -21,9 +21,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         window = UIWindow(frame: UIScreen.main.bounds)
         window?.makeKeyAndVisible()
-     //   let storyboard = UIStoryboard(name: "Main", bundle: nil)
-    //  let loginVC = storyboard.instantiateViewController(withIdentifier: "LoginPageID")
-   //     print(Auth.auth().currentUser?.uid)
+        
+ //     let storyboard = UIStoryboard(name: "Main", bundle: nil)
+ //     let loginVC = storyboard.instantiateViewController(withIdentifier: "LoginPageID")
+ //    print(Auth.auth().currentUser?.uid)
+        
         if let _ = Auth.auth().currentUser?.uid {
             window?.rootViewController = RootViewController()
         } else {
