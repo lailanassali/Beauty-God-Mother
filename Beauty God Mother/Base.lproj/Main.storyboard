@@ -892,6 +892,7 @@
                                 </state>
                                 <connections>
                                     <action selector="NextButton:" destination="TDs-X3-0yw" eventType="touchUpInside" id="dIG-gG-qNj"/>
+                                    <segue destination="ROc-lZ-egk" kind="show" id="7L9-ta-vVn"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -1103,6 +1104,7 @@
                                 </state>
                                 <connections>
                                     <action selector="NextButton:" destination="ROc-lZ-egk" eventType="touchUpInside" id="hFx-fO-27K"/>
+                                    <segue destination="7yh-yW-ka8" kind="show" id="ZTt-VI-6ZR"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -1240,6 +1242,7 @@
                                 </state>
                                 <connections>
                                     <action selector="NextButton:" destination="7yh-yW-ka8" eventType="touchUpInside" id="tdg-fJ-qB0"/>
+                                    <segue destination="9iZ-qT-u4Z" kind="show" id="gaH-ag-kcA"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -1451,6 +1454,7 @@
                                 </state>
                                 <connections>
                                     <action selector="NextButton:" destination="9iZ-qT-u4Z" eventType="touchUpInside" id="y11-mM-ccx"/>
+                                    <segue destination="rO3-1p-lkF" kind="show" id="NdU-FA-oKp"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -1611,7 +1615,7 @@
                                 </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="dismissRegistration:" destination="5Zx-Io-eZE" eventType="touchUpInside" id="QWt-bm-Ezc"/>
-                                    <segue destination="BYZ-38-t0r" kind="presentation" id="zKv-ns-HSy"/>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="1Mz-Fm-hDF"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -1631,7 +1635,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="V12-WN-01H" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1710" y="2866"/>
+            <point key="canvasLocation" x="1601" y="2866"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="ueU-Hz-UJY">
@@ -2734,7 +2738,6 @@
         <!--View Controller-->
         <scene sceneID="if9-OE-gsQ">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="wJk-YR-ylS" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="XUv-IJ-53e" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="RtB-bp-JWu"/>
@@ -2755,6 +2758,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </view>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wJk-YR-ylS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="9540" y="-1493"/>
         </scene>
@@ -2909,8 +2913,10 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="egn-s3-YUk"/>
+        <segue reference="ScV-HV-PxE"/>
+        <segue reference="Kyl-E8-csH"/>
         <segue reference="sEq-NP-V1k"/>
         <segue reference="MA9-b3-8EW"/>
-        <segue reference="OSa-zz-B7m"/>
+        <segue reference="1Mz-Fm-hDF"/>
     </inferredMetricsTieBreakers>
 </document>
