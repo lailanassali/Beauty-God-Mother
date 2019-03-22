@@ -2467,6 +2467,7 @@
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
                                                     <constraint firstItem="uaF-j2-7O3" firstAttribute="leading" secondItem="YQk-DN-lzr" secondAttribute="leading" id="03J-v4-8q3"/>
+                                                    <constraint firstItem="fek-JE-cIL" firstAttribute="width" secondItem="ZDS-iP-7JH" secondAttribute="height" multiplier="111:50" id="188-AS-b1S"/>
                                                     <constraint firstAttribute="trailing" secondItem="QbU-E5-Mke" secondAttribute="trailing" constant="37" id="8ub-Oo-bgC"/>
                                                     <constraint firstItem="J1a-eU-UkT" firstAttribute="leading" secondItem="qom-eB-pG1" secondAttribute="leading" id="A6T-5Q-MYQ"/>
                                                     <constraint firstItem="EwS-c6-NtX" firstAttribute="centerX" secondItem="J1a-eU-UkT" secondAttribute="centerX" id="C6O-3S-joQ"/>
@@ -2533,6 +2534,10 @@
                     <navigationItem key="navigationItem" title="Business Name" largeTitleDisplayMode="never" id="CcG-Ei-OdC"/>
                     <size key="freeformSize" width="375" height="1024"/>
                     <connections>
+                        <outlet property="bioText" destination="fek-JE-cIL" id="Xf9-16-lBs"/>
+                        <outlet property="businessNameText" destination="oPz-TI-Af7" id="Oip-bg-pJG"/>
+                        <outlet property="categoriesText" destination="8j4-I8-U2i" id="a84-pB-jir"/>
+                        <outlet property="logoImageView" destination="n7a-dG-Dhp" id="Veu-Yz-Eo8"/>
                         <outlet property="mediaContainer" destination="b64-b5-yoV" id="5KY-N7-cB8"/>
                         <outlet property="reviewsContainer" destination="YQk-DN-lzr" id="69F-97-0HV"/>
                         <outlet property="servicesContainer" destination="uaF-j2-7O3" id="vum-DQ-edX"/>

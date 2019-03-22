@@ -21,7 +21,7 @@ class AccountViewController: UIViewController, UIImagePickerControllerDelegate, 
     @IBOutlet weak var email: UILabel!
     @IBOutlet weak var name: UILabel!
     @IBOutlet weak var picLoader: UIActivityIndicatorView!
-    
+
     
     var loggedInUser: AnyObject? = .none
     var databaseRef = Database.database().reference()

@@ -8,68 +8,44 @@
 
 
 import UIKit
+import Firebase
 import FirebaseAuth
 
 
-class ProfileViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
-   
-  var iconArray = [UIImage(named: "webicon"),UIImage(named: "instaicon"),UIImage(named: "fbicon"),UIImage(named: "mailicon"),UIImage(named: "phoneicon"),]
+class ProfileViewController: UIViewController {
+
+    @IBOutlet weak var bio: UILabel!
+    @IBOutlet weak var companytype: UILabel!
+    @IBOutlet weak var businessName: UILabel!
+    @IBOutlet weak var logoImage: UIImageView!
     
+    var loggedInUser: AnyObject? = .none
+    var databaseRef = Database.database().reference()
+    var storageRef = Storage.storage().reference()
+    
+   
     @IBOutlet weak var servicesContainer: UIView!
     @IBOutlet weak var mediaContainer: UIView!
     @IBOutlet weak var reviewsContainer: UIView!
     
     
-    override func viewDidLoad (){
+    override func viewDidLoad() {
         super.viewDidLoad()
-    }
-    
-    
-    
-    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-       return iconArray.count
-    }
-    
-    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "ContactCollectionViewCell", for: indexPath)
-        as? ContactCollectionViewCell
         
-       cell?.ContactIcons.image = iconArray[indexPath.row]
-        return cell!
-    }
-    
-    
-    @IBAction func showComponents(_ sender: AnyObject) {
-        
-        if(sender.selectedSegmentIndex == 0)
-        {
-            UIView.animate(withDuration: 0.5, animations: {
-                
-                self.servicesContainer.alpha = 1
-                self.mediaContainer.alpha = 0
-                self.reviewsContainer.alpha = 0
-            })
-                
-        }
-            else if (sender.selectedSegmentIndex == 1)
-        {
-            UIView.animate(withDuration: 0.5, animations: {
-                
-                self.mediaContainer.alpha = 1
-                self.servicesContainer.alpha = 0
-                self.reviewsContainer.alpha = 0
-            })
-        }
-        else
-        {
-            UIView.animate(withDuration: 0.5, animations: {
-                
-                self.reviewsContainer.alpha = 1
-                self.servicesContainer.alpha = 0
-                self.mediaContainer.alpha = 0
-            })
-        }
-    }
-}
+        self.loggedInUser = Auth.auth().currentUser
+        self.databaseRef.child("users").child(self.loggedInUser!.uid).observeSingleEvent(of: .value) { (snapshot:DataSnapshot)in
+            
+            
+            self.businessName.text = ((snapshot.value as? NSDictionary)? ["organisation name"] as! String)
+            self.bio.text = ((snapshot.value as? NSDictionary)? ["bio"] as! String)
+            self.companytype.text = ((snapshot.value as? NSDictionary)? ["companytype"] as! String)
 
+            }
+        
+        }
+        
+    }
+    
+
+    
 
