@@ -1,14 +1,17 @@
-
-// MapViewController.swift
-// Beauty God Mother
-// Created by Jessica Owusu on 1/20/19.
-// Copyright © 2019 BGM. All rights reserved.
-
-import UIKit
+//
+//// MapViewController.swift
+//// Beauty God Mother
+//// Created by Jessica Owusu on 1/20/19.
+//// Copyright © 2019 BGM. All rights reserved.
+//
+//import UIKit
 //import MapKit
 //import Firebase
-
+//
+//
 //class MapViewController: UIViewController {
+//    
+//}
 //
 //    private let locationManager = CLLocationManager()
 //    private var currentLocation: CLLocationCoordinate2D?
@@ -17,54 +20,54 @@ import UIKit
 //    private var currentRoute: MKRoute?
 //    var user: User?
 //
-//    @IBOutlet weak var MapView: MKMapView!
 //
- //   override func viewDidLoad() {
+//
+//    override func viewDidLoad() {
 //       super.viewDidLoad()
-//        checkIfUserIsLoggedIn()
-//        fetchUser()
+//  //      checkIfUserIsLoggedIn()
+//  //      fetchUser()
 //        MapView.delegate = self
 //
 //        configureLocationServices()
 //
- //  }
-
-//    @IBAction func logoutNow(_ sender: Any) {
-//        do {
-//            try Auth.auth().signOut()
-//            dismiss(animated: true, completion: nil)
-//        } catch let e {
-//            print("Failed to logout",e)
-//        }
-//    }
-//    fileprivate func fetchUser() {
-//        guard let id = Auth.auth().currentUser?.uid else {return}
-//        Database.database().reference().child("users").child(id).observeSingleEvent(of: .value, with: { (snapshot) in
-//            guard let dictionary = snapshot.value as? [String:Any] else {return}
-//            let user = User(id: id, dictionary: dictionary)
+//   }
 //
-//
-//        }) { (err) in
-//            print("Failed to fetch user: ", err)
-//        }
-//    }
-//
-//    fileprivate func checkIfUserIsLoggedIn(){
-//        if Auth.auth().currentUser?.uid == nil {
-//            DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 0) {
-//                self.logout()
-//            }
-//        }
-//    }
-//
-
-//    fileprivate func logout() {
-//        do {
-//            try Auth.auth().signOut()
-//            performSegue(withIdentifier: "mainToLogin", sender: self)
-//        } catch let e {
-//            print("Failed to logout",e)
-//        }
+////    @IBAction func logoutNow(_ sender: Any) {
+////        do {
+////            try Auth.auth().signOut()
+////            dismiss(animated: true, completion: nil)
+////        } catch let e {
+////            print("Failed to logout",e)
+////        }
+////    }
+////    fileprivate func fetchUser() {
+////        guard let id = Auth.auth().currentUser?.uid else {return}
+////        Database.database().reference().child("users").child(id).observeSingleEvent(of: .value, with: { (snapshot) in
+////            guard let dictionary = snapshot.value as? [String:Any] else {return}
+////            let user = User(id: id, dictionary: dictionary)
+////
+////
+////        }) { (err) in
+////            print("Failed to fetch user: ", err)
+////        }
+////    }
+////
+////    fileprivate func checkIfUserIsLoggedIn(){
+////        if Auth.auth().currentUser?.uid == nil {
+////            DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 0) {
+////                self.logout()
+////            }
+////        }
+////    }
+////
+////
+////    fileprivate func logout() {
+////        do {
+////            try Auth.auth().signOut()
+////            performSegue(withIdentifier: "mainToLogin", sender: self)
+////        } catch let e {
+////            print("Failed to logout",e)
+////        }
 //    }
 //    private func configureLocationServices() {
 //        locationManager.delegate = self
@@ -207,4 +210,3 @@ import UIKit
 //    func mapView(_ mapView: MKMapView, didSelect view: MKAnnotationView) {
 //        print (" The annotation was selected: \(String(describing: view.annotation?.title))")
 //    }
-//
