@@ -36,9 +36,6 @@
 		5B2E24452215A3A600F21E29 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B2E24442215A3A600F21E29 /* RootViewController.swift */; };
 		5B6A73A722158E6D00E506DC /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B6A73A622158E6D00E506DC /* User.swift */; };
 		5B6A73AA2215964800E506DC /* ProviderTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B6A73A92215964800E506DC /* ProviderTabBar.swift */; };
-		5BF67D322245001700AC61E0 /* CustomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF67D312245001700AC61E0 /* CustomViewController.swift */; };
-		5BF67D342245002500AC61E0 /* StandardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF67D332245002500AC61E0 /* StandardViewController.swift */; };
-		5BF67D362245003300AC61E0 /* ApplePayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF67D352245003300AC61E0 /* ApplePayViewController.swift */; };
 		68FC856096471068AC3E1B4E /* Pods_Beauty_God_Mother.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AC7137FDBF8C98CB8F38344 /* Pods_Beauty_God_Mother.framework */; };
 		AE2942F021F2832D00D629EA /* RegistrationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE2942EF21F2832D00D629EA /* RegistrationService.swift */; };
 		AE29B29421EBEE3800B19FFF /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE29B29321EBEE3800B19FFF /* MainViewController.swift */; };
@@ -49,9 +46,9 @@
 		CC62D3C72212F593004FB434 /* ForgotPassword.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC62D3C62212F593004FB434 /* ForgotPassword.swift */; };
 		CC660EC42225DD39008D6E25 /* ConnectionsSPViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC660EC32225DD39008D6E25 /* ConnectionsSPViewController.swift */; };
 		CC793C0F22253A8B00266734 /* ServicesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC793C0E22253A8B00266734 /* ServicesTableViewController.swift */; };
-		CC9F380E2243E308003A7436 /* DateCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC9F380D2243E308003A7436 /* DateCollectionViewCell.swift */; };
-		CC9F38102243E47D003A7436 /* CalendarVars.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC9F380F2243E47D003A7436 /* CalendarVars.swift */; };
-		CC9F38122244C389003A7436 /* PaymentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC9F38112244C389003A7436 /* PaymentViewController.swift */; };
+		CC911BDD22439032003AA84B /* BookingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC911BDC22439032003AA84B /* BookingViewController.swift */; };
+		CC911BDF2243959F003AA84B /* DateCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC911BDE2243959F003AA84B /* DateCollectionViewCell.swift */; };
+		CC911BE122439959003AA84B /* CalendarVars.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC911BE022439959003AA84B /* CalendarVars.swift */; };
 		CCA91949220C7A1C00672E6F /* ConfirmationDetailsBP.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCA91948220C7A1C00672E6F /* ConfirmationDetailsBP.swift */; };
 		CCF35067223178B6007DB408 /* ServicesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCF35066223178B6007DB408 /* ServicesViewController.swift */; };
 		CCFA3E9F221AD2D700B160EF /* Swipe3ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCFA3E9E221AD2D700B160EF /* Swipe3ViewController.swift */; };
@@ -111,9 +108,6 @@
 		5B2E24442215A3A600F21E29 /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
 		5B6A73A622158E6D00E506DC /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		5B6A73A92215964800E506DC /* ProviderTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProviderTabBar.swift; sourceTree = "<group>"; };
-		5BF67D312245001700AC61E0 /* CustomViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomViewController.swift; sourceTree = "<group>"; };
-		5BF67D332245002500AC61E0 /* StandardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StandardViewController.swift; sourceTree = "<group>"; };
-		5BF67D352245003300AC61E0 /* ApplePayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplePayViewController.swift; sourceTree = "<group>"; };
 		718ACE45EB6FE671D1BEECC2 /* Pods-Beauty God MotherTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Beauty God MotherTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Beauty God MotherTests/Pods-Beauty God MotherTests.debug.xcconfig"; sourceTree = "<group>"; };
 		9E1D72925356FF595FB62F1B /* Pods-Beauty God Mother.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Beauty God Mother.release.xcconfig"; path = "Pods/Target Support Files/Pods-Beauty God Mother/Pods-Beauty God Mother.release.xcconfig"; sourceTree = "<group>"; };
 		AE2942EF21F2832D00D629EA /* RegistrationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationService.swift; sourceTree = "<group>"; };
@@ -125,9 +119,9 @@
 		CC62D3C62212F593004FB434 /* ForgotPassword.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPassword.swift; sourceTree = "<group>"; };
 		CC660EC32225DD39008D6E25 /* ConnectionsSPViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectionsSPViewController.swift; sourceTree = "<group>"; };
 		CC793C0E22253A8B00266734 /* ServicesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServicesTableViewController.swift; sourceTree = "<group>"; };
-		CC9F380D2243E308003A7436 /* DateCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateCollectionViewCell.swift; sourceTree = "<group>"; };
-		CC9F380F2243E47D003A7436 /* CalendarVars.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarVars.swift; sourceTree = "<group>"; };
-		CC9F38112244C389003A7436 /* PaymentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentViewController.swift; sourceTree = "<group>"; };
+		CC911BDC22439032003AA84B /* BookingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookingViewController.swift; sourceTree = "<group>"; };
+		CC911BDE2243959F003AA84B /* DateCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateCollectionViewCell.swift; sourceTree = "<group>"; };
+		CC911BE022439959003AA84B /* CalendarVars.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarVars.swift; sourceTree = "<group>"; };
 		CCA91948220C7A1C00672E6F /* ConfirmationDetailsBP.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmationDetailsBP.swift; sourceTree = "<group>"; };
 		CCF35066223178B6007DB408 /* ServicesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServicesViewController.swift; sourceTree = "<group>"; };
 		CCFA3E9E221AD2D700B160EF /* Swipe3ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Swipe3ViewController.swift; sourceTree = "<group>"; };
@@ -177,6 +171,7 @@
 		5B16A00F21DFB0A70022DDE7 = {
 			isa = PBXGroup;
 			children = (
+				CC911BDE2243959F003AA84B /* DateCollectionViewCell.swift */,
 				5B16A01A21DFB0A70022DDE7 /* Beauty God Mother */,
 				5B16A02F21DFB0AA0022DDE7 /* Beauty God MotherTests */,
 				5B16A03A21DFB0AA0022DDE7 /* Beauty God MotherUITests */,
@@ -220,15 +215,9 @@
 				4C6E0795223C4688003B9967 /* SearchCell.swift */,
 				5898698D2245285F00DC6E47 /* ViewControllerRate.swift */,
 				4C6D626721F48A4F00087370 /* MapViewController.swift */,
-<<<<<<< HEAD
 				CC911BDC22439032003AA84B /* BookingViewController.swift */,
 				CC911BE022439959003AA84B /* CalendarVars.swift */,
 				589869892243AFAF00DC6E47 /* RatingViewController.swift */,
-=======
-				CC9F380D2243E308003A7436 /* DateCollectionViewCell.swift */,
-				CC9F380F2243E47D003A7436 /* CalendarVars.swift */,
-				CC9F38112244C389003A7436 /* PaymentViewController.swift */,
->>>>>>> 47e31b8256b10a3a9717605a47827d8ab720b6a0
 			);
 			path = "Beauty God Mother";
 			sourceTree = "<group>";
@@ -308,7 +297,6 @@
 		5B6A73A522158E5600E506DC /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				5BF67D302244FFFD00AC61E0 /* Payments */,
 				5B6A73AB2215965B00E506DC /* TabBars */,
 			);
 			name = Model;
@@ -332,16 +320,6 @@
 			);
 			name = TabBars;
 			path = "New Group";
-			sourceTree = "<group>";
-		};
-		5BF67D302244FFFD00AC61E0 /* Payments */ = {
-			isa = PBXGroup;
-			children = (
-				5BF67D312245001700AC61E0 /* CustomViewController.swift */,
-				5BF67D332245002500AC61E0 /* StandardViewController.swift */,
-				5BF67D352245003300AC61E0 /* ApplePayViewController.swift */,
-			);
-			path = Payments;
 			sourceTree = "<group>";
 		};
 		E4E30AEDA9F91096A65DF3C6 /* Frameworks */ = {
@@ -526,7 +504,6 @@
 				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
 				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
 				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
-				"${BUILT_PRODUCTS_DIR}/Stripe/Stripe.framework",
 				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
@@ -538,7 +515,6 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Stripe.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
@@ -607,16 +583,13 @@
 				5B16A04E21DFC9AB0022DDE7 /* RBViewController.swift in Sources */,
 				014CEF11223C326800F2FC8E /* ContactCollectionViewCell.swift in Sources */,
 				01E097B921FBB19100DB85D4 /* ProfileViewController.swift in Sources */,
-				CC9F38122244C389003A7436 /* PaymentViewController.swift in Sources */,
 				AE29B29A21EBEF6800B19FFF /* ConfirmationVC.swift in Sources */,
 				5B6A73AA2215964800E506DC /* ProviderTabBar.swift in Sources */,
-				5BF67D362245003300AC61E0 /* ApplePayViewController.swift in Sources */,
-				CC9F38102243E47D003A7436 /* CalendarVars.swift in Sources */,
+				CC911BE122439959003AA84B /* CalendarVars.swift in Sources */,
 				4C6D626821F48A4F00087370 /* MapViewController.swift in Sources */,
 				4C6E0796223C4688003B9967 /* SearchCell.swift in Sources */,
 				5B1C212D223730DC00E69DF3 /* Firebase_Extension.swift in Sources */,
 				01B7C3572236A23600381DCD /* ContactViewController.swift in Sources */,
-				5BF67D342245002500AC61E0 /* StandardViewController.swift in Sources */,
 				01D0F38F220CBC120016FD5B /* MenuViewController.swift in Sources */,
 				CC24B0E8221ED1BA00ADEFCC /* BPRegistrationStartViewController.swift in Sources */,
 				5B2E24452215A3A600F21E29 /* RootViewController.swift in Sources */,
@@ -630,11 +603,11 @@
 				CC62D3C72212F593004FB434 /* ForgotPassword.swift in Sources */,
 				01B7C3592236A2C500381DCD /* AccountViewCoontroller.swift in Sources */,
 				5B2E244322159E5D00F21E29 /* Extension+Database.swift in Sources */,
+				CC911BDD22439032003AA84B /* BookingViewController.swift in Sources */,
 				4C6E0792223C456F003B9967 /* SearchViewController.swift in Sources */,
-				5BF67D322245001700AC61E0 /* CustomViewController.swift in Sources */,
 				CCF35067223178B6007DB408 /* ServicesViewController.swift in Sources */,
 				5B16A05021DFC9C10022DDE7 /* SPViewController.swift in Sources */,
-				CC9F380E2243E308003A7436 /* DateCollectionViewCell.swift in Sources */,
+				CC911BDF2243959F003AA84B /* DateCollectionViewCell.swift in Sources */,
 				AE29B29421EBEE3800B19FFF /* MainViewController.swift in Sources */,
 				CCFA3E9F221AD2D700B160EF /* Swipe3ViewController.swift in Sources */,
 				CC793C0F22253A8B00266734 /* ServicesTableViewController.swift in Sources */,
@@ -819,13 +792,13 @@
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 5H3A6UZ6V5;
+				DEVELOPMENT_TEAM = AQ6CQRSKHS;
 				INFOPLIST_FILE = "Beauty God Mother/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "Beauty-God-Mother3";
+				PRODUCT_BUNDLE_IDENTIFIER = "Beauty-God-Mother2";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -838,13 +811,13 @@
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 5H3A6UZ6V5;
+				DEVELOPMENT_TEAM = AQ6CQRSKHS;
 				INFOPLIST_FILE = "Beauty God Mother/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "Beauty-God-Mother3";
+				PRODUCT_BUNDLE_IDENTIFIER = "Beauty-God-Mother2";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";

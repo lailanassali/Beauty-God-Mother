@@ -18,7 +18,7 @@ class RootViewController: UIViewController {
             fetchCurrentUser(withID: uid)
         } else {
             let storyboard = UIStoryboard(name: "Main", bundle: nil)
-         let loginVC = storyboard.instantiateViewController(withIdentifier: "LoginPageID")
+            let loginVC = storyboard.instantiateViewController(withIdentifier: "LoginPageID")
             self.present(loginVC, animated: true, completion: nil)
         }
     }

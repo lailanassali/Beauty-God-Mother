@@ -13,7 +13,6 @@ pod 'Firebase/Database'
 pod 'Firebase/Storage'
 pod 'Kingfisher'
 pod 'SDWebImage'
-pod 'Stripe'
 
 target 'Beauty God MotherTests' do
 inherit! :search_paths

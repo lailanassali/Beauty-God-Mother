@@ -59,11 +59,6 @@ class SearchViewController: UIViewController,UITableViewDataSource, UITableViewD
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 100
     }
-    
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let searchViewC = storyboard?.instantiateViewController(withIdentifier: "ProfileVC" ) as? ProfileViewController
-        self.navigationController?.pushViewController(searchViewC!, animated: true)
-    }
 
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String){
         guard !searchText.isEmpty else {

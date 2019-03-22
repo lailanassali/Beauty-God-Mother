@@ -79,7 +79,6 @@ PODS:
   - SDWebImage (4.4.3):
     - SDWebImage/Core (= 4.4.3)
   - SDWebImage/Core (4.4.3)
-  - Stripe (14.0.0)
 
 DEPENDENCIES:
   - Firebase
@@ -89,7 +88,6 @@ DEPENDENCIES:
   - Firebase/Storage
   - Kingfisher
   - SDWebImage
-  - Stripe
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
@@ -108,7 +106,6 @@ SPEC REPOS:
     - leveldb-library
     - nanopb
     - SDWebImage
-    - Stripe
 
 SPEC CHECKSUMS:
   Firebase: 8bb9268bff82374f2cbaaabb143e725743c316ae
@@ -126,8 +123,7 @@ SPEC CHECKSUMS:
   leveldb-library: 08cba283675b7ed2d99629a4bc5fd052cd2bb6a5
   nanopb: 2901f78ea1b7b4015c860c2fdd1ea2fee1a18d48
   SDWebImage: c5594f1a19c48d526d321e548902b56b479cd508
-  Stripe: db29ad197c74aca6fb981e4e8355cf7ebd0fca5a
 
-PODFILE CHECKSUM: fbabaa119f9c9be383b4d469fcf51d03df46988b
+PODFILE CHECKSUM: 765d53b9e9dfafaeaf5a75caa32a70425fcc13ca
 
-COCOAPODS: 1.6.1
+COCOAPODS: 1.6.0
