@@ -44,7 +44,6 @@
 		CC62D3C72212F593004FB434 /* ForgotPassword.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC62D3C62212F593004FB434 /* ForgotPassword.swift */; };
 		CC660EC42225DD39008D6E25 /* ConnectionsSPViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC660EC32225DD39008D6E25 /* ConnectionsSPViewController.swift */; };
 		CC793C0F22253A8B00266734 /* ServicesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC793C0E22253A8B00266734 /* ServicesTableViewController.swift */; };
-		CC9F380A2243DC53003A7436 /* BookingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC9F38092243DC53003A7436 /* BookingViewController.swift */; };
 		CC9F380E2243E308003A7436 /* DateCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC9F380D2243E308003A7436 /* DateCollectionViewCell.swift */; };
 		CC9F38102243E47D003A7436 /* CalendarVars.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC9F380F2243E47D003A7436 /* CalendarVars.swift */; };
 		CC9F38122244C389003A7436 /* PaymentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC9F38112244C389003A7436 /* PaymentViewController.swift */; };
@@ -116,7 +115,6 @@
 		CC62D3C62212F593004FB434 /* ForgotPassword.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPassword.swift; sourceTree = "<group>"; };
 		CC660EC32225DD39008D6E25 /* ConnectionsSPViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectionsSPViewController.swift; sourceTree = "<group>"; };
 		CC793C0E22253A8B00266734 /* ServicesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServicesTableViewController.swift; sourceTree = "<group>"; };
-		CC9F38092243DC53003A7436 /* BookingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = BookingViewController.swift; path = "/Users/shanju/Desktop/Beauty-God-Mother/Beauty God Mother/BookingViewController.swift"; sourceTree = "<absolute>"; };
 		CC9F380D2243E308003A7436 /* DateCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateCollectionViewCell.swift; sourceTree = "<group>"; };
 		CC9F380F2243E47D003A7436 /* CalendarVars.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarVars.swift; sourceTree = "<group>"; };
 		CC9F38112244C389003A7436 /* PaymentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentViewController.swift; sourceTree = "<group>"; };
@@ -211,7 +209,6 @@
 				4C6E0791223C456F003B9967 /* SearchViewController.swift */,
 				4C6E0795223C4688003B9967 /* SearchCell.swift */,
 				4C6D626721F48A4F00087370 /* MapViewController.swift */,
-				CC9F38092243DC53003A7436 /* BookingViewController.swift */,
 				CC9F380D2243E308003A7436 /* DateCollectionViewCell.swift */,
 				CC9F380F2243E47D003A7436 /* CalendarVars.swift */,
 				CC9F38112244C389003A7436 /* PaymentViewController.swift */,
@@ -599,7 +596,6 @@
 				CC62D3C72212F593004FB434 /* ForgotPassword.swift in Sources */,
 				01B7C3592236A2C500381DCD /* AccountViewCoontroller.swift in Sources */,
 				5B2E244322159E5D00F21E29 /* Extension+Database.swift in Sources */,
-				CC9F380A2243DC53003A7436 /* BookingViewController.swift in Sources */,
 				4C6E0792223C456F003B9967 /* SearchViewController.swift in Sources */,
 				CCF35067223178B6007DB408 /* ServicesViewController.swift in Sources */,
 				5B16A05021DFC9C10022DDE7 /* SPViewController.swift in Sources */,
