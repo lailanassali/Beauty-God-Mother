@@ -5,9 +5,9 @@
 //  Created by Shanju Bakeerathan on 21/03/2019.
 //
 
-//import UIKit
+import UIKit
 //
-//class BookingViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource{
+class BookingViewController: UIViewController { //, UICollectionViewDelegate, UICollectionViewDataSource{
 //
 //
 //
@@ -42,7 +42,7 @@
 //
 //        MonthLabel.text = "\(currentMonth)\(year)"
 //
-//    }
+    }
 //
 //
 //
