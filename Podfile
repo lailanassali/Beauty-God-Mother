@@ -14,6 +14,9 @@ pod 'Firebase/Storage'
 pod 'Kingfisher'
 pod 'SDWebImage'
 pod 'Stripe'
+pod 'GooglePlaces'
+pod 'GooglePlacePicker'
+pod 'GoogleMaps'
 
 target 'Beauty God MotherTests' do
 inherit! :search_paths
