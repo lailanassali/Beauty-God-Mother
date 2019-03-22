@@ -2710,10 +2710,10 @@
             </objects>
             <point key="canvasLocation" x="6238" y="54"/>
         </scene>
-        <!--Map ViewC-->
+        <!--View Controller-->
         <scene sceneID="0mL-gm-j5a">
             <objects>
-                <viewController id="S44-M9-ogZ" customClass="MapViewC" customModule="Beauty_God_Mother" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="S44-M9-ogZ" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Il7-s0-nUC"/>
                         <viewControllerLayoutGuide type="bottom" id="rkw-Ae-oHT"/>
@@ -2722,7 +2722,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hV2-ug-wys">
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="hV2-ug-wys" customClass="Map">
                                 <rect key="frame" x="0.0" y="59" width="375" height="608"/>
                             </mapView>
                         </subviews>
@@ -3184,7 +3184,7 @@
         <image name="title" width="781" height="128"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="w7d-OH-wFc"/>
+        <segue reference="egn-s3-YUk"/>
         <segue reference="ScV-HV-PxE"/>
         <segue reference="7L9-ta-vVn"/>
         <segue reference="sEq-NP-V1k"/>
