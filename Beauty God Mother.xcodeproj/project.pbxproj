@@ -47,6 +47,7 @@
 		CC9F380A2243DC53003A7436 /* BookingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC9F38092243DC53003A7436 /* BookingViewController.swift */; };
 		CC9F380E2243E308003A7436 /* DateCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC9F380D2243E308003A7436 /* DateCollectionViewCell.swift */; };
 		CC9F38102243E47D003A7436 /* CalendarVars.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC9F380F2243E47D003A7436 /* CalendarVars.swift */; };
+		CC9F38122244C389003A7436 /* PaymentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC9F38112244C389003A7436 /* PaymentViewController.swift */; };
 		CCA91949220C7A1C00672E6F /* ConfirmationDetailsBP.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCA91948220C7A1C00672E6F /* ConfirmationDetailsBP.swift */; };
 		CCF35067223178B6007DB408 /* ServicesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCF35066223178B6007DB408 /* ServicesViewController.swift */; };
 		CCFA3E9F221AD2D700B160EF /* Swipe3ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCFA3E9E221AD2D700B160EF /* Swipe3ViewController.swift */; };
@@ -118,6 +119,7 @@
 		CC9F38092243DC53003A7436 /* BookingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = BookingViewController.swift; path = "/Users/shanju/Desktop/Beauty-God-Mother/Beauty God Mother/BookingViewController.swift"; sourceTree = "<absolute>"; };
 		CC9F380D2243E308003A7436 /* DateCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateCollectionViewCell.swift; sourceTree = "<group>"; };
 		CC9F380F2243E47D003A7436 /* CalendarVars.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarVars.swift; sourceTree = "<group>"; };
+		CC9F38112244C389003A7436 /* PaymentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentViewController.swift; sourceTree = "<group>"; };
 		CCA91948220C7A1C00672E6F /* ConfirmationDetailsBP.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmationDetailsBP.swift; sourceTree = "<group>"; };
 		CCF35066223178B6007DB408 /* ServicesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServicesViewController.swift; sourceTree = "<group>"; };
 		CCFA3E9E221AD2D700B160EF /* Swipe3ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Swipe3ViewController.swift; sourceTree = "<group>"; };
@@ -212,6 +214,7 @@
 				CC9F38092243DC53003A7436 /* BookingViewController.swift */,
 				CC9F380D2243E308003A7436 /* DateCollectionViewCell.swift */,
 				CC9F380F2243E47D003A7436 /* CalendarVars.swift */,
+				CC9F38112244C389003A7436 /* PaymentViewController.swift */,
 			);
 			path = "Beauty God Mother";
 			sourceTree = "<group>";
@@ -577,6 +580,7 @@
 				5B16A04E21DFC9AB0022DDE7 /* RBViewController.swift in Sources */,
 				014CEF11223C326800F2FC8E /* ContactCollectionViewCell.swift in Sources */,
 				01E097B921FBB19100DB85D4 /* ProfileViewController.swift in Sources */,
+				CC9F38122244C389003A7436 /* PaymentViewController.swift in Sources */,
 				AE29B29A21EBEF6800B19FFF /* ConfirmationVC.swift in Sources */,
 				5B6A73AA2215964800E506DC /* ProviderTabBar.swift in Sources */,
 				CC9F38102243E47D003A7436 /* CalendarVars.swift in Sources */,
