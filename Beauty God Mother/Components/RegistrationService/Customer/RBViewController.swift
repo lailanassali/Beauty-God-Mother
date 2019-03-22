@@ -19,7 +19,7 @@ class RBViewController: UIViewController {
     @IBOutlet weak var emailTF: UITextField!
     @IBOutlet weak var passwordTF: UITextField!
     @IBOutlet weak var confirmPasswordTF: UITextField!
-    @IBOutlet weak var registerButton: UIButton!
+
     
     var rs = RegistrationService.shared
     
