@@ -18,7 +18,6 @@
 		4C6D626821F48A4F00087370 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C6D626721F48A4F00087370 /* MapViewController.swift */; };
 		4C6E0792223C456F003B9967 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C6E0791223C456F003B9967 /* SearchViewController.swift */; };
 		4C6E0796223C4688003B9967 /* SearchCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C6E0795223C4688003B9967 /* SearchCell.swift */; };
-		4CE5891E22453B3D001A1ABF /* MapViewC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CE5891D22453B3D001A1ABF /* MapViewC.swift */; };
 		5889CE958FED8A050B0F294E /* Pods_Beauty_God_MotherTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAB59A83EF87A5DAB24E7AA9 /* Pods_Beauty_God_MotherTests.framework */; };
 		5B16A01C21DFB0A70022DDE7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B16A01B21DFB0A70022DDE7 /* AppDelegate.swift */; };
 		5B16A01E21DFB0A70022DDE7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B16A01D21DFB0A70022DDE7 /* ViewController.swift */; };
@@ -87,7 +86,6 @@
 		4C6D626721F48A4F00087370 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		4C6E0791223C456F003B9967 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		4C6E0795223C4688003B9967 /* SearchCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCell.swift; sourceTree = "<group>"; };
-		4CE5891D22453B3D001A1ABF /* MapViewC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewC.swift; sourceTree = "<group>"; };
 		5B16A01821DFB0A70022DDE7 /* Beauty God Mother.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Beauty God Mother.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B16A01B21DFB0A70022DDE7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5B16A01D21DFB0A70022DDE7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -217,7 +215,6 @@
 				4C6E0791223C456F003B9967 /* SearchViewController.swift */,
 				4C6E0795223C4688003B9967 /* SearchCell.swift */,
 				4C6D626721F48A4F00087370 /* MapViewController.swift */,
-				4CE5891D22453B3D001A1ABF /* MapViewC.swift */,
 				CC9F380D2243E308003A7436 /* DateCollectionViewCell.swift */,
 				CC9F380F2243E47D003A7436 /* CalendarVars.swift */,
 				CC9F38112244C389003A7436 /* PaymentViewController.swift */,
@@ -358,7 +355,6 @@
 				5B16A01521DFB0A70022DDE7 /* Frameworks */,
 				5B16A01621DFB0A70022DDE7 /* Resources */,
 				256B26206239973531B787F7 /* [CP] Embed Pods Frameworks */,
-				7353333C3EDAB1289C383443 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -540,32 +536,6 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Beauty God Mother/Pods-Beauty God Mother-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		7353333C3EDAB1289C383443 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Beauty God Mother/Pods-Beauty God Mother-resources.sh",
-				"${PODS_ROOT}/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle",
-				"${PODS_ROOT}/GooglePlacePicker/Frameworks/GooglePlacePicker.framework/Resources/GooglePlacePicker.bundle",
-				"${PODS_ROOT}/GooglePlaces/Frameworks/GooglePlaces.framework/Resources/GooglePlaces.bundle",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleMaps.bundle",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GooglePlacePicker.bundle",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GooglePlaces.bundle",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Beauty God Mother/Pods-Beauty God Mother-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		A1D5D2D3E53D6E337585EDF5 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -624,7 +594,6 @@
 				AE2942F021F2832D00D629EA /* RegistrationService.swift in Sources */,
 				CC660EC42225DD39008D6E25 /* ConnectionsSPViewController.swift in Sources */,
 				5B16A04E21DFC9AB0022DDE7 /* RBViewController.swift in Sources */,
-				4CE5891E22453B3D001A1ABF /* MapViewC.swift in Sources */,
 				014CEF11223C326800F2FC8E /* ContactCollectionViewCell.swift in Sources */,
 				01E097B921FBB19100DB85D4 /* ProfileViewController.swift in Sources */,
 				CC9F38122244C389003A7436 /* PaymentViewController.swift in Sources */,
@@ -837,13 +806,13 @@
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 5H3A6UZ6V5;
+				DEVELOPMENT_TEAM = PAUK362GK5;
 				INFOPLIST_FILE = "Beauty God Mother/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "Beauty-God-Mother3";
+				PRODUCT_BUNDLE_IDENTIFIER = "Beauty-God-Mother19990";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -856,13 +825,13 @@
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 5H3A6UZ6V5;
+				DEVELOPMENT_TEAM = PAUK362GK5;
 				INFOPLIST_FILE = "Beauty God Mother/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "Beauty-God-Mother3";
+				PRODUCT_BUNDLE_IDENTIFIER = "Beauty-God-Mother19990";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
