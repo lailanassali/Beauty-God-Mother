@@ -19,6 +19,8 @@
 		4C6E0792223C456F003B9967 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C6E0791223C456F003B9967 /* SearchViewController.swift */; };
 		4C6E0796223C4688003B9967 /* SearchCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C6E0795223C4688003B9967 /* SearchCell.swift */; };
 		5889CE958FED8A050B0F294E /* Pods_Beauty_God_MotherTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAB59A83EF87A5DAB24E7AA9 /* Pods_Beauty_God_MotherTests.framework */; };
+		5898698A2243AFAF00DC6E47 /* RatingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 589869892243AFAF00DC6E47 /* RatingViewController.swift */; };
+		5898698E2245285F00DC6E47 /* ViewControllerRate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5898698D2245285F00DC6E47 /* ViewControllerRate.swift */; };
 		5B16A01C21DFB0A70022DDE7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B16A01B21DFB0A70022DDE7 /* AppDelegate.swift */; };
 		5B16A01E21DFB0A70022DDE7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B16A01D21DFB0A70022DDE7 /* ViewController.swift */; };
 		5B16A02121DFB0A70022DDE7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B16A01F21DFB0A70022DDE7 /* Main.storyboard */; };
@@ -83,6 +85,8 @@
 		4C6D626721F48A4F00087370 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		4C6E0791223C456F003B9967 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		4C6E0795223C4688003B9967 /* SearchCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCell.swift; sourceTree = "<group>"; };
+		589869892243AFAF00DC6E47 /* RatingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingViewController.swift; sourceTree = "<group>"; };
+		5898698D2245285F00DC6E47 /* ViewControllerRate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerRate.swift; sourceTree = "<group>"; };
 		5B16A01821DFB0A70022DDE7 /* Beauty God Mother.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Beauty God Mother.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B16A01B21DFB0A70022DDE7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5B16A01D21DFB0A70022DDE7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -209,9 +213,11 @@
 				01B7C3582236A2C500381DCD /* AccountViewCoontroller.swift */,
 				4C6E0791223C456F003B9967 /* SearchViewController.swift */,
 				4C6E0795223C4688003B9967 /* SearchCell.swift */,
+				5898698D2245285F00DC6E47 /* ViewControllerRate.swift */,
 				4C6D626721F48A4F00087370 /* MapViewController.swift */,
 				CC911BDC22439032003AA84B /* BookingViewController.swift */,
 				CC911BE022439959003AA84B /* CalendarVars.swift */,
+				589869892243AFAF00DC6E47 /* RatingViewController.swift */,
 			);
 			path = "Beauty God Mother";
 			sourceTree = "<group>";
@@ -591,7 +597,9 @@
 				CCA91949220C7A1C00672E6F /* ConfirmationDetailsBP.swift in Sources */,
 				01B7C35B2236B3A300381DCD /* CustomerTabBar.swift in Sources */,
 				5B16A01E21DFB0A70022DDE7 /* ViewController.swift in Sources */,
+				5898698A2243AFAF00DC6E47 /* RatingViewController.swift in Sources */,
 				5B16A01C21DFB0A70022DDE7 /* AppDelegate.swift in Sources */,
+				5898698E2245285F00DC6E47 /* ViewControllerRate.swift in Sources */,
 				CC62D3C72212F593004FB434 /* ForgotPassword.swift in Sources */,
 				01B7C3592236A2C500381DCD /* AccountViewCoontroller.swift in Sources */,
 				5B2E244322159E5D00F21E29 /* Extension+Database.swift in Sources */,

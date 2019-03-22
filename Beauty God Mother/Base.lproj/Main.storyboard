@@ -2479,6 +2479,9 @@
                                                                         <rect key="frame" x="148" y="0.0" width="74" height="36"/>
                                                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                                         <state key="normal" title="(ratings)"/>
+                                                                        <connections>
+                                                                            <segue destination="bhd-7b-Dld" kind="show" id="hFe-UO-I9d"/>
+                                                                        </connections>
                                                                     </button>
                                                                 </subviews>
                                                             </stackView>
@@ -2850,7 +2853,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rBW-rO-OTu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="9014" y="-484"/>
+            <point key="canvasLocation" x="9110" y="-913"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="KKV-Bb-ebh">
@@ -2878,6 +2881,63 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6FU-m3-9MK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="9818" y="-903"/>
+        </scene>
+        <!--View Controller Rate-->
+        <scene sceneID="mmD-Zd-ama">
+            <objects>
+                <viewController id="bhd-7b-Dld" customClass="ViewControllerRate" customModule="Beauty_God_Mother" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="UPj-MK-v5p"/>
+                        <viewControllerLayoutGuide type="bottom" id="ZZx-8K-W2l"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Yrl-8d-2ye" customClass="RatingViewController" customModule="Beauty_God_Mother" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xIw-Ux-9xA">
+                                <rect key="frame" x="90" y="384" width="118" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Rate this product"/>
+                                <connections>
+                                    <action selector="HowManyButtonClicked:" destination="bhd-7b-Dld" eventType="touchUpInside" id="Q8I-fs-HfH"/>
+                                </connections>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZS2-lN-4Gq">
+                                <rect key="frame" x="16" y="303" width="300" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gjS-ws-9hn">
+                                        <rect key="frame" x="0.0" y="0.0" width="60" height="60"/>
+                                        <state key="normal" image="star"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SMl-em-vcY">
+                                        <rect key="frame" x="60" y="0.0" width="60" height="60"/>
+                                        <state key="normal" image="star"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TGf-vt-L4f">
+                                        <rect key="frame" x="120" y="0.0" width="60" height="60"/>
+                                        <state key="normal" image="star"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zeS-Ok-qM7">
+                                        <rect key="frame" x="180" y="0.0" width="60" height="60"/>
+                                        <state key="normal" image="star"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TiR-nk-Ggi">
+                                        <rect key="frame" x="240" y="0.0" width="60" height="60"/>
+                                        <state key="normal" image="star"/>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                    <connections>
+                        <outlet property="ratingStackView" destination="ZS2-lN-4Gq" id="pgZ-z8-fGh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pMw-NW-m3e" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="9229.6000000000004" y="-329.68515742128938"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="tgz-Fn-ceC">
@@ -2925,12 +2985,13 @@
         <image name="checked" width="400.69564819335938" height="400.69564819335938"/>
         <image name="email" width="512" height="512"/>
         <image name="mail round" width="512" height="512"/>
+        <image name="star" width="60" height="60"/>
         <image name="title" width="781" height="128"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="w7d-OH-wFc"/>
+        <segue reference="egn-s3-YUk"/>
         <segue reference="sEq-NP-V1k"/>
-        <segue reference="e9Q-62-xmD"/>
+        <segue reference="AMB-iI-UVW"/>
         <segue reference="6PL-Nj-YnB"/>
     </inferredMetricsTieBreakers>
 </document>
