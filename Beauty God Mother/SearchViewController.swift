@@ -61,7 +61,7 @@ class SearchViewController: UIViewController,UITableViewDataSource, UITableViewD
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let searchViewC = storyboard?.instantiateViewController(withIdentifier: "AdminProfileVC") as? AdminProfileViewController
+        let searchViewC = storyboard?.instantiateViewController(withIdentifier: "AdminProfileVC" ) as? AdminProfileViewController
         self.navigationController?.pushViewController(searchViewC!, animated: true)
     }
 
