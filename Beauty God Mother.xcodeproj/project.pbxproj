@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		014CEF11223C326800F2FC8E /* ContactCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 014CEF10223C326800F2FC8E /* ContactCollectionViewCell.swift */; };
 		01777D6E220B35B400D51EC4 /* EditProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01777D6D220B35B400D51EC4 /* EditProfileViewController.swift */; };
-		01B4B7362246A69600ED92DD /* AdminProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01B4B7352246A69300ED92DD /* AdminProfileViewController.swift */; };
 		01B7C3572236A23600381DCD /* ContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01B7C3562236A23600381DCD /* ContactViewController.swift */; };
 		01B7C3592236A2C500381DCD /* AccountViewCoontroller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01B7C3582236A2C500381DCD /* AccountViewCoontroller.swift */; };
 		01B7C35B2236B3A300381DCD /* CustomerTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01B7C35A2236B3A300381DCD /* CustomerTabBar.swift */; };
@@ -77,7 +76,6 @@
 /* Begin PBXFileReference section */
 		014CEF10223C326800F2FC8E /* ContactCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactCollectionViewCell.swift; sourceTree = "<group>"; };
 		01777D6D220B35B400D51EC4 /* EditProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileViewController.swift; sourceTree = "<group>"; };
-		01B4B7352246A69300ED92DD /* AdminProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminProfileViewController.swift; sourceTree = "<group>"; };
 		01B7C3562236A23600381DCD /* ContactViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactViewController.swift; sourceTree = "<group>"; };
 		01B7C3582236A2C500381DCD /* AccountViewCoontroller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewCoontroller.swift; sourceTree = "<group>"; };
 		01B7C35A2236B3A300381DCD /* CustomerTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomerTabBar.swift; sourceTree = "<group>"; };
@@ -177,7 +175,6 @@
 		5B16A00F21DFB0A70022DDE7 = {
 			isa = PBXGroup;
 			children = (
-				01B4B7352246A69300ED92DD /* AdminProfileViewController.swift */,
 				5B16A01A21DFB0A70022DDE7 /* Beauty God Mother */,
 				5B16A02F21DFB0AA0022DDE7 /* Beauty God MotherTests */,
 				5B16A03A21DFB0AA0022DDE7 /* Beauty God MotherUITests */,
@@ -658,7 +655,6 @@
 				CC9F380E2243E308003A7436 /* DateCollectionViewCell.swift in Sources */,
 				AE29B29421EBEE3800B19FFF /* MainViewController.swift in Sources */,
 				CCFA3E9F221AD2D700B160EF /* Swipe3ViewController.swift in Sources */,
-				01B4B7362246A69600ED92DD /* AdminProfileViewController.swift in Sources */,
 				CC793C0F22253A8B00266734 /* ServicesTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -841,13 +837,13 @@
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = PAUK362GK5;
+				DEVELOPMENT_TEAM = FG8A4NB658;
 				INFOPLIST_FILE = "Beauty God Mother/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "BGM-Beauty-God-Mother1221";
+				PRODUCT_BUNDLE_IDENTIFIER = "BGM-Beauty-God-Mother";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -860,13 +856,13 @@
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = PAUK362GK5;
+				DEVELOPMENT_TEAM = FG8A4NB658;
 				INFOPLIST_FILE = "Beauty God Mother/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "BGM-Beauty-God-Mother1221";
+				PRODUCT_BUNDLE_IDENTIFIER = "BGM-Beauty-God-Mother";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";

@@ -31,7 +31,7 @@ class ProviderTabBar: UITabBarController, UITabBarControllerDelegate {
         let accountNavigation = UINavigationController(rootViewController: accountVC)
         accountVC.title = "My Account"
         // profile
-        let profileVC = storyboard.instantiateViewController(withIdentifier: "AdminProfileVC")
+        let profileVC = storyboard.instantiateViewController(withIdentifier: "ProfileVC")
         let profileNavigation = UINavigationController(rootViewController: profileVC)
         profileVC.title = "Profile"
         //contact page
@@ -39,7 +39,7 @@ class ProviderTabBar: UITabBarController, UITabBarControllerDelegate {
         let contactNavigation = UINavigationController(rootViewController: contactVC)
         accountVC.title = "Contact "
         
-        viewControllers = [searchNavigation, accountNavigation, AdminprofileNavigation, contactNavigation]
+        viewControllers = [searchNavigation, accountNavigation, profileNavigation, contactNavigation]
         
         
     }
