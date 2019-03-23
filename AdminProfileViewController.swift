@@ -8,7 +8,7 @@
 
 import UIKit
 
-class AdminProfileViewController: UIViewController, UINavigationControllerDelegate {
+class AmdinProfileViewController: UIViewController {
 
    
     @IBOutlet weak var adminServicesView: UIView!
