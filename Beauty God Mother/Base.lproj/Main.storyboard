@@ -1942,10 +1942,10 @@
             </objects>
             <point key="canvasLocation" x="4009" y="-808"/>
         </scene>
-        <!--My Profile-->
+        <!--AdminProfile-->
         <scene sceneID="PG7-k6-3yd">
             <objects>
-                <viewController storyboardIdentifier="AdminProfileVC" id="cfe-Hc-zfs" customClass="AdminProfileViewController" customModule="Beauty_God_Mother" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="AdminProfileVC" title="AdminProfile" id="cfe-Hc-zfs" customClass="AdminProfileViewController" customModule="Beauty_God_Mother" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="7hN-Jq-0kK"/>
                         <viewControllerLayoutGuide type="bottom" id="N5r-dz-0pC"/>
@@ -3153,11 +3153,11 @@
             </objects>
             <point key="canvasLocation" x="8374" y="105"/>
         </scene>
-        <!--Item-->
+        <!--Profile-->
         <scene sceneID="euT-WL-I4T">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="uNr-q6-N5A" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="gnb-3M-zKw"/>
+                    <tabBarItem key="tabBarItem" title="Profile" id="gnb-3M-zKw"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="aa0-LQ-bfi">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>

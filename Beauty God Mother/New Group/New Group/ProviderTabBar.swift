@@ -33,7 +33,7 @@ class ProviderTabBar: UITabBarController, UITabBarControllerDelegate {
         // profile
         let adminVC = storyboard.instantiateViewController(withIdentifier: "AdminProfileVC")
         let adminProfileNavigation = UINavigationController(rootViewController: adminVC)
-        adminVC.title = "Profile"
+        adminVC.title = "Admin Profile"
         //contact page
         let contactVC = storyboard.instantiateViewController(withIdentifier: "ContactVC")
         let contactNavigation = UINavigationController(rootViewController: contactVC)
