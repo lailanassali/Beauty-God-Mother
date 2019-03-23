@@ -72,7 +72,7 @@ extension Database {
             ] as [String : Any]
         // Save values to uid
         let values = [uid:dictionaryValues]
-        Database.database().reference().child("users").updateChildValues(values, withCompletionBlock: { (err, ref) in
+        Database.database().reference().child("users").child("providers").updateChildValues(values, withCompletionBlock: { (err, ref) in
             if let err = err {
                 print(err.localizedDescription)
                 return
