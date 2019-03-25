@@ -10,13 +10,14 @@ import UIKit
 import Firebase
 extension Database {
     static func fetchUserWithUID(uid: String, completion: @escaping (User) -> ()) {
-            Database.database().reference().child("users").child(uid).observe(.value, with: { (snapshot) in
-                guard let dictionary = snapshot.value as? [String:Any] else {return}
-                let user = User(id: uid, dictionary: dictionary)
-                completion(user)
-            }) { (e) in
-                print("Failed to fetch user:", e)
-            }
+        
+        Database.database().reference().child("users").child(uid).observe(.value, with: { (snapshot) in
+            guard let dictionary = snapshot.value as? [String:Any] else {return}
+            let user = User(id: uid, dictionary: dictionary)
+            completion(user)
+        }) { (e) in
+            print("Failed to fetch user:", e)
+        }
     }
 }
 

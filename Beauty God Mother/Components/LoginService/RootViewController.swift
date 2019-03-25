@@ -13,7 +13,7 @@ class RootViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool){
         super.viewWillAppear(animated)
-        
+        view.backgroundColor = .white
         if let uid = Auth.auth().currentUser?.uid {
             fetchCurrentUser(withID: uid)
         } else {
@@ -24,14 +24,12 @@ class RootViewController: UIViewController {
     }
     
     fileprivate func fetchCurrentUser(withID id: String) {
-        
-            Database.fetchUserWithUID(uid: id) { (user) in
-                if user.kind == .provider {
-                    self.present(ProviderTabBar(), animated: true, completion: nil)
-                } else {
-                    self.present(CustomerTabBar(), animated: true, completion: nil)
-                }
+        Database.fetchUserWithUID(uid: id) { (user) in
+            if user.kind == .provider {
+                self.present(ProviderTabBar(), animated: true, completion: nil)
+            } else {
+                self.present(CustomerTabBar(), animated: true, completion: nil)
             }
-        
+        }
     }
 }

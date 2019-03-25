@@ -1940,7 +1940,7 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XDJ-EX-5u6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4196" y="-688"/>
+            <point key="canvasLocation" x="4009" y="-808"/>
         </scene>
         <!--Profile-->
         <scene sceneID="lqX-hj-Rkm">
@@ -2418,19 +2418,19 @@
                                                         </connections>
                                                     </segmentedControl>
                                                     <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="50B-BB-Asf" userLabel="services Container View">
-                                                        <rect key="frame" x="0.0" y="466.5" width="375" height="441.5"/>
+                                                        <rect key="frame" x="0.0" y="467" width="375" height="441"/>
                                                         <connections>
                                                             <segue destination="TKK-vk-G8D" kind="embed" id="O2X-wR-Khr"/>
                                                         </connections>
                                                     </containerView>
                                                     <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qvK-ka-WIQ">
-                                                        <rect key="frame" x="0.0" y="466.5" width="375" height="441.5"/>
+                                                        <rect key="frame" x="0.0" y="467" width="375" height="441"/>
                                                         <connections>
                                                             <segue destination="AAi-Cg-Aqs" kind="embed" id="c3N-vZ-iXl"/>
                                                         </connections>
                                                     </containerView>
                                                     <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iXm-OS-urY">
-                                                        <rect key="frame" x="0.0" y="466.5" width="375" height="441.5"/>
+                                                        <rect key="frame" x="0.0" y="467" width="375" height="441"/>
                                                         <connections>
                                                             <segue destination="54m-FT-eb5" kind="embed" id="Ne5-KZ-HoZ"/>
                                                         </connections>
@@ -2572,7 +2572,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YV0-KC-lTW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5305" y="-850"/>
+            <point key="canvasLocation" x="5305" y="-808"/>
         </scene>
         <!--Search View Controller-->
         <scene sceneID="Glo-RD-sb3">
@@ -3027,12 +3027,8 @@
         <scene sceneID="O1r-If-FL2">
             <objects>
                 <viewController storyboardIdentifier="servicesContainer" id="TKK-vk-G8D" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="xG8-nE-T6A"/>
-                        <viewControllerLayoutGuide type="bottom" id="SWB-G2-TkO"/>
-                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="P0s-WB-YmP">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="441.5"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="441"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="services" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UuC-aw-7Kr">
@@ -3054,10 +3050,6 @@
         <scene sceneID="zGb-wM-ekJ">
             <objects>
                 <viewController id="VzS-WC-Lv2" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="Mce-tJ-Iz5"/>
-                        <viewControllerLayoutGuide type="bottom" id="HVQ-7a-Ghc"/>
-                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="tBj-QH-Kk1">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -3081,12 +3073,8 @@
         <scene sceneID="7c6-ga-KT1">
             <objects>
                 <viewController storyboardIdentifier="mediaContainer" id="AAi-Cg-Aqs" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="XAa-H7-pua"/>
-                        <viewControllerLayoutGuide type="bottom" id="2ju-jF-JqH"/>
-                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="gxv-rE-nsP">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="441.5"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="441"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="media" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fgl-vx-ago">
@@ -3108,12 +3096,8 @@
         <scene sceneID="Doz-1k-R2Y">
             <objects>
                 <viewController storyboardIdentifier="reviewContainer" id="54m-FT-eb5" customClass="ProfileViewController" customModule="Beauty_God_Mother" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="Fd8-c3-MEv"/>
-                        <viewControllerLayoutGuide type="bottom" id="Bvo-ks-uRO"/>
-                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="ro6-hu-Wyd">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="441.5"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="441"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="reviews" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IJt-A4-Z98">
