@@ -19,8 +19,8 @@
 		4C6E0792223C456F003B9967 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C6E0791223C456F003B9967 /* SearchViewController.swift */; };
 		4C6E0796223C4688003B9967 /* SearchCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C6E0795223C4688003B9967 /* SearchCell.swift */; };
 		4CE5891E22453B3D001A1ABF /* MapViewC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CE5891D22453B3D001A1ABF /* MapViewC.swift */; };
-		4CEDD41622494C0600E3227B /* ServicesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CEDD41522494C0600E3227B /* ServicesViewController.swift */; };
-		4CEDD41B2249556A00E3227B /* ProfileServicesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CEDD41A2249556A00E3227B /* ProfileServicesTableViewCell.swift */; };
+		4CEDD41F2249602300E3227B /* ProfileServicesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CEDD41E2249602300E3227B /* ProfileServicesTableViewController.swift */; };
+		4CEDD421224962E600E3227B /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CEDD420224962E600E3227B /* CustomCell.swift */; };
 		5889CE958FED8A050B0F294E /* Pods_Beauty_God_MotherTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAB59A83EF87A5DAB24E7AA9 /* Pods_Beauty_God_MotherTests.framework */; };
 		5B16A01C21DFB0A70022DDE7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B16A01B21DFB0A70022DDE7 /* AppDelegate.swift */; };
 		5B16A01E21DFB0A70022DDE7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B16A01D21DFB0A70022DDE7 /* ViewController.swift */; };
@@ -90,8 +90,8 @@
 		4C6E0791223C456F003B9967 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		4C6E0795223C4688003B9967 /* SearchCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCell.swift; sourceTree = "<group>"; };
 		4CE5891D22453B3D001A1ABF /* MapViewC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewC.swift; sourceTree = "<group>"; };
-		4CEDD41522494C0600E3227B /* ServicesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServicesViewController.swift; sourceTree = "<group>"; };
-		4CEDD41A2249556A00E3227B /* ProfileServicesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileServicesTableViewCell.swift; sourceTree = "<group>"; };
+		4CEDD41E2249602300E3227B /* ProfileServicesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileServicesTableViewController.swift; sourceTree = "<group>"; };
+		4CEDD420224962E600E3227B /* CustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
 		5B16A01821DFB0A70022DDE7 /* Beauty God Mother.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Beauty God Mother.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B16A01B21DFB0A70022DDE7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5B16A01D21DFB0A70022DDE7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -176,13 +176,6 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		4CEDD41722494C5C00E3227B /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
 		5B16A00F21DFB0A70022DDE7 = {
 			isa = PBXGroup;
 			children = (
@@ -208,7 +201,6 @@
 		5B16A01A21DFB0A70022DDE7 /* Beauty God Mother */ = {
 			isa = PBXGroup;
 			children = (
-				4CEDD41722494C5C00E3227B /* View */,
 				5B1C21292237297200E69DF3 /* Supporting Files */,
 				5B6A73A82215960100E506DC /* Components */,
 				5B6A73A522158E5600E506DC /* Model */,
@@ -233,8 +225,8 @@
 				CC9F380D2243E308003A7436 /* DateCollectionViewCell.swift */,
 				CC9F380F2243E47D003A7436 /* CalendarVars.swift */,
 				CC9F38112244C389003A7436 /* PaymentViewController.swift */,
-				4CEDD41522494C0600E3227B /* ServicesViewController.swift */,
-				4CEDD41A2249556A00E3227B /* ProfileServicesTableViewCell.swift */,
+				4CEDD41E2249602300E3227B /* ProfileServicesTableViewController.swift */,
+				4CEDD420224962E600E3227B /* CustomCell.swift */,
 			);
 			path = "Beauty God Mother";
 			sourceTree = "<group>";
@@ -634,8 +626,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				CC123CFF2217149A001A6BBA /* ResetEmailSentViewController.swift in Sources */,
+				4CEDD421224962E600E3227B /* CustomCell.swift in Sources */,
 				01777D6E220B35B400D51EC4 /* EditProfileViewController.swift in Sources */,
-				4CEDD41622494C0600E3227B /* ServicesViewController.swift in Sources */,
+				4CEDD41F2249602300E3227B /* ProfileServicesTableViewController.swift in Sources */,
 				AE2942F021F2832D00D629EA /* RegistrationService.swift in Sources */,
 				CC660EC42225DD39008D6E25 /* ConnectionsSPViewController.swift in Sources */,
 				5B16A04E21DFC9AB0022DDE7 /* RBViewController.swift in Sources */,
@@ -667,7 +660,6 @@
 				5BF67D322245001700AC61E0 /* CustomViewController.swift in Sources */,
 				CCF35067223178B6007DB408 /* ServicesViewController.swift in Sources */,
 				5B16A05021DFC9C10022DDE7 /* SPViewController.swift in Sources */,
-				4CEDD41B2249556A00E3227B /* ProfileServicesTableViewCell.swift in Sources */,
 				CC9F380E2243E308003A7436 /* DateCollectionViewCell.swift in Sources */,
 				AE29B29421EBEE3800B19FFF /* MainViewController.swift in Sources */,
 				CCFA3E9F221AD2D700B160EF /* Swipe3ViewController.swift in Sources */,
