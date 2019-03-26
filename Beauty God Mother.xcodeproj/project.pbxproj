@@ -24,6 +24,8 @@
 		4CEDD41F2249602300E3227B /* ProfileServicesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CEDD41E2249602300E3227B /* ProfileServicesTableViewController.swift */; };
 		4CEDD421224962E600E3227B /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CEDD420224962E600E3227B /* CustomCell.swift */; };
 		5889CE958FED8A050B0F294E /* Pods_Beauty_God_MotherTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAB59A83EF87A5DAB24E7AA9 /* Pods_Beauty_God_MotherTests.framework */; };
+		58CD40E1224AAD95002B4129 /* RatingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58CD40E0224AAD95002B4129 /* RatingViewController.swift */; };
+		58CD40E3224AB135002B4129 /* FloatingRatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58CD40E2224AB135002B4129 /* FloatingRatingView.swift */; };
 		5B16A01C21DFB0A70022DDE7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B16A01B21DFB0A70022DDE7 /* AppDelegate.swift */; };
 		5B16A01E21DFB0A70022DDE7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B16A01D21DFB0A70022DDE7 /* ViewController.swift */; };
 		5B16A02121DFB0A70022DDE7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B16A01F21DFB0A70022DDE7 /* Main.storyboard */; };
@@ -97,6 +99,8 @@
 		4CE5891D22453B3D001A1ABF /* MapViewC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewC.swift; sourceTree = "<group>"; };
 		4CEDD41E2249602300E3227B /* ProfileServicesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileServicesTableViewController.swift; sourceTree = "<group>"; };
 		4CEDD420224962E600E3227B /* CustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
+		58CD40E0224AAD95002B4129 /* RatingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingViewController.swift; sourceTree = "<group>"; };
+		58CD40E2224AB135002B4129 /* FloatingRatingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatingRatingView.swift; sourceTree = "<group>"; };
 		5B16A01821DFB0A70022DDE7 /* Beauty God Mother.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Beauty God Mother.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B16A01B21DFB0A70022DDE7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5B16A01D21DFB0A70022DDE7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -235,6 +239,8 @@
 				4CEDD420224962E600E3227B /* CustomCell.swift */,
 				01CD8594224A32F900E1D40F /* ProfileServicesCell.swift */,
 				01CD8596224A48B200E1D40F /* ProfileServicesViewController.swift */,
+				58CD40E0224AAD95002B4129 /* RatingViewController.swift */,
+				58CD40E2224AB135002B4129 /* FloatingRatingView.swift */,
 			);
 			path = "Beauty God Mother";
 			sourceTree = "<group>";
@@ -635,6 +641,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CC123CFF2217149A001A6BBA /* ResetEmailSentViewController.swift in Sources */,
+				58CD40E1224AAD95002B4129 /* RatingViewController.swift in Sources */,
 				4CEDD421224962E600E3227B /* CustomCell.swift in Sources */,
 				01777D6E220B35B400D51EC4 /* EditProfileViewController.swift in Sources */,
 				4CEDD41F2249602300E3227B /* ProfileServicesTableViewController.swift in Sources */,
@@ -676,6 +683,7 @@
 				AE29B29421EBEE3800B19FFF /* MainViewController.swift in Sources */,
 				CCFA3E9F221AD2D700B160EF /* Swipe3ViewController.swift in Sources */,
 				CC793C0F22253A8B00266734 /* ServicesTableViewController.swift in Sources */,
+				58CD40E3224AB135002B4129 /* FloatingRatingView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -857,7 +865,7 @@
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = PAUK362GK5;
+				DEVELOPMENT_TEAM = 376285AQSX;
 				INFOPLIST_FILE = "Beauty God Mother/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -876,7 +884,7 @@
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = PAUK362GK5;
+				DEVELOPMENT_TEAM = 376285AQSX;
 				INFOPLIST_FILE = "Beauty God Mother/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
