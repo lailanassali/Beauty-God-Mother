@@ -15,12 +15,25 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
+    var placeHolder = NSMutableAttributedString()
     
     var ls = LoginService.shared
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        placeholderForTextFields()
     }
+    
+    func placeholderForTextFields() {
+    
+        emailTextField.attributedPlaceholder = NSAttributedString(string: "Email",
+                                                                  attributes: [NSAttributedString.Key.foregroundColor: UIColor.white])
+        passwordTextField.attributedPlaceholder = NSAttributedString(string: "Password",
+                                                                  attributes: [NSAttributedString.Key.foregroundColor: UIColor.white])
+        
+    }
+   
+    
     
     @IBAction func loginPressed(_ sender: UIButton) {
         // step 1
