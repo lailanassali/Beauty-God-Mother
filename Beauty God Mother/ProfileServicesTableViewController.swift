@@ -54,12 +54,12 @@ class ProfileServicesTableViewController : UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cellIdentifier = "ProfileCell"
         let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath) as! ProfileServicesCell
-        
-        cell.servicesNameLabel.text = serviceNames[indexPath.row]
-        cell.priceLabel.text = servicePrices[indexPath.row]
-        cell.durationLabel.text = durations[indexPath.row]
-        cell.servicesDescriptionLabel.text = serviceDescriptions[indexPath.row]
-        cell.servicesThumbnailImageView.image = UIImage(named: serviceImages[indexPath.row])
+//        
+//        cell.servicesNameLabel.text = serviceNames[indexPath.row]
+//        cell.priceLabel.text = servicePrices[indexPath.row]
+//        cell.durationLabel.text = durations[indexPath.row]
+//        cell.servicesDescriptionLabel.text = serviceDescriptions[indexPath.row]
+//        cell.servicesThumbnailImageView.image = UIImage(named: serviceImages[indexPath.row])
         
         
         return cell

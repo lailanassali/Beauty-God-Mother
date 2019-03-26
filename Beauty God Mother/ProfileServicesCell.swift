@@ -9,14 +9,14 @@
 import UIKit
 
 class ProfileServicesCell: UITableViewCell {
+
+
+    @IBOutlet weak var serviceName: UILabel!
+    @IBOutlet weak var priceLabel: UILabel!
+    @IBOutlet weak var durationLabel: UILabel!
+    @IBOutlet weak var descriptionLabel: UILabel!
+    @IBOutlet weak var servicesImage: UIImageView!
     
-    @IBOutlet var servicesThumbnailImageView: UIImageView!
-    @IBOutlet var servicesNameLabel: UILabel!
-    @IBOutlet var priceLabel: UILabel!
-    @IBOutlet var durationLabel: UILabel!
-    @IBOutlet var servicesDescriptionLabel: UILabel!
-
-
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
