@@ -75,10 +75,6 @@
                                             <segue destination="Pl6-nP-lqa" kind="presentation" modalPresentationStyle="overCurrentContext" id="e9Q-62-xmD"/>
                                         </connections>
                                     </button>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cqY-fc-JOl">
-                                        <rect key="frame" x="68" y="118" width="240" height="128"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    </imageView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h75-vK-Iu3">
                                         <rect key="frame" x="109" y="408" width="157" height="42"/>
                                         <color key="backgroundColor" red="0.60000306367874146" green="0.15564745664596558" blue="0.32604813575744629" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -111,6 +107,10 @@
                                             <action selector="registerPressed:" destination="Igd-8i-HBB" eventType="touchUpInside" id="QP2-Hb-vyo"/>
                                         </connections>
                                     </button>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Image-10" translatesAutoresizingMaskIntoConstraints="NO" id="2xb-G6-KUW">
+                                        <rect key="frame" x="8" y="0.0" width="162" height="104"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
                                 </subviews>
                                 <color key="backgroundColor" red="0.32552516460418701" green="0.0" blue="0.16035708785057068" alpha="0.2030982449" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
@@ -3273,6 +3273,7 @@
     <resources>
         <image name="Image" width="85" height="126"/>
         <image name="Image-1" width="722" height="1001"/>
+        <image name="Image-10" width="600" height="414"/>
         <image name="Image-6" width="286" height="105"/>
         <image name="Image-7" width="3601" height="3601"/>
         <image name="Image-8" width="465" height="127"/>
