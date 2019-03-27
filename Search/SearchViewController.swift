@@ -29,13 +29,13 @@ class SearchViewController: UIViewController,UITableViewDataSource, UITableViewD
     // Details and List of all beauty providers
     private func setUpProviders() {
         // HAIR
-        providersArray.append(Providers(name: "Laid By Tiff", type: "Hair", profileImage: "Tiff"))
-        providersArray.append(Providers(name: "Hair By Lai", type: "Hair", profileImage: "Lai"))
+        providersArray.append(Providers(name: "Laid By Tiff", type: "Hair", image: "Tiff"))
+        providersArray.append(Providers(name: "Hair By Lai", type: "Hair", image: "Lai"))
         
         // NAILS
         
-        providersArray.append(Providers(name: "Nails By Aisha", type: "Nails", profileImage: "Tiff"))
-        providersArray.append(Providers(name: "Shanju Nails", type: "Nails", profileImage: "Lai"))
+        providersArray.append(Providers(name: "Nails By Aisha", type: "Nails", image: "Tiff"))
+        providersArray.append(Providers(name: "Shanju Nails", type: "Nails", image: "Lai"))
         
         currentProvidersArray = providersArray
     }
@@ -50,7 +50,7 @@ class SearchViewController: UIViewController,UITableViewDataSource, UITableViewD
 }
         cell.name.text = currentProvidersArray[indexPath.row].name
         cell.type.text = currentProvidersArray[indexPath.row].type
-        cell.profileImage.image = UIImage(named:currentProvidersArray[indexPath.row].profileImage)
+        cell.imge.image = UIImage(named:currentProvidersArray[indexPath.row].image)
         return cell
         
 
@@ -61,7 +61,7 @@ class SearchViewController: UIViewController,UITableViewDataSource, UITableViewD
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let searchViewC = storyboard?.instantiateViewController(withIdentifier: "BGMProfileVC" ) as? ProfileViewController
+        let searchViewC = storyboard?.instantiateViewController(withIdentifier: "ProfileVC" ) as? ProfileViewController
         self.navigationController?.pushViewController(searchViewC!, animated: true)
     }
 
@@ -78,41 +78,19 @@ class SearchViewController: UIViewController,UITableViewDataSource, UITableViewD
         table.reloadData()
         
         }
-   
-//    override func prepare(for segue:UIStoryboardSegue, sender: Any?){
-//        if segue.identifier == "showProfileDetail" {
-//            
-//            guard let BGMProfileViewController = segue.destination as? BGMProfileViewController,
-//                let index = table.indexPathForSelectedRow?.row
-//                else {
-//                    return
-//            }
-//            BGMProfileViewController.profileImageName = providersArray[IndexPath.profileImage]
-//        }
-//    }
-//    
+    }
+
+
 class Providers {
     let name: String
     let type: String
-    let profileImage: String
+    let image: String
     //let rating:
     
-    init(name: String, type: String, profileImage: String){
+    init(name: String, type: String, image: String){
         self.name = name
         self.type = type
-        self.profileImage = profileImage
+        self.image = image
         
     }
-}
-    
-//    override func prepare(for segue:UIStoryboardSegue, sender: Any?){
-//        if segue.identifier == "showProfileDetail" {
-//            if let indexPath = table.indexPathForSelectedRow {
-//                let destinationController = segue.destination as! BGMProfileViewController
-//                destinationController.profileImageName = profileImage[indexPath.row]
-//            }
-//        }
-//    }
-
-
 }

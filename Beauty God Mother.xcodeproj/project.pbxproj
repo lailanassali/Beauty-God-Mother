@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		010C1AFF224BB33E00EF6151 /* BGMProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 010C1AFE224BB33E00EF6151 /* BGMProfileViewController.swift */; };
 		014CEF11223C326800F2FC8E /* ContactCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 014CEF10223C326800F2FC8E /* ContactCollectionViewCell.swift */; };
 		01777D6E220B35B400D51EC4 /* EditProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01777D6D220B35B400D51EC4 /* EditProfileViewController.swift */; };
 		01B7C3572236A23600381DCD /* ContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01B7C3562236A23600381DCD /* ContactViewController.swift */; };
@@ -16,7 +15,6 @@
 		01CD8595224A32F900E1D40F /* ProfileServicesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01CD8594224A32F900E1D40F /* ProfileServicesCell.swift */; };
 		01CD8597224A48B300E1D40F /* ProfileServicesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01CD8596224A48B200E1D40F /* ProfileServicesViewController.swift */; };
 		01CD859A224AD56900E1D40F /* BPRegisterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01CD8599224AD56900E1D40F /* BPRegisterTests.swift */; };
-		01D0F38F220CBC120016FD5B /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01D0F38E220CBC110016FD5B /* MenuViewController.swift */; };
 		01E097B921FBB19100DB85D4 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01E097B821FBB19100DB85D4 /* ProfileViewController.swift */; };
 		4C391311220C84F200BC55D8 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C391310220C84F200BC55D8 /* MapKit.framework */; };
 		4C6D626821F48A4F00087370 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C6D626721F48A4F00087370 /* MapViewController.swift */; };
@@ -33,7 +31,6 @@
 		5B16A02121DFB0A70022DDE7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B16A01F21DFB0A70022DDE7 /* Main.storyboard */; };
 		5B16A02321DFB0AA0022DDE7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5B16A02221DFB0AA0022DDE7 /* Assets.xcassets */; };
 		5B16A02621DFB0AA0022DDE7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B16A02421DFB0AA0022DDE7 /* LaunchScreen.storyboard */; };
-		5B16A03121DFB0AA0022DDE7 /* Beauty_God_MotherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B16A03021DFB0AA0022DDE7 /* Beauty_God_MotherTests.swift */; };
 		5B16A03C21DFB0AA0022DDE7 /* Beauty_God_MotherUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B16A03B21DFB0AA0022DDE7 /* Beauty_God_MotherUITests.swift */; };
 		5B16A04A21DFB1F90022DDE7 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5B16A04921DFB1F90022DDE7 /* GoogleService-Info.plist */; };
 		5B16A04E21DFC9AB0022DDE7 /* RBViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B16A04D21DFC9AB0022DDE7 /* RBViewController.swift */; };
@@ -53,7 +50,6 @@
 		AE29B29421EBEE3800B19FFF /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE29B29321EBEE3800B19FFF /* MainViewController.swift */; };
 		AE29B29821EBEE9A00B19FFF /* CustomerRegisterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE29B29721EBEE9A00B19FFF /* CustomerRegisterTests.swift */; };
 		AE29B29A21EBEF6800B19FFF /* ConfirmationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE29B29921EBEF6800B19FFF /* ConfirmationVC.swift */; };
-		CC123CFF2217149A001A6BBA /* ResetEmailSentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC123CFE2217149A001A6BBA /* ResetEmailSentViewController.swift */; };
 		CC24B0E8221ED1BA00ADEFCC /* BPRegistrationStartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC24B0E7221ED1BA00ADEFCC /* BPRegistrationStartViewController.swift */; };
 		CC62D3C72212F593004FB434 /* ForgotPassword.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC62D3C62212F593004FB434 /* ForgotPassword.swift */; };
 		CC660EC42225DD39008D6E25 /* ConnectionsSPViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC660EC32225DD39008D6E25 /* ConnectionsSPViewController.swift */; };
@@ -83,7 +79,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		010C1AFE224BB33E00EF6151 /* BGMProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BGMProfileViewController.swift; sourceTree = "<group>"; };
 		014CEF10223C326800F2FC8E /* ContactCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactCollectionViewCell.swift; sourceTree = "<group>"; };
 		01777D6D220B35B400D51EC4 /* EditProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileViewController.swift; sourceTree = "<group>"; };
 		01B7C3562236A23600381DCD /* ContactViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactViewController.swift; sourceTree = "<group>"; };
@@ -92,7 +87,6 @@
 		01CD8594224A32F900E1D40F /* ProfileServicesCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileServicesCell.swift; sourceTree = "<group>"; };
 		01CD8596224A48B200E1D40F /* ProfileServicesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileServicesViewController.swift; sourceTree = "<group>"; };
 		01CD8599224AD56900E1D40F /* BPRegisterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BPRegisterTests.swift; sourceTree = "<group>"; };
-		01D0F38E220CBC110016FD5B /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		01E097B821FBB19100DB85D4 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		1B9D4DE3D2073187C01E22B1 /* Pods-Beauty God MotherTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Beauty God MotherTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Beauty God MotherTests/Pods-Beauty God MotherTests.release.xcconfig"; sourceTree = "<group>"; };
 		3AC7137FDBF8C98CB8F38344 /* Pods_Beauty_God_Mother.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Beauty_God_Mother.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -113,7 +107,6 @@
 		5B16A02521DFB0AA0022DDE7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5B16A02721DFB0AA0022DDE7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5B16A02C21DFB0AA0022DDE7 /* Beauty God MotherTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Beauty God MotherTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		5B16A03021DFB0AA0022DDE7 /* Beauty_God_MotherTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Beauty_God_MotherTests.swift; sourceTree = "<group>"; };
 		5B16A03221DFB0AA0022DDE7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5B16A03721DFB0AA0022DDE7 /* Beauty God MotherUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Beauty God MotherUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B16A03B21DFB0AA0022DDE7 /* Beauty_God_MotherUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Beauty_God_MotherUITests.swift; sourceTree = "<group>"; };
@@ -137,7 +130,6 @@
 		AE29B29321EBEE3800B19FFF /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		AE29B29721EBEE9A00B19FFF /* CustomerRegisterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomerRegisterTests.swift; sourceTree = "<group>"; };
 		AE29B29921EBEF6800B19FFF /* ConfirmationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmationVC.swift; sourceTree = "<group>"; };
-		CC123CFE2217149A001A6BBA /* ResetEmailSentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetEmailSentViewController.swift; sourceTree = "<group>"; };
 		CC24B0E7221ED1BA00ADEFCC /* BPRegistrationStartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BPRegistrationStartViewController.swift; sourceTree = "<group>"; };
 		CC62D3C62212F593004FB434 /* ForgotPassword.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPassword.swift; sourceTree = "<group>"; };
 		CC660EC32225DD39008D6E25 /* ConnectionsSPViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectionsSPViewController.swift; sourceTree = "<group>"; };
@@ -224,64 +216,15 @@
 		5B16A01A21DFB0A70022DDE7 /* Beauty God Mother */ = {
 			isa = PBXGroup;
 			children = (
-				5B1C21292237297200E69DF3 /* Supporting Files */,
-				5B6A73A82215960100E506DC /* Components */,
 				5B6A73A522158E5600E506DC /* Model */,
+				5B22A076224BA1AC007EA047 /* View */,
+				5B22A077224BA1B0007EA047 /* Controller */,
 				5B16A01B21DFB0A70022DDE7 /* AppDelegate.swift */,
 				5B16A01F21DFB0A70022DDE7 /* Main.storyboard */,
-				014CEF10223C326800F2FC8E /* ContactCollectionViewCell.swift */,
 				5B16A02221DFB0AA0022DDE7 /* Assets.xcassets */,
 				5B16A02421DFB0AA0022DDE7 /* LaunchScreen.storyboard */,
 				5B16A02721DFB0AA0022DDE7 /* Info.plist */,
 				5B16A04921DFB1F90022DDE7 /* GoogleService-Info.plist */,
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-				AE29B29321EBEE3800B19FFF /* MainViewController.swift */,
-				01E097B821FBB19100DB85D4 /* ProfileViewController.swift */,
-				01D0F38E220CBC110016FD5B /* MenuViewController.swift */,
-				01777D6D220B35B400D51EC4 /* EditProfileViewController.swift */,
-				5B2E244222159E5D00F21E29 /* Extension+Database.swift */,
-=======
-				01E097B821FBB19100DB85D4 /* ProfileViewController.swift */,
-				01D0F38E220CBC110016FD5B /* MenuViewController.swift */,
-				01777D6D220B35B400D51EC4 /* EditProfileViewController.swift */,
->>>>>>> parent of 9bd3a98... further cleaned structure of files
-=======
-				01E097B821FBB19100DB85D4 /* ProfileViewController.swift */,
-				01D0F38E220CBC110016FD5B /* MenuViewController.swift */,
-				01777D6D220B35B400D51EC4 /* EditProfileViewController.swift */,
->>>>>>> parent of 9bd3a98... further cleaned structure of files
-=======
-				AE29B29321EBEE3800B19FFF /* MainViewController.swift */,
-				01E097B821FBB19100DB85D4 /* ProfileViewController.swift */,
-				01D0F38E220CBC110016FD5B /* MenuViewController.swift */,
-				01777D6D220B35B400D51EC4 /* EditProfileViewController.swift */,
-				5B2E244222159E5D00F21E29 /* Extension+Database.swift */,
->>>>>>> parent of e3664b3... structured files
-				CC123CFE2217149A001A6BBA /* ResetEmailSentViewController.swift */,
-				01B7C3582236A2C500381DCD /* AccountViewCoontroller.swift */,
-				4C6E0791223C456F003B9967 /* SearchViewController.swift */,
-				4C6E0795223C4688003B9967 /* SearchCell.swift */,
-				4C6D626721F48A4F00087370 /* MapViewController.swift */,
-				4CE5891D22453B3D001A1ABF /* MapViewC.swift */,
-				CC9F38112244C389003A7436 /* PaymentViewController.swift */,
-				4CEDD41E2249602300E3227B /* ProfileServicesTableViewController.swift */,
-				4CEDD420224962E600E3227B /* CustomCell.swift */,
-				01CD8594224A32F900E1D40F /* ProfileServicesCell.swift */,
-				01CD8596224A48B200E1D40F /* ProfileServicesViewController.swift */,
-				58CD40E0224AAD95002B4129 /* RatingViewController.swift */,
-				58CD40E2224AB135002B4129 /* FloatingRatingView.swift */,
-<<<<<<< HEAD
-<<<<<<< HEAD
-				010C1AFE224BB33E00EF6151 /* BGMProfileViewController.swift */,
-=======
->>>>>>> d50224f9dfaf81242cf32e94c967fd8d5d0b406a
-=======
->>>>>>> parent of 9bd3a98... further cleaned structure of files
-=======
->>>>>>> parent of 9bd3a98... further cleaned structure of files
 			);
 			path = "Beauty God Mother";
 			sourceTree = "<group>";
@@ -291,7 +234,6 @@
 			children = (
 				5BF5E5F4224AFB64000D4986 /* Login Tests */,
 				01CD8598224AD48F00E1D40F /* Register Tests */,
-				5B16A03021DFB0AA0022DDE7 /* Beauty_God_MotherTests.swift */,
 				5B16A03221DFB0AA0022DDE7 /* Info.plist */,
 			);
 			path = "Beauty God MotherTests";
@@ -304,16 +246,6 @@
 				5B16A03D21DFB0AA0022DDE7 /* Info.plist */,
 			);
 			path = "Beauty God MotherUITests";
-			sourceTree = "<group>";
-		};
-		5B1C21292237297200E69DF3 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				AE2942EF21F2832D00D629EA /* RegistrationService.swift */,
-				5B1C212C223730DC00E69DF3 /* Firebase_Extension.swift */,
-				5B6A73A622158E6D00E506DC /* User.swift */,
-			);
-			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		5B1F858422398D6100EDF2A9 /* Customer */ = {
@@ -340,43 +272,102 @@
 			path = Provider;
 			sourceTree = "<group>";
 		};
-		5B1F858622398E3900EDF2A9 /* LoginService */ = {
+		5B1F858622398E3900EDF2A9 /* Login */ = {
 			isa = PBXGroup;
 			children = (
+				AE29B29321EBEE3800B19FFF /* MainViewController.swift */,
 				5B2E24442215A3A600F21E29 /* RootViewController.swift */,
 				5B16A01D21DFB0A70022DDE7 /* ViewController.swift */,
 				CC62D3C62212F593004FB434 /* ForgotPassword.swift */,
 				5B20B3CF224981310059A08D /* LoginService.swift */,
 			);
-			path = LoginService;
+			path = Login;
 			sourceTree = "<group>";
 		};
-		5B1F858822398E7000EDF2A9 /* RegistrationService */ = {
+		5B1F858822398E7000EDF2A9 /* Registration */ = {
 			isa = PBXGroup;
 			children = (
 				5B1F858522398DB300EDF2A9 /* Provider */,
 				5B1F858422398D6100EDF2A9 /* Customer */,
 			);
-			path = RegistrationService;
+			path = Registration;
+			sourceTree = "<group>";
+		};
+		5B22A076224BA1AC007EA047 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				5B1F858822398E7000EDF2A9 /* Registration */,
+				5B1F858622398E3900EDF2A9 /* Login */,
+				5B22A078224BA2C1007EA047 /* Search */,
+				5B22A079224BA2CC007EA047 /* Map */,
+				5B22A07A224BBDFB007EA047 /* Profile */,
+				5BF67D302244FFFD00AC61E0 /* BookingAndPayments */,
+				5B22A07C224BBEE1007EA047 /* AccountAndContact */,
+			);
+			name = View;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		5B22A077224BA1B0007EA047 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				5B6A73AB2215965B00E506DC /* TabBars */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		5B22A078224BA2C1007EA047 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				4C6E0791223C456F003B9967 /* SearchViewController.swift */,
+				4C6E0795223C4688003B9967 /* SearchCell.swift */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		5B22A079224BA2CC007EA047 /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				4C6D626721F48A4F00087370 /* MapViewController.swift */,
+				4CE5891D22453B3D001A1ABF /* MapViewC.swift */,
+			);
+			path = Map;
+			sourceTree = "<group>";
+		};
+		5B22A07A224BBDFB007EA047 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				01E097B821FBB19100DB85D4 /* ProfileViewController.swift */,
+				01777D6D220B35B400D51EC4 /* EditProfileViewController.swift */,
+				4CEDD41E2249602300E3227B /* ProfileServicesTableViewController.swift */,
+				4CEDD420224962E600E3227B /* CustomCell.swift */,
+				01CD8594224A32F900E1D40F /* ProfileServicesCell.swift */,
+				01CD8596224A48B200E1D40F /* ProfileServicesViewController.swift */,
+				58CD40E0224AAD95002B4129 /* RatingViewController.swift */,
+				58CD40E2224AB135002B4129 /* FloatingRatingView.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		5B22A07C224BBEE1007EA047 /* AccountAndContact */ = {
+			isa = PBXGroup;
+			children = (
+				01B7C3582236A2C500381DCD /* AccountViewCoontroller.swift */,
+				014CEF10223C326800F2FC8E /* ContactCollectionViewCell.swift */,
+			);
+			path = AccountAndContact;
 			sourceTree = "<group>";
 		};
 		5B6A73A522158E5600E506DC /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				5BF67D302244FFFD00AC61E0 /* Payments */,
-				5B6A73AB2215965B00E506DC /* TabBars */,
+				5B2E244222159E5D00F21E29 /* Extension+Database.swift */,
+				AE2942EF21F2832D00D629EA /* RegistrationService.swift */,
+				5B1C212C223730DC00E69DF3 /* Firebase_Extension.swift */,
+				5B6A73A622158E6D00E506DC /* User.swift */,
 			);
 			name = Model;
 			path = "New Group";
-			sourceTree = "<group>";
-		};
-		5B6A73A82215960100E506DC /* Components */ = {
-			isa = PBXGroup;
-			children = (
-				5B1F858822398E7000EDF2A9 /* RegistrationService */,
-				5B1F858622398E3900EDF2A9 /* LoginService */,
-			);
-			path = Components;
 			sourceTree = "<group>";
 		};
 		5B6A73AB2215965B00E506DC /* TabBars */ = {
@@ -397,15 +388,16 @@
 			path = "Login Tests";
 			sourceTree = "<group>";
 		};
-		5BF67D302244FFFD00AC61E0 /* Payments */ = {
+		5BF67D302244FFFD00AC61E0 /* BookingAndPayments */ = {
 			isa = PBXGroup;
 			children = (
+				CC9F38112244C389003A7436 /* PaymentViewController.swift */,
 				5BF67D312245001700AC61E0 /* CustomViewController.swift */,
 				5BF67D332245002500AC61E0 /* StandardViewController.swift */,
 				5BF67D352245003300AC61E0 /* ApplePayViewController.swift */,
 				CC68C4C9224B7B4000C528AC /* BookingSysteViewController.swift */,
 			);
-			path = Payments;
+			path = BookingAndPayments;
 			sourceTree = "<group>";
 		};
 		E4E30AEDA9F91096A65DF3C6 /* Frameworks */ = {
@@ -691,7 +683,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CC123CFF2217149A001A6BBA /* ResetEmailSentViewController.swift in Sources */,
 				58CD40E1224AAD95002B4129 /* RatingViewController.swift in Sources */,
 				4CEDD421224962E600E3227B /* CustomCell.swift in Sources */,
 				01777D6E220B35B400D51EC4 /* EditProfileViewController.swift in Sources */,
@@ -713,7 +704,6 @@
 				5B1C212D223730DC00E69DF3 /* Firebase_Extension.swift in Sources */,
 				01B7C3572236A23600381DCD /* ContactViewController.swift in Sources */,
 				5BF67D342245002500AC61E0 /* StandardViewController.swift in Sources */,
-				01D0F38F220CBC120016FD5B /* MenuViewController.swift in Sources */,
 				CC24B0E8221ED1BA00ADEFCC /* BPRegistrationStartViewController.swift in Sources */,
 				5B2E24452215A3A600F21E29 /* RootViewController.swift in Sources */,
 				5B6A73A722158E6D00E506DC /* User.swift in Sources */,
@@ -722,7 +712,6 @@
 				5B16A01E21DFB0A70022DDE7 /* ViewController.swift in Sources */,
 				5B16A01C21DFB0A70022DDE7 /* AppDelegate.swift in Sources */,
 				CC62D3C72212F593004FB434 /* ForgotPassword.swift in Sources */,
-				010C1AFF224BB33E00EF6151 /* BGMProfileViewController.swift in Sources */,
 				CC68C4CA224B7B4000C528AC /* BookingSysteViewController.swift in Sources */,
 				01B7C3592236A2C500381DCD /* AccountViewCoontroller.swift in Sources */,
 				5B2E244322159E5D00F21E29 /* Extension+Database.swift in Sources */,
@@ -742,7 +731,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5B16A03121DFB0AA0022DDE7 /* Beauty_God_MotherTests.swift in Sources */,
 				01CD859A224AD56900E1D40F /* BPRegisterTests.swift in Sources */,
 				5BF5E5F7224AFB95000D4986 /* UserLoginTests.swift in Sources */,
 				AE29B29821EBEE9A00B19FFF /* CustomerRegisterTests.swift in Sources */,
