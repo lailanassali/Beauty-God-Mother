@@ -224,9 +224,9 @@
 		5B16A01A21DFB0A70022DDE7 /* Beauty God Mother */ = {
 			isa = PBXGroup;
 			children = (
-				5B1C21292237297200E69DF3 /* Supporting Files */,
-				5B6A73A82215960100E506DC /* Components */,
 				5B6A73A522158E5600E506DC /* Model */,
+				5B22A076224BA1AC007EA047 /* View */,
+				5B22A077224BA1B0007EA047 /* Controller */,
 				5B16A01B21DFB0A70022DDE7 /* AppDelegate.swift */,
 				5B16A01F21DFB0A70022DDE7 /* Main.storyboard */,
 				014CEF10223C326800F2FC8E /* ContactCollectionViewCell.swift */,
@@ -237,7 +237,6 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
-<<<<<<< HEAD
 				AE29B29321EBEE3800B19FFF /* MainViewController.swift */,
 				01E097B821FBB19100DB85D4 /* ProfileViewController.swift */,
 				01D0F38E220CBC110016FD5B /* MenuViewController.swift */,
@@ -253,13 +252,6 @@
 				01D0F38E220CBC110016FD5B /* MenuViewController.swift */,
 				01777D6D220B35B400D51EC4 /* EditProfileViewController.swift */,
 >>>>>>> parent of 9bd3a98... further cleaned structure of files
-=======
-				AE29B29321EBEE3800B19FFF /* MainViewController.swift */,
-				01E097B821FBB19100DB85D4 /* ProfileViewController.swift */,
-				01D0F38E220CBC110016FD5B /* MenuViewController.swift */,
-				01777D6D220B35B400D51EC4 /* EditProfileViewController.swift */,
-				5B2E244222159E5D00F21E29 /* Extension+Database.swift */,
->>>>>>> parent of e3664b3... structured files
 				CC123CFE2217149A001A6BBA /* ResetEmailSentViewController.swift */,
 				01B7C3582236A2C500381DCD /* AccountViewCoontroller.swift */,
 				4C6E0791223C456F003B9967 /* SearchViewController.swift */,
@@ -306,16 +298,6 @@
 			path = "Beauty God MotherUITests";
 			sourceTree = "<group>";
 		};
-		5B1C21292237297200E69DF3 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				AE2942EF21F2832D00D629EA /* RegistrationService.swift */,
-				5B1C212C223730DC00E69DF3 /* Firebase_Extension.swift */,
-				5B6A73A622158E6D00E506DC /* User.swift */,
-			);
-			path = "Supporting Files";
-			sourceTree = "<group>";
-		};
 		5B1F858422398D6100EDF2A9 /* Customer */ = {
 			isa = PBXGroup;
 			children = (
@@ -340,43 +322,88 @@
 			path = Provider;
 			sourceTree = "<group>";
 		};
-		5B1F858622398E3900EDF2A9 /* LoginService */ = {
+		5B1F858622398E3900EDF2A9 /* Login */ = {
 			isa = PBXGroup;
 			children = (
+				AE29B29321EBEE3800B19FFF /* MainViewController.swift */,
 				5B2E24442215A3A600F21E29 /* RootViewController.swift */,
 				5B16A01D21DFB0A70022DDE7 /* ViewController.swift */,
 				CC62D3C62212F593004FB434 /* ForgotPassword.swift */,
 				5B20B3CF224981310059A08D /* LoginService.swift */,
 			);
-			path = LoginService;
+			path = Login;
 			sourceTree = "<group>";
 		};
-		5B1F858822398E7000EDF2A9 /* RegistrationService */ = {
+		5B1F858822398E7000EDF2A9 /* Registration */ = {
 			isa = PBXGroup;
 			children = (
 				5B1F858522398DB300EDF2A9 /* Provider */,
 				5B1F858422398D6100EDF2A9 /* Customer */,
 			);
-			path = RegistrationService;
+			path = Registration;
+			sourceTree = "<group>";
+		};
+		5B22A076224BA1AC007EA047 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				5B22A07C224BBEE1007EA047 /* AccountAndContact */,
+				5B22A07A224BBDFB007EA047 /* Profile */,
+				5B22A079224BA2CC007EA047 /* Map */,
+				5B22A078224BA2C1007EA047 /* Search */,
+				5B1F858622398E3900EDF2A9 /* Login */,
+				5B1F858822398E7000EDF2A9 /* Registration */,
+				5BF67D302244FFFD00AC61E0 /* BookingAndPayments */,
+			);
+			name = View;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		5B22A077224BA1B0007EA047 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				5B6A73AB2215965B00E506DC /* TabBars */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		5B22A078224BA2C1007EA047 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		5B22A079224BA2CC007EA047 /* Map */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Map;
+			sourceTree = "<group>";
+		};
+		5B22A07A224BBDFB007EA047 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		5B22A07C224BBEE1007EA047 /* AccountAndContact */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = AccountAndContact;
 			sourceTree = "<group>";
 		};
 		5B6A73A522158E5600E506DC /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				5BF67D302244FFFD00AC61E0 /* Payments */,
-				5B6A73AB2215965B00E506DC /* TabBars */,
+				5B2E244222159E5D00F21E29 /* Extension+Database.swift */,
+				AE2942EF21F2832D00D629EA /* RegistrationService.swift */,
+				5B1C212C223730DC00E69DF3 /* Firebase_Extension.swift */,
+				5B6A73A622158E6D00E506DC /* User.swift */,
 			);
 			name = Model;
 			path = "New Group";
-			sourceTree = "<group>";
-		};
-		5B6A73A82215960100E506DC /* Components */ = {
-			isa = PBXGroup;
-			children = (
-				5B1F858822398E7000EDF2A9 /* RegistrationService */,
-				5B1F858622398E3900EDF2A9 /* LoginService */,
-			);
-			path = Components;
 			sourceTree = "<group>";
 		};
 		5B6A73AB2215965B00E506DC /* TabBars */ = {
@@ -397,7 +424,7 @@
 			path = "Login Tests";
 			sourceTree = "<group>";
 		};
-		5BF67D302244FFFD00AC61E0 /* Payments */ = {
+		5BF67D302244FFFD00AC61E0 /* BookingAndPayments */ = {
 			isa = PBXGroup;
 			children = (
 				5BF67D312245001700AC61E0 /* CustomViewController.swift */,
@@ -405,7 +432,7 @@
 				5BF67D352245003300AC61E0 /* ApplePayViewController.swift */,
 				CC68C4C9224B7B4000C528AC /* BookingSysteViewController.swift */,
 			);
-			path = Payments;
+			path = BookingAndPayments;
 			sourceTree = "<group>";
 		};
 		E4E30AEDA9F91096A65DF3C6 /* Frameworks */ = {
