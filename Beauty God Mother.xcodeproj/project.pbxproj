@@ -335,13 +335,13 @@
 		5B22A076224BA1AC007EA047 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				5B22A07C224BBEE1007EA047 /* AccountAndContact */,
-				5B22A07A224BBDFB007EA047 /* Profile */,
-				5B22A079224BA2CC007EA047 /* Map */,
-				5B22A078224BA2C1007EA047 /* Search */,
-				5B1F858622398E3900EDF2A9 /* Login */,
 				5B1F858822398E7000EDF2A9 /* Registration */,
+				5B1F858622398E3900EDF2A9 /* Login */,
+				5B22A078224BA2C1007EA047 /* Search */,
+				5B22A079224BA2CC007EA047 /* Map */,
+				5B22A07A224BBDFB007EA047 /* Profile */,
 				5BF67D302244FFFD00AC61E0 /* BookingAndPayments */,
+				5B22A07C224BBEE1007EA047 /* AccountAndContact */,
 			);
 			name = View;
 			path = ..;
