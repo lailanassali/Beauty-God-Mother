@@ -1,0 +1,6 @@
+framework module Pods_Beauty_God_Mother {
+  umbrella header "Pods-Beauty God Mother-umbrella.h"
+
+  export *
+  module * { export * }
+}
