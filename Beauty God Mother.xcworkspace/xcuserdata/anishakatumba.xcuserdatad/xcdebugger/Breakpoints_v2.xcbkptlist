@@ -151,7 +151,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Beauty God MotherTests/Login Tests/UserLoginTests.swift"
-            timestampString = "575339972.715849"
+            timestampString = "575341530.70886"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "15"
@@ -235,6 +235,22 @@
                   offsetFromSymbolStart = "23">
                </Location>
             </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Beauty God Mother/Components/RegistrationService/Provider/BPRegistrationStartViewController.swift"
+            timestampString = "575342205.228754"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "22"
+            endingLineNumber = "22"
+            landmarkName = "NextButton(_:)"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

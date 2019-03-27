@@ -31,16 +31,18 @@ class BPRegisterTests: XCTestCase {
     
     func testShouldSucceedIfServicesFieldsAreNotEmpty() {
 
-        let result = registerService.servicesFieldsAreNotEmpty(name: "aisha", price: "aisha", duration: "aisha", description: "aisha")
+        let result = registerService.servicesFieldsAreNotEmpty(name: "aisha", price: 20, duration: "aisha", description: "aisha")
         XCTAssertEqual(result, true)
 
     }
 
     func testShouldFailIfServicesFieldsAreEmpty() {
 
-        let result = registerService.servicesFieldsAreNotEmpty(name: "", price: "", duration: "", description: "")
+        let result = registerService.servicesFieldsAreNotEmpty(name: "", price: nil, duration: "", description: "")
         XCTAssertEqual(result, false)
     }
+    
+
 
     
     
