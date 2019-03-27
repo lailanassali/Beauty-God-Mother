@@ -238,7 +238,6 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
-<<<<<<< HEAD
 				AE29B29321EBEE3800B19FFF /* MainViewController.swift */,
 				01E097B821FBB19100DB85D4 /* ProfileViewController.swift */,
 				01D0F38E220CBC110016FD5B /* MenuViewController.swift */,
@@ -254,13 +253,6 @@
 				01D0F38E220CBC110016FD5B /* MenuViewController.swift */,
 				01777D6D220B35B400D51EC4 /* EditProfileViewController.swift */,
 >>>>>>> parent of 9bd3a98... further cleaned structure of files
-=======
-				AE29B29321EBEE3800B19FFF /* MainViewController.swift */,
-				01E097B821FBB19100DB85D4 /* ProfileViewController.swift */,
-				01D0F38E220CBC110016FD5B /* MenuViewController.swift */,
-				01777D6D220B35B400D51EC4 /* EditProfileViewController.swift */,
-				5B2E244222159E5D00F21E29 /* Extension+Database.swift */,
->>>>>>> parent of e3664b3... structured files
 =======
 				AE29B29321EBEE3800B19FFF /* MainViewController.swift */,
 				01E097B821FBB19100DB85D4 /* ProfileViewController.swift */,
