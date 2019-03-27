@@ -34,7 +34,7 @@
                                             <constraint firstAttribute="height" constant="42" id="55m-VV-Rxm"/>
                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="251" id="PFO-XI-7Ef"/>
                                         </constraints>
-                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="textColor" red="1" green="0.28926893812024579" blue="0.91135084935541411" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
@@ -45,7 +45,7 @@
                                             <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="42" id="gXW-Uy-uIA"/>
                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="251" id="v8Q-RH-lJM"/>
                                         </constraints>
-                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="textColor" red="1" green="0.26132701322338314" blue="0.89768638651961952" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
@@ -2400,6 +2400,9 @@
                                                                         <rect key="frame" x="148" y="0.0" width="74" height="36"/>
                                                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                                         <state key="normal" title="(ratings)"/>
+                                                                        <connections>
+                                                                            <segue destination="Cbg-gG-ZO5" kind="show" id="a1C-xg-xoi"/>
+                                                                        </connections>
                                                                     </button>
                                                                 </subviews>
                                                             </stackView>
@@ -2436,9 +2439,6 @@
                                                     </containerView>
                                                     <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qvK-ka-WIQ">
                                                         <rect key="frame" x="0.0" y="478.5" width="375" height="429.5"/>
-                                                        <connections>
-                                                            <segue destination="AAi-Cg-Aqs" kind="embed" id="c3N-vZ-iXl"/>
-                                                        </connections>
                                                     </containerView>
                                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="11" baselineRelativeArrangement="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GnL-lj-iLb" userLabel="Socials">
                                                         <rect key="frame" x="1" y="327.5" width="375" height="100"/>
@@ -3067,7 +3067,7 @@
                                 <rect key="frame" x="21" y="66" width="338" height="364"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ProfileCell" rowHeight="100" id="dnw-gA-SOD" customClass="ProfileServicesCell" customModule="Beauty_God_Mother" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ProfileCell" rowHeight="100" id="dnw-gA-SOD" customClass="ProfileServicesCell" customModule="Beauty_God_Mother" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="338" height="100"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="dnw-gA-SOD" id="uEs-Gq-cor">
@@ -3244,39 +3244,99 @@
             </objects>
             <point key="canvasLocation" x="8751" y="-400"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="7c6-ga-KT1">
+        <!--Rating View Controller-->
+        <scene sceneID="JIS-vx-nOz">
             <objects>
-                <viewController storyboardIdentifier="mediaContainer" id="AAi-Cg-Aqs" sceneMemberID="viewController">
+                <viewController id="Cbg-gG-ZO5" customClass="RatingViewController" customModule="Beauty_God_Mother" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="x2a-Vf-WDe"/>
-                        <viewControllerLayoutGuide type="bottom" id="u0J-wg-bPa"/>
+                        <viewControllerLayoutGuide type="top" id="ROS-qU-C3U"/>
+                        <viewControllerLayoutGuide type="bottom" id="PgW-Jp-SoT"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="gxv-rE-nsP">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="429.5"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    <view key="view" contentMode="scaleToFill" id="XZ3-A1-gFS">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fgl-vx-ago">
-                                <rect key="frame" x="147" y="39" width="0.0" height="0.0"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Float Rating View" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FDy-mX-Sxd">
+                                <rect key="frame" x="105" y="66" width="165" height="26.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="reviews" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DrU-bY-e3K">
-                                <rect key="frame" x="114" y="89" width="58" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gBA-Fg-fPN" customClass="FloatRatingView" customModule="Beauty_God_Mother">
+                                <rect key="frame" x="16" y="200.5" width="343" height="44"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="eUn-MQ-Tph"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="image" keyPath="emptyImage" value="StarEmpty"/>
+                                    <userDefinedRuntimeAttribute type="image" keyPath="fullImage" value="StarFull"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="minRating">
+                                        <integer key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="maxRating">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="rating">
+                                        <real key="value" value="2.5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="editable" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Live Rating:" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Ka-VH-fPY">
+                                <rect key="frame" x="71.5" y="277" width="89" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Updated Rating:" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y3j-Je-nTh">
+                                <rect key="frame" x="36" y="305.5" width="124.5" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xTa-lW-wVR">
+                                <rect key="frame" x="168.5" y="277" width="24" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nyr-Pm-aFS">
+                                <rect key="frame" x="168.5" y="305.5" width="24" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="7Ka-VH-fPY" firstAttribute="trailing" secondItem="Y3j-Je-nTh" secondAttribute="trailing" id="0RV-Zw-hVZ"/>
+                            <constraint firstItem="xTa-lW-wVR" firstAttribute="leading" secondItem="nyr-Pm-aFS" secondAttribute="leading" id="1mw-fw-Kzk"/>
+                            <constraint firstItem="Y3j-Je-nTh" firstAttribute="leading" secondItem="XZ3-A1-gFS" secondAttribute="leadingMargin" constant="20" id="248-vT-oKD"/>
+                            <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="xTa-lW-wVR" secondAttribute="trailing" constant="10" id="2QK-tm-xfK"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="gBA-Fg-fPN" secondAttribute="trailing" id="8LU-9f-l9y"/>
+                            <constraint firstItem="7Ka-VH-fPY" firstAttribute="top" secondItem="gBA-Fg-fPN" secondAttribute="bottom" multiplier="1.1" constant="8" symbolic="YES" id="DZM-DQ-uxx"/>
+                            <constraint firstItem="7Ka-VH-fPY" firstAttribute="centerY" secondItem="xTa-lW-wVR" secondAttribute="centerY" id="F6R-pe-8dt"/>
+                            <constraint firstAttribute="centerX" secondItem="FDy-mX-Sxd" secondAttribute="centerX" id="MFw-iT-XIV"/>
+                            <constraint firstItem="nyr-Pm-aFS" firstAttribute="leading" secondItem="Y3j-Je-nTh" secondAttribute="trailing" constant="8" symbolic="YES" id="S3Q-yx-yrr"/>
+                            <constraint firstItem="7Ka-VH-fPY" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="XZ3-A1-gFS" secondAttribute="leadingMargin" constant="10" id="SE7-YL-0fi"/>
+                            <constraint firstItem="gBA-Fg-fPN" firstAttribute="centerY" secondItem="XZ3-A1-gFS" secondAttribute="centerY" multiplier="2/3" id="VOb-YV-5rb"/>
+                            <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="nyr-Pm-aFS" secondAttribute="trailing" constant="10" id="erl-HS-ckA"/>
+                            <constraint firstItem="gBA-Fg-fPN" firstAttribute="leading" secondItem="XZ3-A1-gFS" secondAttribute="leadingMargin" id="nmI-Gd-hsw"/>
+                            <constraint firstItem="nyr-Pm-aFS" firstAttribute="centerY" secondItem="Y3j-Je-nTh" secondAttribute="centerY" id="rfu-eR-2kX"/>
+                            <constraint firstItem="Y3j-Je-nTh" firstAttribute="top" secondItem="7Ka-VH-fPY" secondAttribute="bottom" constant="8" symbolic="YES" id="y6K-CV-rZw"/>
+                        </constraints>
                     </view>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
+                    <connections>
+                        <outlet property="floatingRatingView" destination="gBA-Fg-fPN" id="ljl-Od-eOh"/>
+                        <outlet property="liveLabel" destination="xTa-lW-wVR" id="6h9-yI-6Re"/>
+                        <outlet property="updatedLabel" destination="nyr-Pm-aFS" id="tMG-Gb-X5f"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="oEW-Qj-2OZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Rmx-KB-SFv" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="8247" y="-1077"/>
+            <point key="canvasLocation" x="7969" y="-1107"/>
         </scene>
     </scenes>
     <resources>
@@ -3288,6 +3348,8 @@
         <image name="Image-8" width="465" height="127"/>
         <image name="Instagram round social media icon free" width="100" height="100"/>
         <image name="Map" width="491.51998901367188" height="491.51998901367188"/>
+        <image name="StarEmpty" width="16" height="16"/>
+        <image name="StarFull" width="16" height="16"/>
         <image name="Twitter round" width="100" height="100"/>
         <image name="account picture" width="346" height="346"/>
         <image name="checked" width="400.69564819335938" height="400.69564819335938"/>

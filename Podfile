@@ -19,6 +19,7 @@ pod 'GooglePlacePicker'
 pod 'GoogleMaps'
 pod 'Cosmos'
 pod 'TinyConstraints'
+pod 'FloatRatingView'
 
 target 'Beauty God MotherTests' do
 inherit! :search_paths
