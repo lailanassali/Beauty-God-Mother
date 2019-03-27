@@ -10,17 +10,19 @@ import UIKit
 
 class ProfileServicesViewController: UIViewController,UITableViewDataSource, UITableViewDelegate,UISearchBarDelegate {
     
-    @IBOutlet var servicesTable: UITableView!
-    @IBOutlet var servicesSearch: UISearchBar!
     
-    var servicesArray = [Services]()
-    var currentServicesArray = [Services]()
+    @IBOutlet weak var servicesTable: UITableView!
+    @IBOutlet weak var servicesSearch: UISearchBar!
+    
+    var serviceArray = [Service]()
+    var currentServiceArray = [Service]()
 
     override func viewDidLoad() {
         super.viewDidLoad()
         setUpServices()
         setUpSearchBar()
 
+    
     }
     
     private func setUpSearchBar(){
@@ -29,16 +31,16 @@ class ProfileServicesViewController: UIViewController,UITableViewDataSource, UIT
 
     private func setUpServices() {
         // HAIR
-        servicesArray.append(Services(serviceName: "Closure", duration: "1hr", price: "£100", description: "i will do a closure", image: "closurewig"))
-        servicesArray.append(Services(serviceName: "Frontal", duration: "2hr", price: "£200", description: "i will do a frontal", image: "closurewig"))
-        servicesArray.append(Services(serviceName: "Dyeing service", duration: "2hr", price: "£200", description: "i will do a frontal", image: "closurewig"))
-        servicesArray.append(Services(serviceName: "Fullani braids", duration: "2hr", price: "£200", description: "i will do a frontal", image: "closurewig"))
-        servicesArray.append(Services(serviceName: "Chunky braids", duration: "2hr", price: "£200", description: "i will do a frontal", image: "closurewig"))
-        servicesArray.append(Services(serviceName: "Sew-in", duration: "2hr", price: "£200", description: "i will do a frontal", image: "closurewig"))
-        servicesArray.append(Services(serviceName: "Wash and treat", duration: "2hr", price: "£200", description: "i will do a frontal", image: "closurewig"))
+        serviceArray.append(Service(serviceName: "Closure", duration: "1hr", price: "£100", description: "i will do a closure", image: "closurewig"))
+        serviceArray.append(Service(serviceName: "Frontal", duration: "2hr", price: "£200", description: "i will do a frontal", image: "closurewig"))
+        serviceArray.append(Service(serviceName: "Dyeing service", duration: "2hr", price: "£200", description: "i will do a frontal", image: "closurewig"))
+        serviceArray.append(Service(serviceName: "Fullani braids", duration: "2hr", price: "£200", description: "i will do a frontal", image: "closurewig"))
+        serviceArray.append(Service(serviceName: "Chunky braids", duration: "2hr", price: "£200", description: "i will do a frontal", image: "closurewig"))
+        serviceArray.append(Service(serviceName: "Sew-in", duration: "2hr", price: "£200", description: "i will do a frontal", image: "closurewig"))
+        serviceArray.append(Service(serviceName: "Wash and treat", duration: "2hr", price: "£200", description: "i will do a frontal", image: "closurewig"))
         
         
-        currentServicesArray = servicesArray
+        currentServiceArray = serviceArray
     }
     
 //    private func setUpSearchBar() {
@@ -46,7 +48,7 @@ class ProfileServicesViewController: UIViewController,UITableViewDataSource, UIT
 //    }
 //
     func tableView(_ tableView:UITableView, numberOfRowsInSection section: Int) -> Int {
-        return currentServicesArray.count
+        return currentServiceArray.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell{
@@ -54,11 +56,11 @@ class ProfileServicesViewController: UIViewController,UITableViewDataSource, UIT
             return UITableViewCell()
         }
         
-        cell.serviceName.text = currentServicesArray[indexPath.row].serviceName
-        cell.priceLabel.text = currentServicesArray[indexPath.row].price
-        cell.durationLabel.text = currentServicesArray[indexPath.row].duration
-        cell.descriptionLabel.text = currentServicesArray[indexPath.row].description
-        cell.servicesImage.image = UIImage(named:currentServicesArray[indexPath.row].image)
+        cell.serviceName.text = currentServiceArray[indexPath.row].serviceName
+        cell.priceLabel.text = currentServiceArray[indexPath.row].price
+        cell.durationLabel.text = currentServiceArray[indexPath.row].duration
+        cell.descriptionLabel.text = currentServiceArray[indexPath.row].description
+        cell.servicesImage.image = UIImage(named:currentServiceArray[indexPath.row].image)
 
         return cell
         
@@ -69,40 +71,19 @@ class ProfileServicesViewController: UIViewController,UITableViewDataSource, UIT
         return 100
     }
     
-   
+    func seacrchBar (_ searchBar: UISearchBar, textDidChange searchText: String){
+        currentServiceArray = serviceArray.filter({ Service -> Bool in
+            guard let text = searchBar.text else { return false }
+            return Service.serviceName.contains(text)
+        })
+    }
     
-//
-//    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String){
-//        guard !searchText.isEmpty else {
-//            currentServicesArray = servicesArray
-//            table.reloadData()
-//            return
-//        }
-    
-//        currentServicesArray = servicesArray.filter({ services -> Bool in
-//            guard let searchText = searchBar.text else { return false }
-//            return services.serviceName.lowercased().contains(searchText.lowercased())
-//        })
-//       
-//          table.reloadData()
-//
-//    }
-//}
+    func searchBar(_ searchBar: UISearchBar, selectedScopeButtonIndexDidChange selectedScope: Int){
+        
+    }
 
-    
-//    func searchBar (_ searchBar: UISearchBar, textDidChange searchText: String){
-//        currentServiceArray = serviceArray.filter({ Service -> Bool in
-//            guard let text = searchBar.text else { return false }
-//            return Service.serviceName.contains(text)
-//        })
-//    }
-//
-//    func searchBar(_ searchBar: UISearchBar, selectedScopeButtonIndexDidChange selectedScope: Int){
-//
-//    }
-
-
-class Services {
+}
+class Service {
     let serviceName: String
     let duration: String
     let price: String
@@ -121,4 +102,3 @@ class Services {
     }
 }
 
-}

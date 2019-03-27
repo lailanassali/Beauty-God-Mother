@@ -240,7 +240,6 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
-<<<<<<< HEAD
 				AE29B29321EBEE3800B19FFF /* MainViewController.swift */,
 				01E097B821FBB19100DB85D4 /* ProfileViewController.swift */,
 				01D0F38E220CBC110016FD5B /* MenuViewController.swift */,
@@ -264,8 +263,6 @@
 				5B2E244222159E5D00F21E29 /* Extension+Database.swift */,
 >>>>>>> parent of e3664b3... structured files
 =======
-=======
->>>>>>> parent of 2c6520a... Merge branch 'develop' of https://github.com/lailanassali/Beauty-God-Mother into develop
 				AE29B29321EBEE3800B19FFF /* MainViewController.swift */,
 				01E097B821FBB19100DB85D4 /* ProfileViewController.swift */,
 				01D0F38E220CBC110016FD5B /* MenuViewController.swift */,
@@ -294,7 +291,6 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 				010C1AFE224BB33E00EF6151 /* BGMProfileViewController.swift */,
-<<<<<<< HEAD
 =======
 >>>>>>> d50224f9dfaf81242cf32e94c967fd8d5d0b406a
 =======
@@ -303,8 +299,6 @@
 >>>>>>> parent of 9bd3a98... further cleaned structure of files
 =======
 >>>>>>> parent of 9bd3a98... further cleaned structure of files
-=======
->>>>>>> parent of 2c6520a... Merge branch 'develop' of https://github.com/lailanassali/Beauty-God-Mother into develop
 			);
 			path = "Beauty God Mother";
 			sourceTree = "<group>";
@@ -390,7 +384,6 @@
 				5B6A73AB2215965B00E506DC /* TabBars */,
 			);
 <<<<<<< HEAD
-<<<<<<< HEAD
 			name = Model;
 			path = "New Group";
 =======
@@ -424,10 +417,6 @@
 			);
 			path = AccountAndContact;
 >>>>>>> parent of 9bd3a98... further cleaned structure of files
-=======
-			name = Model;
-			path = "New Group";
->>>>>>> parent of 2c6520a... Merge branch 'develop' of https://github.com/lailanassali/Beauty-God-Mother into develop
 			sourceTree = "<group>";
 		};
 		5B6A73A82215960100E506DC /* Components */ = {
