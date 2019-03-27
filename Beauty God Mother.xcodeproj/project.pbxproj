@@ -54,9 +54,10 @@
 		CC24B0E8221ED1BA00ADEFCC /* BPRegistrationStartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC24B0E7221ED1BA00ADEFCC /* BPRegistrationStartViewController.swift */; };
 		CC62D3C72212F593004FB434 /* ForgotPassword.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC62D3C62212F593004FB434 /* ForgotPassword.swift */; };
 		CC660EC42225DD39008D6E25 /* ConnectionsSPViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC660EC32225DD39008D6E25 /* ConnectionsSPViewController.swift */; };
+		CC68C4BC224AF11B00C528AC /* BookingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC68C4BB224AF11B00C528AC /* BookingsViewController.swift */; };
+		CC68C4C2224AF89500C528AC /* DateCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC68C4C1224AF89500C528AC /* DateCollectionViewCell.swift */; };
+		CC68C4C4224AFC1E00C528AC /* CalendarVars.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC68C4C3224AFC1E00C528AC /* CalendarVars.swift */; };
 		CC793C0F22253A8B00266734 /* ServicesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC793C0E22253A8B00266734 /* ServicesTableViewController.swift */; };
-		CC9F380E2243E308003A7436 /* DateCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC9F380D2243E308003A7436 /* DateCollectionViewCell.swift */; };
-		CC9F38102243E47D003A7436 /* CalendarVars.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC9F380F2243E47D003A7436 /* CalendarVars.swift */; };
 		CC9F38122244C389003A7436 /* PaymentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC9F38112244C389003A7436 /* PaymentViewController.swift */; };
 		CCA91949220C7A1C00672E6F /* ConfirmationDetailsBP.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCA91948220C7A1C00672E6F /* ConfirmationDetailsBP.swift */; };
 		CCF35067223178B6007DB408 /* ServicesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCF35066223178B6007DB408 /* ServicesViewController.swift */; };
@@ -136,9 +137,10 @@
 		CC24B0E7221ED1BA00ADEFCC /* BPRegistrationStartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BPRegistrationStartViewController.swift; sourceTree = "<group>"; };
 		CC62D3C62212F593004FB434 /* ForgotPassword.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPassword.swift; sourceTree = "<group>"; };
 		CC660EC32225DD39008D6E25 /* ConnectionsSPViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectionsSPViewController.swift; sourceTree = "<group>"; };
+		CC68C4BB224AF11B00C528AC /* BookingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookingsViewController.swift; sourceTree = "<group>"; };
+		CC68C4C1224AF89500C528AC /* DateCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateCollectionViewCell.swift; sourceTree = "<group>"; };
+		CC68C4C3224AFC1E00C528AC /* CalendarVars.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarVars.swift; sourceTree = "<group>"; };
 		CC793C0E22253A8B00266734 /* ServicesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServicesTableViewController.swift; sourceTree = "<group>"; };
-		CC9F380D2243E308003A7436 /* DateCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateCollectionViewCell.swift; sourceTree = "<group>"; };
-		CC9F380F2243E47D003A7436 /* CalendarVars.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarVars.swift; sourceTree = "<group>"; };
 		CC9F38112244C389003A7436 /* PaymentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentViewController.swift; sourceTree = "<group>"; };
 		CCA91948220C7A1C00672E6F /* ConfirmationDetailsBP.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmationDetailsBP.swift; sourceTree = "<group>"; };
 		CCF35066223178B6007DB408 /* ServicesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServicesViewController.swift; sourceTree = "<group>"; };
@@ -232,8 +234,6 @@
 				4C6E0795223C4688003B9967 /* SearchCell.swift */,
 				4C6D626721F48A4F00087370 /* MapViewController.swift */,
 				4CE5891D22453B3D001A1ABF /* MapViewC.swift */,
-				CC9F380D2243E308003A7436 /* DateCollectionViewCell.swift */,
-				CC9F380F2243E47D003A7436 /* CalendarVars.swift */,
 				CC9F38112244C389003A7436 /* PaymentViewController.swift */,
 				4CEDD41E2249602300E3227B /* ProfileServicesTableViewController.swift */,
 				4CEDD420224962E600E3227B /* CustomCell.swift */,
@@ -353,6 +353,9 @@
 				5BF67D312245001700AC61E0 /* CustomViewController.swift */,
 				5BF67D332245002500AC61E0 /* StandardViewController.swift */,
 				5BF67D352245003300AC61E0 /* ApplePayViewController.swift */,
+				CC68C4BB224AF11B00C528AC /* BookingsViewController.swift */,
+				CC68C4C1224AF89500C528AC /* DateCollectionViewCell.swift */,
+				CC68C4C3224AFC1E00C528AC /* CalendarVars.swift */,
 			);
 			path = Payments;
 			sourceTree = "<group>";
@@ -652,12 +655,12 @@
 				4CE5891E22453B3D001A1ABF /* MapViewC.swift in Sources */,
 				014CEF11223C326800F2FC8E /* ContactCollectionViewCell.swift in Sources */,
 				01E097B921FBB19100DB85D4 /* ProfileViewController.swift in Sources */,
+				CC68C4C2224AF89500C528AC /* DateCollectionViewCell.swift in Sources */,
 				CC9F38122244C389003A7436 /* PaymentViewController.swift in Sources */,
 				AE29B29A21EBEF6800B19FFF /* ConfirmationVC.swift in Sources */,
 				5B6A73AA2215964800E506DC /* ProviderTabBar.swift in Sources */,
 				01CD8597224A48B300E1D40F /* ProfileServicesViewController.swift in Sources */,
 				5BF67D362245003300AC61E0 /* ApplePayViewController.swift in Sources */,
-				CC9F38102243E47D003A7436 /* CalendarVars.swift in Sources */,
 				4C6D626821F48A4F00087370 /* MapViewController.swift in Sources */,
 				4C6E0796223C4688003B9967 /* SearchCell.swift in Sources */,
 				5B1C212D223730DC00E69DF3 /* Firebase_Extension.swift in Sources */,
@@ -673,14 +676,15 @@
 				5B16A01C21DFB0A70022DDE7 /* AppDelegate.swift in Sources */,
 				CC62D3C72212F593004FB434 /* ForgotPassword.swift in Sources */,
 				01B7C3592236A2C500381DCD /* AccountViewCoontroller.swift in Sources */,
+				CC68C4C4224AFC1E00C528AC /* CalendarVars.swift in Sources */,
 				5B2E244322159E5D00F21E29 /* Extension+Database.swift in Sources */,
 				4C6E0792223C456F003B9967 /* SearchViewController.swift in Sources */,
 				5BF67D322245001700AC61E0 /* CustomViewController.swift in Sources */,
 				CCF35067223178B6007DB408 /* ServicesViewController.swift in Sources */,
 				5B16A05021DFC9C10022DDE7 /* SPViewController.swift in Sources */,
 				01CD8595224A32F900E1D40F /* ProfileServicesCell.swift in Sources */,
-				CC9F380E2243E308003A7436 /* DateCollectionViewCell.swift in Sources */,
 				AE29B29421EBEE3800B19FFF /* MainViewController.swift in Sources */,
+				CC68C4BC224AF11B00C528AC /* BookingsViewController.swift in Sources */,
 				CCFA3E9F221AD2D700B160EF /* Swipe3ViewController.swift in Sources */,
 				CC793C0F22253A8B00266734 /* ServicesTableViewController.swift in Sources */,
 				58CD40E3224AB135002B4129 /* FloatingRatingView.swift in Sources */,
@@ -865,7 +869,7 @@
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 376285AQSX;
+				DEVELOPMENT_TEAM = 5H3A6UZ6V5;
 				INFOPLIST_FILE = "Beauty God Mother/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -884,7 +888,7 @@
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 376285AQSX;
+				DEVELOPMENT_TEAM = 5H3A6UZ6V5;
 				INFOPLIST_FILE = "Beauty God Mother/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
