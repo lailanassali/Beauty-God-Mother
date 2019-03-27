@@ -19,10 +19,10 @@ class BookingSysteViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-       
+       createdatepicker()
     }
     
-    func createDatePicker(){
+    func createdatepicker(){
         datepicker.datePickerMode = .dateAndTime
         
         let toolbar = UIToolbar()
