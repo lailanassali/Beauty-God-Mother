@@ -239,6 +239,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 				AE29B29321EBEE3800B19FFF /* MainViewController.swift */,
 				01E097B821FBB19100DB85D4 /* ProfileViewController.swift */,
 				01D0F38E220CBC110016FD5B /* MenuViewController.swift */,
@@ -268,6 +269,11 @@
 				01777D6D220B35B400D51EC4 /* EditProfileViewController.swift */,
 				5B2E244222159E5D00F21E29 /* Extension+Database.swift */,
 >>>>>>> parent of e3664b3... structured files
+=======
+				01E097B821FBB19100DB85D4 /* ProfileViewController.swift */,
+				01D0F38E220CBC110016FD5B /* MenuViewController.swift */,
+				01777D6D220B35B400D51EC4 /* EditProfileViewController.swift */,
+>>>>>>> parent of 9bd3a98... further cleaned structure of files
 				CC123CFE2217149A001A6BBA /* ResetEmailSentViewController.swift */,
 				01B7C3582236A2C500381DCD /* AccountViewCoontroller.swift */,
 				4C6E0791223C456F003B9967 /* SearchViewController.swift */,
@@ -283,9 +289,12 @@
 				58CD40E2224AB135002B4129 /* FloatingRatingView.swift */,
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 				010C1AFE224BB33E00EF6151 /* BGMProfileViewController.swift */,
 =======
 >>>>>>> d50224f9dfaf81242cf32e94c967fd8d5d0b406a
+=======
+>>>>>>> parent of 9bd3a98... further cleaned structure of files
 =======
 >>>>>>> parent of 9bd3a98... further cleaned structure of files
 =======
@@ -374,8 +383,40 @@
 				5BF67D302244FFFD00AC61E0 /* Payments */,
 				5B6A73AB2215965B00E506DC /* TabBars */,
 			);
+<<<<<<< HEAD
 			name = Model;
 			path = "New Group";
+=======
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		5B22A078224BA2C1007EA047 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		5B22A079224BA2CC007EA047 /* Map */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Map;
+			sourceTree = "<group>";
+		};
+		5B22A07A224BBDFB007EA047 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		5B22A07C224BBEE1007EA047 /* AccountAndContact */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = AccountAndContact;
+>>>>>>> parent of 9bd3a98... further cleaned structure of files
 			sourceTree = "<group>";
 		};
 		5B6A73A82215960100E506DC /* Components */ = {
