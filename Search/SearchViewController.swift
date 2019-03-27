@@ -61,7 +61,9 @@ class SearchViewController: UIViewController,UITableViewDataSource, UITableViewD
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let searchViewC = storyboard?.instantiateViewController(withIdentifier: "ProfileVC" ) as? ProfileViewController
+        tableView.deselectRow(at: indexPath, animated: true)
+        performSegue(withIdentifier: "showprofile", sender: self)
+        let searchViewC = storyboard?.instantiateViewController(withIdentifier: "BGMProfileVC" ) as? BGMViewController
         self.navigationController?.pushViewController(searchViewC!, animated: true)
     }
 
@@ -71,14 +73,20 @@ class SearchViewController: UIViewController,UITableViewDataSource, UITableViewD
             table.reloadData()
             return
         }
-    currentProvidersArray = providersArray.filter({ providers -> Bool in
-        guard let searchText = searchBar.text else { return false }
-        return providers.type.lowercased().contains(searchText.lowercased())
+            currentProvidersArray = providersArray.filter({ providers -> Bool in
+                guard let searchText = searchBar.text else { return false }
+                return providers.type.lowercased().contains(searchText.lowercased())
     })
         table.reloadData()
         
+    
+    func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.destination is BGMViewController {
+     //       destination.product = currentProvidersArray[]
+            }
         }
     }
+
 
 
 class Providers {
@@ -93,4 +101,20 @@ class Providers {
         self.image = image
         
     }
+}
+    
+
+        
+
+// func prepare(for segue: UIStoryboardSegue, sender: Any?){
+//        if segue.identifier == "showProfile" {
+//            let destinationController = segue.destination as! BGMViewController
+//            destinationController.image = image
+//
+//            }
+//
+//            }
+
+
+
 }

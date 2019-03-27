@@ -71,7 +71,7 @@ class ProfileServicesViewController: UIViewController,UITableViewDataSource, UIT
         return 100
     }
     
-    func seacrchBar (_ searchBar: UISearchBar, textDidChange searchText: String){
+    func searchBar (_ searchBar: UISearchBar, textDidChange searchText: String){
         currentServiceArray = serviceArray.filter({ Service -> Bool in
             guard let text = searchBar.text else { return false }
             return Service.serviceName.contains(text)

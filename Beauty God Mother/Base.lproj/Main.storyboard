@@ -1960,7 +1960,7 @@
                         <segue destination="yxI-AY-oc2" kind="relationship" relationship="viewControllers" id="SRe-q2-ugO"/>
                         <segue destination="YDf-W9-MgH" kind="relationship" relationship="viewControllers" id="Wkr-CK-fSA"/>
                         <segue destination="9ex-cx-Pf5" kind="relationship" relationship="viewControllers" id="Ch2-B5-1qO"/>
-                        <segue destination="gy6-MH-aTc" kind="relationship" relationship="viewControllers" id="ftf-qn-cPR"/>
+                        <segue destination="WwT-eg-Tv8" kind="relationship" relationship="viewControllers" id="8Zt-K9-Ugi"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XDJ-EX-5u6" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1984,7 +1984,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vHQ-Fe-UIB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6071" y="-808"/>
+            <point key="canvasLocation" x="6201" y="-1564"/>
         </scene>
         <!--My Account-->
         <scene sceneID="Pzk-Nq-JOr">
@@ -2327,7 +2327,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Te6-5H-8MW" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <tapGestureRecognizer id="3Aq-iY-2g6"/>
             </objects>
-            <point key="canvasLocation" x="5599" y="-1865"/>
+            <point key="canvasLocation" x="4796" y="-2799"/>
         </scene>
         <!--My Profile-->
         <scene sceneID="WgK-4w-s7L">
@@ -2342,7 +2342,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="csb-0v-qCQ">
-                                <rect key="frame" x="0.0" y="20" width="375" height="1004"/>
+                                <rect key="frame" x="0.0" y="64" width="375" height="911"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="2yA-cH-mee">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="960"/>
@@ -2544,7 +2544,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DPT-9m-Cpc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="7152.8000000000002" y="-809.59520239880067"/>
+            <point key="canvasLocation" x="7180" y="-1779"/>
         </scene>
         <!--Account-->
         <scene sceneID="ZIW-yS-PcW">
@@ -2587,6 +2587,7 @@
         <!--Navigation Controller-->
         <scene sceneID="KT8-2t-yLC">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YV0-KC-lTW" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="gy6-MH-aTc" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" systemItem="search" id="xdv-yA-GPQ"/>
                     <toolbarItems/>
@@ -2595,13 +2596,9 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="WwT-eg-Tv8" kind="relationship" relationship="rootViewController" id="DxU-Ps-tDY"/>
-                    </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="YV0-KC-lTW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5204" y="-877"/>
+            <point key="canvasLocation" x="5127" y="-863"/>
         </scene>
         <!--Search View Controller-->
         <scene sceneID="Glo-RD-sb3">
@@ -2672,6 +2669,7 @@
                                             <outlet property="imge" destination="dkf-XG-Ykg" id="CBa-FO-7Rc"/>
                                             <outlet property="name" destination="3hm-vy-VWP" id="fPu-Vh-U2n"/>
                                             <outlet property="type" destination="KEf-7C-eAa" id="HOC-tg-FFk"/>
+                                            <segue destination="0ex-2z-BtU" kind="show" identifier="showprofile" id="82N-q8-OWv"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -2707,6 +2705,33 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sWJ-RS-bmi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="6238" y="54"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="ajr-Sa-btt">
+            <objects>
+                <viewController storyboardIdentifier="BGMProfileVC" id="0ex-2z-BtU" customClass="BGMViewController" customModule="Beauty_God_Mother" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="51Y-jn-ldd"/>
+                        <viewControllerLayoutGuide type="bottom" id="W9s-zH-dwD"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="yLy-lx-ne3">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qzk-BD-Usy">
+                                <rect key="frame" x="45" y="109" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.14944405820000001" blue="0.1448639226" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <connections>
+                        <outlet property="imge" destination="qzk-BD-Usy" id="vdO-LM-Edu"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IQT-c6-Fzl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="7054" y="54"/>
         </scene>
         <!--Map ViewC-->
         <scene sceneID="0mL-gm-j5a">
@@ -2966,12 +2991,13 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qM9-yh-Uhp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="7055" y="105"/>
+            <point key="canvasLocation" x="8799" y="-1323"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="jSi-Lm-ZLA">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="WwT-eg-Tv8" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" systemItem="search" id="qCW-vZ-yub"/>
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="E6M-jt-ewz"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="9aA-c8-liq">
@@ -2979,6 +3005,9 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
+                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="zk6-4P-VC6">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </toolbar>
                     <connections>
                         <segue destination="rA1-a9-lkN" kind="relationship" relationship="rootViewController" id="N3a-cU-Ps7"/>
                     </connections>
@@ -2996,14 +3025,14 @@
                         <viewControllerLayoutGuide type="bottom" id="PWu-cu-Vre"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="WiU-jA-8br">
-                        <rect key="frame" x="0.0" y="0.0" width="760" height="429.5"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="429.5"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="TCH-jm-nZO">
                                 <rect key="frame" x="21" y="66" width="338" height="364"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ProfileCell" rowHeight="100" id="dnw-gA-SOD" customClass="ProfileServicesCell" customModule="Beauty_God_Mother" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ProfileCell" rowHeight="100" id="dnw-gA-SOD" customClass="ProfileServicesCell" customModule="Beauty_God_Mother" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="338" height="100"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="dnw-gA-SOD" id="uEs-Gq-cor">
@@ -3068,7 +3097,7 @@
                                 </connections>
                             </tableView>
                             <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="eh3-hd-SIh">
-                                <rect key="frame" x="0.0" y="0.0" width="760" height="56"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="56"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <scopeButtonTitles>
                                     <string>frontal</string>
@@ -3296,9 +3325,9 @@
         <image name="webicon" width="240" height="240"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="SsV-Mm-ppx"/>
+        <segue reference="egn-s3-YUk"/>
         <segue reference="sEq-NP-V1k"/>
-        <segue reference="e9Q-62-xmD"/>
-        <segue reference="1Mz-Fm-hDF"/>
+        <segue reference="AMB-iI-UVW"/>
+        <segue reference="6PL-Nj-YnB"/>
     </inferredMetricsTieBreakers>
 </document>
