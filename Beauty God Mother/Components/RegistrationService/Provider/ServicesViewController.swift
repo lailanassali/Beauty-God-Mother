@@ -45,7 +45,7 @@ class ServicesViewController: UIViewController  {
         guard let serviceName = nameOfService.text, let price = priceLabel.text, let duration = durationLabel.text, let description = descriptionLabel.text, let additionalInformation = addtionalnfoLabel.text else {return}
         
         // stage 2
-        if !rs.fieldsAreNotEmpty(name: serviceName, p1: price, p2: duration, email: description) { return }
+        if !rs.fieldsAreNotEmpty(name: serviceName, password: price, confirmPassword: duration, email: description) { return }
         
         // save details to registration service
         rs.serviceName = serviceName

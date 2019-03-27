@@ -10,7 +10,7 @@ import XCTest
 import Firebase
 @testable import Beauty_God_Mother
 //BeautyGodMother
-class RegisterTests: XCTestCase {
+class CustomerRegisterTests: XCTestCase {
     var viewController: RBViewController!
     let registerService = RegistrationService.shared
     
