@@ -332,7 +332,6 @@
 			sourceTree = "<group>";
 		};
 <<<<<<< HEAD
-<<<<<<< HEAD
 		5B22A076224BA1AC007EA047 /* View */ = {
 			isa = PBXGroup;
 			children = (
@@ -349,9 +348,6 @@
 			sourceTree = "<group>";
 		};
 		5B22A077224BA1B0007EA047 /* Controller */ = {
-=======
-		5B6A73A522158E5600E506DC /* Model */ = {
->>>>>>> parent of 2c6520a... Merge branch 'develop' of https://github.com/lailanassali/Beauty-God-Mother into develop
 =======
 		5B6A73A522158E5600E506DC /* Model */ = {
 >>>>>>> parent of 2c6520a... Merge branch 'develop' of https://github.com/lailanassali/Beauty-God-Mother into develop
