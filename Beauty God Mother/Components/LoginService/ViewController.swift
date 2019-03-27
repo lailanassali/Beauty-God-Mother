@@ -9,7 +9,7 @@
 import UIKit
 import Firebase
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UITextFieldDelegate {
     
     //MARK: - IBOUTLETS
 
@@ -21,8 +21,17 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(ViewController.keyboardDismiss))
+        
+        view.addGestureRecognizer(tap)
     }
-
+    
+     @objc func keyboardDismiss(){
+        view.endEditing(true)
+    }
+   
+  
     @IBAction func loginPressed(_ sender: UIButton) {
         // step 1
         guard let email = emailTextField.text, let password = passwordTextField.text else {return}
