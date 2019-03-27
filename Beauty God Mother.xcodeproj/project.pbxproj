@@ -43,6 +43,7 @@
 		5B2E24452215A3A600F21E29 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B2E24442215A3A600F21E29 /* RootViewController.swift */; };
 		5B6A73A722158E6D00E506DC /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B6A73A622158E6D00E506DC /* User.swift */; };
 		5B6A73AA2215964800E506DC /* ProviderTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B6A73A92215964800E506DC /* ProviderTabBar.swift */; };
+		5BF5E5F7224AFB95000D4986 /* UserLoginTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF5E5F6224AFB95000D4986 /* UserLoginTests.swift */; };
 		5BF67D322245001700AC61E0 /* CustomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF67D312245001700AC61E0 /* CustomViewController.swift */; };
 		5BF67D342245002500AC61E0 /* StandardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF67D332245002500AC61E0 /* StandardViewController.swift */; };
 		5BF67D362245003300AC61E0 /* ApplePayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF67D352245003300AC61E0 /* ApplePayViewController.swift */; };
@@ -125,6 +126,7 @@
 		5B2E24442215A3A600F21E29 /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
 		5B6A73A622158E6D00E506DC /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		5B6A73A92215964800E506DC /* ProviderTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProviderTabBar.swift; sourceTree = "<group>"; };
+		5BF5E5F6224AFB95000D4986 /* UserLoginTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserLoginTests.swift; sourceTree = "<group>"; };
 		5BF67D312245001700AC61E0 /* CustomViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomViewController.swift; sourceTree = "<group>"; };
 		5BF67D332245002500AC61E0 /* StandardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StandardViewController.swift; sourceTree = "<group>"; };
 		5BF67D352245003300AC61E0 /* ApplePayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplePayViewController.swift; sourceTree = "<group>"; };
@@ -259,6 +261,7 @@
 		5B16A02F21DFB0AA0022DDE7 /* Beauty God MotherTests */ = {
 			isa = PBXGroup;
 			children = (
+				5BF5E5F4224AFB64000D4986 /* Login Tests */,
 				01CD8598224AD48F00E1D40F /* Register Tests */,
 				5B16A03021DFB0AA0022DDE7 /* Beauty_God_MotherTests.swift */,
 				5B16A03221DFB0AA0022DDE7 /* Info.plist */,
@@ -356,6 +359,14 @@
 			);
 			name = TabBars;
 			path = "New Group";
+			sourceTree = "<group>";
+		};
+		5BF5E5F4224AFB64000D4986 /* Login Tests */ = {
+			isa = PBXGroup;
+			children = (
+				5BF5E5F6224AFB95000D4986 /* UserLoginTests.swift */,
+			);
+			path = "Login Tests";
 			sourceTree = "<group>";
 		};
 		5BF67D302244FFFD00AC61E0 /* Payments */ = {
@@ -704,6 +715,7 @@
 			files = (
 				5B16A03121DFB0AA0022DDE7 /* Beauty_God_MotherTests.swift in Sources */,
 				01CD859A224AD56900E1D40F /* BPRegisterTests.swift in Sources */,
+				5BF5E5F7224AFB95000D4986 /* UserLoginTests.swift in Sources */,
 				AE29B29821EBEE9A00B19FFF /* CustomerRegisterTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
