@@ -22,7 +22,7 @@ class BPRegistrationStartViewController: UIViewController {
         guard let organisationName = organisationName.text, let address = addressLabel.text, let postcode = postcodeLabel.text, let contactNumber = contactNumberLabel.text else {return}
         
         // stage 2
-        if !rs.contactFieldsAreNotEmpty(name: organisationName, address: address, postcode: postcode, contactNumber: contactNumber) { return }
+        if !rs.contactFieldsAreNotEmpty(name: organisationName, address: address, postcode: postcode, contactNumber: contactNumber) || !rs.contactFieldNumberShouldBe11Characters(contactNumber: contactNumber) || !rs.nameFormatIsCorrect(name: organisationName) || !rs.contactFieldPostcodeShouldBe7CharactersOrLess(postcode: postcode)   { return }
         
         // save details to registration service
         rs.organisationName = organisationName

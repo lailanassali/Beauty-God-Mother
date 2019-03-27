@@ -38,10 +38,16 @@ class RegistrationService {
     var website: String?
     var companyType: CompanyType = .commercial
     
-    
-    
-    
     var view = UIViewController()
+    
+    fileprivate func presentAlert(title: String, errorDescription: String) {
+        let cancel = UIAlertAction(title: "Ok", style: .cancel, handler: nil)
+        let alert = UIAlertController(title: title, message: "Please try again.", preferredStyle: .alert)
+        alert.addAction(cancel)
+        view.present(alert, animated: true, completion: nil)
+        print(errorDescription)
+        
+    }
     
     public func passwordMatches(p1:String, p2:String) -> Bool {
         if p1 == p2 {
@@ -76,6 +82,22 @@ class RegistrationService {
     }
     
     
+    public func contactFieldPostcodeShouldBe7CharactersOrLess(postcode: String) -> Bool {
+        if postcode.count <= 7 {
+            return true
+        } else {
+            presentAlert(title: "Sorry, your postcode must be 7 characters or less!", errorDescription: "incorrect")
+            return false }
+        }
+    
+    public func contactFieldNumberShouldBe11Characters(contactNumber: String) -> Bool {
+        if contactNumber.count == 11 {
+            return true
+        } else {
+            presentAlert(title: "Sorry, your contact number must be a UK registered number!", errorDescription: "incorrect")
+            return false }
+        }
+    
     public func imageIsSelected(image: UIImage) -> Bool {
         if image.images?.count == 1 {
             return true
@@ -92,15 +114,4 @@ class RegistrationService {
             return false }
     }
     
-    
-    fileprivate func presentAlert(title: String, errorDescription: String) {
-        let cancel = UIAlertAction(title: "Ok", style: .cancel, handler: nil)
-        let alert = UIAlertController(title: title, message: "Please try again.", preferredStyle: .alert)
-        alert.addAction(cancel)
-        view.present(alert, animated: true, completion: nil)
-        print(errorDescription)
-        }
-    }
-
-  
-
+}
