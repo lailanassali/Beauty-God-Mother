@@ -144,5 +144,98 @@
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Beauty God MotherTests/Login Tests/UserLoginTests.swift"
+            timestampString = "575339972.715849"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "15"
+            endingLineNumber = "15"
+            landmarkName = "UserLoginTests"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Beauty_God_MotherTests.UserLoginTests.viewController.getter : Swift.Optional&lt;Beauty_God_Mother.ViewController&gt;"
+                  moduleName = "Beauty God MotherTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/anishakatumba/Desktop/Beauty-God-Mother/Beauty%20God%20MotherTests/Login%20Tests/UserLoginTests.swift"
+                  timestampString = "575339921.9572771"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "16"
+                  endingLineNumber = "16"
+                  offsetFromSymbolStart = "114">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Beauty_God_MotherTests.UserLoginTests.viewController.setter : Swift.Optional&lt;Beauty_God_Mother.ViewController&gt;"
+                  moduleName = "Beauty God MotherTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/anishakatumba/Desktop/Beauty-God-Mother/Beauty%20God%20MotherTests/Login%20Tests/UserLoginTests.swift"
+                  timestampString = "575339921.959754"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "16"
+                  endingLineNumber = "16"
+                  offsetFromSymbolStart = "128">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Beauty_God_MotherTests.UserLoginTests.init(invocation: Swift.Optional&lt;__C.NSInvocation&gt;) -&gt; Beauty_God_MotherTests.UserLoginTests"
+                  moduleName = "Beauty God MotherTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/anishakatumba/Desktop/Beauty-God-Mother/Beauty%20God%20MotherTests/Login%20Tests/UserLoginTests.swift"
+                  timestampString = "575339921.9622"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "16"
+                  endingLineNumber = "16"
+                  offsetFromSymbolStart = "35">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Beauty_God_MotherTests.UserLoginTests.init(selector: ObjectiveC.Selector) -&gt; Beauty_God_MotherTests.UserLoginTests"
+                  moduleName = "Beauty God MotherTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/anishakatumba/Desktop/Beauty-God-Mother/Beauty%20God%20MotherTests/Login%20Tests/UserLoginTests.swift"
+                  timestampString = "575339921.965423"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "16"
+                  endingLineNumber = "16"
+                  offsetFromSymbolStart = "35">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Beauty_God_MotherTests.UserLoginTests.init() -&gt; Beauty_God_MotherTests.UserLoginTests"
+                  moduleName = "Beauty God MotherTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/anishakatumba/Desktop/Beauty-God-Mother/Beauty%20God%20MotherTests/Login%20Tests/UserLoginTests.swift"
+                  timestampString = "575339921.968022"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "16"
+                  endingLineNumber = "16"
+                  offsetFromSymbolStart = "23">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
    </Breakpoints>
 </Bucket>

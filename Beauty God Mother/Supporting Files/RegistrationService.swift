@@ -59,23 +59,32 @@ class RegistrationService {
             return false }
     }
     
-    public func fieldsAreNotEmpty(name: String, p1: String, p2: String, email: String) -> Bool {
-        if name.count != 0 && p1.count != 0 && p2.count != 0 && email.count != 0 {
+    public func fieldsAreNotEmpty(name: String, password: String, confirmPassword: String, email: String) -> Bool {
+        if name.count != 0 && password.count != 0 && confirmPassword.count != 0 && email.count != 0 {
             return true
         } else {
             presentAlert(title: "Sorry, you must fill out your details to continue!", errorDescription: "FIELDS MUST NOT BE EMPTY")
             return false }
-        }
+    }
     
-    public func fieldsAreNotEmpty(image: UIImage) -> Bool {
-        if image.images?.count == 0 {
+    public func contactFieldsAreNotEmpty(name: String, address: String, postcode: String, contactNumber: String) -> Bool {
+        if name.count != 0 && address.count != 0 && postcode.count != 0 && contactNumber.count != 0 {
+            return true
+        } else {
+            presentAlert(title: "Sorry, you must fill out your details to continue!", errorDescription: "FIELDS MUST NOT BE EMPTY")
+            return false }
+    }
+    
+    
+    public func imageIsSelected(image: UIImage) -> Bool {
+        if image.images?.count == 1 {
             return true
         } else {
         presentAlert(title: "Sorry", errorDescription: "You must add a profile picture to continue!")
             return false }
     }
     
-    public func fieldsAreNotEmpty(name: String, price: String, duration: String, description: String) -> Bool {
+    public func servicesFieldsAreNotEmpty(name: String, price: String, duration: String, description: String) -> Bool {
         if name.count != 0 && price.count != 0 && duration.count != 0 && description.count != 0 {
             return true
         } else {

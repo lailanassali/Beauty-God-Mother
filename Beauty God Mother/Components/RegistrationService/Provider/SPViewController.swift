@@ -34,7 +34,7 @@ class SPViewController: UIViewController {
         guard let name = organisation.text, let email = email.text, let password = password.text, let confirmPassword = confirmPassword.text else {return}
         
         // stage 2
-        if !rs.passwordMatches(p1: password, p2: confirmPassword) || !rs.nameFormatIsCorrect(name: name) || !rs.fieldsAreNotEmpty(name: name, p1: password, p2: confirmPassword, email: email) { return }
+        if !rs.passwordMatches(p1: password, p2: confirmPassword) || !rs.nameFormatIsCorrect(name: name) || !rs.fieldsAreNotEmpty(name: name, password: confirmPassword, confirmPassword: confirmPassword, email: email) { return }
         // save details to registration service
         rs.name = name
         rs.email = email
