@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		010C1AFF224BB33E00EF6151 /* BGMProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 010C1AFE224BB33E00EF6151 /* BGMProfileViewController.swift */; };
 		014CEF11223C326800F2FC8E /* ContactCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 014CEF10223C326800F2FC8E /* ContactCollectionViewCell.swift */; };
 		01777D6E220B35B400D51EC4 /* EditProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01777D6D220B35B400D51EC4 /* EditProfileViewController.swift */; };
 		01B7C3572236A23600381DCD /* ContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01B7C3562236A23600381DCD /* ContactViewController.swift */; };
@@ -82,6 +83,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		010C1AFE224BB33E00EF6151 /* BGMProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BGMProfileViewController.swift; sourceTree = "<group>"; };
 		014CEF10223C326800F2FC8E /* ContactCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactCollectionViewCell.swift; sourceTree = "<group>"; };
 		01777D6D220B35B400D51EC4 /* EditProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileViewController.swift; sourceTree = "<group>"; };
 		01B7C3562236A23600381DCD /* ContactViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactViewController.swift; sourceTree = "<group>"; };
@@ -250,6 +252,7 @@
 				01CD8596224A48B200E1D40F /* ProfileServicesViewController.swift */,
 				58CD40E0224AAD95002B4129 /* RatingViewController.swift */,
 				58CD40E2224AB135002B4129 /* FloatingRatingView.swift */,
+				010C1AFE224BB33E00EF6151 /* BGMProfileViewController.swift */,
 			);
 			path = "Beauty God Mother";
 			sourceTree = "<group>";
@@ -690,6 +693,7 @@
 				5B16A01E21DFB0A70022DDE7 /* ViewController.swift in Sources */,
 				5B16A01C21DFB0A70022DDE7 /* AppDelegate.swift in Sources */,
 				CC62D3C72212F593004FB434 /* ForgotPassword.swift in Sources */,
+				010C1AFF224BB33E00EF6151 /* BGMProfileViewController.swift in Sources */,
 				CC68C4CA224B7B4000C528AC /* BookingSysteViewController.swift in Sources */,
 				01B7C3592236A2C500381DCD /* AccountViewCoontroller.swift in Sources */,
 				5B2E244322159E5D00F21E29 /* Extension+Database.swift in Sources */,
