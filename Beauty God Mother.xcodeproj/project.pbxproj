@@ -236,17 +236,11 @@
 				5B16A04921DFB1F90022DDE7 /* GoogleService-Info.plist */,
 <<<<<<< HEAD
 <<<<<<< HEAD
-<<<<<<< HEAD
 				AE29B29321EBEE3800B19FFF /* MainViewController.swift */,
 				01E097B821FBB19100DB85D4 /* ProfileViewController.swift */,
 				01D0F38E220CBC110016FD5B /* MenuViewController.swift */,
 				01777D6D220B35B400D51EC4 /* EditProfileViewController.swift */,
 				5B2E244222159E5D00F21E29 /* Extension+Database.swift */,
-=======
-				01E097B821FBB19100DB85D4 /* ProfileViewController.swift */,
-				01D0F38E220CBC110016FD5B /* MenuViewController.swift */,
-				01777D6D220B35B400D51EC4 /* EditProfileViewController.swift */,
->>>>>>> parent of 9bd3a98... further cleaned structure of files
 =======
 				01E097B821FBB19100DB85D4 /* ProfileViewController.swift */,
 				01D0F38E220CBC110016FD5B /* MenuViewController.swift */,
@@ -266,12 +260,9 @@
 				58CD40E0224AAD95002B4129 /* RatingViewController.swift */,
 				58CD40E2224AB135002B4129 /* FloatingRatingView.swift */,
 <<<<<<< HEAD
-<<<<<<< HEAD
 				010C1AFE224BB33E00EF6151 /* BGMProfileViewController.swift */,
 =======
 >>>>>>> d50224f9dfaf81242cf32e94c967fd8d5d0b406a
-=======
->>>>>>> parent of 9bd3a98... further cleaned structure of files
 =======
 >>>>>>> parent of 9bd3a98... further cleaned structure of files
 			);
