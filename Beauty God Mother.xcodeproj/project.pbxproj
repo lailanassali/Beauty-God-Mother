@@ -19,7 +19,6 @@
 		4C2CDAAC224BEB1E00641044 /* BGMViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C2CDAAB224BEB1E00641044 /* BGMViewController.swift */; };
 		4C391311220C84F200BC55D8 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C391310220C84F200BC55D8 /* MapKit.framework */; };
 		4C6D626821F48A4F00087370 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C6D626721F48A4F00087370 /* MapViewController.swift */; };
-		4C6E0792223C456F003B9967 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C6E0791223C456F003B9967 /* SearchViewController.swift */; };
 		4C6E0796223C4688003B9967 /* SearchCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C6E0795223C4688003B9967 /* SearchCell.swift */; };
 		4CE5891E22453B3D001A1ABF /* MapViewC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CE5891D22453B3D001A1ABF /* MapViewC.swift */; };
 		4CEDD41F2249602300E3227B /* ProfileServicesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CEDD41E2249602300E3227B /* ProfileServicesTableViewController.swift */; };
@@ -38,10 +37,15 @@
 		5B16A05021DFC9C10022DDE7 /* SPViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B16A04F21DFC9C10022DDE7 /* SPViewController.swift */; };
 		5B1C212D223730DC00E69DF3 /* Firebase_Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B1C212C223730DC00E69DF3 /* Firebase_Extension.swift */; };
 		5B20B3D0224981310059A08D /* LoginService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B20B3CF224981310059A08D /* LoginService.swift */; };
+		5B21B48F224C6CAF00F2FAD5 /* FeaturedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B21B48E224C6CAF00F2FAD5 /* FeaturedViewController.swift */; };
 		5B2E244322159E5D00F21E29 /* Extension+Database.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B2E244222159E5D00F21E29 /* Extension+Database.swift */; };
 		5B2E24452215A3A600F21E29 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B2E24442215A3A600F21E29 /* RootViewController.swift */; };
+		5B3DDBAE224C5C30003E799C /* profile.json in Resources */ = {isa = PBXBuildFile; fileRef = 5B3DDBAD224C5C30003E799C /* profile.json */; };
+		5B3DDBB0224C5D5C003E799C /* DataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B3DDBAF224C5D5C003E799C /* DataProvider.swift */; };
+		5B3DDBB4224C5EA8003E799C /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B3DDBB3224C5EA8003E799C /* SearchViewController.swift */; };
 		5B6A73A722158E6D00E506DC /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B6A73A622158E6D00E506DC /* User.swift */; };
 		5B6A73AA2215964800E506DC /* ProviderTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B6A73A92215964800E506DC /* ProviderTabBar.swift */; };
+		5BB5EEEC224C466A00D0742E /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BB5EEEB224C466A00D0742E /* Profile.swift */; };
 		5BF5E5F7224AFB95000D4986 /* UserLoginTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF5E5F6224AFB95000D4986 /* UserLoginTests.swift */; };
 		5BF67D322245001700AC61E0 /* CustomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF67D312245001700AC61E0 /* CustomViewController.swift */; };
 		5BF67D342245002500AC61E0 /* StandardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF67D332245002500AC61E0 /* StandardViewController.swift */; };
@@ -94,7 +98,6 @@
 		4C2CDAAB224BEB1E00641044 /* BGMViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BGMViewController.swift; sourceTree = "<group>"; };
 		4C391310220C84F200BC55D8 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		4C6D626721F48A4F00087370 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
-		4C6E0791223C456F003B9967 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		4C6E0795223C4688003B9967 /* SearchCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCell.swift; sourceTree = "<group>"; };
 		4CE5891D22453B3D001A1ABF /* MapViewC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewC.swift; sourceTree = "<group>"; };
 		4CEDD41E2249602300E3227B /* ProfileServicesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileServicesTableViewController.swift; sourceTree = "<group>"; };
@@ -118,10 +121,15 @@
 		5B16A04F21DFC9C10022DDE7 /* SPViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPViewController.swift; sourceTree = "<group>"; };
 		5B1C212C223730DC00E69DF3 /* Firebase_Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Firebase_Extension.swift; sourceTree = "<group>"; };
 		5B20B3CF224981310059A08D /* LoginService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginService.swift; sourceTree = "<group>"; };
+		5B21B48E224C6CAF00F2FAD5 /* FeaturedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeaturedViewController.swift; sourceTree = "<group>"; };
 		5B2E244222159E5D00F21E29 /* Extension+Database.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+Database.swift"; sourceTree = "<group>"; };
 		5B2E24442215A3A600F21E29 /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
+		5B3DDBAD224C5C30003E799C /* profile.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = profile.json; sourceTree = "<group>"; };
+		5B3DDBAF224C5D5C003E799C /* DataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataProvider.swift; sourceTree = "<group>"; };
+		5B3DDBB3224C5EA8003E799C /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		5B6A73A622158E6D00E506DC /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		5B6A73A92215964800E506DC /* ProviderTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProviderTabBar.swift; sourceTree = "<group>"; };
+		5BB5EEEB224C466A00D0742E /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
 		5BF5E5F6224AFB95000D4986 /* UserLoginTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserLoginTests.swift; sourceTree = "<group>"; };
 		5BF67D312245001700AC61E0 /* CustomViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomViewController.swift; sourceTree = "<group>"; };
 		5BF67D332245002500AC61E0 /* StandardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StandardViewController.swift; sourceTree = "<group>"; };
@@ -218,6 +226,7 @@
 		5B16A01A21DFB0A70022DDE7 /* Beauty God Mother */ = {
 			isa = PBXGroup;
 			children = (
+				5B3DDBAD224C5C30003E799C /* profile.json */,
 				5B6A73A522158E5600E506DC /* Model */,
 				5B22A076224BA1AC007EA047 /* View */,
 				5B22A077224BA1B0007EA047 /* Controller */,
@@ -321,8 +330,10 @@
 		5B22A078224BA2C1007EA047 /* Search */ = {
 			isa = PBXGroup;
 			children = (
-				4C6E0791223C456F003B9967 /* SearchViewController.swift */,
 				4C6E0795223C4688003B9967 /* SearchCell.swift */,
+				5B3DDBAF224C5D5C003E799C /* DataProvider.swift */,
+				5B3DDBB3224C5EA8003E799C /* SearchViewController.swift */,
+				5B21B48E224C6CAF00F2FAD5 /* FeaturedViewController.swift */,
 			);
 			path = Search;
 			sourceTree = "<group>";
@@ -368,6 +379,7 @@
 				AE2942EF21F2832D00D629EA /* RegistrationService.swift */,
 				5B1C212C223730DC00E69DF3 /* Firebase_Extension.swift */,
 				5B6A73A622158E6D00E506DC /* User.swift */,
+				5BB5EEEB224C466A00D0742E /* Profile.swift */,
 			);
 			name = Model;
 			path = "New Group";
@@ -527,6 +539,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5B3DDBAE224C5C30003E799C /* profile.json in Resources */,
 				5B16A02621DFB0AA0022DDE7 /* LaunchScreen.storyboard in Resources */,
 				5B16A04A21DFB1F90022DDE7 /* GoogleService-Info.plist in Resources */,
 				5B16A02321DFB0AA0022DDE7 /* Assets.xcassets in Resources */,
@@ -582,11 +595,16 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-Beauty God Mother/Pods-Beauty God Mother-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/AlamofireImage/AlamofireImage.framework",
+				"${BUILT_PRODUCTS_DIR}/Cosmos/Cosmos.framework",
+				"${BUILT_PRODUCTS_DIR}/FloatRatingView/FloatRatingView.framework",
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
 				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
 				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
 				"${BUILT_PRODUCTS_DIR}/Stripe/Stripe.framework",
+				"${BUILT_PRODUCTS_DIR}/TinyConstraints/TinyConstraints.framework",
 				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
@@ -594,11 +612,16 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Cosmos.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FloatRatingView.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Stripe.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TinyConstraints.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
@@ -690,6 +713,7 @@
 				4CEDD421224962E600E3227B /* CustomCell.swift in Sources */,
 				01777D6E220B35B400D51EC4 /* EditProfileViewController.swift in Sources */,
 				4CEDD41F2249602300E3227B /* ProfileServicesTableViewController.swift in Sources */,
+				5B21B48F224C6CAF00F2FAD5 /* FeaturedViewController.swift in Sources */,
 				AE2942F021F2832D00D629EA /* RegistrationService.swift in Sources */,
 				CC660EC42225DD39008D6E25 /* ConnectionsSPViewController.swift in Sources */,
 				5B16A04E21DFC9AB0022DDE7 /* RBViewController.swift in Sources */,
@@ -715,14 +739,16 @@
 				5B16A01E21DFB0A70022DDE7 /* ViewController.swift in Sources */,
 				5B16A01C21DFB0A70022DDE7 /* AppDelegate.swift in Sources */,
 				CC62D3C72212F593004FB434 /* ForgotPassword.swift in Sources */,
+				5B3DDBB4224C5EA8003E799C /* SearchViewController.swift in Sources */,
 				CC68C4CA224B7B4000C528AC /* BookingSysteViewController.swift in Sources */,
 				01B7C3592236A2C500381DCD /* AccountViewCoontroller.swift in Sources */,
 				5B2E244322159E5D00F21E29 /* Extension+Database.swift in Sources */,
-				4C6E0792223C456F003B9967 /* SearchViewController.swift in Sources */,
 				5BF67D322245001700AC61E0 /* CustomViewController.swift in Sources */,
 				CCF35067223178B6007DB408 /* ServicesViewController.swift in Sources */,
 				5B16A05021DFC9C10022DDE7 /* SPViewController.swift in Sources */,
 				01CD8595224A32F900E1D40F /* ProfileServicesCell.swift in Sources */,
+				5BB5EEEC224C466A00D0742E /* Profile.swift in Sources */,
+				5B3DDBB0224C5D5C003E799C /* DataProvider.swift in Sources */,
 				AE29B29421EBEE3800B19FFF /* MainViewController.swift in Sources */,
 				CCFA3E9F221AD2D700B160EF /* Swipe3ViewController.swift in Sources */,
 				4C2CDAAC224BEB1E00641044 /* BGMViewController.swift in Sources */,

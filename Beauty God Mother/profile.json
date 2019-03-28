@@ -1,0 +1,38 @@
+[
+    
+    {
+        "id" : 1,
+        "name" : "LaidByTiff",
+        "category" : "Hair",
+        "picture" : "https://marketplace.canva.com/MADOPpPOUEw/1/0/thumbnail_large/canva-white-and-pink-strikeout-cosmetics-beauty-logo-MADOPpPOUEw.jpg"
+    },
+    
+    {
+        "id" : 2,
+        "name" : "HairByLai",
+        "category" : "Hair",
+        "picture" : "https://marketplace.canva.com/MADOPpPOUEw/1/0/thumbnail_large/canva-white-and-pink-strikeout-cosmetics-beauty-logo-MADOPpPOUEw.jpg",
+    },
+    
+    {
+        "id" : 3,
+        "name" : "NailsByShanju",
+        "category" : "Manicure",
+        "picture" : "https://marketplace.canva.com/MADOPpPOUEw/1/0/thumbnail_large/canva-white-and-pink-strikeout-cosmetics-beauty-logo-MADOPpPOUEw.jpg",
+    },
+    
+    {
+        "id" : 4,
+        "name" : "BeautyByJess",
+        "category" : "Massage",
+        "picture" : "https://marketplace.canva.com/MADOPpPOUEw/1/0/thumbnail_large/canva-white-and-pink-strikeout-cosmetics-beauty-logo-MADOPpPOUEw.jpg",
+    },
+    
+    {
+        "id" : 5,
+        "name" : "EyebrowsByAisha",
+        "category" : "Plucking Chin",
+        "picture" : "https://marketplace.canva.com/MADOPpPOUEw/1/0/thumbnail_large/canva-white-and-pink-strikeout-cosmetics-beauty-logo-MADOPpPOUEw.jpg",
+    }
+    
+]

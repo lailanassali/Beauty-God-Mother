@@ -20,6 +20,8 @@ pod 'GoogleMaps'
 pod 'Cosmos'
 pod 'TinyConstraints'
 pod 'FloatRatingView'
+pod 'Alamofire', '~> 4.5'
+pod 'AlamofireImage', '~> 3.3'
 
 target 'Beauty God MotherTests' do
 inherit! :search_paths

@@ -7,22 +7,25 @@
 //
 
 import UIKit
+import AlamofireImage
 
 class SearchCell: UITableViewCell {
-
-    @IBOutlet var name: UILabel!
-    @IBOutlet var type: UILabel!
-    @IBOutlet var imge: UIImageView!
     
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
+    override func prepareForReuse() {
+        super.prepareForReuse()
+        imageLabel.af_cancelImageRequest()
     }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
-    }
-
+    
+    @IBOutlet var imageLabel: UIImageView!
+    @IBOutlet var nameLabel: UILabel!
+    @IBOutlet var typeLabel: UILabel!
+    
+    func configure(with profile: Profile) {
+                nameLabel.text = profile.name
+                typeLabel.text = profile.category
+                    imageLabel.af_setImage(withURL: profile.picture)
+        }
 }
+
+
+

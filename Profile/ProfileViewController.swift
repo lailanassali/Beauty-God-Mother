@@ -8,47 +8,32 @@
 
 
 import UIKit
-import Firebase
-import FirebaseAuth
-import FirebaseDatabase
-import FirebaseStorage
-import ImageIO
-
+import AlamofireImage
 
 class ProfileViewController: UIViewController {
 
     
-    @IBOutlet weak var servicesContainer: UIView!
-    @IBOutlet weak var mediaContainer: UIView!
-    @IBOutlet weak var reviewContainer: UIView!
+    @IBOutlet weak var imageView: UIImageView!
+    @IBOutlet var nameLabel: UILabel!
+    @IBOutlet weak var categoriesLabel: UILabel!
+    @IBOutlet weak var imageActivityIndicator: UIActivityIndicatorView!
     
-  //  var loggedInUser: AnyObject? = .none
-   // var databaseRef = Database.database().reference()
-   // var storageRef = Storage.storage().reference()
+    var profile: Profile!
     
-    override func viewDidLoad (){
+    override func viewDidLoad() {
         super.viewDidLoad()
-    
-       // self.loggedInUser = Auth.auth().currentUser
-        //self.databaseRef.child("providers").child(self.loggedInUser!.uid).observeSingleEvent(of: .value) {(snapshot:DataSnapshot)in
-            
-            
-           // self.organisationName.text = ((snapshot.value as? NSDictionary)? ["organisationname"] as! String)
-            //self.serviceType.text = ((snapshot.value as? NSDictionary)? ["companytype"] as? String)
-           // self.bio.text = ((snapshot.value as? NSDictionary)? ["bio"] as? String)
-
-        }
-    
-    @IBAction func switchViews(_ sender: UISegmentedControl) {
         
-    if sender.selectedSegmentIndex == 0
-        {
-            servicesContainer.alpha = 1
-            reviewContainer.alpha = 0
-        } else {
-            servicesContainer.alpha = 0
-            reviewContainer.alpha = 1
+        imageActivityIndicator.startAnimating()
+        nameLabel.text = profile.name
+        categoriesLabel.text = profile.category
+        imageView.af_setImage(withURL: profile.picture)
+        { [weak self] _ in
+            guard let strongSelf = self else {
+                return
+            }
+            strongSelf.imageActivityIndicator.stopAnimating()
         }
+        
     }
     
 

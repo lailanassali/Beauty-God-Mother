@@ -1,4 +1,8 @@
 PODS:
+  - Alamofire (4.8.1)
+  - AlamofireImage (3.5.0):
+    - Alamofire (~> 4.8)
+  - Cosmos (18.0.1)
   - Firebase (5.15.0):
     - Firebase/Core (= 5.15.0)
   - Firebase/Auth (5.15.0):
@@ -44,6 +48,7 @@ PODS:
     - FirebaseAuthInterop (~> 1.0)
     - FirebaseCore (~> 5.1)
     - GTMSessionFetcher/Core (~> 1.1)
+  - FloatRatingView (3.0)
   - GoogleAppMeasurement (5.4.0):
     - GoogleUtilities/AppDelegateSwizzler (~> 5.2)
     - GoogleUtilities/MethodSwizzler (~> 5.2)
@@ -90,22 +95,31 @@ PODS:
     - SDWebImage/Core (= 4.4.3)
   - SDWebImage/Core (4.4.3)
   - Stripe (14.0.0)
+  - TinyConstraints (3.3.1)
 
 DEPENDENCIES:
+  - Alamofire (~> 4.5)
+  - AlamofireImage (~> 3.3)
+  - Cosmos
   - Firebase
   - Firebase/Auth
   - Firebase/Core
   - Firebase/Database
   - Firebase/Storage
+  - FloatRatingView
   - GoogleMaps
   - GooglePlacePicker
   - GooglePlaces
   - Kingfisher
   - SDWebImage
   - Stripe
+  - TinyConstraints
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
+    - Alamofire
+    - AlamofireImage
+    - Cosmos
     - Firebase
     - FirebaseAnalytics
     - FirebaseAuth
@@ -114,6 +128,7 @@ SPEC REPOS:
     - FirebaseDatabase
     - FirebaseInstanceID
     - FirebaseStorage
+    - FloatRatingView
     - GoogleAppMeasurement
     - GoogleMaps
     - GooglePlacePicker
@@ -125,8 +140,12 @@ SPEC REPOS:
     - nanopb
     - SDWebImage
     - Stripe
+    - TinyConstraints
 
 SPEC CHECKSUMS:
+  Alamofire: 16ce2c353fb72865124ddae8a57c5942388f4f11
+  AlamofireImage: 1aea346f4dda2f6c67622fa5a89fcbb80d79cc16
+  Cosmos: 7dfaa3f52584ca5f94ab74b5c2e264019cc9f7f5
   Firebase: 8bb9268bff82374f2cbaaabb143e725743c316ae
   FirebaseAnalytics: c06f9d70577d79074214700a71fd5d39de5550fb
   FirebaseAuth: 02e969ff430e156d99d4cb842d77b806b71ad7bb
@@ -135,6 +154,7 @@ SPEC CHECKSUMS:
   FirebaseDatabase: 0621689f77528d62b47e1c06ca737c4c19275d1a
   FirebaseInstanceID: e2fa4cb35ef5558c200f7f0ad8a53e212215f93e
   FirebaseStorage: 3d22c041370593e639fba013d1eb698a8dae2881
+  FloatRatingView: 0f7b45733124516ac6b8f535e5b5f4fa2e122180
   GoogleAppMeasurement: 98b71f5e04142793729a5ef23e5b96651ff4b70f
   GoogleMaps: fd5c9fa58871781b9fb94d4936f19c69fe60ce32
   GooglePlacePicker: 0c90898945f02ef36cce86fc9a107e1c5d3d26b1
@@ -146,7 +166,8 @@ SPEC CHECKSUMS:
   nanopb: 2901f78ea1b7b4015c860c2fdd1ea2fee1a18d48
   SDWebImage: c5594f1a19c48d526d321e548902b56b479cd508
   Stripe: db29ad197c74aca6fb981e4e8355cf7ebd0fca5a
+  TinyConstraints: dbf7519aefc01ea59d62244300c7718aec68e280
 
-PODFILE CHECKSUM: 10a43e613fb9379772e02056d99b413e629cf6ec
+PODFILE CHECKSUM: 99fd78151ef68b460c9890eb6ec6460dab16f822
 
 COCOAPODS: 1.6.1
