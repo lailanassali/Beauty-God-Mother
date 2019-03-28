@@ -41,6 +41,12 @@ class Registration2ViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-
+    @IBAction func ClearButton(_ sender: Any) {
+    
+        self.dismiss(animated: false, completion: nil)
+        self.presentingViewController?.dismiss(animated: false, completion: nil)
+    
+    }
+    
 
 }
