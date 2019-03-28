@@ -20,6 +20,7 @@ struct Profile: Codable {
         case name = "name"
         case category = "category"
         case picture = "picture"
+
     }
 }
     
