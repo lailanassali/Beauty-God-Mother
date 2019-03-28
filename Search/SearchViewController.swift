@@ -19,7 +19,7 @@ class SearchViewController: UIViewController {
     }
     
     private enum ViewControllerIdentifiers {
-        static let Detail = "ProfileVC"
+        static let Detail = "DetailsVC"
     }
     
     @IBOutlet var tableView: UITableView!
@@ -56,7 +56,7 @@ extension SearchViewController: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let storyboard = UIStoryboard(name: StoryboardNames.Main, bundle: nil)
-        guard let detailViewController = storyboard.instantiateViewController(withIdentifier: ViewControllerIdentifiers.Detail) as? ProfileViewController else {
+        guard let detailViewController = storyboard.instantiateViewController(withIdentifier: ViewControllerIdentifiers.Detail) as? DetailsViewController else {
             return
         }
         detailViewController.profile = profiles[indexPath.row]
