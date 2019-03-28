@@ -33,6 +33,7 @@ class Swipe3ViewController: UIViewController, UINavigationControllerDelegate, UI
     
     {
         let image = UIImagePickerController()
+        image.allowsEditing = true
         image.delegate = self
         
         image.sourceType = UIImagePickerController.SourceType.photoLibrary
@@ -47,7 +48,9 @@ class Swipe3ViewController: UIViewController, UINavigationControllerDelegate, UI
     
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any])
     {
-        if let image = info[UIImagePickerController.InfoKey.originalImage] as? UIImage
+        if let image = info[.editedImage] as? UIImage {
+            myImageView.image = image
+        }else if let image = info[UIImagePickerController.InfoKey.originalImage] as? UIImage
         {
             myImageView.image = image
         }
