@@ -2315,6 +2315,14 @@
                                     </view>
                                 </subviews>
                             </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hPJ-iG-Euu">
+                                <rect key="frame" x="43" y="20" width="82" height="104"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="Map"/>
+                                <connections>
+                                    <segue destination="ZnZ-BZ-Qmk" kind="show" id="GgR-8J-wby"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </view>
@@ -2327,7 +2335,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Scq-wI-YPk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="8308" y="-1590.8545727136434"/>
+            <point key="canvasLocation" x="8308" y="-1591.304347826087"/>
         </scene>
         <!--My Account-->
         <scene sceneID="Pzk-Nq-JOr">
@@ -2801,6 +2809,38 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sWJ-RS-bmi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="6237.6000000000004" y="53.523238380809602"/>
+        </scene>
+        <!--Map View Controller-->
+        <scene sceneID="Brp-9D-agM">
+            <objects>
+                <viewController id="ZnZ-BZ-Qmk" customClass="MapViewController" customModule="Beauty_God_Mother" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="DBJ-N7-tC1"/>
+                        <viewControllerLayoutGuide type="bottom" id="ORw-YI-lVL"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="75I-UR-vex">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="554"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="IgG-Zh-eZS">
+                                <rect key="frame" x="0.0" y="20" width="375" height="534"/>
+                            </mapView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="IgG-Zh-eZS" firstAttribute="leading" secondItem="75I-UR-vex" secondAttribute="leading" id="8ie-OK-Ss3"/>
+                            <constraint firstItem="IgG-Zh-eZS" firstAttribute="top" secondItem="DBJ-N7-tC1" secondAttribute="bottom" id="aiC-0B-s0E"/>
+                            <constraint firstAttribute="trailing" secondItem="IgG-Zh-eZS" secondAttribute="trailing" id="fv6-ID-ZBU"/>
+                            <constraint firstItem="ORw-YI-lVL" firstAttribute="top" secondItem="IgG-Zh-eZS" secondAttribute="bottom" id="sEZ-Rv-e4H"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="mapview" destination="IgG-Zh-eZS" id="XLQ-c2-KnZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gy9-nr-N6S" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="8308" y="-799"/>
         </scene>
         <!--Payment View Controller-->
         <scene sceneID="44W-vH-fDI">

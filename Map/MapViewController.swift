@@ -4,14 +4,42 @@
 //// Created by Jessica Owusu on 1/20/19.
 //// Copyright © 2019 BGM. All rights reserved.
 //
-//import UIKit
-//import MapKit
-//import Firebase
-//
-//
-//class MapViewController: UIViewController {
-//    
-//}
+import UIKit
+import MapKit
+
+
+
+
+    class MapViewController: UIViewController {
+        
+        @IBOutlet weak var mapview: MKMapView!
+        
+        override func viewDidLoad() {
+            super.viewDidLoad()
+            
+            let initialLocation = CLLocation(latitude: 51.2802, longitude: 1.0789 )
+            zoomMap(location: initialLocation)
+            
+            let example = bpinfo(name: "Laid By Tiff", location: "Cants", coordinate: CLLocationCoordinate2D(latitude: 51.287750, longitude: 1.093652))
+            
+            mapview.addAnnotation(example)
+        }
+        
+        private let regionRadius: CLLocationDistance = 5500
+        func zoomMap(location:CLLocation){
+            
+            let region = MKCoordinateRegion(center: location.coordinate, latitudinalMeters: 5500, longitudinalMeters: 5500)
+            
+                mapview.setRegion(region , animated: true)
+        }
+}
+
+extension MapViewController : MKMapViewDelegate {
+    
+}
+
+
+
 //
 //    private let locationManager = CLLocationManager()
 //    private var currentLocation: CLLocationCoordinate2D?
@@ -22,8 +50,7 @@
 //
 //
 //
-//    override func viewDidLoad() {
-//       super.viewDidLoad()
+//
 //  //      checkIfUserIsLoggedIn()
 //  //      fetchUser()
 //        MapView.delegate = self

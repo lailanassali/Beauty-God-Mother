@@ -22,8 +22,8 @@ final class DataProvider {
         }
         let decoder = JSONDecoder()
         guard let decoded = try? decoder.decode([Profile].self, from: jsonData) else {
-            fatalError("Invalid JSON data")
-        }
+     fatalError("Invalid JSON data")
+    }
         return decoded
     }
     
