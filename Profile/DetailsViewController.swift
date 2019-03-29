@@ -16,6 +16,11 @@ import FirebaseStorage
 import ImageIO
 
 class DetailsViewController: UIViewController {
+    
+    @IBOutlet weak var servivesView: UIView!
+    @IBOutlet weak var reviewsView: UIView!
+    @IBOutlet weak var mapView: UIView!
+
 
     
     @IBOutlet weak var imageView: UIImageView!
@@ -43,9 +48,25 @@ class DetailsViewController: UIViewController {
         
     }
     
+    @IBAction func switchViews (_ sender: UISegmentedControl) {
+        if sender.selectedSegmentIndex == 0 {
+            servivesView.alpha = 1
+            reviewsView.alpha = 0
+            mapView.alpha = 0
+        } else if sender.selectedSegmentIndex == 1 {
+            
+            servivesView.alpha = 0
+            reviewsView.alpha = 1
+            mapView.alpha = 0
+            
+            } else {
+                servivesView.alpha = 0
+                reviewsView.alpha = 0
+                mapView.alpha = 1
+            }
     
-    
-
+        }
+        
 
 
 }
