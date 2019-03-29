@@ -944,7 +944,7 @@
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = AQ6CQRSKHS;
+				DEVELOPMENT_TEAM = FG8A4NB658;
 				INFOPLIST_FILE = "Beauty God Mother/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -963,7 +963,7 @@
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = AQ6CQRSKHS;
+				DEVELOPMENT_TEAM = FG8A4NB658;
 				INFOPLIST_FILE = "Beauty God Mother/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
