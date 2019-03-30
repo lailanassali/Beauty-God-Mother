@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "BCE3DE68053C99B18AAD56BE1F98BD73"
-               BuildableName = "GoogleMaps"
-               BlueprintName = "GoogleMaps"
+               BlueprintIdentifier = "13D60CA645BD749F45395D3918CA7B0A"
+               BuildableName = "SwiftyJSON.framework"
+               BlueprintName = "SwiftyJSON"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -45,9 +45,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "BCE3DE68053C99B18AAD56BE1F98BD73"
-            BuildableName = "GoogleMaps"
-            BlueprintName = "GoogleMaps"
+            BlueprintIdentifier = "13D60CA645BD749F45395D3918CA7B0A"
+            BuildableName = "SwiftyJSON.framework"
+            BlueprintName = "SwiftyJSON"
             ReferencedContainer = "container:Pods.xcodeproj">
          </BuildableReference>
       </MacroExpansion>

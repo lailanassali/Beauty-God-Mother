@@ -14,12 +14,24 @@ struct Profile: Codable {
     let name: String
     let category: String
     let picture: URL
+    let displayAddress: String
+    let postcode: Int
+    let lat: Int
+    let lng: Int
+    let city: String
+    let actualAddress: String
     
     enum CodingKeys: String, CodingKey {
         case id = "id"
         case name = "name"
         case category = "category"
         case picture = "picture"
+        case displayAddress = "displayAddress"
+        case postcode = "postcode"
+        case lat = "lat"
+        case lng = "lng"
+        case city = "city"
+        case actualAddress = "actualAddress"
 
     }
 }

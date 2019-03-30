@@ -95,6 +95,7 @@ PODS:
     - SDWebImage/Core (= 4.4.3)
   - SDWebImage/Core (4.4.3)
   - Stripe (14.0.0)
+  - SwiftyJSON (4.2.0)
   - TinyConstraints (3.3.1)
 
 DEPENDENCIES:
@@ -113,6 +114,7 @@ DEPENDENCIES:
   - Kingfisher
   - SDWebImage
   - Stripe
+  - SwiftyJSON (from `https://github.com/SwiftyJSON/SwiftyJSON.git`)
   - TinyConstraints
 
 SPEC REPOS:
@@ -142,6 +144,15 @@ SPEC REPOS:
     - Stripe
     - TinyConstraints
 
+EXTERNAL SOURCES:
+  SwiftyJSON:
+    :git: https://github.com/SwiftyJSON/SwiftyJSON.git
+
+CHECKOUT OPTIONS:
+  SwiftyJSON:
+    :commit: 3f6f1d32df6e5f334593682b20bb829e48bffbee
+    :git: https://github.com/SwiftyJSON/SwiftyJSON.git
+
 SPEC CHECKSUMS:
   Alamofire: 16ce2c353fb72865124ddae8a57c5942388f4f11
   AlamofireImage: 1aea346f4dda2f6c67622fa5a89fcbb80d79cc16
@@ -166,8 +177,9 @@ SPEC CHECKSUMS:
   nanopb: 2901f78ea1b7b4015c860c2fdd1ea2fee1a18d48
   SDWebImage: c5594f1a19c48d526d321e548902b56b479cd508
   Stripe: db29ad197c74aca6fb981e4e8355cf7ebd0fca5a
+  SwiftyJSON: c4bcba26dd9ec7a027fc8eade48e2c911f229e96
   TinyConstraints: dbf7519aefc01ea59d62244300c7718aec68e280
 
-PODFILE CHECKSUM: 99fd78151ef68b460c9890eb6ec6460dab16f822
+PODFILE CHECKSUM: 4575ac53172a193dad625ec4aee2fd95518987c4
 
 COCOAPODS: 1.6.1

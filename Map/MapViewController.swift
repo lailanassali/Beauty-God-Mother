@@ -6,6 +6,7 @@
 //
 import UIKit
 import MapKit
+import SwiftyJSON
 
 
 
@@ -14,15 +15,46 @@ import MapKit
         
         @IBOutlet weak var mapview: MKMapView!
         
+        var profile = [bpinfo]()
+        
+    // retrieving data from json
+        func getData() {
+            let fileName = Bundle.main.path(forResource: "profile", ofType: "json")
+            let path = URL(fileURLWithPath: fileName!)
+            var data: Data?
+            do {
+            data = try Data(contentsOf: path, options: Data.ReadingOptions(rawValue: 0))}
+            catch let error {
+                data = nil
+                print ("Error!!! The error is \(error.localizedDescription)")
+                // don't forget to make user friendly alert for this error!
+            }
+            if let jsonData = data {
+                let json = try! JSON(data: jsonData)
+                    if let bpinfoJSON = json["profile"].array {
+                        for bpinfoJSON in bpinfoJSON {
+                            if let bpinfo = bpinfo.from(json: bpinfoJSON) {
+                                self.profile.append(bpinfo)
+                
+                            }
+                        }
+                    }
+                }
+            }
+        
+        
         override func viewDidLoad() {
             super.viewDidLoad()
             
             let initialLocation = CLLocation(latitude: 51.2802, longitude: 1.0789 )
             zoomMap(location: initialLocation)
             
-            let example = bpinfo(name: "Laid By Tiff", location: "Cants", coordinate: CLLocationCoordinate2D(latitude: 51.287750, longitude: 1.093652))
+//            let example = bpinfo(name: "Laid By Tiff", location: "Cants", coordinate: CLLocationCoordinate2D(latitude: 51.287750, longitude: 1.093652))
             
-            mapview.addAnnotation(example)
+  //          mapview.addAnnotation(example)
+            mapview.delegate = self
+            getData()
+            mapview.addAnnotations(profile)
         }
         
         private let regionRadius: CLLocationDistance = 5500
@@ -35,8 +67,26 @@ import MapKit
 }
 
 extension MapViewController : MKMapViewDelegate {
-    
-}
+    func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
+        if let annotation = annotation as? bpinfo {
+            let identifier = "pin"
+            var view: MKPinAnnotationView
+            if let dequeuedView = mapview.dequeueReusableAnnotationView(withIdentifier: identifier) as? MKPinAnnotationView {
+                dequeuedView.annotation = annotation
+                view = dequeuedView
+            } else {
+                view = MKPinAnnotationView(annotation: annotation, reuseIdentifier: identifier)
+                view.canShowCallout = true
+                view.calloutOffset = CGPoint(x: -5, y: 5)
+                view.detailCalloutAccessoryView = UIButton(type: .detailDisclosure) as UIView
+                }
+            return view
+            
+            }
+            return nil
+        }
+    }
+
 
 
 

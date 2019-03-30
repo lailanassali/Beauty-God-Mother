@@ -22,6 +22,7 @@ pod 'TinyConstraints'
 pod 'FloatRatingView'
 pod 'Alamofire', '~> 4.5'
 pod 'AlamofireImage', '~> 3.3'
+pod 'SwiftyJSON', :git =>'https://github.com/SwiftyJSON/SwiftyJSON.git'
 
 target 'Beauty God MotherTests' do
 inherit! :search_paths

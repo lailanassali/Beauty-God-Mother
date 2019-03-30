@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "BCE3DE68053C99B18AAD56BE1F98BD73"
-               BuildableName = "GoogleMaps"
-               BlueprintName = "GoogleMaps"
+               BlueprintIdentifier = "64A5B0D84D8579CF3E24DF2C12D99B08"
+               BuildableName = "Cosmos.framework"
+               BlueprintName = "Cosmos"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -45,9 +45,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "BCE3DE68053C99B18AAD56BE1F98BD73"
-            BuildableName = "GoogleMaps"
-            BlueprintName = "GoogleMaps"
+            BlueprintIdentifier = "64A5B0D84D8579CF3E24DF2C12D99B08"
+            BuildableName = "Cosmos.framework"
+            BlueprintName = "Cosmos"
             ReferencedContainer = "container:Pods.xcodeproj">
          </BuildableReference>
       </MacroExpansion>

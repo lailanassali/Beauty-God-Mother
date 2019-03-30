@@ -8,6 +8,7 @@
 
 import MapKit
 import AddressBook
+import SwiftyJSON
 
 class bpinfo: NSObject, MKAnnotation {
     
@@ -25,6 +26,22 @@ class bpinfo: NSObject, MKAnnotation {
         
     }
     
+    var subtitle: String? {
+        return location
     
+    }
     
+    // Calling information from profile.json -> to follow  bp.info format
+    class func from(json: JSON) -> bpinfo? {
+        var name: String
+        if let unwrappedTitle = json["name"].string {name = unwrappedTitle }
+        else {
+            name = "" }
+        
+        let location = json["displayAddress"].string
+        let lat = json["location"]["lat"].doubleValue
+        let long = json["location"]["lng"].doubleValue
+        let coordinate = CLLocationCoordinate2D(latitude: lat, longitude: long)
+        return bpinfo(name: name, location: location, coordinate: coordinate)
+    }
 }

@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "BCE3DE68053C99B18AAD56BE1F98BD73"
-               BuildableName = "GoogleMaps"
-               BlueprintName = "GoogleMaps"
+               BlueprintIdentifier = "2A34E5F57193BB81D7750A435A62A4EE"
+               BuildableName = "TinyConstraints.framework"
+               BlueprintName = "TinyConstraints"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -45,9 +45,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "BCE3DE68053C99B18AAD56BE1F98BD73"
-            BuildableName = "GoogleMaps"
-            BlueprintName = "GoogleMaps"
+            BlueprintIdentifier = "2A34E5F57193BB81D7750A435A62A4EE"
+            BuildableName = "TinyConstraints.framework"
+            BlueprintName = "TinyConstraints"
             ReferencedContainer = "container:Pods.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
