@@ -12,79 +12,89 @@ import SwiftyJSON
 
 
     class MapViewController: UIViewController {
-        
         @IBOutlet weak var mapview: MKMapView!
-        
-        var profile = [bpinfo]()
-        
-    // retrieving data from json
-        func getData() {
-            let fileName = Bundle.main.path(forResource: "profile", ofType: "json")
-            let path = URL(fileURLWithPath: fileName!)
-            var data: Data?
-            do {
-            data = try Data(contentsOf: path, options: Data.ReadingOptions(rawValue: 0))}
-            catch let error {
-                data = nil
-                print ("Error!!! The error is \(error.localizedDescription)")
-                // don't forget to make user friendly alert for this error!
-            }
-            if let jsonData = data {
-                let json = try! JSON(data: jsonData)
-                    if let bpinfoJSON = json["profile"].array {
-                        for bpinfoJSON in bpinfoJSON {
-                            if let bpinfo = bpinfo.from(json: bpinfoJSON) {
-                                self.profile.append(bpinfo)
-                
-                            }
-                        }
-                    }
-                }
-            }
-        
-        
+
         override func viewDidLoad() {
             super.viewDidLoad()
             
-            let initialLocation = CLLocation(latitude: 51.2802, longitude: 1.0789 )
-            zoomMap(location: initialLocation)
+        let initialLocation = CLLocation(latitude: 51.2802, longitude: 1.0789 )
+        zoomMap(location: initialLocation)
+        
+       // List of beauty providers and locations
+        
+        let list1 = bpinfo(title: "Beauty By Jess", locationName: "CT12YA", coordinate:CLLocationCoordinate2D(latitude: 51.274875,longitude: 1.080233))
+        let list2 = bpinfo(title: "Laid By Tiff", locationName: "CT2 7RF", coordinate: CLLocationCoordinate2D(latitude: 51.287750, longitude: 1.093652))
+        let list3 = bpinfo(title: "Hair By Lai", locationName: "CT2 7RF", coordinate: CLLocationCoordinate2D(latitude: 51.294494, longitude: 1.091007))
+        let list4 = bpinfo(title: "Nails By Shanju", locationName: "CT2 7BY", coordinate: CLLocationCoordinate2D(latitude: 51.294793, longitude: 1.083423))
+        let list5 = bpinfo(title: "Eyebrows By Aisha", locationName: "CT2 9NB", coordinate: CLLocationCoordinate2D(latitude: 51.307794, longitude: 1.068223))
             
-//            let example = bpinfo(name: "Laid By Tiff", location: "Cants", coordinate: CLLocationCoordinate2D(latitude: 51.287750, longitude: 1.093652))
+        mapview.addAnnotation(list1)
+        mapview.addAnnotation(list2)
+        mapview.addAnnotation(list3)
+        mapview.addAnnotation(list4)
+        mapview.addAnnotation(list5)
             
-  //          mapview.addAnnotation(example)
             mapview.delegate = self
-            getData()
-            mapview.addAnnotations(profile)
         }
         
-        private let regionRadius: CLLocationDistance = 5500
-        func zoomMap(location:CLLocation){
-            
-            let region = MKCoordinateRegion(center: location.coordinate, latitudinalMeters: 5500, longitudinalMeters: 5500)
-            
+        override func viewDidAppear(_ animated: Bool) {
+            super.viewDidAppear(animated)
+            checkLocationStatus()
+        }
+        
+        private let regionRadius: CLLocationDistance = 10000
+        func zoomMap(location:CLLocation)
+        {
+        let region = MKCoordinateRegion(center: location.coordinate, latitudinalMeters: 10000, longitudinalMeters: 10000)
                 mapview.setRegion(region , animated: true)
         }
+        private let locationManager = CLLocationManager()
+        func checkLocationStatus() {
+            locationManager.delegate = self
+            if CLLocationManager.authorizationStatus() == .authorizedWhenInUse{
+            mapview.showsUserLocation = true
+                locationManager.startUpdatingLocation() // remove this
+            } else {
+                locationManager.requestWhenInUseAuthorization()
+                locationManager.startUpdatingLocation()
+            }
+    }
+        
+}
+extension MapViewController : CLLocationManagerDelegate{
+    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+       let location = locations.last!
+
+    }
 }
 
-extension MapViewController : MKMapViewDelegate {
-    func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
+extension MapViewController : MKMapViewDelegate
+{
+    func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView?
+    {
         if let annotation = annotation as? bpinfo {
             let identifier = "pin"
             var view: MKPinAnnotationView
-            if let dequeuedView = mapview.dequeueReusableAnnotationView(withIdentifier: identifier) as? MKPinAnnotationView {
+            if let dequeuedView = mapView.dequeueReusableAnnotationView(withIdentifier: identifier) as? MKPinAnnotationView {
                 dequeuedView.annotation = annotation
                 view = dequeuedView
             } else {
                 view = MKPinAnnotationView(annotation: annotation, reuseIdentifier: identifier)
                 view.canShowCallout = true
                 view.calloutOffset = CGPoint(x: -5, y: 5)
-                view.detailCalloutAccessoryView = UIButton(type: .detailDisclosure) as UIView
-                }
-            return view
+                view.rightCalloutAccessoryView = UIButton(type: .detailDisclosure) as UIView
             
             }
-            return nil
+            return view
         }
+        return nil
+    }
+    
+    func mapView(_ mapView: MKMapView, annotationView view: MKAnnotationView, calloutAccessoryControlTapped control: UIControl) {
+        let location = view.annotation as! bpinfo
+        let launch = [MKLaunchOptionsDirectionsModeKey : MKLaunchOptionsDirectionsModeDriving]
+        location.mapItem().openInMaps(launchOptions: launch)
+    }
     }
 
 
@@ -187,16 +197,16 @@ extension MapViewController : MKMapViewDelegate {
 //    shanjuNails.title = "shanjuNails"
 //    shanjuNails.coordinate = CLLocationCoordinate2D(latitude: 51.294793, longitude: 1.083423)
 //
-//        destinations.append(laidByTiff)
-//        destinations.append(nailsByAisha)
-//        destinations.append(hairByLaila)
-//        destinations.append(shanjuNails)
 //
 //    MapView.addAnnotation(laidByTiff)
 //    MapView.addAnnotation(nailsByAisha)
 //    MapView.addAnnotation(hairByLaila)
 //    MapView.addAnnotation(shanjuNails)
 //
+// destinations.append(laidByTiff)
+//        destinations.append(nailsByAisha)
+//        destinations.append(hairByLaila)
+//        destinations.append(shanjuNails)
 //    }
 //
 //    private func constructRoute(userLocation: CLLocationCoordinate2D) {
@@ -287,3 +297,4 @@ extension MapViewController : MKMapViewDelegate {
 //    func mapView(_ mapView: MKMapView, didSelect view: MKAnnotationView) {
 //        print (" The annotation was selected: \(String(describing: view.annotation?.title))")
 //    }
+

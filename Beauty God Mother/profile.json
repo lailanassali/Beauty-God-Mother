@@ -1,17 +1,16 @@
-    [
-        
+[
+    
     {
         "id" : 1,
         "name" : "Laid By Tiff",
         "category" : "Hair",
-        "picture" : "https://marketplace.canva.com/MADOPpPOUEw/1/0/thumbnail_large/canva-white-and-pink-strikeout-cosmetics-beauty-logo-MADOPpPOUEw.jpg"
-        "displayAddress" : "Laid By Tiff"
-        "postcode" : "CT1 1DA"
-        "lat" : 51.287750
-        "lng" : 1.093652
-        "city" : "Canterbury"
-        "actualAddress" : ""
-        
+        "picture" : "https://marketplace.canva.com/MADOPpPOUEw/1/0/thumbnail_large/canva-white-and-pink-strikeout-cosmetics-beauty-logo-MADOPpPOUEw.jpg",
+        "address" : "Laid By Tiff",
+        "postcode" : "CT11DA",
+        "latitude" : 51.287750,
+        "longitude" : 1.093652,
+        "city" : "Canterbury",
+        "actualAddress" : "",
     },
     
     
@@ -20,13 +19,12 @@
         "name" : "Hair By Lai",
         "category" : "Hair",
         "picture" : "https://marketplace.canva.com/MADOPpPOUEw/1/0/thumbnail_large/canva-white-and-pink-strikeout-cosmetics-beauty-logo-MADOPpPOUEw.jpg",
-        "displayAddress" : "Hair By Lai"
-        "postcode" : "CT2 7RF"
-        "lat" : 51.294494
-        "lng" : 1.091007
-        "city" : "Canterbury"
-        "actualAddress" : ""
-        
+        "address" : "Hair By Lai",
+        "postcode" : "CT27RF",
+        "latitude" : 51.294494,
+        "longitude" : 1.091007,
+        "city" : "Canterbury",
+        "actualAddress" : "",
     },
     
     {
@@ -34,13 +32,12 @@
         "name" : "Nails By Shanju",
         "category" : "Manicure",
         "picture" : "https://marketplace.canva.com/MADOPpPOUEw/1/0/thumbnail_large/canva-white-and-pink-strikeout-cosmetics-beauty-logo-MADOPpPOUEw.jpg",
-        "displayAddress" : "Nails By Shanju"
-        "postcode" : "CT2 7BY"
-        "lat" : 51.294793
-        "lng" : 1.083423
-        "city" : "Canterbury"
-        "actualAddress" : ""
-        
+        "address" : "Nails By Shanju",
+        "postcode" : "CT27BY",
+        "latitude" : 51.294793,
+        "longitude" : 1.083423,
+        "city" : "Canterbury",
+        "actualAddress" : "",
     },
     
     {
@@ -48,13 +45,11 @@
         "name" : "Beauty By Jess",
         "category" : "Massage",
         "picture" : "https://marketplace.canva.com/MADOPpPOUEw/1/0/thumbnail_large/canva-white-and-pink-strikeout-cosmetics-beauty-logo-MADOPpPOUEw.jpg",
-        "displayAddress" : "Beauty By Jess"
-        "postcode" : "CT1 2YA"
-        "lat" : 51.274875
-        "lng" : 1.080233
-        "city" : "Canterbury"
-        "actualAddress" : ""
-        
+        "address":"Rhodaus Town",
+        "latitude":51.274875,
+        "longitude":1.083423,
+        "city" : "Canterbury",
+        "actualAddress" : "",
     },
     
     {
@@ -62,12 +57,12 @@
         "name" : "Eyebrows By Aisha",
         "category" : "Plucking Chin",
         "picture" : "https://marketplace.canva.com/MADOPpPOUEw/1/0/thumbnail_large/canva-white-and-pink-strikeout-cosmetics-beauty-logo-MADOPpPOUEw.jpg",
-        "displayAddress" : "Eyebrows By Aisha"
-        "postcode" : "CT2 9NB"
-        "lat" : 51.307794
-        "lng" : 1.068223
-        "city" : "Canterbury"
-        "actualAddress" : ""
-        
+        "address" : "Eyebrows By Aisha",
+        "postcode" : "CT29NB",
+        "latitude" : 51.307794,
+        "longitude" : 1.068223,
+        "city" : "Canterbury",
+        "actualAddress" : "",
     }
 ]
+ 
