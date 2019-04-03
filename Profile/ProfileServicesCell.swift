@@ -9,23 +9,24 @@
 import UIKit
 
 class ProfileServicesCell: UITableViewCell {
-
-
-    @IBOutlet weak var serviceName: UILabel!
-    @IBOutlet weak var priceLabel: UILabel!
-    @IBOutlet weak var durationLabel: UILabel!
-    @IBOutlet weak var descriptionLabel: UILabel!
-    @IBOutlet weak var servicesImage: UIImageView!
     
+    @IBOutlet weak var serviceNamelbl: UILabel!
+    @IBOutlet weak var pricelbl: UILabel!
+    @IBOutlet weak var durationlbl: UILabel!
+    @IBOutlet weak var serviceDescriptionlbl: UILabel!
+    
+    
+    func configure(with profile: profileServices) {
+        serviceNamelbl.text = profile.serviceName
+        pricelbl.text = profile.price
+        durationlbl.text = profile.duration
+        serviceDescriptionlbl.text = profile.serviceDescription
+        
+    }
+
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
-    }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
     }
 
 }
