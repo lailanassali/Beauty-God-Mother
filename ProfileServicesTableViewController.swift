@@ -17,7 +17,7 @@ class ProfileServicesTableViewController: UITableViewController {
         super.viewDidLoad()
 
 
-        profileServices = DataProvider.shared.allProfiles
+      //  profileServices = DataProvider.shared.allProfiles
 
     }
 
@@ -30,7 +30,7 @@ class ProfileServicesTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
        
         let cell = tableView.dequeueReusableCell(withIdentifier: "ProfileServicesCell", for: indexPath) as! ProfileServicesCell
-        cell.configure(with: profileServices[indexPath.row])
+      //  cell.configure(with: profileServices[indexPath.row])
         return cell
     }
 
