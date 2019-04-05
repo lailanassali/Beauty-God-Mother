@@ -17,7 +17,7 @@ import ImageIO
 
 class DetailsViewController: UIViewController {
     
-    @IBOutlet weak var servicesView: UIView!
+    @IBOutlet weak var servivesView: UIView!
     @IBOutlet weak var reviewsView: UIView!
     @IBOutlet weak var mapView: UIView!
 
@@ -50,17 +50,17 @@ class DetailsViewController: UIViewController {
     
     @IBAction func switchViews (_ sender: UISegmentedControl) {
         if sender.selectedSegmentIndex == 0 {
-            servicesView.alpha = 1
+            servivesView.alpha = 1
             reviewsView.alpha = 0
             mapView.alpha = 0
         } else if sender.selectedSegmentIndex == 1 {
             
-            servicesView.alpha = 0
+            servivesView.alpha = 0
             reviewsView.alpha = 1
             mapView.alpha = 0
             
             } else {
-            servicesView.alpha = 0
+                servivesView.alpha = 0
                 reviewsView.alpha = 0
                 mapView.alpha = 1
             }

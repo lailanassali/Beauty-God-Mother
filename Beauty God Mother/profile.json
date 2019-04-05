@@ -11,21 +11,7 @@
         "longitude" : 1.093652,
         "city" : "Canterbury",
         "actualAddress" : "",
-        "profileServices" : [
-        {  "serviceName" : "Frontal",
-            "price" : "£100",
-            "duration" : "1hr20mins",
-            "serviceDescription" : "i will do a frontal and blah blah"
-            
-        },
-        {
-            "serviceName" : "closure",
-            "price" : "£50",
-            "duration" : "1hr",
-            "serviceDescription" : "i will do a closure and blah blah"
-        }
-    ]
-},
+    },
     
     
     {
@@ -39,20 +25,6 @@
         "longitude" : 1.091007,
         "city" : "Canterbury",
         "actualAddress" : "",
-        "profileServices" : [
-            {  "serviceName" : "Frontal",
-                "price" : "£100",
-                "duration" : "1hr20mins",
-                "serviceDescription" : "i will do a frontal and blah blah"
-                
-            },
-            {
-                "serviceName" : "closure",
-                "price" : "£50",
-                "duration" : "1hr",
-                "serviceDescription" : "i will do a closure and blah blah"
-            }
-        ]
     },
     
     {
@@ -66,20 +38,6 @@
         "longitude" : 1.083423,
         "city" : "Canterbury",
         "actualAddress" : "",
-        "profileServices" : [
-            {  "serviceName" : "Frontal",
-                "price" : "£100",
-                "duration" : "1hr20mins",
-                "serviceDescription" : "i will do a frontal and blah blah"
-                
-            },
-            {
-                "serviceName" : "closure",
-                "price" : "£50",
-                "duration" : "1hr",
-                "serviceDescription" : "i will do a closure and blah blah"
-            }
-        ]
     },
     
     {
@@ -92,20 +50,6 @@
         "longitude":1.083423,
         "city" : "Canterbury",
         "actualAddress" : "",
-        "profileServices" : [
-            {  "serviceName" : "Frontal",
-                "price" : "£100",
-                "duration" : "1hr20mins",
-                "serviceDescription" : "i will do a frontal and blah blah"
-                
-            },
-            {
-                "serviceName" : "closure",
-                "price" : "£50",
-                "duration" : "1hr",
-                "serviceDescription" : "i will do a closure and blah blah"
-            }
-        ]
     },
     
     {
@@ -119,20 +63,6 @@
         "longitude" : 1.068223,
         "city" : "Canterbury",
         "actualAddress" : "",
-        "profileServices" : [
-            {  "serviceName" : "Frontal",
-                "price" : "£100",
-                "duration" : "1hr20mins",
-                "serviceDescription" : "i will do a frontal and blah blah"
-                
-            },
-            {
-                "serviceName" : "closure",
-                "price" : "£50",
-                "duration" : "1hr",
-                "serviceDescription" : "i will do a closure and blah blah"
-            }
-        ]
     }
 ]
  

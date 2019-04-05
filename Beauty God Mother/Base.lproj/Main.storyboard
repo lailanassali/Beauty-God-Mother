@@ -2312,7 +2312,7 @@
                                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="No5-yX-CK3">
                                                 <rect key="frame" x="17" y="340" width="341" height="348"/>
                                                 <connections>
-                                                    <segue destination="Ml0-qq-BEN" kind="embed" id="gxS-Ct-J6a"/>
+                                                    <segue destination="E1Z-eH-A1F" kind="embed" id="8UN-xC-9Ff"/>
                                                 </connections>
                                             </containerView>
                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XeB-E2-Rfl">
@@ -3283,10 +3283,6 @@
         <scene sceneID="dE2-hN-atx">
             <objects>
                 <viewController id="58f-bU-qMW" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="fN3-O4-TFY"/>
-                        <viewControllerLayoutGuide type="bottom" id="93v-fp-nwT"/>
-                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="CKN-Uu-EFl">
                         <rect key="frame" x="0.0" y="0.0" width="338" height="348"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -3304,74 +3300,30 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CPf-3x-F5O" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="9464" y="-907"/>
+            <point key="canvasLocation" x="9011" y="-1607"/>
         </scene>
-        <!--Profile Services Table View Controller-->
-        <scene sceneID="wkg-L9-WVx">
+        <!--View Controller-->
+        <scene sceneID="jRv-FF-hQw">
             <objects>
-                <tableViewController storyboardIdentifier="ProfileServicesCell" id="Ml0-qq-BEN" customClass="ProfileServicesTableViewController" customModule="Beauty_God_Mother" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="Qg0-v8-ZR8">
+                <viewController id="E1Z-eH-A1F" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="mf8-de-hP1">
                         <rect key="frame" x="0.0" y="0.0" width="341" height="348"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="services" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SvF-Zc-Umn">
+                                <rect key="frame" x="128" y="51" width="64" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="profilecell" rowHeight="95" id="hQS-WA-e9w" customClass="ProfileServicesCell" customModule="Beauty_God_Mother" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="28" width="341" height="95"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="hQS-WA-e9w" id="B1f-An-b0q">
-                                    <rect key="frame" x="0.0" y="0.0" width="341" height="94.5"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                    <subviews>
-                                        <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="C6k-YV-QlX">
-                                            <rect key="frame" x="7" y="0.0" width="88" height="77"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Service" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="guh-K7-EJU">
-                                                    <rect key="frame" x="0.0" y="0.0" width="60" height="20.5"/>
-                                                    <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Price" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TD9-lx-Aag">
-                                                    <rect key="frame" x="0.0" y="20.5" width="35" height="18"/>
-                                                    <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
-                                                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Duration" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ikp-0c-ETs">
-                                                    <rect key="frame" x="0.0" y="38.5" width="59" height="18"/>
-                                                    <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
-                                                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ude-1w-ydb">
-                                                    <rect key="frame" x="0.0" y="56.5" width="88" height="20.5"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                            </subviews>
-                                        </stackView>
-                                    </subviews>
-                                </tableViewCellContentView>
-                                <connections>
-                                    <outlet property="description" destination="Ude-1w-ydb" id="HAX-Oh-bEB"/>
-                                    <outlet property="duration" destination="Ikp-0c-ETs" id="hkp-wi-JzT"/>
-                                    <outlet property="price" destination="TD9-lx-Aag" id="bBp-un-V0L"/>
-                                    <outlet property="service" destination="guh-K7-EJU" id="Ppf-Ch-36J"/>
-                                    <outlet property="serviceDescription" destination="Ude-1w-ydb" id="LRF-21-z0R"/>
-                                </connections>
-                            </tableViewCell>
-                        </prototypes>
-                        <connections>
-                            <outlet property="dataSource" destination="Ml0-qq-BEN" id="RyM-3t-Prb"/>
-                            <outlet property="delegate" destination="Ml0-qq-BEN" id="8VW-U6-2Tr"/>
-                        </connections>
-                    </tableView>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="mgB-zL-YnP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jyE-2X-5qN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="9228" y="-2136"/>
+            <point key="canvasLocation" x="9011" y="-1922"/>
         </scene>
     </scenes>
     <resources>
