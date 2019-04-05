@@ -2426,7 +2426,7 @@
                                 </connections>
                             </button>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="D7d-oh-E22">
-                                <rect key="frame" x="25" y="237" width="324" height="219"/>
+                                <rect key="frame" x="23" y="209" width="324" height="219"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="5" minimumInteritemSpacing="5" id="ffE-KB-fDn">
@@ -2464,7 +2464,7 @@
                                 </connections>
                             </collectionView>
                             <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" alignment="top" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="zpP-vt-oLS">
-                                <rect key="frame" x="32" y="201" width="298" height="20.5"/>
+                                <rect key="frame" x="33" y="187" width="298" height="20.5"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mon" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6W7-FI-4yb">
@@ -2518,12 +2518,40 @@
                                 <color key="textColor" red="0.91102655440000002" green="0.55376136970000001" blue="0.68843997649999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Nln-tC-36C">
+                                <rect key="frame" x="0.0" y="480" width="370" height="138"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="1iC-np-JFt" id="95r-1Q-uaZ"/>
+                                    <outlet property="delegate" destination="1iC-np-JFt" id="K2p-RR-cOi"/>
+                                </connections>
+                            </pickerView>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1ib-eX-iUG">
+                                <rect key="frame" x="-2" y="448" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <items>
+                                    <barButtonItem title="Done" id="dID-Hy-8y5">
+                                        <connections>
+                                            <action selector="DoneButton:" destination="1iC-np-JFt" id="dFW-m8-ea4"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n9t-3y-6Aw">
+                                <rect key="frame" x="16" y="81" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </view>
                     <connections>
                         <outlet property="Calendar2" destination="D7d-oh-E22" id="nD7-38-lET"/>
+                        <outlet property="LabelSelected" destination="n9t-3y-6Aw" id="LWn-SP-8QP"/>
                         <outlet property="MonthLabel2" destination="fby-Vb-Z46" id="JVc-uK-bbc"/>
+                        <outlet property="TimePicker" destination="Nln-tC-36C" id="p3R-Be-riw"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zXu-Ck-G2m" userLabel="First Responder" sceneMemberID="firstResponder"/>
