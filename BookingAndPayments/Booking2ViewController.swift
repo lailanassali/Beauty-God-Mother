@@ -39,46 +39,10 @@ class Booking2ViewController: UIViewController,UICollectionViewDelegate,UICollec
     
     
     @IBAction func Next2(_ sender: Any) {
-        switch currentMonth {
-        case "December":
-            month = 0
-            year += 1
-            
-            currentMonth = Months[month]
-            
-            MonthLabel2.text = "\(currentMonth) \(year)"
-            Calendar2.reloadData()
-            
-        default:
-            month += 1
-            
-            currentMonth = Months[month]
-            MonthLabel2.text = "\(currentMonth) \(year)"
-            Calendar2.reloadData()
-        }
     }
-
     
     
     @IBAction func Back2(_ sender: Any) {
-        switch currentMonth {
-        case "January":
-            month = 11
-            year -= 1
-            
-            currentMonth = Months[month]
-            
-            MonthLabel2.text = "\(currentMonth) \(year)"
-            Calendar2.reloadData()
-            
-        default:
-            month -= 1
-            
-            currentMonth = Months[month]
-            
-            MonthLabel2.text = "\(currentMonth) \(year)"
-            Calendar2.reloadData()
-        }
     }
     
     
