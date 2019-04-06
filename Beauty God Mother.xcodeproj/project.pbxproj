@@ -946,11 +946,6 @@
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-				DEVELOPMENT_TEAM = 5H3A6UZ6V5;
-=======
 				DEVELOPMENT_TEAM = AQ6CQRSKHS;
 				INFOPLIST_FILE = "Beauty God Mother/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -970,10 +965,6 @@
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-				DEVELOPMENT_TEAM = 5H3A6UZ6V5;
 				DEVELOPMENT_TEAM = AQ6CQRSKHS;
 				INFOPLIST_FILE = "Beauty God Mother/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
