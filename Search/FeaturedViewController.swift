@@ -23,7 +23,7 @@ class FeaturedViewController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let detailsViewController = segue.destination as? DetailsViewController,
             segue.identifier == SegueIdentifiers.Embed {
-          //  detailsViewController.profile = DataProvider.shared.featuredProfile
+            detailsViewController.profile = DataProvider.shared.featuredProfile
         }
     }
 
