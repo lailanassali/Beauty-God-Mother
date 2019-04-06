@@ -948,6 +948,7 @@
 				CODE_SIGN_STYLE = Automatic;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 				DEVELOPMENT_TEAM = 5H3A6UZ6V5;
 =======
 				DEVELOPMENT_TEAM = AQ6CQRSKHS;
@@ -955,6 +956,9 @@
 =======
 				DEVELOPMENT_TEAM = PAUK362GK5;
 >>>>>>> parent of 53ab638... calendar part 3
+=======
+				DEVELOPMENT_TEAM = AQ6CQRSKHS;
+>>>>>>> parent of 48dd5de... profile json attempt
 				INFOPLIST_FILE = "Beauty God Mother/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -975,6 +979,7 @@
 				CODE_SIGN_STYLE = Automatic;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 				DEVELOPMENT_TEAM = 5H3A6UZ6V5;
 =======
 				DEVELOPMENT_TEAM = AQ6CQRSKHS;
@@ -982,6 +987,9 @@
 =======
 				DEVELOPMENT_TEAM = PAUK362GK5;
 >>>>>>> parent of 53ab638... calendar part 3
+=======
+				DEVELOPMENT_TEAM = AQ6CQRSKHS;
+>>>>>>> parent of 48dd5de... profile json attempt
 				INFOPLIST_FILE = "Beauty God Mother/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
