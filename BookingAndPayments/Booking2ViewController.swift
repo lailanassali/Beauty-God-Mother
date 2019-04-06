@@ -8,34 +8,7 @@
 
 import UIKit
 
-class Booking2ViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource,UIPickerViewDelegate,UIPickerViewDataSource {
-    
-    
-    
-    
-    
-  
-    @IBOutlet var TimePicker: UIPickerView!
-      @IBOutlet var LabelSelected: UILabel!
-    
-    let time = ["9.00","10.00","11.00"]
-    
-    @IBAction func DoneButton(_ sender: Any) {
-        LabelSelected.text = time [TimePicker.selectedRow(inComponent: 0)]
-    }
-    
-    
-    
-    func numberOfComponents(in pickerView: UIPickerView) -> Int {
-        return 1
-    }
-    
-    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
-        return time.count
-    }
-    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
-        return time[row]
-    }
+class Booking2ViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
     
     
     @IBOutlet var Calendar2: UICollectionView!
