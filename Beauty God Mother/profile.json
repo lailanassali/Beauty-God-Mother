@@ -11,6 +11,21 @@
         "longitude" : 1.093652,
         "city" : "Canterbury",
         "actualAddress" : "",
+        "services" : [{
+            "name" : "Manicure",
+            "price" : 56,
+            "location" : "London"
+        },
+        {
+            "name" : "Pedicure",
+            "price" : 112,
+            "location" : "Manchester"
+        },
+        {
+            "name" : "Coventry",
+            "price": 5,
+            "location": "London"
+        }]
     },
     
     
@@ -25,6 +40,21 @@
         "longitude" : 1.091007,
         "city" : "Canterbury",
         "actualAddress" : "",
+        "services" : [{
+            "name" : "Manicure",
+            "price" : 56,
+            "location" : "London"
+        },
+        {
+            "name" : "Pedicure",
+            "price" : 112,
+            "location" : "Manchester"
+        },
+        {
+            "name" : "Coventry",
+            "price": 5,
+            "location": "London"
+        }]
     },
     
     {
@@ -38,6 +68,21 @@
         "longitude" : 1.083423,
         "city" : "Canterbury",
         "actualAddress" : "",
+        "services" : [{
+            "name" : "Manicure",
+            "price" : 56,
+            "location" : "London"
+        },
+        {
+            "name" : "Pedicure",
+            "price" : 112,
+            "location" : "Manchester"
+        },
+        {
+            "name" : "Coventry",
+            "price": 5,
+            "location": "London"
+        }]
     },
     
     {
@@ -50,6 +95,21 @@
         "longitude":1.083423,
         "city" : "Canterbury",
         "actualAddress" : "",
+        "services" : [{
+            "name" : "Manicure",
+            "price" : 56,
+            "location" : "London"
+        },
+        {
+            "name" : "Pedicure",
+            "price" : 112,
+            "location" : "Manchester"
+        },
+        {
+            "name" : "Coventry",
+            "price": 5,
+            "location": "London"
+        }]
     },
     
     {
@@ -63,6 +123,21 @@
         "longitude" : 1.068223,
         "city" : "Canterbury",
         "actualAddress" : "",
+        "services" : [{
+            "name" : "Manicure",
+            "price" : 56,
+            "location" : "London"
+        },
+        {
+            "name" : "Pedicure",
+            "price" : 112,
+            "location" : "Manchester"
+        },
+        {
+            "name" : "Coventry",
+            "price": 5,
+            "location": "London"
+        }]
     }
 ]
  

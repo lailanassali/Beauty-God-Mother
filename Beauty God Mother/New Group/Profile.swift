@@ -9,11 +9,18 @@
 import Foundation
 import UIKit
 
+struct Service2: Codable {
+    let name: String
+    let price: Int
+    let location: String
+}
+
 struct Profile: Codable {
     let id: Int
     let name: String
     let category: String
     let picture: URL
+    let services: [Service2]
    
     
     enum CodingKeys: String, CodingKey {
@@ -21,7 +28,7 @@ struct Profile: Codable {
         case name = "name"
         case category = "category"
         case picture = "picture"
-     
+        case services = "services"
 
     }
 }

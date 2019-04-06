@@ -33,6 +33,7 @@ class SearchViewController: UIViewController {
         title = "Search"
         
         profiles = DataProvider.shared.allProfiles
+    print(profiles[0].services)
         // Do any additional setup after loading the view.
     }
 }
