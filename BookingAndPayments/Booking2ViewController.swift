@@ -163,8 +163,6 @@ class Booking2ViewController: UIViewController, UICollectionViewDelegate, UIColl
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "Calendar", for: indexPath) as! Date2CollectionViewCell
         cell.backgroundColor = UIColor.clear
         
-        //cell.DateLabel2.textColor = UIColor.magenta
-        
         if cell.isHidden{
             cell.isHidden = false
         }
