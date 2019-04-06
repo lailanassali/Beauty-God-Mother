@@ -16,7 +16,6 @@
 			<integer>1</integer>
 =======
 			<integer>2</integer>
->>>>>>> parent of 48dd5de... profile json attempt
 		</dict>
 		<key>Cosmos.xcscheme_^#shared#^_</key>
 		<dict>
@@ -25,7 +24,6 @@
 			<integer>2</integer>
 =======
 			<integer>3</integer>
->>>>>>> parent of 48dd5de... profile json attempt
 		</dict>
 		<key>Firebase-Auth-Core-CoreOnly-Database-Storage.xcscheme_^#shared#^_</key>
 		<dict>
@@ -34,7 +32,6 @@
 			<integer>3</integer>
 =======
 			<integer>4</integer>
->>>>>>> parent of 48dd5de... profile json attempt
 		</dict>
 		<key>Firebase.default-CoreOnly.xcscheme_^#shared#^_</key>
 		<dict>
@@ -43,7 +40,6 @@
 			<integer>4</integer>
 =======
 			<integer>5</integer>
->>>>>>> parent of 48dd5de... profile json attempt
 		</dict>
 		<key>FirebaseAnalytics.xcscheme_^#shared#^_</key>
 		<dict>
@@ -52,7 +48,6 @@
 			<integer>5</integer>
 =======
 			<integer>6</integer>
->>>>>>> parent of 48dd5de... profile json attempt
 		</dict>
 		<key>FirebaseAuth.xcscheme_^#shared#^_</key>
 		<dict>
@@ -61,7 +56,6 @@
 			<integer>6</integer>
 =======
 			<integer>7</integer>
->>>>>>> parent of 48dd5de... profile json attempt
 		</dict>
 		<key>FirebaseAuthInterop.xcscheme_^#shared#^_</key>
 		<dict>
@@ -70,7 +64,6 @@
 			<integer>7</integer>
 =======
 			<integer>8</integer>
->>>>>>> parent of 48dd5de... profile json attempt
 		</dict>
 		<key>FirebaseCore.xcscheme_^#shared#^_</key>
 		<dict>
@@ -79,7 +72,6 @@
 			<integer>8</integer>
 =======
 			<integer>9</integer>
->>>>>>> parent of 48dd5de... profile json attempt
 		</dict>
 		<key>FirebaseDatabase.xcscheme_^#shared#^_</key>
 		<dict>
@@ -88,7 +80,6 @@
 			<integer>9</integer>
 =======
 			<integer>10</integer>
->>>>>>> parent of 48dd5de... profile json attempt
 		</dict>
 		<key>FirebaseInstanceID.xcscheme_^#shared#^_</key>
 		<dict>
@@ -97,7 +88,6 @@
 			<integer>10</integer>
 =======
 			<integer>11</integer>
->>>>>>> parent of 48dd5de... profile json attempt
 		</dict>
 		<key>FirebaseStorage.xcscheme_^#shared#^_</key>
 		<dict>
@@ -106,7 +96,6 @@
 			<integer>11</integer>
 =======
 			<integer>12</integer>
->>>>>>> parent of 48dd5de... profile json attempt
 		</dict>
 		<key>FloatRatingView.xcscheme_^#shared#^_</key>
 		<dict>
@@ -115,7 +104,6 @@
 			<integer>12</integer>
 =======
 			<integer>13</integer>
->>>>>>> parent of 48dd5de... profile json attempt
 		</dict>
 		<key>GTMSessionFetcher.xcscheme_^#shared#^_</key>
 		<dict>
@@ -124,7 +112,6 @@
 			<integer>18</integer>
 =======
 			<integer>19</integer>
->>>>>>> parent of 48dd5de... profile json attempt
 		</dict>
 		<key>GoogleAppMeasurement.xcscheme_^#shared#^_</key>
 		<dict>
@@ -133,7 +120,6 @@
 			<integer>13</integer>
 =======
 			<integer>14</integer>
->>>>>>> parent of 48dd5de... profile json attempt
 		</dict>
 		<key>GoogleMaps.xcscheme_^#shared#^_</key>
 		<dict>
@@ -142,7 +128,6 @@
 			<integer>14</integer>
 =======
 			<integer>15</integer>
->>>>>>> parent of 48dd5de... profile json attempt
 		</dict>
 		<key>GooglePlacePicker.xcscheme_^#shared#^_</key>
 		<dict>
@@ -151,7 +136,6 @@
 			<integer>15</integer>
 =======
 			<integer>16</integer>
->>>>>>> parent of 48dd5de... profile json attempt
 		</dict>
 		<key>GooglePlaces.xcscheme_^#shared#^_</key>
 		<dict>
@@ -160,7 +144,6 @@
 			<integer>16</integer>
 =======
 			<integer>17</integer>
->>>>>>> parent of 48dd5de... profile json attempt
 		</dict>
 		<key>GoogleUtilities.xcscheme_^#shared#^_</key>
 		<dict>
@@ -169,7 +152,6 @@
 			<integer>17</integer>
 =======
 			<integer>18</integer>
->>>>>>> parent of 48dd5de... profile json attempt
 		</dict>
 		<key>Kingfisher.xcscheme_^#shared#^_</key>
 		<dict>
@@ -178,7 +160,6 @@
 			<integer>19</integer>
 =======
 			<integer>20</integer>
->>>>>>> parent of 48dd5de... profile json attempt
 		</dict>
 		<key>Pods-Beauty God Mother.xcscheme_^#shared#^_</key>
 		<dict>
@@ -187,7 +168,6 @@
 			<integer>22</integer>
 =======
 			<integer>23</integer>
->>>>>>> parent of 48dd5de... profile json attempt
 		</dict>
 		<key>Pods-Beauty God MotherTests.xcscheme_^#shared#^_</key>
 		<dict>
@@ -196,7 +176,6 @@
 			<integer>23</integer>
 =======
 			<integer>24</integer>
->>>>>>> parent of 48dd5de... profile json attempt
 		</dict>
 		<key>SDWebImage.xcscheme_^#shared#^_</key>
 		<dict>
@@ -205,7 +184,6 @@
 			<integer>24</integer>
 =======
 			<integer>25</integer>
->>>>>>> parent of 48dd5de... profile json attempt
 		</dict>
 		<key>Stripe-Stripe.xcscheme_^#shared#^_</key>
 		<dict>
@@ -219,7 +197,6 @@
 			<integer>25</integer>
 =======
 			<integer>27</integer>
->>>>>>> parent of 48dd5de... profile json attempt
 		</dict>
 		<key>Stripe.xcscheme_^#shared#^_</key>
 		<dict>
@@ -228,7 +205,6 @@
 			<integer>27</integer>
 =======
 			<integer>26</integer>
->>>>>>> parent of 48dd5de... profile json attempt
 		</dict>
 		<key>TinyConstraints.xcscheme_^#shared#^_</key>
 		<dict>
@@ -242,7 +218,6 @@
 			<integer>20</integer>
 =======
 			<integer>21</integer>
->>>>>>> parent of 48dd5de... profile json attempt
 		</dict>
 		<key>nanopb.xcscheme_^#shared#^_</key>
 		<dict>
@@ -251,7 +226,6 @@
 			<integer>21</integer>
 =======
 			<integer>22</integer>
->>>>>>> parent of 48dd5de... profile json attempt
 		</dict>
 	</dict>
 </dict>
