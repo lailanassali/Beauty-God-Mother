@@ -2058,8 +2058,8 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="spH-vB-UWa">
                                         <rect key="frame" x="8" y="8" width="236" height="194"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iJo-v7-TaK">
-                                                <rect key="frame" x="89" y="131" width="58" height="30"/>
+                                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iJo-v7-TaK">
+                                                <rect key="frame" x="89" y="132" width="58" height="30"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="30" id="40B-hA-oUA"/>
                                                 </constraints>
@@ -3101,6 +3101,10 @@
         <scene sceneID="dE2-hN-atx">
             <objects>
                 <viewController id="58f-bU-qMW" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="E1Q-AE-qWX"/>
+                        <viewControllerLayoutGuide type="bottom" id="mJ2-FI-hev"/>
+                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="CKN-Uu-EFl">
                         <rect key="frame" x="0.0" y="0.0" width="338" height="348"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -3124,6 +3128,10 @@
         <scene sceneID="jRv-FF-hQw">
             <objects>
                 <viewController id="E1Z-eH-A1F" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="rDM-dD-W30"/>
+                        <viewControllerLayoutGuide type="bottom" id="G4W-tB-k0n"/>
+                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="mf8-de-hP1">
                         <rect key="frame" x="0.0" y="0.0" width="341" height="348"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -3164,6 +3172,6 @@
         <segue reference="lLA-gX-9aE"/>
         <segue reference="sEq-NP-V1k"/>
         <segue reference="e9Q-62-xmD"/>
-        <segue reference="bJ2-At-Za9"/>
+        <segue reference="Kv6-es-Wtb"/>
     </inferredMetricsTieBreakers>
 </document>
