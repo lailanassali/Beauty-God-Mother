@@ -18,23 +18,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Image-1" translatesAutoresizingMaskIntoConstraints="NO" id="gAI-eZ-ds4">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="SPLASHPAGE" translatesAutoresizingMaskIntoConstraints="NO" id="ISW-Xm-mo5">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.33345821499824524" green="0.0" blue="0.16015192866325378" alpha="0.55265410960000005" colorSpace="custom" customColorSpace="sRGB"/>
                             </imageView>
-                            <view alpha="0.64999997615814209" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="w9K-ql-c6j">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                                <color key="backgroundColor" red="0.32552516460000003" green="0.0" blue="0.1603570879" alpha="0.2030982449" colorSpace="custom" customColorSpace="sRGB"/>
-                            </view>
                         </subviews>
                         <color key="backgroundColor" red="0.94919878244400024" green="0.48325198888778687" blue="0.66269421577453613" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <constraints>
-                            <constraint firstItem="w9K-ql-c6j" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="HcG-Rh-2mh"/>
-                            <constraint firstItem="w9K-ql-c6j" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="MK5-Qf-1JK"/>
-                            <constraint firstItem="w9K-ql-c6j" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="dv8-1A-ece"/>
-                            <constraint firstItem="w9K-ql-c6j" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="tt1-Ja-AfZ"/>
-                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
@@ -44,6 +33,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Image-1" width="722" height="1001"/>
+        <image name="SPLASHPAGE" width="375" height="667"/>
     </resources>
 </document>
