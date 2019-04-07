@@ -21,17 +21,16 @@ class DetailsViewController: UIViewController {
     @IBOutlet weak var reviewsView: UIView!
     @IBOutlet weak var mapView: UIView!
 
-
-    
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet var nameLabel: UILabel!
     @IBOutlet weak var categoriesLabel: UILabel!
-    @IBOutlet weak var imageActivityIndicator: UIActivityIndicatorView!
     
     @IBOutlet weak var serviceName: UILabel!
     @IBOutlet weak var servicePrice: UILabel!
     @IBOutlet weak var serviceDuration: UILabel!
     @IBOutlet weak var serviceDescription: UILabel!
+    
+    @IBOutlet weak var imageActivityIndicator: UIActivityIndicatorView!
     
     var profile: Profile!
     
@@ -41,6 +40,13 @@ class DetailsViewController: UIViewController {
         imageActivityIndicator.startAnimating()
         nameLabel.text = profile.name
         categoriesLabel.text = profile.category
+        
+        serviceName.text = profile.serviceName
+        servicePrice.text = profile.servicePrice
+        serviceDuration.text = profile.serviceDuration
+        serviceDescription.text = profile.serviceDescription
+        
+        
         imageView.af_setImage(withURL: profile.picture)
         { [weak self] _ in
             guard let strongSelf = self else {
@@ -48,11 +54,6 @@ class DetailsViewController: UIViewController {
             }
             strongSelf.imageActivityIndicator.stopAnimating()
         }
-        
-        serviceName.text = profile.serviceName
-        servicePrice.text = profile.servicePrice
-        serviceDuration.text = profile.serviceDuration
-        serviceDescription.text = profile.serviceDescription
         
         
         

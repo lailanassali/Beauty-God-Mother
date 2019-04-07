@@ -11,24 +11,11 @@
         "longitude" : 1.093652,
         "city" : "Canterbury",
         "actualAddress" : "",
-        "services" : [{
-            "name" : "Manicure",
-            "price" : 56,
-            "location" : "London"
+            "serviceName" : "Frontal Wig",
+            "price" : "£106",
+            "duration" : "1 hour",
+            "description" : "Please bring your frontal and bundles prior to the appointment."
         },
-        {
-            "name" : "Pedicure",
-            "price" : 112,
-            "location" : "Manchester"
-        },
-        {
-            "name" : "Coventry",
-            "price": 5,
-            "location": "London"
-        }]
-    },
-    
-    
     {
         "id" : 2,
         "name" : "Hair By Lai",
@@ -40,23 +27,11 @@
         "longitude" : 1.091007,
         "city" : "Canterbury",
         "actualAddress" : "",
-        "services" : [{
-            "name" : "Manicure",
-            "price" : 56,
-            "location" : "London"
+            "serviceName" : "Box Braids",
+            "price" : "£80",
+            "duration" : "3-4 hours",
+            "description": "Please bring hair expressions prior to the appointment."
         },
-        {
-            "name" : "Pedicure",
-            "price" : 112,
-            "location" : "Manchester"
-        },
-        {
-            "name" : "Coventry",
-            "price": 5,
-            "location": "London"
-        }]
-    },
-    
     {
         "id" : 3,
         "name" : "Nails By Shanju",
@@ -68,21 +43,10 @@
         "longitude" : 1.083423,
         "city" : "Canterbury",
         "actualAddress" : "",
-        "services" : [{
-            "name" : "Manicure",
-            "price" : 56,
-            "location" : "London"
-        },
-        {
-            "name" : "Pedicure",
-            "price" : 112,
-            "location" : "Manchester"
-        },
-        {
-            "name" : "Coventry",
-            "price": 5,
-            "location": "London"
-        }]
+        "serviceName" : "Manicure",
+        "price" : "£56",
+        "duration" : "2 hours",
+        "description": "If you have any requests, please email us, prior to the appointment."
     },
     
     {
@@ -95,21 +59,10 @@
         "longitude":1.083423,
         "city" : "Canterbury",
         "actualAddress" : "",
-        "services" : [{
-            "name" : "Manicure",
-            "price" : 56,
-            "location" : "London"
-        },
-        {
-            "name" : "Pedicure",
-            "price" : 112,
-            "location" : "Manchester"
-        },
-        {
-            "name" : "Coventry",
-            "price": 5,
-            "location": "London"
-        }]
+        "serviceName" : "Swedish Massage",
+        "price" : "£56",
+        "duration" : "1 hour",
+        "description": "If you have any requests, please email us, prior to the appointment."
     },
     
     {
@@ -123,21 +76,10 @@
         "longitude" : 1.068223,
         "city" : "Canterbury",
         "actualAddress" : "",
-        "services" : [{
-            "name" : "Manicure",
-            "price" : 56,
-            "location" : "London"
-        },
-        {
-            "name" : "Pedicure",
-            "price" : 112,
-            "location" : "Manchester"
-        },
-        {
-            "name" : "Coventry",
-            "price": 5,
-            "location": "London"
-        }]
+        "serviceName" : "Pluck Eyebrows",
+        "price" : "12",
+        "duration" : "30 minutes",
+        "description": "If you have any requests, please email us, prior to the appointment."
     }
 ]
  
