@@ -240,10 +240,19 @@ class Booking2ViewController: UIViewController, UICollectionViewDelegate, UIColl
             fatalError()
         }
         
-        // any cell that is less than 1 is hidden
+        
         if Int(cell.DateLabel2.text!)! < 1{
             cell.isHidden = true
         }
+        
+        if presentMonth == Months[calendar.component(.month, from: date) - 1] && year == calendar.component(.year, from: date) &&
+            indexPath.row + 1 == day{
+            
+        }
+        
+        
+        
+        
         
         return cell
     }
