@@ -56,11 +56,13 @@
 		AE29B29421EBEE3800B19FFF /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE29B29321EBEE3800B19FFF /* MainViewController.swift */; };
 		AE29B29821EBEE9A00B19FFF /* CustomerRegisterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE29B29721EBEE9A00B19FFF /* CustomerRegisterTests.swift */; };
 		AE29B29A21EBEF6800B19FFF /* ConfirmationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE29B29921EBEF6800B19FFF /* ConfirmationVC.swift */; };
+		CC0BDCD3225B7B3300440554 /* Booking2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC0BDCD2225B7B3300440554 /* Booking2ViewController.swift */; };
+		CC0BDCD5225B7BCD00440554 /* dateCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC0BDCD4225B7BCD00440554 /* dateCollectionViewCell.swift */; };
+		CC0BDCD7225B7DE800440554 /* Calendar2Vars.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC0BDCD6225B7DE800440554 /* Calendar2Vars.swift */; };
 		CC0EC084224CE5AC004FA5F9 /* Registration2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC0EC083224CE5AC004FA5F9 /* Registration2ViewController.swift */; };
 		CC24B0E8221ED1BA00ADEFCC /* BPRegistrationStartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC24B0E7221ED1BA00ADEFCC /* BPRegistrationStartViewController.swift */; };
 		CC62D3C72212F593004FB434 /* ForgotPassword.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC62D3C62212F593004FB434 /* ForgotPassword.swift */; };
 		CC660EC42225DD39008D6E25 /* ConnectionsSPViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC660EC32225DD39008D6E25 /* ConnectionsSPViewController.swift */; };
-		CC68C4CA224B7B4000C528AC /* BookingSysteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC68C4C9224B7B4000C528AC /* BookingSysteViewController.swift */; };
 		CC793C0F22253A8B00266734 /* ServicesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC793C0E22253A8B00266734 /* ServicesTableViewController.swift */; };
 		CC9F38122244C389003A7436 /* PaymentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC9F38112244C389003A7436 /* PaymentViewController.swift */; };
 		CCA91949220C7A1C00672E6F /* ConfirmationDetailsBP.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCA91948220C7A1C00672E6F /* ConfirmationDetailsBP.swift */; };
@@ -143,11 +145,13 @@
 		AE29B29321EBEE3800B19FFF /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		AE29B29721EBEE9A00B19FFF /* CustomerRegisterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomerRegisterTests.swift; sourceTree = "<group>"; };
 		AE29B29921EBEF6800B19FFF /* ConfirmationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmationVC.swift; sourceTree = "<group>"; };
+		CC0BDCD2225B7B3300440554 /* Booking2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Booking2ViewController.swift; sourceTree = "<group>"; };
+		CC0BDCD4225B7BCD00440554 /* dateCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dateCollectionViewCell.swift; sourceTree = "<group>"; };
+		CC0BDCD6225B7DE800440554 /* Calendar2Vars.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Calendar2Vars.swift; sourceTree = "<group>"; };
 		CC0EC083224CE5AC004FA5F9 /* Registration2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Registration2ViewController.swift; sourceTree = "<group>"; };
 		CC24B0E7221ED1BA00ADEFCC /* BPRegistrationStartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BPRegistrationStartViewController.swift; sourceTree = "<group>"; };
 		CC62D3C62212F593004FB434 /* ForgotPassword.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPassword.swift; sourceTree = "<group>"; };
 		CC660EC32225DD39008D6E25 /* ConnectionsSPViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectionsSPViewController.swift; sourceTree = "<group>"; };
-		CC68C4C9224B7B4000C528AC /* BookingSysteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookingSysteViewController.swift; sourceTree = "<group>"; };
 		CC793C0E22253A8B00266734 /* ServicesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServicesTableViewController.swift; sourceTree = "<group>"; };
 		CC9F38112244C389003A7436 /* PaymentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentViewController.swift; sourceTree = "<group>"; };
 		CCA91948220C7A1C00672E6F /* ConfirmationDetailsBP.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmationDetailsBP.swift; sourceTree = "<group>"; };
@@ -416,7 +420,9 @@
 				5BF67D312245001700AC61E0 /* CustomViewController.swift */,
 				5BF67D332245002500AC61E0 /* StandardViewController.swift */,
 				5BF67D352245003300AC61E0 /* ApplePayViewController.swift */,
-				CC68C4C9224B7B4000C528AC /* BookingSysteViewController.swift */,
+				CC0BDCD2225B7B3300440554 /* Booking2ViewController.swift */,
+				CC0BDCD4225B7BCD00440554 /* dateCollectionViewCell.swift */,
+				CC0BDCD6225B7DE800440554 /* Calendar2Vars.swift */,
 			);
 			path = BookingAndPayments;
 			sourceTree = "<group>";
@@ -742,12 +748,13 @@
 				5B2E24452215A3A600F21E29 /* RootViewController.swift in Sources */,
 				5B6A73A722158E6D00E506DC /* User.swift in Sources */,
 				CCA91949220C7A1C00672E6F /* ConfirmationDetailsBP.swift in Sources */,
+				CC0BDCD3225B7B3300440554 /* Booking2ViewController.swift in Sources */,
 				01B7C35B2236B3A300381DCD /* CustomerTabBar.swift in Sources */,
 				5B16A01E21DFB0A70022DDE7 /* ViewController.swift in Sources */,
+				CC0BDCD5225B7BCD00440554 /* dateCollectionViewCell.swift in Sources */,
 				5B16A01C21DFB0A70022DDE7 /* AppDelegate.swift in Sources */,
 				CC62D3C72212F593004FB434 /* ForgotPassword.swift in Sources */,
 				5B3DDBB4224C5EA8003E799C /* SearchViewController.swift in Sources */,
-				CC68C4CA224B7B4000C528AC /* BookingSysteViewController.swift in Sources */,
 				01B7C3592236A2C500381DCD /* AccountViewCoontroller.swift in Sources */,
 				5B2E244322159E5D00F21E29 /* Extension+Database.swift in Sources */,
 				5BF67D322245001700AC61E0 /* CustomViewController.swift in Sources */,
@@ -755,6 +762,7 @@
 				5B16A05021DFC9C10022DDE7 /* SPViewController.swift in Sources */,
 				CC0EC084224CE5AC004FA5F9 /* Registration2ViewController.swift in Sources */,
 				01CD8595224A32F900E1D40F /* ProfileServicesCell.swift in Sources */,
+				CC0BDCD7225B7DE800440554 /* Calendar2Vars.swift in Sources */,
 				4C2CDAB2224D7CA700641044 /* bpinfo.swift in Sources */,
 				5B21B491224C768D00F2FAD5 /* ProfileViewController.swift in Sources */,
 				5BB5EEEC224C466A00D0742E /* Profile.swift in Sources */,
@@ -946,7 +954,7 @@
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = AQ6CQRSKHS;
+				DEVELOPMENT_TEAM = 5H3A6UZ6V5;
 				INFOPLIST_FILE = "Beauty God Mother/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -965,7 +973,7 @@
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = AQ6CQRSKHS;
+				DEVELOPMENT_TEAM = 5H3A6UZ6V5;
 				INFOPLIST_FILE = "Beauty God Mother/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

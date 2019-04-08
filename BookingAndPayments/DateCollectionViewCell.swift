@@ -1,16 +1,15 @@
 //
-//  DateCollectionViewCell.swift
+//  dateCollectionViewCell.swift
 //  Beauty God Mother
 //
-//  Created by Shanju Bakeerathan on 27/03/2019.
+//  Created by Shanju Bakeerathan on 08/04/2019.
 //  Copyright © 2019 BGM. All rights reserved.
 //
 
 import UIKit
 
-class DateCollectionViewCell: UICollectionViewCell {
+class dateCollectionViewCell: UICollectionViewCell {
     
-    @IBOutlet var DateLabel: UILabel!
-    
+    @IBOutlet var DateLabel2: UILabel!
     
 }
