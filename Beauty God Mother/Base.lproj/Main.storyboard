@@ -2273,8 +2273,8 @@
                                     <action selector="PaymentTapped:" destination="xCg-Dz-iLQ" eventType="touchUpInside" id="II9-jr-kPP"/>
                                 </connections>
                             </button>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" text="Card details will be here" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="BKi-xl-fuB">
-                                <rect key="frame" x="43" y="358" width="288" height="170"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Card details will be here" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="BKi-xl-fuB">
+                                <rect key="frame" x="43" y="358" width="289" height="170"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -2283,16 +2283,19 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="sVz-Pc-OcH" firstAttribute="leading" secondItem="W1a-4e-VwQ" secondAttribute="leading" id="3kf-tS-AcS"/>
+                            <constraint firstItem="BKi-xl-fuB" firstAttribute="leading" secondItem="hN1-Ka-EaQ" secondAttribute="leadingMargin" constant="27" id="5Bv-nO-mCR"/>
                             <constraint firstItem="W1a-4e-VwQ" firstAttribute="top" secondItem="hN1-Ka-EaQ" secondAttribute="top" constant="252" id="GF0-89-fYX"/>
                             <constraint firstItem="sVz-Pc-OcH" firstAttribute="trailing" secondItem="W1a-4e-VwQ" secondAttribute="trailing" id="I2i-qo-2vG"/>
                             <constraint firstItem="sVz-Pc-OcH" firstAttribute="trailing" secondItem="3Wt-WM-iqH" secondAttribute="trailing" id="Kz9-CK-yfD"/>
                             <constraint firstAttribute="trailingMargin" secondItem="sVz-Pc-OcH" secondAttribute="trailing" constant="53" id="MNz-sk-cdV"/>
+                            <constraint firstItem="BhC-oX-WLQ" firstAttribute="top" secondItem="BKi-xl-fuB" secondAttribute="bottom" constant="139" id="MSm-lb-ukj"/>
+                            <constraint firstItem="BKi-xl-fuB" firstAttribute="top" secondItem="hcp-Nd-P6u" secondAttribute="bottom" constant="24" id="PHc-UC-yh1"/>
                             <constraint firstItem="sVz-Pc-OcH" firstAttribute="leading" secondItem="3Wt-WM-iqH" secondAttribute="leading" id="U5o-JT-exE"/>
-                            <constraint firstItem="hcp-Nd-P6u" firstAttribute="centerX" secondItem="hN1-Ka-EaQ" secondAttribute="centerX" id="ZPe-Df-GuD"/>
                             <constraint firstItem="BKi-xl-fuB" firstAttribute="top" secondItem="hcp-Nd-P6u" secondAttribute="bottom" constant="24" id="b1Y-mD-pGN"/>
                             <constraint firstItem="sVz-Pc-OcH" firstAttribute="top" secondItem="wPf-IZ-e5F" secondAttribute="bottom" constant="118" id="clw-DB-d15"/>
-                            <constraint firstItem="hcp-Nd-P6u" firstAttribute="centerX" secondItem="BKi-xl-fuB" secondAttribute="centerX" id="cm2-Or-flb"/>
+                            <constraint firstItem="BKi-xl-fuB" firstAttribute="centerX" secondItem="hcp-Nd-P6u" secondAttribute="centerX" id="iMY-JE-RXr"/>
                             <constraint firstItem="sVz-Pc-OcH" firstAttribute="leading" secondItem="suN-rA-CZD" secondAttribute="leading" id="ndy-M8-Kag"/>
+                            <constraint firstItem="BKi-xl-fuB" firstAttribute="centerX" secondItem="hN1-Ka-EaQ" secondAttribute="centerX" id="oOq-zf-301"/>
                             <constraint firstItem="3Wt-WM-iqH" firstAttribute="top" secondItem="sVz-Pc-OcH" secondAttribute="bottom" constant="8" symbolic="YES" id="sm5-wO-NvM"/>
                             <constraint firstItem="sVz-Pc-OcH" firstAttribute="trailing" secondItem="suN-rA-CZD" secondAttribute="trailing" id="snw-2W-JTM"/>
                             <constraint firstItem="hcp-Nd-P6u" firstAttribute="top" secondItem="W1a-4e-VwQ" secondAttribute="bottom" constant="22" id="tLp-GM-knV"/>
@@ -2343,7 +2346,7 @@
                                     <action selector="PaymentTapped:" destination="xCg-Dz-iLQ" eventType="touchUpInside" id="qjA-ZL-20t"/>
                                 </connections>
                             </button>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" text="Card details will be here" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Ljn-jL-iRM">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Card details will be here" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Ljn-jL-iRM">
                                 <rect key="frame" x="43" y="174" width="288" height="407"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -2352,10 +2355,14 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="P0A-nD-Zl3" firstAttribute="top" secondItem="Ljn-jL-iRM" secondAttribute="bottom" constant="86" id="94u-Oc-MG1"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Ljn-jL-iRM" secondAttribute="trailing" constant="28" id="Gp6-aR-YXQ"/>
                             <constraint firstItem="htm-7y-4UX" firstAttribute="top" secondItem="p2l-ab-dtp" secondAttribute="bottom" constant="86" id="NQT-8U-AV6"/>
+                            <constraint firstItem="Ljn-jL-iRM" firstAttribute="top" secondItem="htm-7y-4UX" secondAttribute="bottom" constant="38" id="WNk-rU-1AC"/>
                             <constraint firstItem="Ljn-jL-iRM" firstAttribute="top" secondItem="htm-7y-4UX" secondAttribute="bottom" constant="38" id="ZVr-KC-1nl"/>
                             <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="htm-7y-4UX" secondAttribute="trailing" constant="20" symbolic="YES" id="gPM-pA-HZc"/>
                             <constraint firstItem="htm-7y-4UX" firstAttribute="leading" secondItem="Zuk-mI-B1r" secondAttribute="leading" constant="129" id="odq-fF-377"/>
+                            <constraint firstItem="Ljn-jL-iRM" firstAttribute="leading" secondItem="Zuk-mI-B1r" secondAttribute="leadingMargin" constant="27" id="orq-UT-J6b"/>
                         </constraints>
                     </view>
                     <connections>
