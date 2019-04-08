@@ -32,7 +32,7 @@ class Booking2ViewController: UIViewController, UICollectionViewDelegate, UIColl
     
     var selectedTime : String?
     
-    var Time = ["10.00 AM","11:00 AM","12:00 PM","1.00 PM", "2.00 PM","3:00 PM", "4.00 PM","5:00PM","6:00 PM",]
+    var Time = ["10.00 AM","11:00 AM","12:00 PM","1.00 PM", "2.00 PM","3:00 PM", "4.00 PM","5:00PM","6:00 PM","7:00 PM","8:00 PM"]
     
     func createPickerView()
     {
@@ -80,11 +80,11 @@ class Booking2ViewController: UIViewController, UICollectionViewDelegate, UIColl
     let DaysOfMonth =
         ["Monday","Tueaday","Wednesday","Thursday","Friday","Saturday","Sunday"]
     
-    var DaysInMonths = [31,28,31,30,31,30,31,31,30,31,30,31]
+    var DaysInMonth = [31,28,31,30,31,30,31,31,30,31,30,31]
     
-    var currentMonth = String()
+    var presentMonth = String()
     
-    var NumberOfEmptyBox = Int()    //number of empty boxes at the start of the current month
+    var EmptyBox = Int()
     
     var NextNumberOfEmptyBox = Int()
     
@@ -100,9 +100,9 @@ class Booking2ViewController: UIViewController, UICollectionViewDelegate, UIColl
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        currentMonth = Months[month]
+        presentMonth = Months[month]
         
-        MonthLabel2.text = "\(currentMonth) \(year)"
+        MonthLabel2.text = "\(presentMonth) \(year)"
         
         createPickerView()
         
@@ -112,7 +112,7 @@ class Booking2ViewController: UIViewController, UICollectionViewDelegate, UIColl
     
     
     @IBAction func Next2(_ sender: Any) {
-        switch currentMonth {
+        switch presentMonth {
         case "December":
             month = 0
             year += 1
@@ -120,8 +120,8 @@ class Booking2ViewController: UIViewController, UICollectionViewDelegate, UIColl
             
             GetStartDateDayPosition()
             
-            currentMonth = Months[month]
-            MonthLabel2.text = "\(currentMonth) \(year)"
+            presentMonth = Months[month]
+            MonthLabel2.text = "\(presentMonth) \(year)"
             Calendar2.reloadData()
             
         default:
@@ -132,8 +132,8 @@ class Booking2ViewController: UIViewController, UICollectionViewDelegate, UIColl
             
             month += 1
             
-            currentMonth = Months[month]
-            MonthLabel2.text = "\(currentMonth) \(year)"
+            presentMonth = Months[month]
+            MonthLabel2.text = "\(presentMonth) \(year)"
             Calendar2.reloadData()
         }
     }
@@ -141,7 +141,7 @@ class Booking2ViewController: UIViewController, UICollectionViewDelegate, UIColl
     
     
     @IBAction func Back2(_ sender: Any) {
-        switch currentMonth {
+        switch presentMonth {
         case "January":
             month = 11
             year -= 1
@@ -149,8 +149,8 @@ class Booking2ViewController: UIViewController, UICollectionViewDelegate, UIColl
             
             GetStartDateDayPosition()
             
-            currentMonth = Months[month]
-            MonthLabel2.text = "\(currentMonth) \(year)"
+            presentMonth = Months[month]
+            MonthLabel2.text = "\(presentMonth) \(year)"
             Calendar2.reloadData()
             
         default:
@@ -159,8 +159,8 @@ class Booking2ViewController: UIViewController, UICollectionViewDelegate, UIColl
             
             GetStartDateDayPosition()
             
-            currentMonth = Months[month]
-            MonthLabel2.text = "\(currentMonth) \(year)"
+            presentMonth = Months[month]
+            MonthLabel2.text = "\(presentMonth) \(year)"
             Calendar2.reloadData()
         }
     }
@@ -168,28 +168,28 @@ class Booking2ViewController: UIViewController, UICollectionViewDelegate, UIColl
     func GetStartDateDayPosition() {
         switch Direction{
         case 0:
-            switch weekday{
+            switch daysOfTheWeek{
             case 1...7:
-                NumberOfEmptyBox = weekday - day
+                EmptyBox = daysOfTheWeek - day
             case 8...14:
-                NumberOfEmptyBox = weekday - day - 7
+                EmptyBox = daysOfTheWeek - day - 7
             case 15...21:
-                NumberOfEmptyBox = weekday - day - 14
+                EmptyBox = daysOfTheWeek - day - 14
             case 22...28:
-                NumberOfEmptyBox = weekday - day - 21
+                EmptyBox = daysOfTheWeek - day - 21
             case 29...31:
-                NumberOfEmptyBox = weekday - day - 28
+                EmptyBox = daysOfTheWeek - day - 28
             default:
                 break
             }
-            PositionIndex = NumberOfEmptyBox
+            PositionIndex = EmptyBox
             
         case 1...:
-            NextNumberOfEmptyBox = (PositionIndex + DaysInMonths[month])%7
+            NextNumberOfEmptyBox = (PositionIndex + DaysInMonth[month])%7
             PositionIndex = NextNumberOfEmptyBox
             
         case -1:
-            PreviousNumberOfEmptyBox = (7 - (DaysInMonths[month] - PositionIndex)%7)
+            PreviousNumberOfEmptyBox = (7 - (DaysInMonth[month] - PositionIndex)%7)
             if PreviousNumberOfEmptyBox == 7 {
                 PreviousNumberOfEmptyBox = 0
             }
@@ -205,11 +205,11 @@ class Booking2ViewController: UIViewController, UICollectionViewDelegate, UIColl
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         switch Direction {
         case 0:
-            return DaysInMonths[month] + NumberOfEmptyBox
+            return DaysInMonth[month] + EmptyBox
         case 1...:
-            return DaysInMonths[month] + NextNumberOfEmptyBox
+            return DaysInMonth[month] + NextNumberOfEmptyBox
         case -1:
-            return DaysInMonths[month] + PreviousNumberOfEmptyBox
+            return DaysInMonth[month] + PreviousNumberOfEmptyBox
         default:
             fatalError()
         }
@@ -231,7 +231,7 @@ class Booking2ViewController: UIViewController, UICollectionViewDelegate, UIColl
         
         switch Direction {
         case 0:
-            cell.DateLabel2.text = "\(indexPath.row + 1 - NumberOfEmptyBox)"
+            cell.DateLabel2.text = "\(indexPath.row + 1 - EmptyBox)"
         case 1:
             cell.DateLabel2.text = "\(indexPath.row + 1 - NextNumberOfEmptyBox)"
         case -1:
