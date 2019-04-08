@@ -811,7 +811,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="PICTUR" translatesAutoresizingMaskIntoConstraints="NO" id="Eaa-Jk-i9N">
-                                <rect key="frame" x="179.5" y="651" width="16" height="16"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="fXG-66-jhc">
                                 <rect key="frame" x="45" y="190" width="285" height="170"/>
@@ -2185,18 +2185,18 @@
                         <viewControllerLayoutGuide type="bottom" id="j6g-Yv-9CY"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="gWA-pB-QMr">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="554"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MJj-02-B0M">
-                                <rect key="frame" x="160" y="253" width="54" height="30"/>
+                                <rect key="frame" x="160" y="140" width="54" height="30"/>
                                 <state key="normal" title="Custom"/>
                                 <connections>
                                     <segue destination="xX4-k7-drg" kind="show" id="C7l-LY-Bph"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rJ5-Ww-7Ui">
-                                <rect key="frame" x="160" y="139" width="63" height="106"/>
+                                <rect key="frame" x="160" y="26" width="63" height="106"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="106" id="xch-g8-CCv"/>
                                 </constraints>
@@ -2206,7 +2206,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5wi-Ah-f97">
-                                <rect key="frame" x="145" y="339" width="69" height="39"/>
+                                <rect key="frame" x="145" y="226" width="69" height="39"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="39" id="CkG-Qw-MMB"/>
                                 </constraints>
@@ -2231,7 +2231,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gOd-VU-p9m" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="8255" y="536"/>
+            <point key="canvasLocation" x="9994" y="-2333"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="87o-aN-KzL">
@@ -2242,7 +2242,7 @@
                         <viewControllerLayoutGuide type="bottom" id="BhC-oX-WLQ"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="hN1-Ka-EaQ">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="554"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Card holder name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sVz-Pc-OcH">
@@ -2278,7 +2278,7 @@
                                 </connections>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Card details will be here" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="BKi-xl-fuB">
-                                <rect key="frame" x="43" y="358" width="289" height="170"/>
+                                <rect key="frame" x="43" y="358" width="289" height="57"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -2310,7 +2310,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KV7-bp-epG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="10103" y="1616"/>
+            <point key="canvasLocation" x="11233" y="-1591"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="RDl-gB-psy">
@@ -2321,14 +2321,14 @@
                         <viewControllerLayoutGuide type="bottom" id="QbW-DF-C1U"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="CxC-6Z-3h3">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="554"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yX9-UG-CpH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="10102" y="2446"/>
+            <point key="canvasLocation" x="11233" y="-823"/>
         </scene>
         <!--Standard View Controller-->
         <scene sceneID="uFW-A7-dsl">
@@ -2339,7 +2339,7 @@
                         <viewControllerLayoutGuide type="bottom" id="P0A-nD-Zl3"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Zuk-mI-B1r">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="554"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="htm-7y-4UX">
@@ -2351,7 +2351,7 @@
                                 </connections>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Card details will be here" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Ljn-jL-iRM">
-                                <rect key="frame" x="43" y="174" width="288" height="407"/>
+                                <rect key="frame" x="43" y="174" width="288" height="294"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -2376,7 +2376,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pPu-Fc-KpA" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="xCg-Dz-iLQ" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="10103.200000000001" y="916.1919040479761"/>
+            <point key="canvasLocation" x="11198" y="-2301"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="jSi-Lm-ZLA">
@@ -2486,7 +2486,7 @@
         <!--Booking2 View Controller-->
         <scene sceneID="PpW-Ii-lol">
             <objects>
-                <viewController id="hUe-cG-suk" customClass="Booking2ViewController" customModule="Calendar" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="hUe-cG-suk" customClass="Booking2ViewController" customModule="Beauty_God_Mother" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="aci-Pb-H7x"/>
                         <viewControllerLayoutGuide type="bottom" id="BAP-7r-yW2"/>
@@ -2638,6 +2638,14 @@
                                     </barButtonItem>
                                 </items>
                             </toolbar>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LQu-YO-2O5">
+                                <rect key="frame" x="234" y="37" width="115" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Make A Payment"/>
+                                <connections>
+                                    <segue destination="5J6-iK-VMG" kind="show" id="1vl-hI-3cV"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="Uok-vL-wx9"/>
