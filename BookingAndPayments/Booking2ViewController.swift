@@ -94,6 +94,8 @@ class Booking2ViewController: UIViewController, UICollectionViewDelegate, UIColl
     
     var PositionIndex = 0
     
+    var SelectDate = -1
+    
     
     
     
@@ -141,6 +143,7 @@ class Booking2ViewController: UIViewController, UICollectionViewDelegate, UIColl
     
     
     @IBAction func Back2(_ sender: Any) {
+        SelectDate = -1
         switch presentMonth {
         case "January":
             month = 11
@@ -250,13 +253,17 @@ class Booking2ViewController: UIViewController, UICollectionViewDelegate, UIColl
             
         }
         
-        
-        
-        
+        if SelectDate == indexPath.row {
+            cell.backgroundColor = UIColor(red:0.92, green:0.55, blue:0.78, alpha:1.0)
+        }
         
         return cell
     }
     
-    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        
+        SelectDate = indexPath.row
+        collectionView.reloadData()
+    }
 
 }
