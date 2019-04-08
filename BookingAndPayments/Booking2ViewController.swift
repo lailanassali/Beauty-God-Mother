@@ -9,17 +9,6 @@
 import UIKit
 
 class Booking2ViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource,UIPickerViewDelegate,UIPickerViewDataSource {
-
-    
-    @IBOutlet var TimePicker: UIPickerView!
-    @IBOutlet var LabelSelected: UILabel!
-    
-    let time = ["9.00","10.00","11.00"]
-    
-    @IBAction func DoneButton(_ sender: Any) {
-        LabelSelected.text = time [TimePicker.selectedRow(inComponent: 0)]
-    }
-    
     
     
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
@@ -27,11 +16,57 @@ class Booking2ViewController: UIViewController, UICollectionViewDelegate, UIColl
     }
     
     func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
-        return time.count
+        return Time.count
     }
+    
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
-        return time[row]
+        return Time[row]
+        
     }
+    
+    func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+        selectedTime = Time[row]
+        TimeTextField.text = selectedTime
+    }
+    
+    
+    var selectedTime : String?
+    
+    var Time = ["10.00 AM","11:00 AM","12:00 PM","1.00 PM", "2.00 PM","3:00 PM", "4.00 PM","5:00PM","6:00 PM",]
+    
+    func createPickerView()
+    {
+        let pickerView = UIPickerView()
+        pickerView.delegate = self
+        
+        TimeTextField.inputView = pickerView
+    
+    }
+    
+    @objc func dismissPickerView()
+    {
+        let toolBar = UIToolbar()
+        toolBar.sizeToFit()
+        
+        let doneButton = UIBarButtonItem(title: "Done", style: .plain, target: self, action: #selector(self.dismissKeyboard))
+   
+        
+        toolBar.setItems([doneButton], animated: false)
+        toolBar.isUserInteractionEnabled = true
+        
+        TimeTextField.inputAccessoryView = toolBar
+    }
+    
+    @objc func dismissKeyboard()
+    {
+        view.endEditing(true)
+    }
+    
+    
+    
+    
+    @IBOutlet var TimeTextField: UITextField!
+    
     
     
     @IBOutlet var Calendar2: UICollectionView!
@@ -69,7 +104,9 @@ class Booking2ViewController: UIViewController, UICollectionViewDelegate, UIColl
         
         MonthLabel2.text = "\(currentMonth) \(year)"
         
+        createPickerView()
         
+        dismissPickerView()
     }
     
     
