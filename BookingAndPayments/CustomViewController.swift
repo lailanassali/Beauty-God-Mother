@@ -6,16 +6,40 @@
 //  Copyright © 2019 BGM. All rights reserved.
 //
 
+
 import UIKit
+import Stripe
 
 class CustomViewController: UIViewController {
-
+    
+    
+    @IBOutlet var CardName: UITextField!
+    @IBOutlet var CardNumber: UITextField!
+    @IBOutlet var ExpiryDate: UITextField!
+    @IBOutlet var CVC: UITextField!
+    @IBOutlet var Message: UITextView!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         self.title = "Custom"
+        Message.text = ""
         // Do any additional setup after loading the view.
     }
+    
+    @IBAction func MakePayment(_ sender: Any) {
+        
+       
+        
+    }
+    
+    
+    
+    
+    
+    
+    
     
 
     /*

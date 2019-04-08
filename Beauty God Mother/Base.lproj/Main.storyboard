@@ -2233,10 +2233,10 @@
             </objects>
             <point key="canvasLocation" x="10143" y="-2333"/>
         </scene>
-        <!--View Controller-->
+        <!--Custom View Controller-->
         <scene sceneID="87o-aN-KzL">
             <objects>
-                <viewController id="xX4-k7-drg" sceneMemberID="viewController">
+                <viewController id="xX4-k7-drg" customClass="CustomViewController" customModule="Beauty_God_Mother" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="wPf-IZ-e5F"/>
                         <viewControllerLayoutGuide type="bottom" id="BhC-oX-WLQ"/>
@@ -2273,6 +2273,8 @@
                                 <rect key="frame" x="131" y="304" width="113" height="30"/>
                                 <state key="normal" title="Make a payment"/>
                                 <connections>
+                                    <action selector="MakePayment:" destination="xX4-k7-drg" eventType="touchUpInside" id="KqC-wc-Liw"/>
+                                    <action selector="Makeapayment:" destination="xX4-k7-drg" eventType="touchUpInside" id="e7j-jM-pK3"/>
                                     <action selector="PaymentTapped:" destination="WqG-Kk-dle" eventType="touchUpInside" id="CXj-iZ-Ap8"/>
                                     <action selector="PaymentTapped:" destination="xCg-Dz-iLQ" eventType="touchUpInside" id="II9-jr-kPP"/>
                                 </connections>
@@ -2307,10 +2309,17 @@
                             <constraint firstItem="W1a-4e-VwQ" firstAttribute="top" secondItem="suN-rA-CZD" secondAttribute="bottom" constant="8" symbolic="YES" id="zlG-x9-Y8R"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="CVC" destination="W1a-4e-VwQ" id="v31-p1-Fbw"/>
+                        <outlet property="CardName" destination="sVz-Pc-OcH" id="jh6-Ze-rCM"/>
+                        <outlet property="CardNumber" destination="3Wt-WM-iqH" id="36E-oN-rmG"/>
+                        <outlet property="ExpiryDate" destination="suN-rA-CZD" id="jKW-Hm-c7H"/>
+                        <outlet property="Message" destination="BKi-xl-fuB" id="yEJ-jV-tNT"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KV7-bp-epG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="11233" y="-1591"/>
+            <point key="canvasLocation" x="11329" y="-1673"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="RDl-gB-psy">
@@ -2376,7 +2385,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pPu-Fc-KpA" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="xCg-Dz-iLQ" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="11198" y="-2301"/>
+            <point key="canvasLocation" x="11188" y="-2333"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="jSi-Lm-ZLA">
