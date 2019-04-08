@@ -21,7 +21,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="IPHONE" translatesAutoresizingMaskIntoConstraints="NO" id="mOc-P0-MLr">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Image" translatesAutoresizingMaskIntoConstraints="NO" id="mOc-P0-MLr">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -40,7 +40,7 @@
                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Veo-e8-zEM">
-                                <rect key="frame" x="201" y="414" width="136" height="25"/>
+                                <rect key="frame" x="231" y="414" width="106" height="25"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <connections>
                                     <segue destination="6D7-J4-RYg" kind="show" id="qWL-W4-2Cj"/>
@@ -796,6 +796,7 @@
                         <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
                     </view>
                     <connections>
+                        <outlet property="bioLabel" destination="5h3-bU-ExB" id="tHU-z0-C8R"/>
                         <outlet property="myImageView" destination="fXG-66-jhc" id="yTl-xT-q55"/>
                     </connections>
                 </viewController>
@@ -2251,7 +2252,7 @@
     </scenes>
     <resources>
         <image name="CREATEACCOUNT" width="375" height="667"/>
-        <image name="IPHONE" width="375" height="667"/>
+        <image name="Image" width="375" height="667"/>
         <image name="Image-1" width="467" height="270"/>
         <image name="Instagram round social media icon free" width="100" height="100"/>
         <image name="LOGO" width="791" height="449"/>
@@ -2273,7 +2274,7 @@
     <inferredMetricsTieBreakers>
         <segue reference="8S7-k6-BN6"/>
         <segue reference="gXM-fs-wZZ"/>
-        <segue reference="UHE-P3-JhR"/>
+        <segue reference="Gy2-9d-og5"/>
         <segue reference="VM8-RR-bXg"/>
     </inferredMetricsTieBreakers>
 </document>
