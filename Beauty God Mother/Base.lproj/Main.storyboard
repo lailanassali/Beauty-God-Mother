@@ -837,29 +837,6 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Hxw-x2-8zS">
-                                <rect key="frame" x="199" y="390" width="51" height="31"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="20" id="f2G-PQ-GJj"/>
-                                    <constraint firstAttribute="width" constant="20" id="v2S-5X-1Wz"/>
-                                </constraints>
-                                <connections>
-                                    <action selector="swicthState:" destination="9iZ-qT-u4Z" eventType="valueChanged" id="Dcd-oE-fJ7"/>
-                                </connections>
-                            </switch>
-                            <switch opaque="NO" tag="1" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xNF-GM-I49">
-                                <rect key="frame" x="199" y="431" width="51" height="31"/>
-                                <connections>
-                                    <action selector="swicthState:" destination="9iZ-qT-u4Z" eventType="valueChanged" id="0LX-90-ZEe"/>
-                                </connections>
-                            </switch>
-                            <switch opaque="NO" tag="2" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wfV-fq-iYc">
-                                <rect key="frame" x="200" y="470" width="51" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <connections>
-                                    <action selector="swicthState:" destination="9iZ-qT-u4Z" eventType="valueChanged" id="wdV-TO-nQg"/>
-                                </connections>
-                            </switch>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Kn-9N-ZHx">
                                 <rect key="frame" x="37" y="520" width="291" height="42"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -878,18 +855,58 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Instagram" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="reh-5v-gHc">
+                                <rect key="frame" x="56" y="209" width="231" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Facebook" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lHX-gB-RcV">
+                                <rect key="frame" x="56" y="268" width="231" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="www." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="73r-tk-vbh">
+                                <rect key="frame" x="56" y="329" width="231" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Twg-b8-3rI">
+                                <rect key="frame" x="194" y="390" width="49" height="109"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="IlA-r6-b7H">
+                                        <rect key="frame" x="0.0" y="0.0" width="51" height="31"/>
+                                        <connections>
+                                            <action selector="swicthState:" destination="9iZ-qT-u4Z" eventType="valueChanged" id="84G-wu-Bgv"/>
+                                        </connections>
+                                    </switch>
+                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="U7z-Nr-Bsc">
+                                        <rect key="frame" x="0.0" y="39" width="51" height="31"/>
+                                        <connections>
+                                            <action selector="swicthState:" destination="9iZ-qT-u4Z" eventType="valueChanged" id="UvE-Sp-rLb"/>
+                                        </connections>
+                                    </switch>
+                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Gvm-wH-6Ek">
+                                        <rect key="frame" x="0.0" y="78" width="51" height="31"/>
+                                        <connections>
+                                            <action selector="swicthState:" destination="9iZ-qT-u4Z" eventType="valueChanged" id="bGL-Gw-OEW"/>
+                                        </connections>
+                                    </switch>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
-                        <constraints>
-                            <constraint firstItem="Hxw-x2-8zS" firstAttribute="leading" secondItem="jVM-k6-csW" secondAttribute="leadingMargin" constant="70" id="P8V-bD-vPe"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="Hxw-x2-8zS" secondAttribute="trailing" constant="70" id="V7X-CR-0Bg"/>
-                            <constraint firstAttribute="bottom" secondItem="xNF-GM-I49" secondAttribute="bottom" constant="205" id="upL-ir-g6W"/>
-                        </constraints>
                     </view>
                     <connections>
-                        <outlet property="facebookLabel" destination="ALA-K7-vBz" id="nJE-Db-yFO"/>
-                        <outlet property="instagramLabel" destination="bSK-4L-Vi7" id="xFM-sb-COZ"/>
-                        <outlet property="websiteLabel" destination="G6T-R2-pMi" id="DHf-fk-9Yw"/>
+                        <outlet property="facebookLabel" destination="lHX-gB-RcV" id="guC-WO-eW4"/>
+                        <outlet property="instagramLabel" destination="reh-5v-gHc" id="stB-1m-aLn"/>
+                        <outlet property="websiteLabel" destination="73r-tk-vbh" id="NHr-Fy-Uyf"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kdv-Np-PUB" userLabel="First Responder" sceneMemberID="firstResponder"/>
