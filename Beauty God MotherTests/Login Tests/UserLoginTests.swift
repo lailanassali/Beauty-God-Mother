@@ -13,15 +13,15 @@ import Firebase
 
 class UserLoginTests: XCTestCase {
 
-        let loginService = LoginService.shared
+        let login = ViewController()
         
         func testShouldSucceedIfFieldsAreNotEmpty() {
-            let result = loginService.fieldsShouldNotBeEmpty(email: "test@test.com", password: "test123")
+            let result = login.fieldsShouldNotBeEmpty(email: "test@test.com", password: "test123")
             XCTAssertEqual(result, true)
         }
     
         func testShouldFailIfFieldsAreNotEmpty() {
-            let result = loginService.fieldsShouldNotBeEmpty(email: "", password: "")
+            let result = login.fieldsAreEmpty(email: "", password: "")
             XCTAssertEqual(result, false)
     }
 
