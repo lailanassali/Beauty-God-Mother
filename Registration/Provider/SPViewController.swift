@@ -19,6 +19,7 @@ class SPViewController: UIViewController {
     @IBOutlet weak var confirmPassword: UITextField!
     @IBOutlet weak var nameFormatAlert: UILabel!
     @IBOutlet weak var passwordMatchAlert: UILabel!
+    @IBOutlet weak var fieldsEmptyAlert: UILabel!
     
     var rs = RegistrationService.shared
     
@@ -26,6 +27,7 @@ class SPViewController: UIViewController {
         super.viewDidLoad()
         nameFormatAlert.isHidden = true
         passwordMatchAlert.isHidden = true
+        fieldsEmptyAlert.isHidden = true
     }
     
     @IBAction func nextPressed(_ sender: Any) {
@@ -49,12 +51,20 @@ class SPViewController: UIViewController {
         }
     }
     
+    public func fieldsAreNotEmpty(name: String, password: String, confirmPassword: String, email: String) -> Bool {
+        if name.count != 0 && password.count != 0 && confirmPassword.count != 0 && email.count != 0 {
+            return true
+        } else {
+           fieldsEmptyAlert.isHidden = false
+            return false }
+    }
+    
     public func handleNext() {
         // stage 1
         guard let name = organisation.text, let email = email.text, let password = password.text, let confirmPassword = confirmPassword.text else {return}
         
         // stage 2
-        if passwordMatches(password: password, confirmPassword: confirmPassword) || nameFormatIsCorrect(name: name) || !rs.fieldsAreNotEmpty(name: name, password: confirmPassword, confirmPassword: confirmPassword, email: email) { return }
+        if !passwordMatches(password: password, confirmPassword: confirmPassword) || !nameFormatIsCorrect(name: name) || !fieldsAreNotEmpty(name: name, password: confirmPassword, confirmPassword: confirmPassword, email: email) { return }
         // save details to registration service
         rs.name = name
         rs.email = email

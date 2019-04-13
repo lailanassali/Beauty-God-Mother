@@ -31,7 +31,7 @@ class RegistrationService {
     var duration: String!
     var description: String!
     var additionalInformation: String?
-    var profileImage: UIImage!
+    var profileImage: UIImageView!
     var bio: String?
     var instagram: String?
     var facebook: String?

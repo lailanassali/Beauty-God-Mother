@@ -8,18 +8,35 @@
 
 import UIKit
 
-class Swipe3ViewController: UIViewController, UINavigationControllerDelegate, UIImagePickerControllerDelegate {
+class profilePictureViewController: UIViewController, UINavigationControllerDelegate, UIImagePickerControllerDelegate {
     
     let rs = RegistrationService.shared
     @IBOutlet weak var myImageView: UIImageView!
     @IBOutlet weak var bioLabel: UITextField!
+    @IBOutlet weak var imageAlert: UILabel!
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        imageAlert.isHidden = true
+        
+    }
+    
+     func imageIsSelected(profilePicture: UIImageView) -> Bool {
+        
+        if (profilePicture.image != nil){
+            return true
+        } else {
+            imageAlert.isHidden = false
+            return false }
+    }
     
     @IBAction func NextButton(_ sender: Any) {
         // stage 1
-        guard let profileImageView = myImageView.image, let bio = bioLabel.text else {return}
+        guard let profileImageView = myImageView, let bio = bioLabel.text else {return}
         
         // stage 2
-      //  if !rs.fieldsAreNotEmpty(image: profileImageView) { return }
+        if !imageIsSelected(profilePicture: profileImageView) { return }
         
         // save details to registration service
         rs.profileImage = profileImageView
@@ -60,13 +77,4 @@ class Swipe3ViewController: UIViewController, UINavigationControllerDelegate, UI
         }
         self.dismiss(animated: true, completion: nil)
     }
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-    }
-    
-    
-    
-
 }

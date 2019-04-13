@@ -18,14 +18,15 @@ class RBViewController: UIViewController {
     @IBOutlet weak var confirmPasswordTF: UITextField!
     @IBOutlet weak var nameFormatAlert: UILabel!
     @IBOutlet weak var passwordMatchAlert: UILabel!
+    @IBOutlet weak var fieldsEmptyAlert: UILabel!
     
-    var rs = RegistrationService.shared
     
     var isEnabled = true
     override func viewDidLoad() {
         super.viewDidLoad()
         nameFormatAlert.isHidden = true
         passwordMatchAlert.isHidden = true
+        fieldsEmptyAlert.isHidden = true
     }
     
     @IBAction func registerPressed(_ sender: Any) {
@@ -73,13 +74,23 @@ class RBViewController: UIViewController {
         return false
     }
     
+    public func fieldsAreNotEmpty(name: String, password: String, confirmPassword: String, email: String) -> Bool {
+        if name.count != 0 && password.count != 0 && confirmPassword.count != 0 && email.count != 0 {
+            return true
+        } else {
+
+            fieldsEmptyAlert.isHidden = false
+            return false
+        }
+    }
+    
     
     public func handleRegister() {
         
         // Stage 1
         guard let name = name.text, let email = emailTF.text, let password = passwordTF.text, let confirmPassword = confirmPasswordTF.text else {return}
        // Stage 2
-        if !passwordMatches(password: password, confirmPassword: confirmPassword) || !nameFormatIsCorrect(name: name) || !rs.fieldsAreNotEmpty(name: name, password: password, confirmPassword: confirmPassword, email: email) { return }
+        if !passwordMatches(password: password, confirmPassword: confirmPassword) || !nameFormatIsCorrect(name: name) || !fieldsAreNotEmpty(name: name, password: password, confirmPassword: confirmPassword, email: email) { return }
         
         
         Auth.auth().createUser(withEmail: email, password: password) { (result:AuthDataResult?, error) in

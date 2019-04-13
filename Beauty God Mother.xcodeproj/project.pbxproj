@@ -59,7 +59,7 @@
 		CC0BDCD5225B7BCD00440554 /* dateCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC0BDCD4225B7BCD00440554 /* dateCollectionViewCell.swift */; };
 		CC0BDCD7225B7DE800440554 /* Calendar2Vars.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC0BDCD6225B7DE800440554 /* Calendar2Vars.swift */; };
 		CC0EC084224CE5AC004FA5F9 /* Registration2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC0EC083224CE5AC004FA5F9 /* Registration2ViewController.swift */; };
-		CC24B0E8221ED1BA00ADEFCC /* BPRegistrationStartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC24B0E7221ED1BA00ADEFCC /* BPRegistrationStartViewController.swift */; };
+		CC24B0E8221ED1BA00ADEFCC /* ContactDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC24B0E7221ED1BA00ADEFCC /* ContactDetailsViewController.swift */; };
 		CC62D3C72212F593004FB434 /* ForgotPassword.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC62D3C62212F593004FB434 /* ForgotPassword.swift */; };
 		CC660EC42225DD39008D6E25 /* ConnectionsSPViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC660EC32225DD39008D6E25 /* ConnectionsSPViewController.swift */; };
 		CC793C0F22253A8B00266734 /* ServicesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC793C0E22253A8B00266734 /* ServicesTableViewController.swift */; };
@@ -147,7 +147,7 @@
 		CC0BDCD4225B7BCD00440554 /* dateCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dateCollectionViewCell.swift; sourceTree = "<group>"; };
 		CC0BDCD6225B7DE800440554 /* Calendar2Vars.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Calendar2Vars.swift; sourceTree = "<group>"; };
 		CC0EC083224CE5AC004FA5F9 /* Registration2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Registration2ViewController.swift; sourceTree = "<group>"; };
-		CC24B0E7221ED1BA00ADEFCC /* BPRegistrationStartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BPRegistrationStartViewController.swift; sourceTree = "<group>"; };
+		CC24B0E7221ED1BA00ADEFCC /* ContactDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactDetailsViewController.swift; sourceTree = "<group>"; };
 		CC62D3C62212F593004FB434 /* ForgotPassword.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPassword.swift; sourceTree = "<group>"; };
 		CC660EC32225DD39008D6E25 /* ConnectionsSPViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectionsSPViewController.swift; sourceTree = "<group>"; };
 		CC793C0E22253A8B00266734 /* ServicesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServicesTableViewController.swift; sourceTree = "<group>"; };
@@ -280,7 +280,7 @@
 				01B7C3562236A23600381DCD /* ContactViewController.swift */,
 				CCFA3E9E221AD2D700B160EF /* Swipe3ViewController.swift */,
 				5B16A04F21DFC9C10022DDE7 /* SPViewController.swift */,
-				CC24B0E7221ED1BA00ADEFCC /* BPRegistrationStartViewController.swift */,
+				CC24B0E7221ED1BA00ADEFCC /* ContactDetailsViewController.swift */,
 				CC660EC32225DD39008D6E25 /* ConnectionsSPViewController.swift */,
 				CC793C0E22253A8B00266734 /* ServicesTableViewController.swift */,
 				AE29B29921EBEF6800B19FFF /* ConfirmationVC.swift */,
@@ -740,7 +740,7 @@
 				5B1C212D223730DC00E69DF3 /* Firebase_Extension.swift in Sources */,
 				01B7C3572236A23600381DCD /* ContactViewController.swift in Sources */,
 				5BF67D342245002500AC61E0 /* StandardViewController.swift in Sources */,
-				CC24B0E8221ED1BA00ADEFCC /* BPRegistrationStartViewController.swift in Sources */,
+				CC24B0E8221ED1BA00ADEFCC /* ContactDetailsViewController.swift in Sources */,
 				5B2E24452215A3A600F21E29 /* RootViewController.swift in Sources */,
 				5B6A73A722158E6D00E506DC /* User.swift in Sources */,
 				CCA91949220C7A1C00672E6F /* ConfirmationDetailsBP.swift in Sources */,

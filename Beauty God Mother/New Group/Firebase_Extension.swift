@@ -24,9 +24,12 @@ extension Database {
             guard let uid = result?.user.uid else {return}
             
             let ref = Storage.storage().reference(withPath: "/\(uid)/profileImage")
-            let imageData = rs.profileImage.jpegData(compressionQuality: 0.5) ?? Data()
-            ref.putData(imageData, metadata: nil, completion: { (_, e) in
-                if let e = e {
+            
+            let imageData = rs.profileImage.image?.pngData()
+            let metaData = StorageMetadata()
+            metaData.contentType = "image/png"
+            ref.putData(imageData!, metadata: metaData, completion: { (metaData, error) in
+                if let e = error {
                     print(e.localizedDescription)
                 }
                 print("Sucessfully uploaded image to storage")
