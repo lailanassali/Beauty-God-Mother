@@ -12,22 +12,22 @@ import FirebaseDatabase
 
 class RBViewController: UIViewController {
     
-    //MARK: - IB0UTLETS
-    
-    
     @IBOutlet weak var name: UITextField!
     @IBOutlet weak var emailTF: UITextField!
     @IBOutlet weak var passwordTF: UITextField!
     @IBOutlet weak var confirmPasswordTF: UITextField!
-    @IBOutlet weak var registerButton: UIButton!
+    @IBOutlet weak var nameFormatAlert: UILabel!
+    @IBOutlet weak var passwordMatchAlert: UILabel!
     
     var rs = RegistrationService.shared
     
     var isEnabled = true
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        nameFormatAlert.isHidden = true
+        passwordMatchAlert.isHidden = true
     }
+    
     @IBAction func registerPressed(_ sender: Any) {
             handleRegister()
     
@@ -37,12 +37,49 @@ class RBViewController: UIViewController {
         navigationController?.popViewController(animated: true)
     }
     
+    func nameFormatIsCorrect(name: String) -> Bool {
+        if name.count <= 20 {
+            return true
+        } else {
+            nameFormatAlert.isHidden = false
+            return false }
+    }
+    
+    func nameFormatTest(name: String) -> Bool {
+        if name.count > 20 {
+              if let _:Bool? = nil {
+                nameFormatAlert.isHidden = false
+                return true
+            }
+           
+        }
+        return false
+    }
+    
+    func passwordMatches(password:String, confirmPassword:String) -> Bool {
+        if password == confirmPassword {
+            return true
+        } else {
+           passwordMatchAlert.isHidden = false
+            return false
+        }
+    }
+    
+    func passwordMatchesTest(password:String, confirmPassword:String) -> Bool {
+        if password != confirmPassword {
+                passwordMatchAlert.isHidden = false
+            return true
+        }
+        return false
+    }
+    
+    
     public func handleRegister() {
         
         // Stage 1
         guard let name = name.text, let email = emailTF.text, let password = passwordTF.text, let confirmPassword = confirmPasswordTF.text else {return}
        // Stage 2
-        if !rs.passwordMatches(p1: password, p2: confirmPassword) || !rs.nameFormatIsCorrect(name: name) || !rs.fieldsAreNotEmpty(name: name, password: password, confirmPassword: confirmPassword, email: email) { return }
+        if !passwordMatches(password: password, confirmPassword: confirmPassword) || !nameFormatIsCorrect(name: name) || !rs.fieldsAreNotEmpty(name: name, password: password, confirmPassword: confirmPassword, email: email) { return }
         
         
         Auth.auth().createUser(withEmail: email, password: password) { (result:AuthDataResult?, error) in
@@ -64,6 +101,8 @@ class RBViewController: UIViewController {
                 if let err = error {
                     print("Failed to save user to database:",err)
                     return
+                    
+                    
                 }
                 
                 print("Sucessfully added \(name) to database!")

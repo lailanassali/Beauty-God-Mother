@@ -220,7 +220,7 @@
                                 <rect key="frame" x="261" y="345" width="71" height="41"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <connections>
-                                    <segue destination="Pl6-nP-lqa" kind="show" id="UHE-P3-JhR"/>
+                                    <segue destination="Pl6-nP-lqa" kind="show" animates="NO" id="UHE-P3-JhR"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -304,6 +304,20 @@
                                                     <segue destination="Pl6-nP-lqa" kind="show" id="mh7-qC-WiU"/>
                                                 </connections>
                                             </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Name must be less than 20 characters." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FK4-W0-WzG">
+                                                <rect key="frame" x="49" y="261" width="206" height="14"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                                <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Sorry, password does not match." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Yh-eu-dsR">
+                                                <rect key="frame" x="46" y="467" width="173" height="14"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                                <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
@@ -351,6 +365,8 @@
                         <outlet property="confirmPasswordTF" destination="1IH-aM-q0C" id="WQw-wd-nfq"/>
                         <outlet property="emailTF" destination="pnH-vG-MWS" id="mPG-r7-y5h"/>
                         <outlet property="name" destination="uZj-c8-hw8" id="ARV-nq-doe"/>
+                        <outlet property="nameFormatAlert" destination="FK4-W0-WzG" id="w9W-7S-VUW"/>
+                        <outlet property="passwordMatchAlert" destination="3Yh-eu-dsR" id="pyf-Tv-mpE"/>
                         <outlet property="passwordTF" destination="pXa-iQ-Ksa" id="p5c-Qq-jKQ"/>
                         <segue destination="5Zx-Io-eZE" kind="show" identifier="buyerToConfirmation" id="H8L-Qa-8g0"/>
                     </connections>
@@ -374,6 +390,13 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="NEXR" translatesAutoresizingMaskIntoConstraints="NO" id="9Yd-qB-UKJ">
                                 <rect key="frame" x="0.0" y="0.0" width="379" height="667"/>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Name must be less than 20 characters." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ssr-mc-7uY">
+                                <rect key="frame" x="45" y="260" width="206" height="14"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="86Z-Mn-jIT">
                                 <rect key="frame" x="58" y="356" width="66.5" height="30"/>
                                 <nil key="textColor"/>
@@ -422,6 +445,13 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Sorry, password does not match." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ue2-8K-tne">
+                                <rect key="frame" x="45" y="467" width="173" height="14"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -471,8 +501,10 @@
                     <connections>
                         <outlet property="confirmPassword" destination="PIC-AX-XbF" id="hAz-yf-lu5"/>
                         <outlet property="email" destination="c1C-by-vKh" id="tZ6-yq-Wyl"/>
+                        <outlet property="nameFormatAlert" destination="Ssr-mc-7uY" id="UC6-gl-4AJ"/>
                         <outlet property="organisation" destination="Mep-hz-42B" id="D45-1h-4pE"/>
                         <outlet property="password" destination="86Z-Mn-jIT" id="2i4-5Y-JTM"/>
+                        <outlet property="passwordMatchAlert" destination="ue2-8K-tne" id="IbN-Nn-6QW"/>
                         <segue destination="TDs-X3-0yw" kind="show" id="gXM-fs-wZZ"/>
                     </connections>
                 </viewController>
@@ -1009,7 +1041,7 @@
                                 <rect key="frame" x="259" y="363" width="59" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <connections>
-                                    <segue destination="Pl6-nP-lqa" kind="show" id="vEN-Yb-gpP"/>
+                                    <segue destination="Pl6-nP-lqa" kind="show" animates="NO" id="vEN-Yb-gpP"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -2508,8 +2540,8 @@
         <image name="verifyy" width="375" height="667"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="zZ2-D1-pX5"/>
-        <segue reference="Gy2-9d-og5"/>
-        <segue reference="OSa-zz-B7m"/>
+        <segue reference="gXM-fs-wZZ"/>
+        <segue reference="vEN-Yb-gpP"/>
+        <segue reference="nBF-3p-nzN"/>
     </inferredMetricsTieBreakers>
 </document>
