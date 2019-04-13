@@ -10,43 +10,56 @@ import UIKit
 import Firebase
 
 class ViewController: UIViewController, UITextFieldDelegate {
-    
-    //MARK: - IBOUTLETS
 
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
     var placeHolder = NSMutableAttributedString()
+    @IBOutlet weak var fieldsEmptyAlert: UILabel!
+    @IBOutlet weak var emailNotExistAlert: UILabel!
     
-    var ls = LoginService.shared
+    static var view = ViewController()
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+      
         let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(ViewController.keyboardDismiss))
         
         view.addGestureRecognizer(tap)
+        
+        hideText()
     }
-    
+
      @objc func keyboardDismiss(){
         view.endEditing(true)
     }
-   
+    
+    func hideText() {
+        fieldsEmptyAlert.isHidden = true
+        emailNotExistAlert.isHidden = true
+    }
+    
+    func fieldsShouldNotBeEmpty(email: String, password: String) -> Bool {
+        if email.count != 0 && password.count != 0 {
+            return true
+        } else {
+            fieldsEmptyAlert.isHidden = false
+            return false
+        }
+    }
   
     @IBAction func loginPressed(_ sender: UIButton) {
+      
         // step 1
         guard let email = emailTextField.text, let password = passwordTextField.text else {return}
         
         // step 2
-        if !ls.fieldsShouldNotBeEmpty(email: email, password: password) { return }
+        if !fieldsShouldNotBeEmpty(email: email, password: password) { return }
         
-        // step 2 
+        // step 3
         Auth.auth().signIn(withEmail: email, password: password) { (user, error) in
             if let e = error {
                 
-                let cancel = UIAlertAction(title: "Ok", style: .cancel, handler: nil)
-                let alert = UIAlertController(title: "Sorry, you have entered an invalid email or password!", message: "Please try again.", preferredStyle: .alert)
-                alert.addAction(cancel)
-                self.present(alert, animated: true, completion: nil) 
+                self.emailNotExistAlert.isHidden = false
                 
                 print("Failed to log user in: ",e)
                 return

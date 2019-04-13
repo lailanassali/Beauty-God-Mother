@@ -36,7 +36,6 @@
 		5B16A04E21DFC9AB0022DDE7 /* RBViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B16A04D21DFC9AB0022DDE7 /* RBViewController.swift */; };
 		5B16A05021DFC9C10022DDE7 /* SPViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B16A04F21DFC9C10022DDE7 /* SPViewController.swift */; };
 		5B1C212D223730DC00E69DF3 /* Firebase_Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B1C212C223730DC00E69DF3 /* Firebase_Extension.swift */; };
-		5B20B3D0224981310059A08D /* LoginService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B20B3CF224981310059A08D /* LoginService.swift */; };
 		5B21B48F224C6CAF00F2FAD5 /* FeaturedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B21B48E224C6CAF00F2FAD5 /* FeaturedViewController.swift */; };
 		5B21B491224C768D00F2FAD5 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B21B490224C768D00F2FAD5 /* ProfileViewController.swift */; };
 		5B2E244322159E5D00F21E29 /* Extension+Database.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B2E244222159E5D00F21E29 /* Extension+Database.swift */; };
@@ -124,7 +123,6 @@
 		5B16A04D21DFC9AB0022DDE7 /* RBViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RBViewController.swift; sourceTree = "<group>"; };
 		5B16A04F21DFC9C10022DDE7 /* SPViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPViewController.swift; sourceTree = "<group>"; };
 		5B1C212C223730DC00E69DF3 /* Firebase_Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Firebase_Extension.swift; sourceTree = "<group>"; };
-		5B20B3CF224981310059A08D /* LoginService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginService.swift; sourceTree = "<group>"; };
 		5B21B48E224C6CAF00F2FAD5 /* FeaturedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeaturedViewController.swift; sourceTree = "<group>"; };
 		5B21B490224C768D00F2FAD5 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		5B2E244222159E5D00F21E29 /* Extension+Database.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+Database.swift"; sourceTree = "<group>"; };
@@ -299,7 +297,6 @@
 				5B2E24442215A3A600F21E29 /* RootViewController.swift */,
 				5B16A01D21DFB0A70022DDE7 /* ViewController.swift */,
 				CC62D3C62212F593004FB434 /* ForgotPassword.swift */,
-				5B20B3CF224981310059A08D /* LoginService.swift */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -731,7 +728,6 @@
 				AE2942F021F2832D00D629EA /* RegistrationService.swift in Sources */,
 				CC660EC42225DD39008D6E25 /* ConnectionsSPViewController.swift in Sources */,
 				5B16A04E21DFC9AB0022DDE7 /* RBViewController.swift in Sources */,
-				5B20B3D0224981310059A08D /* LoginService.swift in Sources */,
 				014CEF11223C326800F2FC8E /* ContactCollectionViewCell.swift in Sources */,
 				01E097B921FBB19100DB85D4 /* DetailsViewController.swift in Sources */,
 				CC9F38122244C389003A7436 /* PaymentViewController.swift in Sources */,
@@ -954,7 +950,7 @@
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 5H3A6UZ6V5;
+				DEVELOPMENT_TEAM = FG8A4NB658;
 				INFOPLIST_FILE = "Beauty God Mother/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -973,7 +969,7 @@
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 5H3A6UZ6V5;
+				DEVELOPMENT_TEAM = FG8A4NB658;
 				INFOPLIST_FILE = "Beauty God Mother/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

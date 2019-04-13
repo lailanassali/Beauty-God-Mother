@@ -62,10 +62,7 @@ extension SearchViewController: UITableViewDelegate {
         }
         detailViewController.profile = profiles[indexPath.row]
         navigationController?.pushViewController(detailViewController, animated: true)
-    }
-    
-    
-    
+    } 
 }
 
 

@@ -43,8 +43,8 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Veo-e8-zEM">
-                                <rect key="frame" x="308" y="414" width="30" height="25"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Veo-e8-zEM">
+                                <rect key="frame" x="218" y="414" width="120" height="25"/>
                                 <connections>
                                     <segue destination="6D7-J4-RYg" kind="show" id="qWL-W4-2Cj"/>
                                 </connections>
@@ -70,6 +70,21 @@
                                     <segue destination="Pl6-nP-lqa" kind="show" id="Gy2-9d-og5"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="*Fields should not be empty." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IAZ-jc-IbR">
+                                <rect key="frame" x="49" y="418" width="161" height="22"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="*Sorry, this email does not exist." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Fy-fu-psK">
+                                <rect key="frame" x="49" y="436" width="212" height="18"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -98,7 +113,9 @@
                     </view>
                     <navigationItem key="navigationItem" id="ETG-SQ-YaG"/>
                     <connections>
+                        <outlet property="emailNotExistAlert" destination="3Fy-fu-psK" id="2LA-vi-2vd"/>
                         <outlet property="emailTextField" destination="VRl-WS-FIo" id="htU-GW-tWK"/>
+                        <outlet property="fieldsEmptyAlert" destination="IAZ-jc-IbR" id="gav-UH-6CI"/>
                         <outlet property="passwordTextField" destination="l7u-2O-8eg" id="XAR-oe-aAF"/>
                         <segue destination="J3r-c9-DRm" kind="show" identifier="loginToTabBar" id="5RJ-ao-KDe"/>
                     </connections>
@@ -996,7 +1013,7 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.5" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gn5-bW-uNO" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1219,7 +1236,6 @@
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="rus-9h-ZAC">
                         <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
                         <segue destination="yxI-AY-oc2" kind="relationship" relationship="viewControllers" id="SRe-q2-ugO"/>
@@ -2493,7 +2509,7 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="zZ2-D1-pX5"/>
-        <segue reference="vzB-fi-gDe"/>
-        <segue reference="VM8-RR-bXg"/>
+        <segue reference="Gy2-9d-og5"/>
+        <segue reference="OSa-zz-B7m"/>
     </inferredMetricsTieBreakers>
 </document>
