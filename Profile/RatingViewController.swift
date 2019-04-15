@@ -2,57 +2,40 @@
 //  RatingViewController.swift
 //  Beauty God Mother
 //
-//  Created by Tiffany Tobi-Lawal on 26/03/2019.
+//  Created by Tiffany Tobi-Lawal on 15/04/2019.
 //  Copyright © 2019 BGM. All rights reserved.
 //
 
 import UIKit
 
-class RatingViewController: UIViewController {
-    
-   
-    
-    @IBOutlet weak var floatingRatingView: FloatRatingView!
-    @IBOutlet weak var liveLabel: UILabel!
-    @IBOutlet weak var updatedLabel: UILabel!
-    
-    
-    
-        override func viewDidLoad() {
-            super.viewDidLoad()
-            
-            // Reset float rating view's background color
-            
-            floatingRatingView.backgroundColor = UIColor.clear
-            
-            /** Note: With the exception of contentMode, type and delegate,
-             all properties can be set directly in Interface Builder **/
-            floatingRatingView.delegate = self as? FloatRatingViewDelegate
-            floatingRatingView.contentMode = UIView.ContentMode.scaleAspectFit
-            
-            
-
-         //    Labels init
-            liveLabel.text = String(format: "%.2f", self.floatingRatingView.rating)
-            updatedLabel.text = String(format: "%.2f", self.floatingRatingView.rating)
-
-    }
-}
-
-    extension RatingViewController: FloatRatingViewDelegate {
-//
-//
-        func floatRatingView(_ ratingView: FloatRatingView, isUpdating rating: Double) {
-            liveLabel.text = String(format: "%.2f", floatingRatingView.self)
-       //     "";, arguments: self.floatingRatingView)
+class RatingViewController: UIStackView {
+    var starRating = 0
+    var starsEmptyPicName = "star"
+    var starsFilledPicName = "starfill"
+    override func draw(_ rect: CGRect) {
+        let myViews = self.subviews.filter{$0 is UIButton}
+        var starTag = 1
+        for theView in myViews {
+            if let theButton = theView as? UIButton{
+                theButton.setImage(UIImage(named: starsEmptyPicName), for: .normal)
+                theButton.addTarget(self, action: #selector(self.pressed(sender:)), for: .touchUpInside)
+                theButton.tag = starTag
+                starTag = starTag + 1
+            }
         }
-//
-//
-   func floatRatingView(_ ratingView: FloatRatingView, didUpdate rating: Double) {
-       updatedLabel.text = String (format: "%.2f", floatingRatingView.self)
-  }
+    }
 
-    
-
-
+    @objc func pressed(sender: UIButton) {
+        starRating = sender.tag
+        let myViews = self.subviews.filter{$0 is UIButton}
+        for theView in myViews {
+            if let theButton = theView as? UIButton{
+                if theButton.tag > sender.tag {
+                    theButton.setImage(UIImage(named: starsEmptyPicName), for: .normal)
+                }else{
+                    theButton.setImage(UIImage(named: starsFilledPicName), for: .normal)
+                }
+            }
+        }
+    }
 }

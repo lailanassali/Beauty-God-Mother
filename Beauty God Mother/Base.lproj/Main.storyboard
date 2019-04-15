@@ -1514,12 +1514,15 @@
                                                     <segue destination="hUe-cG-suk" kind="show" id="x2L-FY-e46"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZOk-fB-u8w">
-                                                <rect key="frame" x="267" y="207" width="94" height="45"/>
+                                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZOk-fB-u8w">
+                                                <rect key="frame" x="252" y="219" width="94" height="45"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="45" id="oYQ-Pd-XbW"/>
                                                 </constraints>
                                                 <state key="normal" title="Rate Service"/>
+                                                <connections>
+                                                    <segue destination="xgg-eK-TPc" kind="show" id="t8u-JX-IZc"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -2166,6 +2169,63 @@
             </objects>
             <point key="canvasLocation" x="9159" y="-1150"/>
         </scene>
+        <!--Rate View Controller-->
+        <scene sceneID="I6e-8o-Mt8">
+            <objects>
+                <viewController id="xgg-eK-TPc" customClass="RateViewController" customModule="Beauty_God_Mother" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="pOx-6p-ruT"/>
+                        <viewControllerLayoutGuide type="bottom" id="mXP-V0-ddW"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="5j0-xp-XAd" customClass="RatingViewController" customModule="Beauty_God_Mother" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="554"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="Ohk-C0-zG6" customClass="RatingViewController" customModule="Beauty_God_Mother" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="200" width="375" height="75"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9N7-tG-aou">
+                                        <rect key="frame" x="0.0" y="0.0" width="75" height="75"/>
+                                        <state key="normal" image="star"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9us-aq-8SJ">
+                                        <rect key="frame" x="75" y="0.0" width="75" height="75"/>
+                                        <state key="normal" image="star"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fho-jz-gfF">
+                                        <rect key="frame" x="150" y="0.0" width="75" height="75"/>
+                                        <state key="normal" image="star"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eah-Tw-acG">
+                                        <rect key="frame" x="225" y="0.0" width="75" height="75"/>
+                                        <state key="normal" image="star"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oi0-le-ZPM">
+                                        <rect key="frame" x="300" y="0.0" width="75" height="75"/>
+                                        <state key="normal" image="star"/>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qzx-Af-pTd">
+                                <rect key="frame" x="106" y="306" width="163" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Please rate this service."/>
+                                <connections>
+                                    <action selector="HowManyButtonClicked:" destination="xgg-eK-TPc" eventType="touchUpInside" id="Oac-P5-gzA"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                    <connections>
+                        <outlet property="ratingStackView" destination="Ohk-C0-zG6" id="tEF-fD-OIH"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kl6-OA-G6z" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="9871" y="-1656"/>
+        </scene>
         <!--Payment View Controller-->
         <scene sceneID="44W-vH-fDI">
             <objects>
@@ -2593,6 +2653,7 @@
         <image name="mail round" width="512" height="512"/>
         <image name="popuser" width="467" height="270"/>
         <image name="services" width="375" height="667"/>
+        <image name="star" width="75" height="75"/>
         <image name="verifyy" width="375" height="667"/>
     </resources>
     <inferredMetricsTieBreakers>
