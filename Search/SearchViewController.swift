@@ -36,8 +36,6 @@ class SearchViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        title = "Search"
         
         profiles = DataProvider.shared.allProfiles
    // print(profiles[0].services)
@@ -88,8 +86,17 @@ extension SearchViewController: UITableViewDataSource {
             
             data = profile![indexPath.row]
         }
-          let profileCategory = data["category"].stringValue
-        cell.textLabel?.text = profileCategory
+        let profileImage = data["picture"].url!
+        let profileName = data["name"].stringValue
+        let profileCategory = data["category"].stringValue
+       
+       
+      //  let  = profileImage[indexPath.row]
+        cell.imageLabel?.af_setImage(withURL: profileImage)
+        cell.nameLabel?.text = profileName
+        cell.typeLabel?.text = profileCategory
+        
+        
         return cell
     }
     
