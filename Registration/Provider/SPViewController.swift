@@ -38,7 +38,7 @@ class SPViewController: UIViewController {
         if name.count <= 20 {
             return true
         } else {
-            nameFormatAlert.isHidden = false
+            nameFormatAlert?.isHidden = false
             return false }
     }
     
@@ -46,7 +46,7 @@ class SPViewController: UIViewController {
         if password == confirmPassword {
             return true
         } else {
-            passwordMatchAlert.isHidden = false
+            passwordMatchAlert?.isHidden = false
             return false
         }
     }
@@ -55,7 +55,7 @@ class SPViewController: UIViewController {
         if name.count != 0 && password.count != 0 && confirmPassword.count != 0 && email.count != 0 {
             return true
         } else {
-           fieldsEmptyAlert.isHidden = false
+           fieldsEmptyAlert?.isHidden = false
             return false }
     }
     

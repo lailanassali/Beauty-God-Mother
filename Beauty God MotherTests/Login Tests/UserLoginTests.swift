@@ -21,7 +21,7 @@ class UserLoginTests: XCTestCase {
         }
     
         func testShouldFailIfFieldsAreNotEmpty() {
-            let result = login.fieldsAreEmpty(email: "", password: "")
+            let result = login.fieldsShouldNotBeEmpty(email: "", password: "")
             XCTAssertEqual(result, false)
     }
 

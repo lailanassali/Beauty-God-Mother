@@ -19,21 +19,21 @@ class CustomerRegisterTests: XCTestCase {
         XCTAssertEqual(result, true)
     }
     
-//        func testShouldFailToRegisterWithPasswordsThatAreNotTheSame() {
-//            let result = registerBuyer.passwordMatchesTest(password: "123444", confirmPassword: "1134")
-//            XCTAssertEqual(result, true)
-//        }
+        func testShouldFailToRegisterWithPasswordsThatAreNotTheSame() {
+            let result = registerBuyer.passwordMatches(password: "123444", confirmPassword: "1134")
+            XCTAssertEqual(result, false)
+        }
     
     func testShouldSucceedToRegisterIfNameIsMoreThan3Characters() {
        let result = registerBuyer.nameFormatIsCorrect(name: "laila")
        XCTAssertEqual(result, true)
     }
 
-//    func testShouldFailToRegisterIfNameIsMoreThan20Characters() {
-//        let result = registerBuyer.nameFormatTest(name: "abcdefghijklmnopqrstuvwxyz")
-//        XCTAssertEqual(result, true)
-//
-//        }
+  func testShouldFailToRegisterIfNameIsMoreThan20Characters() {
+        let result = registerBuyer.nameFormatIsCorrect(name: "abcdefghijklmnopqrstuvwxyz")
+        XCTAssertEqual(result, false)
+
+        }
     
     
     }

@@ -42,37 +42,22 @@ class RBViewController: UIViewController {
         if name.count <= 20 {
             return true
         } else {
-            nameFormatAlert.isHidden = false
+            nameFormatAlert?.isHidden = false
             return false }
     }
+   
     
-    func nameFormatTest(name: String) -> Bool {
-        if name.count > 20 {
-              if let _:Bool? = nil {
-                nameFormatAlert.isHidden = false
-                return true
-            }
-           
-        }
-        return false
-    }
     
     func passwordMatches(password:String, confirmPassword:String) -> Bool {
         if password == confirmPassword {
             return true
         } else {
-           passwordMatchAlert.isHidden = false
+           passwordMatchAlert?.isHidden = false
             return false
         }
     }
     
-    func passwordMatchesTest(password:String, confirmPassword:String) -> Bool {
-        if password != confirmPassword {
-                passwordMatchAlert.isHidden = false
-            return true
-        }
-        return false
-    }
+
     
     public func fieldsAreNotEmpty(name: String, password: String, confirmPassword: String, email: String) -> Bool {
         if name.count != 0 && password.count != 0 && confirmPassword.count != 0 && email.count != 0 {

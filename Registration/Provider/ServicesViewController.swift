@@ -33,7 +33,7 @@ class ServicesViewController: UIViewController  {
         if nameOfService.count != 0 && price.count != 0 && duration.count != 0 && description.count != 0 {
             return true
         } else {
-              fieldsEmpty.isHidden = false
+              fieldsEmpty?.isHidden = false
             return false }
     }
     

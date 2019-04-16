@@ -67,7 +67,7 @@
 		CC9F38122244C389003A7436 /* PaymentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC9F38112244C389003A7436 /* PaymentViewController.swift */; };
 		CCA91949220C7A1C00672E6F /* ConfirmationDetailsBP.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCA91948220C7A1C00672E6F /* ConfirmationDetailsBP.swift */; };
 		CCF35067223178B6007DB408 /* ServicesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCF35066223178B6007DB408 /* ServicesViewController.swift */; };
-		CCFA3E9F221AD2D700B160EF /* Swipe3ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCFA3E9E221AD2D700B160EF /* Swipe3ViewController.swift */; };
+		CCFA3E9F221AD2D700B160EF /* profilePictureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCFA3E9E221AD2D700B160EF /* profilePictureViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -156,7 +156,7 @@
 		CC9F38112244C389003A7436 /* PaymentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentViewController.swift; sourceTree = "<group>"; };
 		CCA91948220C7A1C00672E6F /* ConfirmationDetailsBP.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmationDetailsBP.swift; sourceTree = "<group>"; };
 		CCF35066223178B6007DB408 /* ServicesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServicesViewController.swift; sourceTree = "<group>"; };
-		CCFA3E9E221AD2D700B160EF /* Swipe3ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Swipe3ViewController.swift; sourceTree = "<group>"; };
+		CCFA3E9E221AD2D700B160EF /* profilePictureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = profilePictureViewController.swift; sourceTree = "<group>"; };
 		EAB59A83EF87A5DAB24E7AA9 /* Pods_Beauty_God_MotherTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Beauty_God_MotherTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC2014412864173D30490638 /* Pods-Beauty God Mother.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Beauty God Mother.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Beauty God Mother/Pods-Beauty God Mother.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -192,8 +192,8 @@
 		01CD8598224AD48F00E1D40F /* Register Tests */ = {
 			isa = PBXGroup;
 			children = (
+				581073F022661F37000C9F45 /*  Beauty Provider Test */,
 				AE29B29721EBEE9A00B19FFF /* CustomerRegisterTests.swift */,
-				01CD8599224AD56900E1D40F /* BPRegisterTests.swift */,
 			);
 			path = "Register Tests";
 			sourceTree = "<group>";
@@ -207,6 +207,14 @@
 				1B9D4DE3D2073187C01E22B1 /* Pods-Beauty God MotherTests.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		581073F022661F37000C9F45 /*  Beauty Provider Test */ = {
+			isa = PBXGroup;
+			children = (
+				01CD8599224AD56900E1D40F /* BPRegisterTests.swift */,
+			);
+			path = " Beauty Provider Test";
 			sourceTree = "<group>";
 		};
 		5B16A00F21DFB0A70022DDE7 = {
@@ -280,7 +288,7 @@
 			children = (
 				CCA91948220C7A1C00672E6F /* ConfirmationDetailsBP.swift */,
 				01B7C3562236A23600381DCD /* ContactViewController.swift */,
-				CCFA3E9E221AD2D700B160EF /* Swipe3ViewController.swift */,
+				CCFA3E9E221AD2D700B160EF /* profilePictureViewController.swift */,
 				5B16A04F21DFC9C10022DDE7 /* SPViewController.swift */,
 				CC24B0E7221ED1BA00ADEFCC /* ContactDetailsViewController.swift */,
 				CC660EC32225DD39008D6E25 /* ConnectionsSPViewController.swift */,
@@ -769,7 +777,7 @@
 				5BB5EEEC224C466A00D0742E /* Profile.swift in Sources */,
 				5B3DDBB0224C5D5C003E799C /* DataProvider.swift in Sources */,
 				AE29B29421EBEE3800B19FFF /* MainViewController.swift in Sources */,
-				CCFA3E9F221AD2D700B160EF /* Swipe3ViewController.swift in Sources */,
+				CCFA3E9F221AD2D700B160EF /* profilePictureViewController.swift in Sources */,
 				4C2CDAAC224BEB1E00641044 /* BGMViewController.swift in Sources */,
 				CC793C0F22253A8B00266734 /* ServicesTableViewController.swift in Sources */,
 			);

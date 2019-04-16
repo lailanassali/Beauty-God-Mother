@@ -27,7 +27,7 @@ class profilePictureViewController: UIViewController, UINavigationControllerDele
         if (profilePicture.image != nil){
             return true
         } else {
-            imageAlert.isHidden = false
+            imageAlert?.isHidden = false
             return false }
     }
     

@@ -42,21 +42,10 @@ class ViewController: UIViewController, UITextFieldDelegate {
         if email.count != 0 && password.count != 0 {
             return true
         } else {
-            fieldsEmptyAlert.isHidden = false
+            fieldsEmptyAlert?.isHidden = false
             return false
         }
     }
-    
-    func fieldsAreEmpty(email: String, password: String) -> Bool {
-        if email.count == 0 && password.count == 0 {
-            if let _:Bool? = nil {
-               fieldsEmptyAlert.isHidden = false
-            return true
-            }
-        }
-        return false
-    }
-    
   
     @IBAction func loginPressed(_ sender: UIButton) {
       
