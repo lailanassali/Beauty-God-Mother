@@ -2235,7 +2235,7 @@
                         <viewControllerLayoutGuide type="bottom" id="j6g-Yv-9CY"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="gWA-pB-QMr">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="554"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MJj-02-B0M">
@@ -2248,9 +2248,6 @@
                                     <constraint firstAttribute="height" constant="106" id="xch-g8-CCv"/>
                                 </constraints>
                                 <state key="normal" title="Standard"/>
-                                <connections>
-                                    <segue destination="WqG-Kk-dle" kind="show" id="Ion-ir-jAB"/>
-                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -2264,7 +2261,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gOd-VU-p9m" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="10183" y="-2297"/>
+            <point key="canvasLocation" x="11222" y="-2279"/>
         </scene>
         <!--Custom View Controller-->
         <scene sceneID="87o-aN-KzL">
@@ -2400,7 +2397,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pPu-Fc-KpA" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="xCg-Dz-iLQ" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="10182" y="-1566"/>
+            <point key="canvasLocation" x="10214" y="-2264"/>
         </scene>
         <!--Payment Confirmation View Controller-->
         <scene sceneID="cMx-9b-Ygx">
@@ -2495,7 +2492,7 @@
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <state key="normal" title="Pay for your booking"/>
                                                 <connections>
-                                                    <segue destination="5J6-iK-VMG" kind="show" id="JLP-ja-TZw"/>
+                                                    <segue destination="WqG-Kk-dle" kind="show" id="Wuq-Y2-44M"/>
                                                 </connections>
                                             </button>
                                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Wf5-A5-yE5">
@@ -2656,7 +2653,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bNA-OU-ykF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="9213.6000000000004" y="-2264.167916041979"/>
+            <point key="canvasLocation" x="9345" y="-2264"/>
         </scene>
     </scenes>
     <resources>
