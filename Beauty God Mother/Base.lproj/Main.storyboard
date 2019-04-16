@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -1795,7 +1795,7 @@
                                                 </attributedString>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hoS-wF-88L">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hoS-wF-88L">
                                                 <rect key="frame" x="145" y="330" width="88" height="21"/>
                                                 <attributedString key="attributedText">
                                                     <fragment content="Contact us">
@@ -1809,7 +1809,7 @@
                                                 </attributedString>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="brE-Kc-e9O">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="brE-Kc-e9O">
                                                 <rect key="frame" x="150" y="610" width="78" height="21"/>
                                                 <attributedString key="attributedText">
                                                     <fragment content="Feedback">
@@ -1853,7 +1853,7 @@
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                             </textView>
-                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="Be sure to follow the socials to keep up to date with promotions and all the beauTEA we have for you!" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Uzi-kp-EN1">
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" editable="NO" text="Be sure to follow the socials to keep up to date with promotions and all the beauTEA we have for you!" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Uzi-kp-EN1">
                                                 <rect key="frame" x="-248" y="359" width="872" height="59"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <accessibility key="accessibilityConfiguration">
@@ -1866,13 +1866,13 @@
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                             </textView>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Instagram round social media icon free" translatesAutoresizingMaskIntoConstraints="NO" id="x0H-Oz-z28">
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="Instagram round social media icon free" translatesAutoresizingMaskIntoConstraints="NO" id="x0H-Oz-z28">
                                                 <rect key="frame" x="158" y="426" width="60" height="60"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="60" id="qQ6-Ak-ZVF"/>
                                                 </constraints>
                                             </imageView>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Twitter round" translatesAutoresizingMaskIntoConstraints="NO" id="Fdx-cJ-KWe">
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="Twitter round" translatesAutoresizingMaskIntoConstraints="NO" id="Fdx-cJ-KWe">
                                                 <rect key="frame" x="159" y="522" width="60" height="60"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="60" id="5KC-Ma-0Sy"/>
@@ -1886,21 +1886,21 @@
                                                     <constraint firstAttribute="height" constant="104" id="p87-DG-pdw"/>
                                                 </constraints>
                                             </imageView>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="bottom" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aDj-Qv-xhR">
+                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="bottom" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aDj-Qv-xhR">
                                                 <rect key="frame" x="53" y="426" width="272" height="76"/>
                                                 <state key="normal" title="www.instagram.com/beautygodmother_"/>
                                                 <connections>
                                                     <action selector="didTapInstagram:" destination="GxD-9L-LdQ" eventType="touchUpInside" id="Q6T-mi-KQR"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="bottom" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CwJ-U5-PhT">
+                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="bottom" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CwJ-U5-PhT">
                                                 <rect key="frame" x="59" y="571" width="184" height="30"/>
                                                 <state key="normal" title="www.twitter.com/BGM_app"/>
                                                 <connections>
                                                     <action selector="didTapTwitter:" destination="GxD-9L-LdQ" eventType="touchUpInside" id="3px-Ea-vNT"/>
                                                 </connections>
                                             </button>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NU1-2d-dJ2">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NU1-2d-dJ2">
                                                 <rect key="frame" x="92" y="522" width="0.0" height="0.0"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
@@ -2182,27 +2182,27 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="Ohk-C0-zG6" customClass="RatingViewController" customModule="Beauty_God_Mother" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="200" width="375" height="75"/>
+                                <rect key="frame" x="0.0" y="200" width="250" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9N7-tG-aou">
-                                        <rect key="frame" x="0.0" y="0.0" width="75" height="75"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
                                         <state key="normal" image="star"/>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9us-aq-8SJ">
-                                        <rect key="frame" x="75" y="0.0" width="75" height="75"/>
+                                        <rect key="frame" x="50" y="0.0" width="50" height="50"/>
                                         <state key="normal" image="star"/>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fho-jz-gfF">
-                                        <rect key="frame" x="150" y="0.0" width="75" height="75"/>
+                                        <rect key="frame" x="100" y="0.0" width="50" height="50"/>
                                         <state key="normal" image="star"/>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eah-Tw-acG">
-                                        <rect key="frame" x="225" y="0.0" width="75" height="75"/>
+                                        <rect key="frame" x="150" y="0.0" width="50" height="50"/>
                                         <state key="normal" image="star"/>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oi0-le-ZPM">
-                                        <rect key="frame" x="300" y="0.0" width="75" height="75"/>
+                                        <rect key="frame" x="200" y="0.0" width="50" height="50"/>
                                         <state key="normal" image="star"/>
                                     </button>
                                 </subviews>
@@ -2224,7 +2224,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kl6-OA-G6z" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="9871" y="-1656"/>
+            <point key="canvasLocation" x="9185" y="-1591"/>
         </scene>
         <!--Payment View Controller-->
         <scene sceneID="44W-vH-fDI">
@@ -2241,9 +2241,6 @@
                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MJj-02-B0M">
                                 <rect key="frame" x="160" y="140" width="54" height="30"/>
                                 <state key="normal" title="Custom"/>
-                                <connections>
-                                    <segue destination="xX4-k7-drg" kind="show" id="C7l-LY-Bph"/>
-                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rJ5-Ww-7Ui">
                                 <rect key="frame" x="160" y="26" width="63" height="106"/>
@@ -2267,7 +2264,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gOd-VU-p9m" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="10145" y="-2272"/>
+            <point key="canvasLocation" x="10183" y="-2297"/>
         </scene>
         <!--Custom View Controller-->
         <scene sceneID="87o-aN-KzL">
@@ -2278,7 +2275,7 @@
                         <viewControllerLayoutGuide type="bottom" id="BhC-oX-WLQ"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="hN1-Ka-EaQ">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="554"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Card holder name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sVz-Pc-OcH">
@@ -2316,7 +2313,7 @@
                                 </connections>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Card details will be here" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="BKi-xl-fuB">
-                                <rect key="frame" x="43" y="358" width="289" height="57"/>
+                                <rect key="frame" x="43" y="358" width="289" height="170"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -2355,7 +2352,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KV7-bp-epG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="11631" y="-1813"/>
+            <point key="canvasLocation" x="10182" y="-935"/>
         </scene>
         <!--Standard View Controller-->
         <scene sceneID="uFW-A7-dsl">
@@ -2403,7 +2400,35 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pPu-Fc-KpA" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="xCg-Dz-iLQ" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="11668" y="-2719"/>
+            <point key="canvasLocation" x="10182" y="-1566"/>
+        </scene>
+        <!--Payment Confirmation View Controller-->
+        <scene sceneID="cMx-9b-Ygx">
+            <objects>
+                <viewController id="jg9-oh-3NB" customClass="PaymentConfirmationViewController" customModule="Beauty_God_Mother" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="1WL-lV-TFb"/>
+                        <viewControllerLayoutGuide type="bottom" id="ef2-bL-nFb"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="7cZ-AU-oKO">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pMG-eb-VXv">
+                                <rect key="frame" x="124" y="456" width="89" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Confirmation"/>
+                                <connections>
+                                    <action selector="Confirmation:" destination="jg9-oh-3NB" eventType="touchUpInside" id="IDv-eD-tET"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bhg-sL-iQW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="11009" y="-1540"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="jSi-Lm-ZLA">
@@ -2470,7 +2495,7 @@
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <state key="normal" title="Pay for your booking"/>
                                                 <connections>
-                                                    <segue destination="5J6-iK-VMG" kind="show" id="1vl-hI-3cV"/>
+                                                    <segue destination="5J6-iK-VMG" kind="show" id="JLP-ja-TZw"/>
                                                 </connections>
                                             </button>
                                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Wf5-A5-yE5">
@@ -2640,7 +2665,7 @@
         <image name="Image-1" width="467" height="270"/>
         <image name="Instagram round social media icon free" width="100" height="100"/>
         <image name="LOGO" width="791" height="449"/>
-        <image name="Map" width="491.51998901367188" height="491.51998901367188"/>
+        <image name="Map" width="256" height="256"/>
         <image name="NEXR" width="375" height="667"/>
         <image name="OPTIONAL" width="375" height="667"/>
         <image name="PICTUR" width="375" height="667"/>
@@ -2653,7 +2678,7 @@
         <image name="mail round" width="512" height="512"/>
         <image name="popuser" width="467" height="270"/>
         <image name="services" width="375" height="667"/>
-        <image name="star" width="75" height="75"/>
+        <image name="star" width="50" height="50"/>
         <image name="verifyy" width="375" height="667"/>
     </resources>
     <inferredMetricsTieBreakers>

@@ -59,6 +59,7 @@
 		CC0BDCD5225B7BCD00440554 /* dateCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC0BDCD4225B7BCD00440554 /* dateCollectionViewCell.swift */; };
 		CC0BDCD7225B7DE800440554 /* Calendar2Vars.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC0BDCD6225B7DE800440554 /* Calendar2Vars.swift */; };
 		CC0EC084224CE5AC004FA5F9 /* Registration2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC0EC083224CE5AC004FA5F9 /* Registration2ViewController.swift */; };
+		CC23DF1C226603B100DC0920 /* PaymentConfirmationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC23DF1B226603B100DC0920 /* PaymentConfirmationViewController.swift */; };
 		CC24B0E8221ED1BA00ADEFCC /* ContactDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC24B0E7221ED1BA00ADEFCC /* ContactDetailsViewController.swift */; };
 		CC62D3C72212F593004FB434 /* ForgotPassword.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC62D3C62212F593004FB434 /* ForgotPassword.swift */; };
 		CC660EC42225DD39008D6E25 /* ConnectionsSPViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC660EC32225DD39008D6E25 /* ConnectionsSPViewController.swift */; };
@@ -147,6 +148,7 @@
 		CC0BDCD4225B7BCD00440554 /* dateCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dateCollectionViewCell.swift; sourceTree = "<group>"; };
 		CC0BDCD6225B7DE800440554 /* Calendar2Vars.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Calendar2Vars.swift; sourceTree = "<group>"; };
 		CC0EC083224CE5AC004FA5F9 /* Registration2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Registration2ViewController.swift; sourceTree = "<group>"; };
+		CC23DF1B226603B100DC0920 /* PaymentConfirmationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentConfirmationViewController.swift; sourceTree = "<group>"; };
 		CC24B0E7221ED1BA00ADEFCC /* ContactDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactDetailsViewController.swift; sourceTree = "<group>"; };
 		CC62D3C62212F593004FB434 /* ForgotPassword.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPassword.swift; sourceTree = "<group>"; };
 		CC660EC32225DD39008D6E25 /* ConnectionsSPViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectionsSPViewController.swift; sourceTree = "<group>"; };
@@ -420,6 +422,7 @@
 				CC0BDCD2225B7B3300440554 /* Booking2ViewController.swift */,
 				CC0BDCD4225B7BCD00440554 /* dateCollectionViewCell.swift */,
 				CC0BDCD6225B7DE800440554 /* Calendar2Vars.swift */,
+				CC23DF1B226603B100DC0920 /* PaymentConfirmationViewController.swift */,
 			);
 			path = BookingAndPayments;
 			sourceTree = "<group>";
@@ -751,6 +754,7 @@
 				5B16A01C21DFB0A70022DDE7 /* AppDelegate.swift in Sources */,
 				CC62D3C72212F593004FB434 /* ForgotPassword.swift in Sources */,
 				581073EF2264F127000C9F45 /* RateViewController.swift in Sources */,
+				CC23DF1C226603B100DC0920 /* PaymentConfirmationViewController.swift in Sources */,
 				5B3DDBB4224C5EA8003E799C /* SearchViewController.swift in Sources */,
 				01B7C3592236A2C500381DCD /* AccountViewCoontroller.swift in Sources */,
 				5B2E244322159E5D00F21E29 /* Extension+Database.swift in Sources */,
