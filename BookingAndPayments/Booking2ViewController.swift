@@ -7,9 +7,8 @@
 //
 
 import UIKit
-import Stripe
 
-class Booking2ViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource,UIPickerViewDelegate,UIPickerViewDataSource, STPAddCardViewControllerDelegate {
+class Booking2ViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource,UIPickerViewDelegate,UIPickerViewDataSource {
     
     
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
@@ -266,29 +265,5 @@ class Booking2ViewController: UIViewController, UICollectionViewDelegate, UIColl
         SelectDate = indexPath.row
         collectionView.reloadData()
     }
-    
-    
-    @IBAction func PaymentTapped(_ sender: Any) {
-        // Setup add card view controller
-        let addCardViewController = STPAddCardViewController()
-        addCardViewController.delegate = self
-        // present add card view controller
-        let navigationController = UINavigationController(rootViewController: addCardViewController)
-        present(navigationController, animated: true)
-        
-    }
-    
-    func addCardViewControllerDidCancel(_ addCardViewController: STPAddCardViewController) {
-        // dsmiss add card view controller
-        dismiss(animated: true)
-    }
-    
-    func addCardViewController(_ addCardViewController: STPAddCardViewController, didCreateToken token: STPToken, completion: @escaping STPErrorBlock) {
-        
-        dismiss(animated: true)
-        
-       
-        
-        self.performSegue(withIdentifier: "paymentConfirm", sender: self)
-    }
+
 }
