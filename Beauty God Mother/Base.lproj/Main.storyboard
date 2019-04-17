@@ -1461,7 +1461,6 @@
         <!--Details View Controller-->
         <scene sceneID="uug-nc-q3V">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Scq-wI-YPk" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController storyboardIdentifier="DetailsVC" id="RjA-KH-xxn" customClass="DetailsViewController" customModule="Beauty_God_Mother" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Pcy-yE-R5E"/>
@@ -1679,6 +1678,7 @@
                         <outlet property="servicePrice" destination="hcI-6A-Gay" id="WZ1-nH-6qy"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Scq-wI-YPk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="8288.7999999999993" y="-2494.4527736131936"/>
         </scene>
@@ -2048,63 +2048,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gy9-nr-N6S" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="9159" y="-1150"/>
-        </scene>
-        <!--Rate View Controller-->
-        <scene sceneID="I6e-8o-Mt8">
-            <objects>
-                <viewController id="xgg-eK-TPc" customClass="RateViewController" customModule="Beauty_God_Mother" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="pOx-6p-ruT"/>
-                        <viewControllerLayoutGuide type="bottom" id="mXP-V0-ddW"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="5j0-xp-XAd" customClass="RatingViewController" customModule="Beauty_God_Mother" customModuleProvider="target">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="Ohk-C0-zG6" customClass="RatingViewController" customModule="Beauty_God_Mother" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="200" width="375" height="75"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9N7-tG-aou">
-                                        <rect key="frame" x="0.0" y="0.0" width="75" height="75"/>
-                                        <state key="normal" image="star"/>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9us-aq-8SJ">
-                                        <rect key="frame" x="75" y="0.0" width="75" height="75"/>
-                                        <state key="normal" image="star"/>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fho-jz-gfF">
-                                        <rect key="frame" x="150" y="0.0" width="75" height="75"/>
-                                        <state key="normal" image="star"/>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eah-Tw-acG">
-                                        <rect key="frame" x="225" y="0.0" width="75" height="75"/>
-                                        <state key="normal" image="star"/>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oi0-le-ZPM">
-                                        <rect key="frame" x="300" y="0.0" width="75" height="75"/>
-                                        <state key="normal" image="star"/>
-                                    </button>
-                                </subviews>
-                            </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qzx-Af-pTd">
-                                <rect key="frame" x="106" y="306" width="163" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Please rate this service."/>
-                                <connections>
-                                    <action selector="HowManyButtonClicked:" destination="xgg-eK-TPc" eventType="touchUpInside" id="Oac-P5-gzA"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                    </view>
-                    <connections>
-                        <outlet property="ratingStackView" destination="Ohk-C0-zG6" id="tEF-fD-OIH"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="kl6-OA-G6z" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="9185" y="-1591"/>
         </scene>
         <!--Payment View Controller-->
         <scene sceneID="44W-vH-fDI">
@@ -2542,6 +2485,142 @@
             </objects>
             <point key="canvasLocation" x="9492" y="-2264"/>
         </scene>
+        <!--Rating View Controller-->
+        <scene sceneID="oQO-ae-9ws">
+            <objects>
+                <viewController id="KI5-i8-rEb" customClass="RatingViewController" customModule="reviewsFinal" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="TzS-Kz-wxS"/>
+                        <viewControllerLayoutGuide type="bottom" id="x8q-DR-gyX"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="auq-8g-f4d">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="700"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="adK-eR-hTR">
+                                <rect key="frame" x="74" y="374" width="244" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lHi-Nx-eS6">
+                                        <rect key="frame" x="0.0" y="0.0" width="36" height="60"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                        <state key="normal" title="☆">
+                                            <color key="titleColor" red="1" green="0.27657577960000002" blue="0.63424556170000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="starButtonTap:" destination="KI5-i8-rEb" eventType="touchUpInside" id="uxe-Le-cE9"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SNl-BA-kj8">
+                                        <rect key="frame" x="52" y="0.0" width="36" height="60"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                        <state key="normal" title="☆">
+                                            <color key="titleColor" red="1" green="0.27657577960000002" blue="0.63424556170000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="starButtonTap:" destination="KI5-i8-rEb" eventType="touchUpInside" id="3rx-kv-cHm"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="otO-gC-Bp4">
+                                        <rect key="frame" x="104" y="0.0" width="36" height="60"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                        <state key="normal" title="☆">
+                                            <color key="titleColor" red="1" green="0.27657577960000002" blue="0.63424556170000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="starButtonTap:" destination="KI5-i8-rEb" eventType="touchUpInside" id="bQ1-Bf-KAt"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SKg-B2-ZK8">
+                                        <rect key="frame" x="156" y="0.0" width="36" height="60"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                        <state key="normal" title="☆">
+                                            <color key="titleColor" red="1" green="0.27657577960000002" blue="0.63424556170000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="starButtonTap:" destination="KI5-i8-rEb" eventType="touchUpInside" id="N1a-CX-auq"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gjV-3l-uOk">
+                                        <rect key="frame" x="208" y="0.0" width="36" height="60"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                        <state key="normal" title="☆">
+                                            <color key="titleColor" red="1" green="0.27657577960000002" blue="0.63424556170000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="starButtonTap:" destination="KI5-i8-rEb" eventType="touchUpInside" id="EbD-qM-Gfd"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Xcq-hc-70J">
+                                <rect key="frame" x="70" y="496" width="248" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" red="1" green="0.27657577960000002" blue="0.63424556170000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="textColor" red="1" green="0.27657577960000002" blue="0.63424556170000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="b" highlightedImage="fairy" translatesAutoresizingMaskIntoConstraints="NO" id="5GM-Hd-nVX">
+                                <rect key="frame" x="0.0" y="-69" width="375" height="769"/>
+                                <color key="tintColor" red="1" green="0.27657577960000002" blue="0.63424556170000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="I am always trying to improve what i offer" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uzz-cN-2il">
+                                <rect key="frame" x="13" y="278" width="348" height="23"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="italicSystem" pointSize="19"/>
+                                <color key="textColor" red="1" green="0.27657577960000002" blue="0.63424556170000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="auK-Li-0Mb">
+                                <rect key="frame" x="110" y="550" width="172" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <state key="normal" title="Tap to leave a comment">
+                                    <color key="titleColor" red="1" green="0.27657577960000002" blue="0.63424556170000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="leaveCommentButtonPressed:" destination="KI5-i8-rEb" eventType="touchUpInside" id="8TN-4A-yw4"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Let me know how i am doing!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M0K-Xt-2Io">
+                                <rect key="frame" x="7" y="217" width="361" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="26"/>
+                                <color key="textColor" red="1" green="0.27657577960000002" blue="0.63424556170000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="so your feedback is important!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="edy-xU-mIN">
+                                <rect key="frame" x="54" y="325" width="267" height="24"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="italicSystem" pointSize="20"/>
+                                <color key="textColor" red="1" green="0.27657577960000002" blue="0.63424556170000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="5GM-Hd-nVX" firstAttribute="top" secondItem="auq-8g-f4d" secondAttribute="top" id="JFj-of-pN9"/>
+                            <constraint firstItem="5GM-Hd-nVX" firstAttribute="leading" secondItem="auq-8g-f4d" secondAttribute="leading" id="Rdf-14-oGu"/>
+                            <constraint firstItem="x8q-DR-gyX" firstAttribute="top" secondItem="5GM-Hd-nVX" secondAttribute="bottom" id="dom-sp-65r"/>
+                            <constraint firstAttribute="trailing" secondItem="5GM-Hd-nVX" secondAttribute="trailing" id="ns5-bF-pkn"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="WaT-yE-Q6p"/>
+                    </view>
+                    <size key="freeformSize" width="375" height="700"/>
+                    <connections>
+                        <outletCollection property="starButtons" destination="lHi-Nx-eS6" collectionClass="NSMutableArray" id="Mtd-dk-50k"/>
+                        <outletCollection property="starButtons" destination="SNl-BA-kj8" collectionClass="NSMutableArray" id="I8o-NX-JHq"/>
+                        <outletCollection property="starButtons" destination="otO-gC-Bp4" collectionClass="NSMutableArray" id="cQ2-fy-XUi"/>
+                        <outletCollection property="starButtons" destination="SKg-B2-ZK8" collectionClass="NSMutableArray" id="KhL-me-R2f"/>
+                        <outletCollection property="starButtons" destination="gjV-3l-uOk" collectionClass="NSMutableArray" id="hpG-qA-xvN"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="j4T-fi-qh3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="10282" y="-2936"/>
+        </scene>
     </scenes>
     <resources>
         <image name="CREATEACCOUNT" width="375" height="667"/>
@@ -2554,20 +2633,21 @@
         <image name="PICTUR" width="375" height="667"/>
         <image name="VERIFIED" width="375" height="667"/>
         <image name="accountfinalpic" width="375" height="667"/>
+        <image name="b" width="374" height="592"/>
         <image name="connected" width="375" height="667"/>
         <image name="contact" width="375" height="667"/>
         <image name="contactpage" width="375" height="667"/>
         <image name="email" width="512" height="512"/>
+        <image name="fairy" width="16" height="16"/>
         <image name="myprofilefinal" width="375" height="590"/>
         <image name="popuser" width="467" height="270"/>
         <image name="profilelonger" width="375" height="1200"/>
         <image name="services" width="375" height="667"/>
-        <image name="star" width="75" height="75"/>
         <image name="verifyy" width="375" height="667"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="zZ2-D1-pX5"/>
-        <segue reference="Gy2-9d-og5"/>
+        <segue reference="mh7-qC-WiU"/>
         <segue reference="sVg-pw-0j1"/>
     </inferredMetricsTieBreakers>
 </document>
