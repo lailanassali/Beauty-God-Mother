@@ -41,12 +41,10 @@ class StandardViewController: UIViewController, STPAddCardViewControllerDelegate
         
         dismiss(animated: true)
         
-        print("Printing Strip response:\(token.allResponseFields)\n\n")
-        print("Printing Strip token:\(token.tokenId)")
         
-        msgBox.text = "Transaction success! \n\nHere is the token: \(token.tokenId)\nCard Type: \(token.card!.funding.rawValue)\n\nSend this token or detail to your backend server to complete this payment."
         
-        self.performSegue(withIdentifier: "PaymentConfirmation", sender: self)
+       self.performSegue(withIdentifier: "PaymentConfirmation", sender: self)
+         
     }
     
     
