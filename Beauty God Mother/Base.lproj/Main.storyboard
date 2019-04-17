@@ -1461,7 +1461,6 @@
         <!--Details View Controller-->
         <scene sceneID="uug-nc-q3V">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Scq-wI-YPk" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController storyboardIdentifier="DetailsVC" id="RjA-KH-xxn" customClass="DetailsViewController" customModule="Beauty_God_Mother" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Pcy-yE-R5E"/>
@@ -1560,9 +1559,6 @@
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="31" id="dh6-rI-BHv"/>
                                                 </constraints>
-                                                <connections>
-                                                    <segue destination="hUe-cG-suk" kind="show" id="FbM-bD-JhN"/>
-                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="My7-Ml-ROX">
                                                 <rect key="frame" x="20" y="390" width="334" height="30"/>
@@ -1570,6 +1566,9 @@
                                                     <constraint firstAttribute="width" constant="334" id="2s1-4U-6PH"/>
                                                     <constraint firstAttribute="height" constant="30" id="hbb-UC-XVO"/>
                                                 </constraints>
+                                                <connections>
+                                                    <segue destination="9vS-Uh-9dk" kind="show" id="1Sg-e2-7AW"/>
+                                                </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TcR-Mm-2hH">
                                                 <rect key="frame" x="13" y="601" width="341" height="55"/>
@@ -1679,8 +1678,109 @@
                         <outlet property="servicePrice" destination="hcI-6A-Gay" id="WZ1-nH-6qy"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Scq-wI-YPk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="8288.7999999999993" y="-2494.4527736131936"/>
+        </scene>
+        <!--Rating View Controller-->
+        <scene sceneID="XyE-Mq-NuX">
+            <objects>
+                <viewController id="9vS-Uh-9dk" customClass="RatingViewController" customModule="Beauty_God_Mother" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ha2-ET-oPl"/>
+                        <viewControllerLayoutGuide type="bottom" id="5KS-ke-fKY"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="bPu-Ys-yOn">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="700"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="b" translatesAutoresizingMaskIntoConstraints="NO" id="KNN-HD-TgM">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="700"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="YVj-YA-xGd">
+                                <rect key="frame" x="77" y="453" width="244" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="248-Cs-sGR">
+                                        <rect key="frame" x="0.0" y="0.0" width="36" height="60"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                        <state key="normal" title="☆">
+                                            <color key="titleColor" red="1" green="0.27657577960000002" blue="0.63424556170000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="starButtonTap:" destination="9vS-Uh-9dk" eventType="touchUpInside" id="k9e-Wh-I74"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KGq-ud-63d">
+                                        <rect key="frame" x="52" y="0.0" width="36" height="60"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                        <state key="normal" title="☆">
+                                            <color key="titleColor" red="1" green="0.27657577960000002" blue="0.63424556170000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="starButtonTap:" destination="9vS-Uh-9dk" eventType="touchUpInside" id="r14-SI-b1h"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bFI-Zd-zZm">
+                                        <rect key="frame" x="104" y="0.0" width="36" height="60"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                        <state key="normal" title="☆">
+                                            <color key="titleColor" red="1" green="0.27657577960000002" blue="0.63424556170000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="starButtonTap:" destination="9vS-Uh-9dk" eventType="touchUpInside" id="Bk0-sf-tCe"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xN2-ZW-JmU">
+                                        <rect key="frame" x="156" y="0.0" width="36" height="60"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                        <state key="normal" title="☆">
+                                            <color key="titleColor" red="1" green="0.27657577960000002" blue="0.63424556170000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="starButtonTap:" destination="9vS-Uh-9dk" eventType="touchUpInside" id="hNq-eB-Yde"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yfA-xJ-2zq">
+                                        <rect key="frame" x="208" y="0.0" width="36" height="60"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                        <state key="normal" title="☆">
+                                            <color key="titleColor" red="1" green="0.27657577960000002" blue="0.63424556170000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="starButtonTap:" destination="9vS-Uh-9dk" eventType="touchUpInside" id="3Ci-yU-vr6"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Please rate the service provided " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AgF-RW-lUA">
+                                <rect key="frame" x="26" y="223" width="333" height="26"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="21"/>
+                                <color key="textColor" red="1" green="0.27657577960000002" blue="0.63424556170000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="KNN-HD-TgM" firstAttribute="leading" secondItem="bPu-Ys-yOn" secondAttribute="leading" id="4m3-xe-spc"/>
+                            <constraint firstItem="KNN-HD-TgM" firstAttribute="top" secondItem="bPu-Ys-yOn" secondAttribute="top" id="oJo-n8-N7l"/>
+                            <constraint firstAttribute="trailing" secondItem="KNN-HD-TgM" secondAttribute="trailing" id="pdb-ZT-wSI"/>
+                            <constraint firstItem="5KS-ke-fKY" firstAttribute="top" secondItem="KNN-HD-TgM" secondAttribute="bottom" id="r6F-gv-Llm"/>
+                        </constraints>
+                    </view>
+                    <size key="freeformSize" width="375" height="700"/>
+                    <connections>
+                        <outletCollection property="starButtons" destination="248-Cs-sGR" collectionClass="NSMutableArray" id="9SO-K8-YSv"/>
+                        <outletCollection property="starButtons" destination="KGq-ud-63d" collectionClass="NSMutableArray" id="Kut-z3-DEU"/>
+                        <outletCollection property="starButtons" destination="bFI-Zd-zZm" collectionClass="NSMutableArray" id="A1l-ry-J2Y"/>
+                        <outletCollection property="starButtons" destination="xN2-ZW-JmU" collectionClass="NSMutableArray" id="YG5-9m-Let"/>
+                        <outletCollection property="starButtons" destination="yfA-xJ-2zq" collectionClass="NSMutableArray" id="yvV-kn-L6c"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QGm-P4-jzC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="9360.7999999999993" y="-3081.8590704647677"/>
         </scene>
         <!--My Account-->
         <scene sceneID="Pzk-Nq-JOr">
@@ -2060,47 +2160,8 @@
                     <view key="view" contentMode="scaleToFill" id="5j0-xp-XAd" customClass="RatingViewController" customModule="Beauty_God_Mother" customModuleProvider="target">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="Ohk-C0-zG6" customClass="RatingViewController" customModule="Beauty_God_Mother" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="200" width="375" height="75"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9N7-tG-aou">
-                                        <rect key="frame" x="0.0" y="0.0" width="75" height="75"/>
-                                        <state key="normal" image="star"/>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9us-aq-8SJ">
-                                        <rect key="frame" x="75" y="0.0" width="75" height="75"/>
-                                        <state key="normal" image="star"/>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fho-jz-gfF">
-                                        <rect key="frame" x="150" y="0.0" width="75" height="75"/>
-                                        <state key="normal" image="star"/>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eah-Tw-acG">
-                                        <rect key="frame" x="225" y="0.0" width="75" height="75"/>
-                                        <state key="normal" image="star"/>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oi0-le-ZPM">
-                                        <rect key="frame" x="300" y="0.0" width="75" height="75"/>
-                                        <state key="normal" image="star"/>
-                                    </button>
-                                </subviews>
-                            </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qzx-Af-pTd">
-                                <rect key="frame" x="106" y="306" width="163" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Please rate this service."/>
-                                <connections>
-                                    <action selector="HowManyButtonClicked:" destination="xgg-eK-TPc" eventType="touchUpInside" id="Oac-P5-gzA"/>
-                                </connections>
-                            </button>
-                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </view>
-                    <connections>
-                        <outlet property="ratingStackView" destination="Ohk-C0-zG6" id="tEF-fD-OIH"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kl6-OA-G6z" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -2240,7 +2301,7 @@
                         <viewControllerLayoutGuide type="bottom" id="P0A-nD-Zl3"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Zuk-mI-B1r">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="554"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="htm-7y-4UX">
@@ -2252,7 +2313,7 @@
                                 </connections>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Card details will be here" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Ljn-jL-iRM">
-                                <rect key="frame" x="43" y="174" width="288" height="294"/>
+                                <rect key="frame" x="43" y="174" width="288" height="407"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -2554,6 +2615,7 @@
         <image name="PICTUR" width="375" height="667"/>
         <image name="VERIFIED" width="375" height="667"/>
         <image name="accountfinalpic" width="375" height="667"/>
+        <image name="b" width="374" height="592"/>
         <image name="connected" width="375" height="667"/>
         <image name="contact" width="375" height="667"/>
         <image name="contactpage" width="375" height="667"/>
@@ -2562,7 +2624,6 @@
         <image name="popuser" width="467" height="270"/>
         <image name="profilelonger" width="375" height="1200"/>
         <image name="services" width="375" height="667"/>
-        <image name="star" width="75" height="75"/>
         <image name="verifyy" width="375" height="667"/>
     </resources>
     <inferredMetricsTieBreakers>

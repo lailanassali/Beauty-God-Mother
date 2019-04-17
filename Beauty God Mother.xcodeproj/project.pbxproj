@@ -23,8 +23,7 @@
 		4C6E0796223C4688003B9967 /* SearchCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C6E0795223C4688003B9967 /* SearchCell.swift */; };
 		4CEDD41F2249602300E3227B /* ProfileServicesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CEDD41E2249602300E3227B /* ProfileServicesTableViewController.swift */; };
 		4CEDD421224962E600E3227B /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CEDD420224962E600E3227B /* CustomCell.swift */; };
-		581073ED2264DC53000C9F45 /* RatingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 581073EC2264DC53000C9F45 /* RatingViewController.swift */; };
-		581073EF2264F127000C9F45 /* RateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 581073EE2264F127000C9F45 /* RateViewController.swift */; };
+		581073F42266BC5A000C9F45 /* RatingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 581073F32266BC5A000C9F45 /* RatingViewController.swift */; };
 		5889CE958FED8A050B0F294E /* Pods_Beauty_God_MotherTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAB59A83EF87A5DAB24E7AA9 /* Pods_Beauty_God_MotherTests.framework */; };
 		5B16A01C21DFB0A70022DDE7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B16A01B21DFB0A70022DDE7 /* AppDelegate.swift */; };
 		5B16A01E21DFB0A70022DDE7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B16A01D21DFB0A70022DDE7 /* ViewController.swift */; };
@@ -106,8 +105,7 @@
 		4C6E0795223C4688003B9967 /* SearchCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCell.swift; sourceTree = "<group>"; };
 		4CEDD41E2249602300E3227B /* ProfileServicesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileServicesTableViewController.swift; sourceTree = "<group>"; };
 		4CEDD420224962E600E3227B /* CustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
-		581073EC2264DC53000C9F45 /* RatingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingViewController.swift; sourceTree = "<group>"; };
-		581073EE2264F127000C9F45 /* RateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RateViewController.swift; sourceTree = "<group>"; };
+		581073F32266BC5A000C9F45 /* RatingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingViewController.swift; sourceTree = "<group>"; };
 		5B16A01821DFB0A70022DDE7 /* Beauty God Mother.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Beauty God Mother.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B16A01B21DFB0A70022DDE7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5B16A01D21DFB0A70022DDE7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -369,10 +367,9 @@
 				01E097B821FBB19100DB85D4 /* DetailsViewController.swift */,
 				4C2CDAAB224BEB1E00641044 /* BGMViewController.swift */,
 				01777D6D220B35B400D51EC4 /* EditProfileViewController.swift */,
+				581073F32266BC5A000C9F45 /* RatingViewController.swift */,
 				4CEDD41E2249602300E3227B /* ProfileServicesTableViewController.swift */,
 				4CEDD420224962E600E3227B /* CustomCell.swift */,
-				581073EC2264DC53000C9F45 /* RatingViewController.swift */,
-				581073EE2264F127000C9F45 /* RateViewController.swift */,
 				01CD8594224A32F900E1D40F /* ProfileServicesCell.swift */,
 				01CD8596224A48B200E1D40F /* ProfileServicesViewController.swift */,
 				5B21B490224C768D00F2FAD5 /* ProfileViewController.swift */,
@@ -740,6 +737,7 @@
 				5B16A04E21DFC9AB0022DDE7 /* RBViewController.swift in Sources */,
 				014CEF11223C326800F2FC8E /* ContactCollectionViewCell.swift in Sources */,
 				01E097B921FBB19100DB85D4 /* DetailsViewController.swift in Sources */,
+				581073F42266BC5A000C9F45 /* RatingViewController.swift in Sources */,
 				CC9F38122244C389003A7436 /* PaymentViewController.swift in Sources */,
 				AE29B29A21EBEF6800B19FFF /* ConfirmationVC.swift in Sources */,
 				5B6A73AA2215964800E506DC /* ProviderTabBar.swift in Sources */,
@@ -756,12 +754,10 @@
 				CCA91949220C7A1C00672E6F /* ConfirmationDetailsBP.swift in Sources */,
 				CC0BDCD3225B7B3300440554 /* Booking2ViewController.swift in Sources */,
 				01B7C35B2236B3A300381DCD /* CustomerTabBar.swift in Sources */,
-				581073ED2264DC53000C9F45 /* RatingViewController.swift in Sources */,
 				5B16A01E21DFB0A70022DDE7 /* ViewController.swift in Sources */,
 				CC0BDCD5225B7BCD00440554 /* dateCollectionViewCell.swift in Sources */,
 				5B16A01C21DFB0A70022DDE7 /* AppDelegate.swift in Sources */,
 				CC62D3C72212F593004FB434 /* ForgotPassword.swift in Sources */,
-				581073EF2264F127000C9F45 /* RateViewController.swift in Sources */,
 				CC23DF1C226603B100DC0920 /* PaymentConfirmationViewController.swift in Sources */,
 				5B3DDBB4224C5EA8003E799C /* SearchViewController.swift in Sources */,
 				01B7C3592236A2C500381DCD /* AccountViewCoontroller.swift in Sources */,
