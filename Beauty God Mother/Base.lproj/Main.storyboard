@@ -1120,15 +1120,18 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="EmailSent" translatesAutoresizingMaskIntoConstraints="NO" id="Ve4-vL-RMc">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k9A-sV-i52">
-                                <rect key="frame" x="16" y="597" width="343" height="50"/>
-                                <color key="backgroundColor" red="0.91102655440000002" green="0.55376136970000001" blue="0.68843997649999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <rect key="frame" x="16" y="514" width="343" height="50"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="cy1-X4-d20"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
-                                <state key="normal" title="Go back to Login">
-                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal">
+                                    <color key="titleColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
@@ -1140,68 +1143,28 @@
                                     <segue destination="BYZ-38-t0r" kind="show" id="OSa-zz-B7m"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="All done!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MPD-71-APK">
-                                <rect key="frame" x="126" y="68" width="123" height="35.5"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="email" translatesAutoresizingMaskIntoConstraints="NO" id="zYJ-gp-JIf">
-                                <rect key="frame" x="65" y="217.5" width="245" height="232"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="232" id="88C-HG-XXK"/>
-                                </constraints>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="An email has been sent to you for" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4rk-4h-jmj">
-                                <rect key="frame" x="65" y="111.5" width="255" height="21"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="21" id="UAt-pm-5d5"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="further instructions on how to " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oeR-Z4-lh5">
-                                <rect key="frame" x="79" y="131.5" width="231" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="reset your password." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vMN-rN-fG2">
-                                <rect key="frame" x="114.5" y="152.5" width="160" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="k9A-sV-i52" firstAttribute="trailing" secondItem="yk9-Fh-jlA" secondAttribute="trailingMargin" id="2xH-Aq-mcm"/>
-                            <constraint firstItem="zYJ-gp-JIf" firstAttribute="centerY" secondItem="yk9-Fh-jlA" secondAttribute="centerY" id="4XT-XS-RIB"/>
-                            <constraint firstItem="MPD-71-APK" firstAttribute="top" secondItem="hK3-1T-daL" secondAttribute="bottom" constant="48" id="7Jb-Hh-v2c"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="zYJ-gp-JIf" secondAttribute="trailing" constant="49" id="9hM-XZ-Eyd"/>
-                            <constraint firstItem="4rk-4h-jmj" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="zYJ-gp-JIf" secondAttribute="leading" id="9hu-CG-L29"/>
-                            <constraint firstItem="oeR-Z4-lh5" firstAttribute="top" secondItem="MPD-71-APK" secondAttribute="bottom" constant="28" id="A0q-FX-NHW"/>
-                            <constraint firstItem="zYJ-gp-JIf" firstAttribute="centerX" secondItem="MPD-71-APK" secondAttribute="centerX" id="AlG-IZ-9eK"/>
-                            <constraint firstItem="oeR-Z4-lh5" firstAttribute="centerX" secondItem="vMN-rN-fG2" secondAttribute="centerX" id="DdV-j1-bbn"/>
-                            <constraint firstAttribute="bottom" secondItem="k9A-sV-i52" secondAttribute="bottom" constant="20" symbolic="YES" id="ILG-dn-dxO"/>
-                            <constraint firstItem="4rk-4h-jmj" firstAttribute="top" secondItem="MPD-71-APK" secondAttribute="bottom" constant="8" symbolic="YES" id="Il7-oI-pxT"/>
-                            <constraint firstItem="vMN-rN-fG2" firstAttribute="top" secondItem="oeR-Z4-lh5" secondAttribute="bottom" id="Obd-gB-iko"/>
-                            <constraint firstItem="ccT-rk-wN7" firstAttribute="top" secondItem="k9A-sV-i52" secondAttribute="bottom" constant="20" id="Qi3-XI-MET"/>
-                            <constraint firstItem="zYJ-gp-JIf" firstAttribute="top" secondItem="4rk-4h-jmj" secondAttribute="bottom" constant="85" id="Rmc-L3-8iN"/>
-                            <constraint firstItem="k9A-sV-i52" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="yk9-Fh-jlA" secondAttribute="leading" constant="16" id="ihz-EJ-ny8"/>
-                            <constraint firstItem="zYJ-gp-JIf" firstAttribute="leading" secondItem="yk9-Fh-jlA" secondAttribute="leadingMargin" constant="49" id="nZY-xY-sVY"/>
-                            <constraint firstItem="k9A-sV-i52" firstAttribute="leading" secondItem="yk9-Fh-jlA" secondAttribute="leadingMargin" id="nwU-yJ-gQC"/>
-                            <constraint firstItem="k9A-sV-i52" firstAttribute="trailing" secondItem="yk9-Fh-jlA" secondAttribute="trailingMargin" id="sVs-7k-3Us"/>
-                            <constraint firstAttribute="trailing" secondItem="4rk-4h-jmj" secondAttribute="trailing" constant="55" id="tIl-Cg-vRM"/>
-                            <constraint firstItem="oeR-Z4-lh5" firstAttribute="trailing" secondItem="zYJ-gp-JIf" secondAttribute="trailing" id="x2i-vI-WOd"/>
-                            <constraint firstItem="k9A-sV-i52" firstAttribute="top" secondItem="zYJ-gp-JIf" secondAttribute="bottom" constant="147.5" id="yep-A1-02L"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="k9A-sV-i52" secondAttribute="trailing" constant="46" id="3dH-gV-WFe"/>
+                            <constraint firstItem="k9A-sV-i52" firstAttribute="leading" secondItem="yk9-Fh-jlA" secondAttribute="leadingMargin" constant="44" id="4oi-O1-i6M"/>
+                            <constraint firstAttribute="bottom" secondItem="k9A-sV-i52" secondAttribute="bottom" constant="103" id="CxA-CO-Sl8"/>
+                            <constraint firstItem="ccT-rk-wN7" firstAttribute="top" secondItem="Ve4-vL-RMc" secondAttribute="bottom" id="DsZ-xn-zMj"/>
+                            <constraint firstItem="Ve4-vL-RMc" firstAttribute="top" secondItem="yk9-Fh-jlA" secondAttribute="top" id="M3X-Vk-yKg"/>
+                            <constraint firstItem="k9A-sV-i52" firstAttribute="top" secondItem="hK3-1T-daL" secondAttribute="bottom" constant="494" id="Xgo-Zi-4qJ"/>
+                            <constraint firstItem="k9A-sV-i52" firstAttribute="trailing" secondItem="yk9-Fh-jlA" secondAttribute="trailingMargin" id="d6N-BL-DAB"/>
+                            <constraint firstItem="Ve4-vL-RMc" firstAttribute="leading" secondItem="yk9-Fh-jlA" secondAttribute="leading" id="fjB-pT-BRX"/>
+                            <constraint firstItem="ccT-rk-wN7" firstAttribute="top" secondItem="k9A-sV-i52" secondAttribute="bottom" constant="103" id="hhW-Ms-Klc"/>
+                            <constraint firstItem="k9A-sV-i52" firstAttribute="trailing" secondItem="yk9-Fh-jlA" secondAttribute="trailingMargin" id="j0z-Et-sik"/>
+                            <constraint firstItem="k9A-sV-i52" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="yk9-Fh-jlA" secondAttribute="leading" constant="16" id="n0p-Mv-z6S"/>
+                            <constraint firstItem="k9A-sV-i52" firstAttribute="leading" secondItem="yk9-Fh-jlA" secondAttribute="leadingMargin" id="s0p-sy-etC"/>
+                            <constraint firstAttribute="trailing" secondItem="Ve4-vL-RMc" secondAttribute="trailing" id="tAy-Pj-jKO"/>
                         </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HGq-Va-bIz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1199" y="-1755"/>
+            <point key="canvasLocation" x="1426" y="-1758"/>
         </scene>
         <!--Forgot Password-->
         <scene sceneID="bjt-cc-76M">
@@ -1297,7 +1260,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="urw-d3-8s3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2174" y="-1755"/>
+            <point key="canvasLocation" x="2489" y="-1775"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="gDC-Wl-XTQ">
@@ -2655,6 +2618,7 @@
     </scenes>
     <resources>
         <image name="CREATEACCOUNT" width="375" height="667"/>
+        <image name="EmailSent" width="375" height="667"/>
         <image name="Image" width="375" height="667"/>
         <image name="Image-1" width="467" height="270"/>
         <image name="LOGO" width="791" height="449"/>
@@ -2669,7 +2633,6 @@
         <image name="connected" width="375" height="667"/>
         <image name="contact" width="375" height="667"/>
         <image name="contactpage" width="375" height="667"/>
-        <image name="email" width="512" height="512"/>
         <image name="fairy" width="16" height="16"/>
         <image name="myprofilefinal" width="375" height="590"/>
         <image name="paymentRecieved-1" width="375" height="667"/>
