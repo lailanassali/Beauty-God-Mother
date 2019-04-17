@@ -38,7 +38,6 @@ class DetailsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        imageActivityIndicator.startAnimating()
         nameLabel.text = profile.name
         categoriesLabel.text = profile.category
         imageView.af_setImage(withURL: profile.picture)

@@ -57,6 +57,8 @@ class AccountViewController: UIViewController, UIImagePickerControllerDelegate, 
     func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
         
     }
+   
+    
     @IBAction func logoutTapped(_ sender: Any) {
         do {
             try Auth.auth().signOut()
@@ -68,6 +70,8 @@ class AccountViewController: UIViewController, UIImagePickerControllerDelegate, 
         let signInVC = storyboard.instantiateViewController(withIdentifier: "LoginPageID")
         self.present(signInVC, animated: true, completion: nil)
     }
+    
+    
     
     
     internal func setAccountPic(imageView: UIImageView, imageToSet:UIImage)
