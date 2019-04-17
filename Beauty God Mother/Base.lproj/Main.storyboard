@@ -1855,7 +1855,7 @@
                                     <constraint firstAttribute="height" constant="80" id="bZt-7h-euK"/>
                                 </constraints>
                                 <connections>
-                                    <action selector="didTapEmail:" destination="GxD-9L-LdQ" eventType="touchUpInside" id="Ram-0s-BG7"/>
+                                    <action selector="didTapEmailFeedback:" destination="GxD-9L-LdQ" eventType="touchUpInside" id="kvW-d8-zJa"/>
                                 </connections>
                             </button>
                         </subviews>
