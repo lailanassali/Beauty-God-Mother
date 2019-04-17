@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -1526,6 +1526,9 @@
                                                     <constraint firstAttribute="width" constant="334" id="2s1-4U-6PH"/>
                                                     <constraint firstAttribute="height" constant="30" id="hbb-UC-XVO"/>
                                                 </constraints>
+                                                <connections>
+                                                    <segue destination="KI5-i8-rEb" kind="show" id="iTK-ZX-gpJ"/>
+                                                </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TcR-Mm-2hH">
                                                 <rect key="frame" x="13" y="601" width="341" height="55"/>
@@ -1888,17 +1891,17 @@
                         <viewControllerLayoutGuide type="bottom" id="W8F-Wc-lrT"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="fuG-ul-ThR">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="554"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hJs-y8-eFP">
-                                <rect key="frame" x="279" y="522" width="80" height="80"/>
+                                <rect key="frame" x="279" y="409" width="80" height="80"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" image="Map"/>
                             </button>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="brr-KI-zGA">
-                                <rect key="frame" x="16" y="28" width="343" height="647"/>
+                                <rect key="frame" x="16" y="28" width="343" height="534"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <searchBar key="tableHeaderView" contentMode="redraw" id="M5f-eN-Zwt" userLabel="Search">
                                     <rect key="frame" x="0.0" y="0.0" width="343" height="44"/>
@@ -1972,7 +1975,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sWJ-RS-bmi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6237.6000000000004" y="53.523238380809602"/>
+            <point key="canvasLocation" x="8289" y="-1150"/>
         </scene>
         <!--Map View Controller-->
         <scene sceneID="Brp-9D-agM">
@@ -2532,6 +2535,7 @@
                                 </state>
                                 <connections>
                                     <action selector="leaveCommentButtonPressed:" destination="KI5-i8-rEb" eventType="touchUpInside" id="8TN-4A-yw4"/>
+                                    <segue destination="stF-qs-g4z" kind="showDetail" identifier="CommentViewSegue" id="O7u-jL-8Uf"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Let me know how i am doing!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M0K-Xt-2Io">
@@ -2571,6 +2575,71 @@
             </objects>
             <point key="canvasLocation" x="10282" y="-2936"/>
         </scene>
+        <!--Comment View Controller-->
+        <scene sceneID="Rvj-cW-iqW">
+            <objects>
+                <viewController id="stF-qs-g4z" customClass="CommentViewController" customModule="reviewsFinal" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="TLf-Fb-XqO"/>
+                        <viewControllerLayoutGuide type="bottom" id="tmg-eD-8YG"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="daM-x7-FXv">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="554"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="tick" translatesAutoresizingMaskIntoConstraints="NO" id="rRh-6t-951">
+                                <rect key="frame" x="64" y="214" width="247" height="238"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Review Sent!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KK6-GX-Llj">
+                                <rect key="frame" x="48" y="91" width="280" height="78"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="42"/>
+                                <color key="textColor" red="1" green="0.27657577960000002" blue="0.63424556170000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="your review will be verified by " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="irN-vD-HZx">
+                                <rect key="frame" x="17" y="487" width="343" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="The Beauty God Mother Team" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="13o-MT-WSt">
+                                <rect key="frame" x="73" y="534" width="229" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Thank you!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kK5-Yi-kS5">
+                                <rect key="frame" x="134" y="587" width="106" height="27"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="agp-8Y-30U">
+                                <rect key="frame" x="29" y="588" width="48" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Search">
+                                    <color key="titleColor" red="1" green="0.27657577960000002" blue="0.63424556170000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="backButtonPressed:" destination="stF-qs-g4z" eventType="touchUpInside" id="yJH-mr-ttK"/>
+                                    <segue destination="rA1-a9-lkN" kind="showDetail" id="Yty-GM-hbK"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="FPp-My-rIx"/>
+                    </view>
+                    <value key="contentSizeForViewInPopover" type="size" width="375" height="700"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UQP-ql-mUn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="11185" y="-3017"/>
+        </scene>
     </scenes>
     <resources>
         <image name="CREATEACCOUNT" width="375" height="667"/>
@@ -2578,7 +2647,7 @@
         <image name="Image" width="375" height="667"/>
         <image name="Image-1" width="467" height="270"/>
         <image name="LOGO" width="791" height="449"/>
-        <image name="Map" width="256" height="256"/>
+        <image name="Map" width="491.51998901367188" height="491.51998901367188"/>
         <image name="NEXR" width="375" height="667"/>
         <image name="OPTIONAL" width="375" height="667"/>
         <image name="PICTUR" width="375" height="667"/>
@@ -2596,10 +2665,11 @@
         <image name="popuser" width="467" height="270"/>
         <image name="profilelonger" width="375" height="1200"/>
         <image name="services" width="375" height="667"/>
+        <image name="tick" width="501" height="500"/>
         <image name="verifyy" width="375" height="667"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="e9x-Gv-rjh"/>
+        <segue reference="Yty-GM-hbK"/>
         <segue reference="zZ2-D1-pX5"/>
         <segue reference="Gy2-9d-og5"/>
         <segue reference="OSa-zz-B7m"/>
