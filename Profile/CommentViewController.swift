@@ -10,10 +10,10 @@ import UIKit
 
 class CommentViewController: UIViewController {
     
-    @IBAction func backButtonPressed(_ sender: Any) {
-        
-        self.performSegue(withIdentifier: "CommentSegue", sender: self)
-    }
+    @IBAction func backToSearch(_ sender: Any) {
+    self.performSegue(withIdentifier: "SearchSegue", sender: self)        }
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Bucket
-   type = "0"
+   type = "1"
    version = "2.0">
    <Breakpoints>
       <BreakpointProxy
@@ -9,12 +9,12 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Profile/RatingViewController.swift"
-            timestampString = "577223392.6986721"
+            filePath = "Profile/CommentViewController.swift"
+            timestampString = "577227749.921646"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "2"
-            endingLineNumber = "2"
+            startingLineNumber = "5"
+            endingLineNumber = "5"
             landmarkName = "unknown"
             landmarkType = "0">
          </BreakpointContent>

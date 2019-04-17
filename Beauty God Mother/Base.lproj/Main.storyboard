@@ -2578,7 +2578,7 @@
         <!--Comment View Controller-->
         <scene sceneID="Rvj-cW-iqW">
             <objects>
-                <viewController id="stF-qs-g4z" customClass="CommentViewController" customModule="reviewsFinal" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="stF-qs-g4z" customClass="CommentViewController" customModule="Beauty_God_Mother" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="TLf-Fb-XqO"/>
                         <viewControllerLayoutGuide type="bottom" id="tmg-eD-8YG"/>
@@ -2605,13 +2605,6 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="The Beauty God Mother Team" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="13o-MT-WSt">
-                                <rect key="frame" x="73" y="534" width="229" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Thank you!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kK5-Yi-kS5">
                                 <rect key="frame" x="134" y="587" width="106" height="27"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -2619,26 +2612,33 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="agp-8Y-30U">
-                                <rect key="frame" x="29" y="588" width="48" height="34"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="The Beauty God Mother Team" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="13o-MT-WSt">
+                                <rect key="frame" x="73" y="525" width="229" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Search">
-                                    <color key="titleColor" red="1" green="0.27657577960000002" blue="0.63424556170000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hdi-ki-HdY">
+                                <rect key="frame" x="16" y="20" width="62" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="&lt; Search"/>
                                 <connections>
-                                    <action selector="backButtonPressed:" destination="stF-qs-g4z" eventType="touchUpInside" id="yJH-mr-ttK"/>
-                                    <segue destination="rA1-a9-lkN" kind="showDetail" id="Yty-GM-hbK"/>
+                                    <action selector="backToSearch:" destination="stF-qs-g4z" eventType="touchUpInside" id="gNS-us-aiT"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="FPp-My-rIx"/>
                     </view>
-                    <value key="contentSizeForViewInPopover" type="size" width="375" height="700"/>
+                    <value key="contentSizeForViewInPopover" type="size" width="375" height="600"/>
+                    <connections>
+                        <segue destination="rA1-a9-lkN" kind="showDetail" identifier="SearchSegue" id="MwY-r7-xak"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UQP-ql-mUn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="11185" y="-3017"/>
+            <point key="canvasLocation" x="11201" y="-3002"/>
         </scene>
     </scenes>
     <resources>
@@ -2669,7 +2669,7 @@
         <image name="verifyy" width="375" height="667"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Yty-GM-hbK"/>
+        <segue reference="MwY-r7-xak"/>
         <segue reference="zZ2-D1-pX5"/>
         <segue reference="Gy2-9d-og5"/>
         <segue reference="OSa-zz-B7m"/>
