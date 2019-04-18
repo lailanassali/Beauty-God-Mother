@@ -2051,43 +2051,6 @@
             </objects>
             <point key="canvasLocation" x="9159" y="-1150"/>
         </scene>
-        <!--Payment View Controller-->
-        <scene sceneID="44W-vH-fDI">
-            <objects>
-                <viewController id="5J6-iK-VMG" customClass="PaymentViewController" customModule="Beauty_God_Mother" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="6VU-ez-SKI"/>
-                        <viewControllerLayoutGuide type="bottom" id="j6g-Yv-9CY"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="gWA-pB-QMr">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MJj-02-B0M">
-                                <rect key="frame" x="160" y="140" width="54" height="30"/>
-                                <state key="normal" title="Custom"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rJ5-Ww-7Ui">
-                                <rect key="frame" x="160" y="26" width="63" height="106"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="106" id="xch-g8-CCv"/>
-                                </constraints>
-                                <state key="normal" title="Standard"/>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <constraints>
-                            <constraint firstItem="rJ5-Ww-7Ui" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="MJj-02-B0M" secondAttribute="leading" id="Iza-Hz-hJu"/>
-                            <constraint firstItem="MJj-02-B0M" firstAttribute="top" secondItem="rJ5-Ww-7Ui" secondAttribute="bottom" constant="8" symbolic="YES" id="TQG-Zr-zDM"/>
-                            <constraint firstAttribute="trailing" secondItem="rJ5-Ww-7Ui" secondAttribute="trailing" constant="152" id="pbW-fN-3pf"/>
-                            <constraint firstItem="MJj-02-B0M" firstAttribute="leading" secondItem="gWA-pB-QMr" secondAttribute="leading" constant="160" id="y72-qV-qwY"/>
-                        </constraints>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="gOd-VU-p9m" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="10463" y="-1621"/>
-        </scene>
         <!--Custom View Controller-->
         <scene sceneID="87o-aN-KzL">
             <objects>
@@ -2130,8 +2093,6 @@
                                 <connections>
                                     <action selector="MakePayment:" destination="xX4-k7-drg" eventType="touchUpInside" id="KqC-wc-Liw"/>
                                     <action selector="Makeapayment:" destination="xX4-k7-drg" eventType="touchUpInside" id="e7j-jM-pK3"/>
-                                    <action selector="PaymentTapped:" destination="WqG-Kk-dle" eventType="touchUpInside" id="CXj-iZ-Ap8"/>
-                                    <action selector="PaymentTapped:" destination="xCg-Dz-iLQ" eventType="touchUpInside" id="II9-jr-kPP"/>
                                 </connections>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Card details will be here" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="BKi-xl-fuB">
@@ -2176,41 +2137,6 @@
             </objects>
             <point key="canvasLocation" x="10182" y="-935"/>
         </scene>
-        <!--Standard View Controller-->
-        <scene sceneID="uFW-A7-dsl">
-            <objects>
-                <viewController id="WqG-Kk-dle" customClass="StandardViewController" customModule="Beauty_God_Mother" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="p2l-ab-dtp"/>
-                        <viewControllerLayoutGuide type="bottom" id="P0A-nD-Zl3"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="Zuk-mI-B1r">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="554"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" text="Card details will be here" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Ljn-jL-iRM">
-                                <rect key="frame" x="43" y="174" width="288" height="407"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <constraints>
-                            <constraint firstItem="P0A-nD-Zl3" firstAttribute="top" secondItem="Ljn-jL-iRM" secondAttribute="bottom" constant="86" id="94u-Oc-MG1"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="Ljn-jL-iRM" secondAttribute="trailing" constant="28" id="Gp6-aR-YXQ"/>
-                            <constraint firstItem="Ljn-jL-iRM" firstAttribute="leading" secondItem="Zuk-mI-B1r" secondAttribute="leadingMargin" constant="27" id="orq-UT-J6b"/>
-                        </constraints>
-                    </view>
-                    <connections>
-                        <outlet property="msgBox" destination="Ljn-jL-iRM" id="SCL-h7-6nl"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="pPu-Fc-KpA" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <exit id="xCg-Dz-iLQ" userLabel="Exit" sceneMemberID="exit"/>
-            </objects>
-            <point key="canvasLocation" x="10454" y="-2264"/>
-        </scene>
         <!--Payment Confirmation View Controller-->
         <scene sceneID="cMx-9b-Ygx">
             <objects>
@@ -2220,14 +2146,14 @@
                         <viewControllerLayoutGuide type="bottom" id="ef2-bL-nFb"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="7cZ-AU-oKO">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="554"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="paymentRecieved-1" translatesAutoresizingMaskIntoConstraints="NO" id="W5y-Ge-AaC">
-                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <rect key="frame" x="0.0" y="20" width="375" height="534"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pMG-eb-VXv">
-                                <rect key="frame" x="80" y="531" width="227" height="52"/>
+                                <rect key="frame" x="80" y="440" width="227" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="227" id="veG-mS-cjD"/>
                                 </constraints>
@@ -2256,7 +2182,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bhg-sL-iQW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="11303" y="-2213"/>
+            <point key="canvasLocation" x="10881" y="-2194"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="jSi-Lm-ZLA">
@@ -2324,12 +2250,10 @@
                                                     <constraint firstAttribute="height" constant="700" id="oY5-bd-0v6"/>
                                                 </constraints>
                                             </imageView>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="htm-7y-4UX">
-                                                <rect key="frame" x="131" y="526" width="30" height="42"/>
+                                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="htm-7y-4UX">
+                                                <rect key="frame" x="76" y="526" width="234" height="42"/>
                                                 <connections>
                                                     <action selector="PaymentTapped:" destination="hUe-cG-suk" eventType="touchUpInside" id="6e8-2I-gpz"/>
-                                                    <action selector="PaymentTapped:" destination="WqG-Kk-dle" eventType="touchUpInside" id="XcY-y9-bcr"/>
-                                                    <action selector="PaymentTapped:" destination="xCg-Dz-iLQ" eventType="touchUpInside" id="qjA-ZL-20t"/>
                                                 </connections>
                                             </button>
                                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Wf5-A5-yE5">
@@ -2473,7 +2397,7 @@
                         <outlet property="Calendar2" destination="Wf5-A5-yE5" id="lbY-GY-gTo"/>
                         <outlet property="MonthLabel2" destination="UUH-9c-1bm" id="Rpx-jh-X8H"/>
                         <outlet property="TimeTextField" destination="B3P-t4-LIg" id="LrC-XX-Rtn"/>
-                        <segue destination="WqG-Kk-dle" kind="show" identifier="PaymentConfirmation" id="T9s-dT-3qm"/>
+                        <segue destination="jg9-oh-3NB" kind="show" identifier="PaymentConfirmation" id="A1o-Yn-pkv"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bNA-OU-ykF" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -2708,7 +2632,7 @@
         <image name="verifyy" width="375" height="667"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="bpH-f1-OoX"/>
+        <segue reference="e9x-Gv-rjh"/>
         <segue reference="gXM-fs-wZZ"/>
         <segue reference="vzB-fi-gDe"/>
         <segue reference="VM8-RR-bXg"/>
