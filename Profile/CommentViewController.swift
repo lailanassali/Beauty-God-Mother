@@ -10,9 +10,9 @@ import UIKit
 
 class CommentViewController: UIViewController {
     
-    @IBAction func backToSearch(_ sender: Any) {
-    self.performSegue(withIdentifier: "SearchSegue", sender: self)        }
-    
+   
+    @IBAction func goBackToProfile(_ sender: AnyObject) {
+    self.performSegue(withIdentifier: "BackToProfileSegue", sender: self)            }
     
     override func viewDidLoad() {
         super.viewDidLoad()
