@@ -28,7 +28,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window = UIWindow(frame: UIScreen.main.bounds)
         window?.makeKeyAndVisible()
         
-     
+        UITabBar.appearance().tintColor = UIColor(red:0.86, green:0.37, blue:0.61, alpha:1.0)
+
     
         
         if let _ = Auth.auth().currentUser?.uid {

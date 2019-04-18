@@ -251,7 +251,7 @@ class Booking2ViewController: UIViewController, UICollectionViewDelegate, UIColl
         }
         
         if SelectDate == indexPath.row {
-            cell.backgroundColor = UIColor(red:0.92, green:0.55, blue:0.78, alpha:1.0)
+            cell.backgroundColor = UIColor(red:0.86, green:0.37, blue:0.61, alpha:1.0)
         }
         
         return cell
