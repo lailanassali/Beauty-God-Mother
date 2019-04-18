@@ -23,15 +23,12 @@ class CustomerTabBar: UITabBarController {
         // search
         let searchVC = storyboard.instantiateViewController(withIdentifier: "SearchVC")
         let searchNavigation = UINavigationController(rootViewController: searchVC)
-        searchVC.title = "Search"
         
         let accountVC = storyboard.instantiateViewController(withIdentifier: "AccountVC")
         let accountNavigation = UINavigationController(rootViewController: accountVC)
-        accountVC.title = "My Account"
         
         let contactVC = storyboard.instantiateViewController(withIdentifier: "ContactVC")
         let contactNavigation = UINavigationController(rootViewController: contactVC)
-        contactVC.title = "Contact"
         
         
         

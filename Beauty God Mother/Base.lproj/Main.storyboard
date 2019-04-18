@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -1331,9 +1331,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="tintColor" red="0.94919878244400024" green="0.48325198888778687" blue="0.66269421577453613" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="selectedImageTintColor" red="0.92844045162200928" green="0.22862917184829712" blue="0.31831002235412598" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </tabBar>
                     <connections>
-                        <segue destination="yxI-AY-oc2" kind="relationship" relationship="viewControllers" id="SRe-q2-ugO"/>
                         <segue destination="YDf-W9-MgH" kind="relationship" relationship="viewControllers" id="Wkr-CK-fSA"/>
                         <segue destination="9ex-cx-Pf5" kind="relationship" relationship="viewControllers" id="Ch2-B5-1qO"/>
                         <segue destination="WwT-eg-Tv8" kind="relationship" relationship="viewControllers" id="8Zt-K9-Ugi"/>
@@ -1343,25 +1343,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XDJ-EX-5u6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="4100" y="-877"/>
-        </scene>
-        <!--Featured-->
-        <scene sceneID="lqX-hj-Rkm">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="yxI-AY-oc2" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Featured" id="oF1-hZ-1pi"/>
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="fGA-Z9-Mcj">
-                        <rect key="frame" x="0.0" y="20" width="375" height="96"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="urC-vS-Srf" kind="relationship" relationship="rootViewController" id="9CN-Pa-T2e"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="vHQ-Fe-UIB" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="6201" y="-1564"/>
         </scene>
         <!--My Profile-->
         <scene sceneID="zcu-jj-DHS">
@@ -1428,13 +1409,15 @@
                             <constraint firstItem="olA-c9-aZt" firstAttribute="top" secondItem="kwM-f2-hOE" secondAttribute="bottom" constant="238" id="oll-26-Nou"/>
                         </constraints>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Profile" image="stack_of_photos" id="FaA-xl-WaN"/>
                     <navigationItem key="navigationItem" title="My Profile" id="9qQ-nO-0uu">
                         <barButtonItem key="rightBarButtonItem" title="Edit" id="K5k-4G-sgb"/>
                     </navigationItem>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BAO-n4-Nh0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6914" y="-799"/>
+            <point key="canvasLocation" x="7110" y="-778"/>
         </scene>
         <!--Featured View Controller-->
         <scene sceneID="Rbi-vC-X2g">
@@ -1707,7 +1690,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6zw-5l-PN1">
-                                <rect key="frame" x="48" y="560" width="278" height="42"/>
+                                <rect key="frame" x="48" y="511" width="278" height="42"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1734,7 +1717,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="&quot;Name&quot;" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dax-qx-jjP">
-                                <rect key="frame" x="154" y="275.5" width="66" height="70"/>
+                                <rect key="frame" x="154" y="226.5" width="66" height="70"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="70" id="KYF-CL-DKl"/>
                                 </constraints>
@@ -1743,7 +1726,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="GBz-iU-hbk">
-                                <rect key="frame" x="24" y="372.5" width="327" height="91.5"/>
+                                <rect key="frame" x="24" y="323.5" width="327" height="91.5"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="cOi-HX-24G">
                                         <rect key="frame" x="0.0" y="0.0" width="314.5" height="20.5"/>
@@ -1806,9 +1789,11 @@
                             <constraint firstItem="vze-rM-SMB" firstAttribute="leading" secondItem="Qe2-Jk-JAq" secondAttribute="leading" id="zPk-Hl-2yG"/>
                         </constraints>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Account" image="settings" id="89q-vC-sBt"/>
                     <navigationItem key="navigationItem" title="My Account" id="8SW-Ii-8nk">
                         <barButtonItem key="rightBarButtonItem" title="edit" id="ZRc-u9-Yiw"/>
                     </navigationItem>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="email" destination="Gky-d6-L9K" id="M8w-Ys-Elq"/>
                         <outlet property="name" destination="dax-qx-jjP" id="eSW-oc-YZw"/>
@@ -1885,7 +1870,9 @@
                             <constraint firstItem="9Yb-aS-fPw" firstAttribute="bottom" secondItem="15U-ka-t8k" secondAttribute="top" id="nrf-6Y-jEx"/>
                         </constraints>
                     </view>
+                    <tabBarItem key="tabBarItem" title="BGM" image="link" id="Eqn-Cr-VtM"/>
                     <navigationItem key="navigationItem" title="Beauty Godmother" largeTitleDisplayMode="never" id="X8v-zX-dck"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <size key="freeformSize" width="375" height="667"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Te6-5H-8MW" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1897,7 +1884,7 @@
         <scene sceneID="ZIW-yS-PcW">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="YDf-W9-MgH" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Account" id="dnR-oF-pfY"/>
+                    <tabBarItem key="tabBarItem" title="Account" image="settings" id="dnR-oF-pfY"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="vqu-rc-YQB">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
@@ -1912,11 +1899,11 @@
             </objects>
             <point key="canvasLocation" x="3495" y="-1837"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--BGM-->
         <scene sceneID="S9H-8g-Fm2">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="9ex-cx-Pf5" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" systemItem="more" id="4KH-VM-2yJ"/>
+                    <tabBarItem key="tabBarItem" title="BGM" image="link" id="4KH-VM-2yJ"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="ifi-hn-4wa">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
@@ -1931,7 +1918,7 @@
             </objects>
             <point key="canvasLocation" x="4796" y="-1864"/>
         </scene>
-        <!--Search View Controller-->
+        <!--Search-->
         <scene sceneID="Glo-RD-sb3">
             <objects>
                 <viewController storyboardIdentifier="SearchVC" id="rA1-a9-lkN" customClass="SearchViewController" customModule="Beauty_God_Mother" customModuleProvider="target" sceneMemberID="viewController">
@@ -1950,7 +1937,7 @@
                                 <state key="normal" image="Map"/>
                             </button>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="brr-KI-zGA">
-                                <rect key="frame" x="16" y="28" width="343" height="647"/>
+                                <rect key="frame" x="16" y="72" width="343" height="554"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <searchBar key="tableHeaderView" contentMode="redraw" id="M5f-eN-Zwt" userLabel="Search">
                                     <rect key="frame" x="0.0" y="0.0" width="343" height="44"/>
@@ -2017,7 +2004,9 @@
                             <constraint firstItem="W8F-Wc-lrT" firstAttribute="top" secondItem="brr-KI-zGA" secondAttribute="bottom" constant="-8" id="cRS-mb-gKv"/>
                         </constraints>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Search" image="Search" id="uvj-Vd-jG0"/>
                     <navigationItem key="navigationItem" id="Ksd-mx-KAa"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="tableView" destination="brr-KI-zGA" id="rfa-PB-W2M"/>
                     </connections>
@@ -2191,11 +2180,11 @@
             </objects>
             <point key="canvasLocation" x="10234" y="-2264"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Search-->
         <scene sceneID="jSi-Lm-ZLA">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="WwT-eg-Tv8" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" systemItem="search" id="qCW-vZ-yub"/>
+                    <tabBarItem key="tabBarItem" title="Search" image="Search" id="qCW-vZ-yub"/>
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="E6M-jt-ewz"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="9aA-c8-liq">
@@ -2218,7 +2207,7 @@
         <scene sceneID="el6-VS-fV4">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="JNC-xH-NCa" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Profile" id="bjJ-Vu-QnZ"/>
+                    <tabBarItem key="tabBarItem" title="Profile" image="stack_of_photos" id="bjJ-Vu-QnZ"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="uXl-Mu-bhJ">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
@@ -2658,10 +2647,11 @@
         <image name="Image" width="375" height="667"/>
         <image name="Image-1" width="467" height="270"/>
         <image name="LOGO" width="791" height="449"/>
-        <image name="Map" width="491.51998901367188" height="491.51998901367188"/>
+        <image name="Map" width="256" height="256"/>
         <image name="NEXR" width="375" height="667"/>
         <image name="OPTIONAL" width="375" height="667"/>
         <image name="PICTUR" width="375" height="667"/>
+        <image name="Search" width="25" height="25"/>
         <image name="VERIFIED" width="375" height="667"/>
         <image name="accountfinalpic" width="375" height="667"/>
         <image name="b" width="374" height="592"/>
@@ -2669,19 +2659,22 @@
         <image name="connected" width="375" height="667"/>
         <image name="contact" width="375" height="667"/>
         <image name="contactpage" width="375" height="667"/>
-        <image name="fairy" width="365.27999877929688" height="365.760009765625"/>
+        <image name="fairy" width="761" height="762"/>
         <image name="fp" width="375" height="667"/>
+        <image name="link" width="30" height="30"/>
         <image name="myprofilefinal" width="375" height="590"/>
         <image name="paymentRecieved-1" width="375" height="667"/>
         <image name="popuser" width="467" height="270"/>
         <image name="profilelonger" width="375" height="1200"/>
         <image name="services" width="375" height="667"/>
+        <image name="settings" width="30" height="30"/>
+        <image name="stack_of_photos" width="30" height="30"/>
         <image name="tick" width="501" height="500"/>
         <image name="verifyy" width="375" height="667"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="e9x-Gv-rjh"/>
-        <segue reference="DTm-nb-r8f"/>
+        <segue reference="N3a-cU-Ps7"/>
+        <segue reference="GNR-Bq-yFj"/>
         <segue reference="0TD-9a-GVJ"/>
         <segue reference="rQI-ja-luw"/>
         <segue reference="vzB-fi-gDe"/>
