@@ -1368,20 +1368,20 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="kwM-f2-hOE">
                                 <rect key="frame" x="81" y="287" width="215" height="93"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalCompressionResistancePriority="749" text="my company name " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y4U-jv-Kxy">
-                                        <rect key="frame" x="30.5" y="0.0" width="154" height="19.5"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalCompressionResistancePriority="749" text="Laid By Tiff" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y4U-jv-Kxy">
+                                        <rect key="frame" x="62.5" y="0.0" width="90" height="19.5"/>
                                         <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="hair " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fpx-9D-FGh">
-                                        <rect key="frame" x="91" y="35.5" width="33" height="20.5"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hair " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fpx-9D-FGh">
+                                        <rect key="frame" x="89.5" y="35.5" width="36" height="20.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="my name is tiff and i do hair " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bVw-70-wVi">
-                                        <rect key="frame" x="0.5" y="72" width="214.5" height="21"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Freelance hair stylist " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bVw-70-wVi">
+                                        <rect key="frame" x="27" y="72" width="161.5" height="21"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="21" id="UVj-FO-bRe"/>
                                         </constraints>
@@ -2152,7 +2152,7 @@
                                 <rect key="frame" x="88" y="534" width="217" height="48"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <connections>
-                                    <action selector="Confirmation:" destination="jg9-oh-3NB" eventType="touchUpInside" id="Jzs-pG-XdC"/>
+                                    <action selector="Confirmation:" destination="jg9-oh-3NB" eventType="touchUpInside" id="Xrj-Wy-WDq"/>
                                     <segue destination="rA1-a9-lkN" kind="show" id="6yG-hb-luI"/>
                                 </connections>
                             </button>
@@ -2717,7 +2717,6 @@
         <image name="verifyy" width="375" height="667"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="FbM-bD-JhN"/>
         <segue reference="6yG-hb-luI"/>
         <segue reference="GNR-Bq-yFj"/>
         <segue reference="QiP-c3-YLg"/>
