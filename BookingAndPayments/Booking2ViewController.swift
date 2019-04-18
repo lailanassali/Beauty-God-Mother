@@ -291,6 +291,9 @@ class Booking2ViewController: UIViewController, UICollectionViewDelegate, UIColl
         self.performSegue(withIdentifier: "PaymentConfirmation", sender: self)
     }
     
+    @IBAction func goBack(_ sender: Any) {
+        
+    }
     
 
 }
