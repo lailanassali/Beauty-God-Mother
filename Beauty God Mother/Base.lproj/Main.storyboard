@@ -2518,6 +2518,10 @@
                                 <color key="textColor" red="1" green="0.27657577960000002" blue="0.63424556170000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="fairy" translatesAutoresizingMaskIntoConstraints="NO" id="iz5-Bu-5dt">
+                                <rect key="frame" x="134" y="93" width="125" height="130"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -2539,7 +2543,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="j4T-fi-qh3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="10282" y="-2936"/>
+            <point key="canvasLocation" x="10280.799999999999" y="-2936.1319340329837"/>
         </scene>
         <!--Comment View Controller-->
         <scene sceneID="Rvj-cW-iqW">
@@ -2586,9 +2590,12 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B0V-ol-K7f">
-                                <rect key="frame" x="23" y="20" width="34" height="30"/>
+                                <rect key="frame" x="16" y="20" width="67" height="39"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Back"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <state key="normal" title="Search">
+                                    <color key="titleColor" red="1" green="0.27657577960000002" blue="0.63424556170000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
                                 <connections>
                                     <segue destination="rA1-a9-lkN" kind="show" id="bpH-f1-OoX"/>
                                 </connections>
@@ -2621,7 +2628,7 @@
         <image name="connected" width="375" height="667"/>
         <image name="contact" width="375" height="667"/>
         <image name="contactpage" width="375" height="667"/>
-        <image name="fairy" width="16" height="16"/>
+        <image name="fairy" width="365.27999877929688" height="365.760009765625"/>
         <image name="fp" width="375" height="667"/>
         <image name="myprofilefinal" width="375" height="590"/>
         <image name="paymentRecieved-1" width="375" height="667"/>
@@ -2632,7 +2639,7 @@
         <image name="verifyy" width="375" height="667"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="e9x-Gv-rjh"/>
+        <segue reference="bpH-f1-OoX"/>
         <segue reference="gXM-fs-wZZ"/>
         <segue reference="vzB-fi-gDe"/>
         <segue reference="VM8-RR-bXg"/>
