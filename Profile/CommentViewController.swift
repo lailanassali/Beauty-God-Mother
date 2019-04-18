@@ -10,9 +10,10 @@ import UIKit
 
 class CommentViewController: UIViewController {
     
+    @IBAction func backToProfileButton(_ sender: AnyObject) { self.performSegue(withIdentifier: "ProfileSegue", sender: self)
+     }
+    
    
-    @IBAction func goBackToProfile(_ sender: AnyObject) {
-    self.performSegue(withIdentifier: "BackToProfileSegue", sender: self)            }
     
     override func viewDidLoad() {
         super.viewDidLoad()
