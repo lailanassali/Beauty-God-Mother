@@ -11,6 +11,7 @@ import Stripe
 
 class Booking2ViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource,UIPickerViewDelegate,UIPickerViewDataSource,STPAddCardViewControllerDelegate {
     
+    @IBOutlet weak var timeAlert: UILabel!
     
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
         return 1
@@ -64,16 +65,9 @@ class Booking2ViewController: UIViewController, UICollectionViewDelegate, UIColl
     }
     
     
-    
-    
     @IBOutlet var TimeTextField: UITextField!
-    
-    
-    
     @IBOutlet var Calendar2: UICollectionView!
     @IBOutlet var MonthLabel2: UILabel!
-    
-    
     
     let Months =
         ["January","Febuary","March","April","May","June","July","August","September","October","November","December"]
@@ -110,6 +104,8 @@ class Booking2ViewController: UIViewController, UICollectionViewDelegate, UIColl
         createPickerView()
         
         dismissPickerView()
+        
+           timeAlert.isHidden = true
     }
     
     
@@ -267,8 +263,23 @@ class Booking2ViewController: UIViewController, UICollectionViewDelegate, UIColl
         collectionView.reloadData()
     }
     
+    func timeNotSelected(time: String) -> Bool {
+        if selectedTime != nil {
+            return true
+        } else {
+            timeAlert?.isHidden = false
+       return false }
+    }
+    
     @IBAction func PaymentTapped(_ sender: Any) {
+       // stage 1
+        
+        guard let time = timeAlert.text else { return }
+        
+        if !timeNotSelected(time: time) { return }
+        
         // Setup add card view controller
+      
         let addCardViewController = STPAddCardViewController()
         addCardViewController.delegate = self
         // present add card view controller

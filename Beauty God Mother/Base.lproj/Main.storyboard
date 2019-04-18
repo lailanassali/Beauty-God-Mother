@@ -2337,8 +2337,8 @@
                                                     <action selector="Next2:" destination="hUe-cG-suk" eventType="touchUpInside" id="3KE-cG-D6L"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CT2-Sd-C2I">
-                                                <rect key="frame" x="8" y="592" width="106" height="35"/>
+                                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CT2-Sd-C2I">
+                                                <rect key="frame" x="8" y="596" width="106" height="35"/>
                                                 <connections>
                                                     <action selector="goBack:" destination="hUe-cG-suk" eventType="touchUpInside" id="rs4-cf-Eni"/>
                                                     <segue destination="RjA-KH-xxn" kind="show" id="0TD-9a-GVJ"/>
@@ -2351,7 +2351,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="*Please select a time" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Ea-5d-7Yx">
-                                                <rect key="frame" x="179" y="612" width="168" height="15"/>
+                                                <rect key="frame" x="120" y="598" width="168" height="15"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                                 <color key="textColor" red="0.92844045162200928" green="0.22862917184829712" blue="0.31831002235412598" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -2433,8 +2433,8 @@
                     <connections>
                         <outlet property="Calendar2" destination="Wf5-A5-yE5" id="lbY-GY-gTo"/>
                         <outlet property="MonthLabel2" destination="UUH-9c-1bm" id="Rpx-jh-X8H"/>
-                        <outlet property="TimeAlert" destination="6Ea-5d-7Yx" id="18m-RM-9po"/>
                         <outlet property="TimeTextField" destination="B3P-t4-LIg" id="LrC-XX-Rtn"/>
+                        <outlet property="timeAlert" destination="6Ea-5d-7Yx" id="rb7-Iu-Cua"/>
                         <segue destination="jg9-oh-3NB" kind="show" identifier="PaymentConfirmation" id="A1o-Yn-pkv"/>
                     </connections>
                 </viewController>
