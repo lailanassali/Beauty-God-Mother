@@ -10,7 +10,9 @@ import UIKit
 
 class CommentViewController: UIViewController {
  
-   
+    @IBAction func goToMyAccount(_ sender: AnyObject) {
+   self.performSegue(withIdentifier: "AccountSegue", sender: self) }
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
