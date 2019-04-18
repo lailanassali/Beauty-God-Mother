@@ -25,6 +25,7 @@ class SPViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         nameFormatAlert.isHidden = true
         passwordMatchAlert.isHidden = true
         fieldsEmptyAlert.isHidden = true
@@ -69,8 +70,7 @@ class SPViewController: UIViewController {
         rs.name = name
         rs.email = email
         rs.password = password
-        
-
+        rs.password = confirmPassword
         
         let controller = storyboard!.instantiateViewController(withIdentifier: "StartVC")
         self.present(controller, animated: true, completion: nil)
@@ -78,4 +78,4 @@ class SPViewController: UIViewController {
     }
 }
         
-public let storyboard = UIStoryboard(name: "Main", bundle: nil)
+
