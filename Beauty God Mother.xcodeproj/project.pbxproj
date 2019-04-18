@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		014CEF11223C326800F2FC8E /* ContactCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 014CEF10223C326800F2FC8E /* ContactCollectionViewCell.swift */; };
-		01777D6E220B35B400D51EC4 /* EditProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01777D6D220B35B400D51EC4 /* EditProfileViewController.swift */; };
 		01B7C3572236A23600381DCD /* ContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01B7C3562236A23600381DCD /* ContactViewController.swift */; };
 		01B7C3592236A2C500381DCD /* AccountViewCoontroller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01B7C3582236A2C500381DCD /* AccountViewCoontroller.swift */; };
 		01B7C35B2236B3A300381DCD /* CustomerTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01B7C35A2236B3A300381DCD /* CustomerTabBar.swift */; };
@@ -89,7 +88,6 @@
 
 /* Begin PBXFileReference section */
 		014CEF10223C326800F2FC8E /* ContactCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactCollectionViewCell.swift; sourceTree = "<group>"; };
-		01777D6D220B35B400D51EC4 /* EditProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileViewController.swift; sourceTree = "<group>"; };
 		01B7C3562236A23600381DCD /* ContactViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactViewController.swift; sourceTree = "<group>"; };
 		01B7C3582236A2C500381DCD /* AccountViewCoontroller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewCoontroller.swift; sourceTree = "<group>"; };
 		01B7C35A2236B3A300381DCD /* CustomerTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomerTabBar.swift; sourceTree = "<group>"; };
@@ -370,7 +368,6 @@
 				581107452267B3A800C35C4A /* CommentViewController.swift */,
 				4C2CDAAB224BEB1E00641044 /* BGMViewController.swift */,
 				581107432267939100C35C4A /* RatingViewController.swift */,
-				01777D6D220B35B400D51EC4 /* EditProfileViewController.swift */,
 				4CEDD41E2249602300E3227B /* ProfileServicesTableViewController.swift */,
 				4CEDD420224962E600E3227B /* CustomCell.swift */,
 				01CD8594224A32F900E1D40F /* ProfileServicesCell.swift */,
@@ -732,7 +729,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				4CEDD421224962E600E3227B /* CustomCell.swift in Sources */,
-				01777D6E220B35B400D51EC4 /* EditProfileViewController.swift in Sources */,
 				4CEDD41F2249602300E3227B /* ProfileServicesTableViewController.swift in Sources */,
 				5B21B48F224C6CAF00F2FAD5 /* FeaturedViewController.swift in Sources */,
 				AE2942F021F2832D00D629EA /* RegistrationService.swift in Sources */,

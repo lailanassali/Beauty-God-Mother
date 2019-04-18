@@ -1359,7 +1359,7 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="myprofilefinal" translatesAutoresizingMaskIntoConstraints="NO" id="gMu-vO-oZs">
                                 <rect key="frame" x="0.0" y="64" width="375" height="554"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="hh9-U9-9Lf">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="beauty-logos-customize-41-beauty-logo-templates-online-canva" translatesAutoresizingMaskIntoConstraints="NO" id="hh9-U9-9Lf">
                                 <rect key="frame" x="117" y="126" width="143" height="134"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="143" id="kWP-4f-0Vu"/>
@@ -2172,7 +2172,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bhg-sL-iQW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="10281" y="-1548"/>
+            <point key="canvasLocation" x="10681" y="-2279"/>
         </scene>
         <!--Search-->
         <scene sceneID="jSi-Lm-ZLA">
@@ -2336,8 +2336,8 @@
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v5Q-Mr-GOu">
                                                 <rect key="frame" x="8" y="589" width="30" height="43"/>
                                             </button>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="*Please select a time" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Ea-5d-7Yx">
-                                                <rect key="frame" x="171" y="596" width="127" height="15"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="*Please select a time" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Ea-5d-7Yx">
+                                                <rect key="frame" x="228" y="616" width="127" height="15"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                                 <color key="textColor" red="0.92844045162200928" green="0.22862917184829712" blue="0.31831002235412598" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
@@ -2350,12 +2350,12 @@
                                             <constraint firstItem="UUH-9c-1bm" firstAttribute="leading" secondItem="f6a-A9-dJP" secondAttribute="trailing" constant="51" id="2mM-CJ-NFK"/>
                                             <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="htm-7y-4UX" secondAttribute="trailing" constant="20" symbolic="YES" id="2me-e2-Ja5"/>
                                             <constraint firstItem="Wf5-A5-yE5" firstAttribute="top" secondItem="h1p-Wr-DJs" secondAttribute="bottom" constant="59" id="6h0-u2-tth"/>
-                                            <constraint firstItem="6Ea-5d-7Yx" firstAttribute="leading" secondItem="v5Q-Mr-GOu" secondAttribute="trailing" constant="6" id="Dh6-gt-CXh"/>
+                                            <constraint firstItem="6Ea-5d-7Yx" firstAttribute="leading" secondItem="v5Q-Mr-GOu" secondAttribute="trailing" constant="190" id="Dh6-gt-CXh"/>
                                             <constraint firstAttribute="trailing" secondItem="B3P-t4-LIg" secondAttribute="trailing" constant="65" id="E0D-oe-G5e"/>
                                             <constraint firstItem="Wf5-A5-yE5" firstAttribute="top" secondItem="f6a-A9-dJP" secondAttribute="bottom" constant="59" id="E9V-uJ-Qoh"/>
                                             <constraint firstItem="htm-7y-4UX" firstAttribute="top" secondItem="pmE-le-Umt" secondAttribute="top" constant="526" id="EV0-H8-bJZ"/>
                                             <constraint firstItem="Y2Y-iu-BOl" firstAttribute="top" secondItem="pmE-le-Umt" secondAttribute="top" constant="-36" id="Ei0-Oh-biU"/>
-                                            <constraint firstItem="6Ea-5d-7Yx" firstAttribute="top" secondItem="CT2-Sd-C2I" secondAttribute="top" id="FXG-AZ-LrB"/>
+                                            <constraint firstItem="6Ea-5d-7Yx" firstAttribute="top" secondItem="CT2-Sd-C2I" secondAttribute="top" constant="20" id="FXG-AZ-LrB"/>
                                             <constraint firstItem="Wf5-A5-yE5" firstAttribute="top" secondItem="h1p-Wr-DJs" secondAttribute="bottom" constant="59" id="Gey-b9-8sy"/>
                                             <constraint firstAttribute="trailing" secondItem="Y2Y-iu-BOl" secondAttribute="trailing" id="Gh5-CP-b8E"/>
                                             <constraint firstAttribute="trailing" secondItem="CT2-Sd-C2I" secondAttribute="trailing" constant="261" id="GnD-nQ-b53"/>
@@ -2398,7 +2398,7 @@
                                             <constraint firstItem="Y2Y-iu-BOl" firstAttribute="leading" secondItem="pmE-le-Umt" secondAttribute="leading" id="vtY-gO-Bhq"/>
                                             <constraint firstAttribute="bottom" secondItem="Y2Y-iu-BOl" secondAttribute="bottom" constant="36" id="vxl-c2-vot"/>
                                             <constraint firstAttribute="trailing" secondItem="BMY-Lr-KIZ" secondAttribute="trailing" constant="98" id="w4f-YT-TeR"/>
-                                            <constraint firstAttribute="bottom" secondItem="6Ea-5d-7Yx" secondAttribute="bottom" constant="89" id="y7p-dd-TVJ"/>
+                                            <constraint firstAttribute="bottom" secondItem="6Ea-5d-7Yx" secondAttribute="bottom" constant="69" id="y7p-dd-TVJ"/>
                                             <constraint firstItem="h1p-Wr-DJs" firstAttribute="leading" secondItem="UUH-9c-1bm" secondAttribute="trailing" constant="47" id="yMD-3r-tie"/>
                                         </constraints>
                                     </view>
@@ -2598,24 +2598,6 @@
             </objects>
             <point key="canvasLocation" x="10005.6" y="-3358.0209895052476"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="dNP-2Y-gQk">
-            <objects>
-                <viewController id="odO-Cb-1sg" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="vqb-Qs-lss"/>
-                        <viewControllerLayoutGuide type="bottom" id="HnZ-98-6wJ"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="0B4-AB-nMw">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="i9e-yi-bct" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="10901" y="-3792"/>
-        </scene>
         <!--Comment View Controller-->
         <scene sceneID="Rvj-cW-iqW">
             <objects>
@@ -2699,6 +2681,7 @@
         <image name="VERIFIED" width="375" height="667"/>
         <image name="accountfinalpic" width="375" height="667"/>
         <image name="b" width="374" height="592"/>
+        <image name="beauty-logos-customize-41-beauty-logo-templates-online-canva" width="500" height="500"/>
         <image name="booking" width="375" height="667"/>
         <image name="connected" width="375" height="667"/>
         <image name="contact" width="375" height="667"/>
@@ -2721,7 +2704,7 @@
         <segue reference="GNR-Bq-yFj"/>
         <segue reference="QiP-c3-YLg"/>
         <segue reference="rQI-ja-luw"/>
-        <segue reference="vzB-fi-gDe"/>
+        <segue reference="Gy2-9d-og5"/>
         <segue reference="sVg-pw-0j1"/>
     </inferredMetricsTieBreakers>
 </document>
