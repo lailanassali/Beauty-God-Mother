@@ -10,7 +10,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Beauty God Mother/AppDelegate.swift"
-            timestampString = "576876081.54566"
+            timestampString = "577277440.138703"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "5"
@@ -158,68 +158,6 @@
             endingLineNumber = "15"
             landmarkName = "UserLoginTests"
             landmarkType = "3">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Beauty_God_MotherTests.UserLoginTests.login.getter : Beauty_God_Mother.ViewController"
-                  moduleName = "Beauty God MotherTests"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/anishakatumba/Desktop/Beauty-God-Mother/Beauty%20God%20MotherTests/Login%20Tests/UserLoginTests.swift"
-                  timestampString = "576862730.181618"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "16"
-                  endingLineNumber = "16"
-                  offsetFromSymbolStart = "44">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Beauty_God_MotherTests.UserLoginTests.init(invocation: Swift.Optional&lt;__C.NSInvocation&gt;) -&gt; Beauty_God_MotherTests.UserLoginTests"
-                  moduleName = "Beauty God MotherTests"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/anishakatumba/Desktop/Beauty-God-Mother/Beauty%20God%20MotherTests/Login%20Tests/UserLoginTests.swift"
-                  timestampString = "576862730.184233"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "16"
-                  endingLineNumber = "16"
-                  offsetFromSymbolStart = "38">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Beauty_God_MotherTests.UserLoginTests.init(selector: ObjectiveC.Selector) -&gt; Beauty_God_MotherTests.UserLoginTests"
-                  moduleName = "Beauty God MotherTests"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/anishakatumba/Desktop/Beauty-God-Mother/Beauty%20God%20MotherTests/Login%20Tests/UserLoginTests.swift"
-                  timestampString = "576862730.1869251"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "16"
-                  endingLineNumber = "16"
-                  offsetFromSymbolStart = "38">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Beauty_God_MotherTests.UserLoginTests.init() -&gt; Beauty_God_MotherTests.UserLoginTests"
-                  moduleName = "Beauty God MotherTests"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/anishakatumba/Desktop/Beauty-God-Mother/Beauty%20God%20MotherTests/Login%20Tests/UserLoginTests.swift"
-                  timestampString = "576862730.189463"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "16"
-                  endingLineNumber = "16"
-                  offsetFromSymbolStart = "26">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -245,7 +183,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Beauty God Mother/AppDelegate.swift"
-            timestampString = "576876081.546275"
+            timestampString = "577277440.139623"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "14"
@@ -323,7 +261,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Beauty God Mother/AppDelegate.swift"
-            timestampString = "576876081.546405"
+            timestampString = "577277440.140079"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "4"
@@ -355,7 +293,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Beauty God Mother/AppDelegate.swift"
-            timestampString = "576876081.546543"
+            timestampString = "577277440.140437"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "5"
@@ -371,7 +309,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Beauty God Mother/AppDelegate.swift"
-            timestampString = "576876081.546636"
+            timestampString = "577277440.140728"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "6"
@@ -387,7 +325,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Beauty God Mother/AppDelegate.swift"
-            timestampString = "576876081.546728"
+            timestampString = "577277440.14104"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "8"
@@ -403,7 +341,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Beauty God Mother/AppDelegate.swift"
-            timestampString = "576876081.546821"
+            timestampString = "577277440.141342"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "7"
@@ -597,6 +535,22 @@
             endingLineNumber = "23"
             landmarkName = "testShouldFailIfFieldsAreNotEmpty()"
             landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Registration/Provider/SPViewController.swift"
+            timestampString = "577277595.774877"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "61"
+            endingLineNumber = "61"
+            landmarkName = "SPViewController"
+            landmarkType = "3">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

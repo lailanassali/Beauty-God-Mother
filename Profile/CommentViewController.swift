@@ -9,10 +9,7 @@
 import UIKit
 
 class CommentViewController: UIViewController {
-    
-    @IBAction func backToProfileButton(_ sender: AnyObject) { self.performSegue(withIdentifier: "ProfileSegue", sender: self)
-     }
-    
+ 
    
     
     override func viewDidLoad() {
