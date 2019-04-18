@@ -24,9 +24,17 @@ class RBViewController: UIViewController {
     var isEnabled = true
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
+        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(ViewController.keyboardDismiss))
+        
+        view.addGestureRecognizer(tap)
         nameFormatAlert.isHidden = true
         passwordMatchAlert.isHidden = true
         fieldsEmptyAlert.isHidden = true
+    }
+    @objc func keyboardDismiss(){
+        view.endEditing(true)
     }
     
     @IBAction func registerPressed(_ sender: Any) {

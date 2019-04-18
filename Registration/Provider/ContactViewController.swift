@@ -12,9 +12,16 @@ class ContactViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
+        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(ViewController.keyboardDismiss))
+        
+        view.addGestureRecognizer(tap)
     }
     
-    
+    @objc func keyboardDismiss(){
+        view.endEditing(true)
+    }
     
     @IBAction func didTapInstagram(_ sender: Any) {
         

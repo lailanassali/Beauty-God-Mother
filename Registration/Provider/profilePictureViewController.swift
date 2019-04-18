@@ -18,10 +18,17 @@ class profilePictureViewController: UIViewController, UINavigationControllerDele
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        
+        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(ViewController.keyboardDismiss))
+        
+        view.addGestureRecognizer(tap)
+        
         imageAlert.isHidden = true
         
     }
-    
+    @objc func keyboardDismiss(){
+        view.endEditing(true)
+    }
      func imageIsSelected(profilePicture: UIImageView) -> Bool {
         
         if (profilePicture.image != nil){

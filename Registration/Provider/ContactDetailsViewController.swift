@@ -24,11 +24,18 @@ class ContactDetailsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        
+        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(ViewController.keyboardDismiss))
+        
+        view.addGestureRecognizer(tap)
+        
         fieldsEmptyAlert.isHidden = true
         postcodeAlert.isHidden = true
         contactNumberAlert.isHidden = true
     }
-    
+    @objc func keyboardDismiss(){
+        view.endEditing(true)
+    }
     public func fieldsAreNotEmpty(organisationName: String, city: String, postcode: String, contactNumber: String) -> Bool {
         if organisationName.count != 0 && city.count != 0 && postcode.count != 0 && contactNumber.count != 0 {
             return true

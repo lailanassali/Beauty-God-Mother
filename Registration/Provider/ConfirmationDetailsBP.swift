@@ -20,11 +20,17 @@ class confirmationDetailsBPViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(ViewController.keyboardDismiss))
+        
+        view.addGestureRecognizer(tap)
+        
         view.addSubview(collectionView)
         collectionView.frame = view.frame
         
     }
-    
+    @objc func keyboardDismiss(){
+        view.endEditing(true)
+    }
     
     
     

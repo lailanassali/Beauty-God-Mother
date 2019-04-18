@@ -37,8 +37,15 @@ class Registration2ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(ViewController.keyboardDismiss))
+        
+        view.addGestureRecognizer(tap)
 
         // Do any additional setup after loading the view.
+    }
+    @objc func keyboardDismiss(){
+        view.endEditing(true)
     }
     
     @IBAction func ClearButton(_ sender: Any) {

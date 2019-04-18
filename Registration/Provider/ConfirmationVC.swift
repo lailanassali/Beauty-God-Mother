@@ -11,6 +11,13 @@ import UIKit
 class ConfirmationVC: UIViewController {
     override func viewDidLoad() {
         
+        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(ViewController.keyboardDismiss))
+        
+        view.addGestureRecognizer(tap)
+        
+    }
+    @objc func keyboardDismiss(){
+        view.endEditing(true)
     }
     
     @IBAction func dismissRegistration(_ sender: UIButton) {

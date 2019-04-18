@@ -11,6 +11,24 @@ import UIKit
 
 class RatingViewController: UIViewController {
     
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(ViewController.keyboardDismiss))
+        
+        view.addGestureRecognizer(tap)
+        
+        // Uncomment the following line to preserve selection between presentations
+        // self.clearsSelectionOnViewWillAppear = false
+        
+        // Register cell classes
+        
+        // Do any additional setup after loading the view.
+    }
+    @objc func keyboardDismiss(){
+        view.endEditing(true)
+    }
+    
     @IBAction func leaveCommentButtonPressed(_ sender: AnyObject) {
         
         self.performSegue(withIdentifier: "CommentViewSegue", sender: self)

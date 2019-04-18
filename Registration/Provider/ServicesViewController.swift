@@ -25,8 +25,15 @@ class ServicesViewController: UIViewController  {
     override func viewDidLoad(){
         super.viewDidLoad()
         
+        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(ViewController.keyboardDismiss))
+        
+        view.addGestureRecognizer(tap)
+        
         fieldsEmpty.isHidden = true
         
+    }
+    @objc func keyboardDismiss(){
+        view.endEditing(true)
     }
     
     public func fieldsAreNotEmpty(nameOfService: String, price: String, duration: String, description: String) -> Bool {

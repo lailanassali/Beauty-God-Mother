@@ -36,7 +36,14 @@ class ServicesTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(ViewController.keyboardDismiss))
+        
+        view.addGestureRecognizer(tap)
 
+    }
+    @objc func keyboardDismiss(){
+        view.endEditing(true)
     }
     
 

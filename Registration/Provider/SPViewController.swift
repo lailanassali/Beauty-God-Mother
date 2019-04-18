@@ -26,11 +26,19 @@ class SPViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        
+        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(ViewController.keyboardDismiss))
+        
+        view.addGestureRecognizer(tap)
+        
         nameFormatAlert.isHidden = true
         passwordMatchAlert.isHidden = true
         fieldsEmptyAlert.isHidden = true
     }
     
+    @objc func keyboardDismiss(){
+        view.endEditing(true)
+    }
     @IBAction func nextPressed(_ sender: Any) {
         handleNext()
     }

@@ -16,6 +16,10 @@ class ForgotPassword: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(ViewController.keyboardDismiss))
+        
+        view.addGestureRecognizer(tap)
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
@@ -24,7 +28,9 @@ class ForgotPassword: UIViewController {
 
         // Do any additional setup after loading the view.
     }
-
+    @objc func keyboardDismiss(){
+        view.endEditing(true)
+    }
     
     @IBAction func ResetButton(_ sender: Any) {
         Auth.auth().sendPasswordReset(withEmail: self.EmailInputField.text!) { (err) in
