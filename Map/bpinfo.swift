@@ -31,7 +31,9 @@ class bpinfo: NSObject, MKAnnotation {
     
     }
     
-    // Calling information from profile.json -> to follow  bp.info format
+    // Calling information from profile.json -> to follow  bp.info format, wasn't working so it was commented out 
+    
+    
 //    class func from(json: JSON) -> bpinfo? {
 //        var title: String
 //        if let unwrappedName = json["name"].string {

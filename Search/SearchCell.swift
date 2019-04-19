@@ -2,7 +2,7 @@
 //  SearchCell.swift
 //  Beauty God Mother
 //
-//  Created by Jessica Owusu on 3/15/19.
+//  Created by Jessica Owusu on 15/03/19.
 //  Copyright © 2019 BGM. All rights reserved.
 //
 

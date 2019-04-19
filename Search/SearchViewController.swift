@@ -2,7 +2,7 @@
 //  SearchViewController.swift
 //  Beauty God Mother
 //
-//  Created by Anisha  KATUMBA  on 28/03/2019.
+//  Created by Jessica Owusu on 19/03/2019.
 //  Copyright © 2019 BGM. All rights reserved.
 //
 
@@ -38,8 +38,6 @@ class SearchViewController: UIViewController {
         super.viewDidLoad()
         
         profiles = DataProvider.shared.allProfiles
-   // print(profiles[0].services)
-        // Do any additional setup after loading the view.
         
         do {
             profile = try JSON(data: dataProvider! as Data)
@@ -90,19 +88,15 @@ extension SearchViewController: UITableViewDataSource {
         let profileName = data["name"].stringValue
         let profileCategory = data["category"].stringValue
        
-       
-      //  let  = profileImage[indexPath.row]
         cell.imageLabel?.af_setImage(withURL: profileImage)
         cell.nameLabel?.text = profileName
         cell.typeLabel?.text = profileCategory
-        
         
         return cell
     }
     
 }
 
-// MARK: - UITableViewDelegate
 extension SearchViewController: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
@@ -110,21 +104,8 @@ extension SearchViewController: UITableViewDelegate {
         guard let detailViewController = storyboard.instantiateViewController(withIdentifier: ViewControllerIdentifiers.Detail) as? DetailsViewController else {
             return
         }
-        
         detailViewController.profile = profiles[indexPath.row]
         navigationController?.pushViewController(detailViewController, animated: true)
     } 
 }
-
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 
