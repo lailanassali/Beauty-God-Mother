@@ -2700,12 +2700,11 @@
         <image name="verifyy" width="375" height="667"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="FbM-bD-JhN"/>
         <segue reference="6yG-hb-luI"/>
         <segue reference="GNR-Bq-yFj"/>
         <segue reference="QiP-c3-YLg"/>
         <segue reference="MWe-hW-TF2"/>
         <segue reference="Bbm-mt-9Qv"/>
-        <segue reference="nBF-3p-nzN"/>
+        <segue reference="VM8-RR-bXg"/>
     </inferredMetricsTieBreakers>
 </document>

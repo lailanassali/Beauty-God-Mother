@@ -17,13 +17,7 @@ class RatingViewController: UIViewController {
         let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(ViewController.keyboardDismiss))
         
         view.addGestureRecognizer(tap)
-        
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-        
-        // Register cell classes
-        
-        // Do any additional setup after loading the view.
+
     }
     @objc func keyboardDismiss(){
         view.endEditing(true)

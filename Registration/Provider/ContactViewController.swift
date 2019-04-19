@@ -78,15 +78,5 @@ class ContactViewController: UIViewController {
             }
         }
     }
-//    @IBAction func didTapEmail(_ sender: Any) {
-//        let email = "beautygodmother@gmail.com"
-//        if let url = URL(string: "mailto:\(email)"){
-//            if #available(iOS 10.0, *){
-//                UIApplication.shared.open(url)
-//            } else {
-//                UIApplication.shared.openURL(url)
-//            }
-//        }
-//    }
 }
 
