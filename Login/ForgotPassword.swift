@@ -21,12 +21,7 @@ class ForgotPassword: UIViewController {
         
         view.addGestureRecognizer(tap)
 
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Register cell classes
-
-        // Do any additional setup after loading the view.
+    
     }
     @objc func keyboardDismiss(){
         view.endEditing(true)
@@ -46,12 +41,4 @@ class ForgotPassword: UIViewController {
         self.navigationController?.popViewController(animated: true)
     }
     
-//    var auth = FirebaseApp.auth();
-//    var emailAddress = "user@example.com";
-    
-//    auth.forgotPassword(emailAddress).then(function() {
-//    // Email sent.
-//    }).catch(function(error) {
-    // An error happened.
-//    });
 }
